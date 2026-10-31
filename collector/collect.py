@@ -328,10 +328,13 @@ def build_candidates(apps, cache, cfg):
         if rc > sweet_hi:
             size = math.log10(sweet_hi) - (math.log10(rc) - math.log10(sweet_hi)) * 1.5
         c["scan"] = rc <= cfg.get("max_ratings_to_scan", 1500000)
+        upd = c.get("updated") or ""
+        stale = len(upd) == 10 and (dt.date.today() - dt.date.fromisoformat(upd)).days > 365
         c["priority"] = round(2 * size + min(c["storefronts"], 30) / 10
                               + (1.5 if c["grossing_storefronts"] else 0) + (0.75 if c["paid_storefronts"] else 0)
                               + (1.0 if 0 < r < 4.5 else 0) + (0.5 if 0 < r < 4.0 else 0)
-                              + (0.5 if sweet_lo <= rc <= sweet_hi else 0), 3)
+                              + (0.5 if sweet_lo <= rc <= sweet_hi else 0)
+                              + (1.5 if stale else 0), 3)  # abandoned-but-charting apps are prime leads
     cands.sort(key=lambda c: c["priority"], reverse=True)
     return cands
 

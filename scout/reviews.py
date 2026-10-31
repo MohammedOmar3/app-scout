@@ -12,6 +12,7 @@
 """
 import argparse
 import json
+import signal
 from pathlib import Path
 
 from themes import themes_of
@@ -30,6 +31,7 @@ def clip(s, n):
 
 
 def main():
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet when piped into head
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", required=True)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -85,7 +87,7 @@ def main():
             for r in rs[:3]:
                 print(f"- {r['stars']}★ {r['cc']} {r['date']} — {clip(r['text'], 300)}")
             shown += 1
-            if shown >= args.limit:
+            if args.limit and shown >= args.limit:
                 break
 
     elif args.cmd == "competitors":
