@@ -56,11 +56,11 @@
   "max_reviews_per_app": 800,
   "drop_app_files_after_days": 90,
   "lookup_cache_days": 7,
-  "workers": 6,
+  "workers": 10,
   "time_budget_minutes": 26,
   "request_timeout_seconds": 12,
-  "charts_budget_minutes": 9,
-  "lookup_budget_minutes": 15,
+  "charts_budget_minutes": 8,
+  "lookup_budget_minutes": 14,
   "sweet_spot_ratings": [
     2000,
     300000

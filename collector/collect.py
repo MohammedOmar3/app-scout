@@ -175,8 +175,9 @@ def chart_jobs(storefronts, cfg, today):
     lim = cfg["chart_limit"]
     jobs = []
     for cc in storefronts:
-        jobs.append((cc, "free", None, f"{V2}/{cc}/apps/top-free/{lim}/apps.json", "v2"))
-        jobs.append((cc, "paid", None, f"{V2}/{cc}/apps/top-paid/{lim}/apps.json", "v2"))
+        # legacy iTunes RSS is far more reliable than the v2 marketing-tools feed (v2 kept as fallback below)
+        jobs.append((cc, "free", None, f"{IT}/{cc}/rss/topfreeapplications/limit={lim}/json", "legacy"))
+        jobs.append((cc, "paid", None, f"{IT}/{cc}/rss/toppaidapplications/limit={lim}/json", "legacy"))
         jobs.append((cc, "grossing", None, f"{IT}/{cc}/rss/topgrossingapplications/limit={lim}/json", "legacy"))
     # rotating slice of storefronts for per-category charts (non-game genres surface here)
     n = cfg["category_chart_storefronts_per_day"]
@@ -316,6 +317,7 @@ def build_candidates(apps, cache, cfg):
             "storefronts": n_sf, "grossing_storefronts": grossing_sf, "paid_storefronts": paid_sf,
             "best_rank": top_sf[0][1] if top_sf else None,
             "top_storefronts": [cc for cc, _ in top_sf[:10]],
+            "all_storefronts": [cc for cc, _ in top_sf],
         })
     sweet_lo, sweet_hi = cfg.get("sweet_spot_ratings", [2000, 300000])
     for c in cands:
@@ -365,7 +367,7 @@ def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
     alt_sort = {"mostrecent": "mostRecent", "mosthelpful": "mostHelpful"}[sort]
     urls = [f"{IT}/{cc}/rss/customerreviews/page={page}/id={app_id}/sortby={sort}/json",
             f"{IT}/{cc}/rss/customerreviews/id={app_id}/sortBy={alt_sort}/page={page}/json"]
-    pauses = [0, 2, 6] if page == 1 else [0]
+    pauses = [0, 2] if page == 1 else [0]
     for attempt, pause in enumerate(pauses):
         if pause:
             time.sleep(pause)
@@ -384,7 +386,9 @@ def scan_app(f, cand, cfg, today, deadline):
     (Apple's feed currently serves ~50 reviews per sort/page; breadth beats depth.)"""
     oldest_ok = (today - dt.timedelta(days=cfg["review_max_age_days"])).isoformat()
     stats, low = {}, []
-    sfs = cand["top_storefronts"][:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
+    order = cfg.get("_storefront_order", {})
+    charted = sorted(cand["all_storefronts"], key=lambda cc: order.get(cc, 999))
+    sfs = charted[:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
     for cc in sfs:
         hist = {str(s): 0 for s in range(1, 6)}
         fetched, newest, oldest, seen = 0, None, None, set()
@@ -436,7 +440,9 @@ def main():
     args = ap.parse_args()
 
     cfg = load_json(HERE / "config.json", {})
-    storefronts = args.storefronts.split(",") if args.storefronts else load_json(HERE / "storefronts.json", ["us"])
+    all_sf = load_json(HERE / "storefronts.json", ["us"])
+    cfg["_storefront_order"] = {cc: i for i, cc in enumerate(all_sf)}
+    storefronts = args.storefronts.split(",") if args.storefronts else all_sf
     if args.max_apps is not None:
         cfg["apps_to_scan_per_day"] = args.max_apps
     out = Path(args.out)
