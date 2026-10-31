@@ -11,6 +11,8 @@ Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps
            ├─ top free / paid / grossing charts, all ~175 storefronts
            ├─ per-category charts for 8 rotating storefronts a day (+ US, GB daily)
            ├─ iTunes Lookup metadata (genre, ratings, price, last update) — cached
+           ├─ focus segments by App Store search (not genres): islamic — Quran, prayer times, qibla, adhkar,
+           │   hadith — in EN/AR/ID/TR/FR/DE storefronts; 40 review-scan slots reserved daily
            ├─ drop games / medical / finance; keep "proven" apps (≥500 ratings or ≥3 storefronts)
            ├─ most-recent + most-helpful reviews from up to 6 storefronts for the top apps not scanned in 4 days
            │   (skips mega-apps > 1.5M ratings; favours mid-sized apps that make money)

@@ -48,6 +48,8 @@ From the digest, shortlist **8–12 pain clusters**. A cluster is one specific f
 | Locale gap | no Arabic / RTL, wrong calendar, not in my country, wrong units or currency | the same tool, done right for that market |
 | Abandoned | still charting but no update in 12+ months, bugs piling up | modern replacement |
 
+**Focus segments.** The digest has a section per focus segment (keyword segments that aren't App Store genres, defined in `collector/config.json` → `focus_segments`; currently **islamic**: Quran, prayer times, qibla, adhkar/dua, hadith, Ramadan). Always review each segment section and put its best 1–2 clusters on the shortlist when they exist. They pass the same gates as everything else; say in the report how the segment did even when nothing qualifies.
+
 **Not opportunities** on their own: crashes and bugs (unless chronic for 6+ months across versions), refunds and support disputes, account bans, outages, content complaints, "I hate the new logo". Note them only as context.
 
 Use the CLI to read the real reviews behind each cluster:
@@ -88,6 +90,15 @@ For each cluster, gather:
 - No hardware or Apple-only APIs Expo can't reach well: watchOS apps, CarPlay, keyboard extensions, Screen Time / FamilyControls, Safari extensions, deep HealthKit work, always-on background location. Home-screen widgets and Live Activities need native extension work: allowed only if not the core, and flag them.
 - No licensed content or data you can't get (music catalogs, sports data, live TV, bank feeds), no marketplace that needs two sides, no regulated domain (the excluded categories).
 - Guideline 4.3 (spam / copycat) risk is acceptable: the differentiator must be visible on the first screen, not "the same app but cheaper" in a crowded template category (flashlight, QR scanner, generic habit tracker) unless the evidence is overwhelming.
+
+#### Extra checks for the islamic segment
+
+- **Correctness is the product.** Prayer times must come from a proven calculation library (e.g. adhan-js, MIT) with selectable calculation method, Asr madhab and high-latitude rule; a wrong time is an instant 1★. Qibla needs location plus the compass (expo-location, expo-sensors) and calibration guidance.
+- **Content rights.** Quran Arabic text from a verified source used unmodified with attribution (e.g. Tanzil); translations and tafsir carry their own licences; recitation audio is copyrighted per reciter. If the idea depends on content you can't clearly license, it fails Gate B.
+- **Notifications.** Adhan alerts are scheduled local notifications; iOS caps pending notifications at 64, so the app must reschedule on a rolling window. Custom adhan sounds must be ≤ 30 s. Flag it in Stack fit.
+- **Excluded inside the segment:** zakat calculators, Islamic banking/investing (finance), religious Q&A that needs scholars, and halal scanners that need a product database you can't get.
+- **Timing.** Demand peaks in Ramadan (next one starts around early-to-mid February 2027; confirm the date with a search). An idea that can ship before then gets a "why now" bonus; say so in the brief.
+- **Tone.** Reviewers are often devout users: complaints about ads during recitation, inappropriate ads, paywalled basic worship features, or tracking are strong, specific signals. Treat them with care and quote them respectfully.
 
 ### 5. Score what passed both gates (1–5 each)
 

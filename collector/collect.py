@@ -24,6 +24,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.error import HTTPError, URLError
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 HERE = Path(__file__).resolve().parent
@@ -300,7 +301,41 @@ def is_excluded(meta, cfg):
     return GAME_GENRE in gids or any(7000 <= g < 8000 for g in gids)
 
 
-def build_candidates(apps, cache, cfg):
+# ---------------------------------------------------------------- focus segments
+
+def collect_focus(f, apps, cache, cfg, today, log):
+    """Keyword segments that are not App Store genres (e.g. Islamic apps).
+    Uses the iTunes Search API per (term, storefront); results carry full metadata,
+    so they go straight into the lookup cache. Returns {appId: {"segments", "storefronts"}}."""
+    focus = {}
+    for seg, spec in (cfg.get("focus_segments") or {}).items():
+        before = len(focus)
+        for group in spec.get("groups", []):
+            for term in group["terms"]:
+                for cc in group["storefronts"]:
+                    if f.past_deadline():
+                        break
+                    url = f"{IT}/search?term={quote(term)}&country={cc}&entity=software&limit={spec.get('limit', 50)}"
+                    data = f.get(url, lookup=True, kind=f"focus-{seg}")
+                    for r in (data or {}).get("results") or []:
+                        if not r.get("trackId"):
+                            continue
+                        tid = str(r["trackId"])
+                        if tid not in cache or cache[tid]["fetched"] < today.isoformat():
+                            cache[tid] = {"fetched": today.isoformat(), "data": trim_lookup(r, cc)}
+                        fe = focus.setdefault(tid, {"segments": set(), "storefronts": []})
+                        fe["segments"].add(seg)
+                        if cc not in fe["storefronts"]:
+                            fe["storefronts"].append(cc)
+                        if tid not in apps:
+                            apps[tid] = {"id": tid, "name": r.get("trackName"), "artist": r.get("sellerName"),
+                                         "chart_genre": r.get("primaryGenreId"), "positions": []}
+        log(f"focus '{seg}': {len(focus) - before} apps found by search")
+    return focus
+
+
+def build_candidates(apps, cache, cfg, focus=None):
+    focus = focus or {}
     cands = []
     for a in apps.values():
         c = cache.get(a["id"])
@@ -314,7 +349,9 @@ def build_candidates(apps, cache, cfg):
             sfs[p["cc"]] = min(sfs.get(p["cc"], 999), p["rank"])
         n_sf = len(sfs)
         rc = m.get("userRatingCount") or 0
-        if rc < cfg["min_ratings"] and n_sf < cfg["min_storefronts_if_few_ratings"]:
+        seg_min = min([cfg["focus_segments"][sg].get("min_ratings", cfg["min_ratings"])
+                       for sg in focus.get(a["id"], {}).get("segments", [])] or [cfg["min_ratings"]])
+        if rc < seg_min and n_sf < cfg["min_storefronts_if_few_ratings"]:
             continue
         grossing_sf = len({p["cc"] for p in a["positions"] if p["chart"] == "grossing"})
         paid_sf = len({p["cc"] for p in a["positions"] if p["chart"] == "paid"})
@@ -330,6 +367,8 @@ def build_candidates(apps, cache, cfg):
             "best_rank": top_sf[0][1] if top_sf else None,
             "top_storefronts": [cc for cc, _ in top_sf[:10]],
             "all_storefronts": [cc for cc, _ in top_sf],
+            "focus": sorted(focus[a["id"]]["segments"]) if a["id"] in focus else [],
+            "search_storefronts": focus[a["id"]]["storefronts"] if a["id"] in focus else [],
         })
     sweet_lo, sweet_hi = cfg.get("sweet_spot_ratings", [2000, 300000])
     for c in cands:
@@ -346,7 +385,8 @@ def build_candidates(apps, cache, cfg):
                               + (1.5 if c["grossing_storefronts"] else 0) + (0.75 if c["paid_storefronts"] else 0)
                               + (1.0 if 0 < r < 4.5 else 0) + (0.5 if 0 < r < 4.0 else 0)
                               + (0.5 if sweet_lo <= rc <= sweet_hi else 0)
-                              + (1.5 if stale else 0), 3)  # abandoned-but-charting apps are prime leads
+                              + (1.5 if stale else 0)  # abandoned-but-charting apps are prime leads
+                              + max([cfg["focus_segments"][sg].get("boost", 0) for sg in c["focus"]] or [0]), 3)
     cands.sort(key=lambda c: c["priority"], reverse=True)
     return cands
 
@@ -403,7 +443,8 @@ def scan_app(f, cand, cfg, today, deadline):
     stats, low = {}, []
     order = cfg.get("_storefront_order", {})
     charted = sorted(cand["all_storefronts"], key=lambda cc: order.get(cc, 999))
-    sfs = charted[:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
+    pool = list(dict.fromkeys(cand.get("search_storefronts", []) + charted))
+    sfs = pool[:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
     for cc in sfs:
         hist = {str(s): 0 for s in range(1, 6)}
         fetched, newest, oldest, seen = 0, None, None, set()
@@ -439,7 +480,7 @@ def merge_reviews(path, cand, stats, low, cfg, today):
         seen[key] = r
     reviews = [r for r in seen.values() if r["date"] >= keep_after]
     reviews.sort(key=lambda r: r["date"], reverse=True)
-    doc.update({"id": cand["id"], "app": {k: cand[k] for k in ("name", "seller", "genre", "rating", "ratings", "price", "updated", "url")},
+    doc.update({"id": cand["id"], "app": {k: cand.get(k) for k in ("name", "seller", "genre", "rating", "ratings", "price", "updated", "url", "focus")},
                 "last_scanned": today.isoformat(), "stats": stats, "reviews": reviews[:cfg["max_reviews_per_app"]]})
     save_json(path, doc, compact=True)
     return doc
@@ -506,8 +547,13 @@ def main():
         apps = state["apps"]
 
         tp = time.monotonic()
-        f.deadline = t0 + cfg["lookup_budget_minutes"] * 60
         cache = load_json(out / "state/lookup_cache.json", {})
+        f.deadline = t0 + cfg.get("focus_budget_minutes", cfg["charts_budget_minutes"] + 4) * 60
+        focus = collect_focus(f, apps, cache, cfg, today, log)
+        phase_done("focus", tp)
+
+        tp = time.monotonic()
+        f.deadline = t0 + cfg["lookup_budget_minutes"] * 60
         cache = collect_lookups(f, apps, cache, cfg, today, log)
         if f.past_deadline():
             state["partial"] = True
@@ -516,7 +562,7 @@ def main():
         cache = {k: v for k, v in cache.items() if v["fetched"] >= stale}
         save_json(out / "state/lookup_cache.json", cache, compact=True)
 
-        cands = build_candidates(apps, cache, cfg)
+        cands = build_candidates(apps, cache, cfg, focus)
         state["cands"] = cands
         save_json(out / "latest/candidates.json", cands, compact=True)
         log(f"candidates: {len(cands)} eligible proven apps (excluded genres removed)")
@@ -526,7 +572,14 @@ def main():
         f.deadline = deadline
         history = load_json(out / "state/history.json", {})
         rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
-        todo = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut][:cfg["apps_to_scan_per_day"]]
+        due = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut]
+        todo, taken = [], set()
+        for seg, spec in (cfg.get("focus_segments") or {}).items():  # reserved slots per focus segment
+            pick = [c for c in due if seg in c["focus"] and c["id"] not in taken][:spec.get("reserve_scan_slots", 0)]
+            todo += pick; taken.update(c["id"] for c in pick)
+        rest = [c for c in due if c["id"] not in taken][:max(0, cfg["apps_to_scan_per_day"] - len(todo))]
+        todo += rest
+        log(f"scan queue: {len(todo)} apps ({sum(1 for c in todo if c['focus'])} from focus segments)")
         log(f"scanning reviews for {len(todo)} apps")
         with ThreadPoolExecutor(cfg["workers"]) as ex:
             futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in todo}

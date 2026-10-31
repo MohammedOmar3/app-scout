@@ -140,6 +140,37 @@ def main():
                      f"**{clip(r['title'], 60)}** — {clip(r['text'], 260)}")
         L.append("")
 
+    # focus segments (keyword segments that aren't App Store genres, e.g. islamic)
+    segs = sorted({sg for a in apps for sg in (a["meta"].get("focus") or [])})
+    shown = {a["id"] for a in apps[: args.top]}
+    for sg in segs:
+        seg_apps = [a for a in apps if sg in (a["meta"].get("focus") or [])]
+        L.append(f"\n## Focus segment: {sg} ({len(seg_apps)} apps with recent low-star reviews)\n")
+        seg_theme = {}
+        for a in seg_apps:
+            for k in OPPORTUNITY:
+                if a["themes"][k]:
+                    seg_theme.setdefault(k, []).append((a["meta"].get("name"), a["themes"][k]))
+        for k, lst in sorted(seg_theme.items(), key=lambda kv: -sum(h for _, h in kv[1])):
+            names = ", ".join(f"{clip(n, 26)} ({h})" for n, h in sorted(lst, key=lambda x: -x[1])[:6])
+            L.append(f"- **{k}**: {len(lst)} apps, {sum(h for _, h in lst)} hits — {names}")
+        L.append("")
+        for a in seg_apps[:15]:
+            m = a["meta"]
+            if a["id"] in shown:
+                L.append(f"- {m.get('name')} (id {a['id']}) — see main list above")
+                continue
+            th = ", ".join(f"{k} {v}" for k, v in a["themes"].most_common() if v)
+            L.append(f"### {m.get('name')} — id {a['id']}" + (" **[already used in ledger]**" if a["used"] else ""))
+            L.append(f"{m.get('genre')} · ★{round(m.get('rating') or 0, 1)} from {m.get('ratings')} ratings ({m.get('ratings_cc')}) · {m.get('price')} · "
+                     f"updated {m.get('updated')} · found via search in {', '.join(m.get('search_storefronts') or [])} · charts in {m.get('storefronts')} storefronts")
+            L.append(f"Low-star last {args.recent}d: {a['recent']} (non-latin {a['non_latin']}) · signal {a['signal']} · themes: {th or 'none matched'}")
+            picks = sorted(a["tagged"], key=lambda rt: (any(t in OPPORTUNITY for t in rt[1]), rt[0]["helpful"], len(rt[0]["text"])), reverse=True)[:5]
+            for r, t in picks:
+                L.append(f"- {r['stars']}★ {r['cc']} {r['date']} v{r.get('version')} [{', '.join(t) or '-'}] "
+                         f"**{clip(r['title'], 60)}** — {clip(r['text'], 240)}")
+            L.append("")
+
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text("\n".join(L), encoding="utf-8")
     print(f"digest: {len(apps)} apps in window, wrote {args.out} ({sum(len(x) for x in L)//1024} KB)")

@@ -60,7 +60,7 @@
   "time_budget_minutes": 26,
   "request_timeout_seconds": 12,
   "charts_budget_minutes": 7,
-  "lookup_budget_minutes": 14,
+  "lookup_budget_minutes": 15,
   "sweet_spot_ratings": [
     2000,
     300000
@@ -69,5 +69,92 @@
   "review_sorts": [
     "mostrecent",
     "mosthelpful"
-  ]
+  ],
+  "focus_budget_minutes": 11,
+  "focus_segments": {
+    "islamic": {
+      "_comment": "Not an App Store genre: found by search. Finance (Islamic banking, zakat) and games stay excluded by genre.",
+      "boost": 2.0,
+      "reserve_scan_slots": 40,
+      "min_ratings": 200,
+      "limit": 50,
+      "groups": [
+        {
+          "terms": [
+            "quran",
+            "prayer times muslim",
+            "islamic",
+            "qibla",
+            "dua adhkar",
+            "hadith"
+          ],
+          "storefronts": [
+            "us",
+            "gb",
+            "ae",
+            "sa",
+            "pk",
+            "my",
+            "ca",
+            "au"
+          ]
+        },
+        {
+          "terms": [
+            "القرآن الكريم",
+            "مواقيت الصلاة",
+            "أذكار",
+            "حديث"
+          ],
+          "storefronts": [
+            "sa",
+            "ae",
+            "eg",
+            "kw",
+            "qa",
+            "jo",
+            "ma"
+          ]
+        },
+        {
+          "terms": [
+            "al quran",
+            "jadwal sholat",
+            "doa harian"
+          ],
+          "storefronts": [
+            "id",
+            "my"
+          ]
+        },
+        {
+          "terms": [
+            "kuran",
+            "namaz vakti"
+          ],
+          "storefronts": [
+            "tr"
+          ]
+        },
+        {
+          "terms": [
+            "coran",
+            "heure de prière"
+          ],
+          "storefronts": [
+            "fr"
+          ]
+        },
+        {
+          "terms": [
+            "koran",
+            "gebetszeiten"
+          ],
+          "storefronts": [
+            "de"
+          ]
+        }
+      ]
+    }
+  }
 }
