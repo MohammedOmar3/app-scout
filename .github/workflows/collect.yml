@@ -1,0 +1,71 @@
+name: collect
+
+# Daily free data pull from Apple's public feeds into the orphan `data` branch.
+# The daily Claude run (see SCOUT.md) reads that branch a couple of hours later.
+on:
+  schedule:
+    - cron: "23 0 * * *"   # 00:23 UTC = 04:23 Dubai
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["collector/**", ".github/workflows/collect.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out previous data (if any)
+        run: |
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch --depth 1 origin data
+            git worktree add data FETCH_HEAD
+          else
+            mkdir -p data
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect
+        run: python collector/collect.py --out data
+
+      - name: Build digest
+        run: python scout/digest.py --data data --out data/latest/digest.md
+
+      - name: Publish data branch (single commit, no history growth)
+        run: |
+          cd data
+          rm -rf .git
+          git init -q -b data
+          git config user.name "app-scout-bot"
+          git config user.email "app-scout-bot@users.noreply.github.com"
+          git add -A
+          git commit -qm "data $(date -u +%F)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data:data
+
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          try:
+              r = json.load(open("data/latest/run.json"))
+          except Exception as e:
+              r = {"error": str(e)}
+          keys = ["date","minutes","partial","unique_chart_apps","eligible_candidates","apps_scanned","reviews_fetched","low_star_kept","requests","failures"]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("| metric | value |\n|---|---|\n")
+              for k in keys:
+                  f.write(f"| {k} | {r.get(k)} |\n")
+          PY
