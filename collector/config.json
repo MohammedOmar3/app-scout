@@ -38,7 +38,7 @@
     6026,
     6027
   ],
-  "category_chart_storefronts_per_day": 25,
+  "category_chart_storefronts_per_day": 8,
   "always_category_storefronts": [
     "us",
     "gb"
@@ -59,7 +59,7 @@
   "workers": 10,
   "time_budget_minutes": 26,
   "request_timeout_seconds": 12,
-  "charts_budget_minutes": 8,
+  "charts_budget_minutes": 7,
   "lookup_budget_minutes": 14,
   "sweet_spot_ratings": [
     2000,

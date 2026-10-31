@@ -7,12 +7,13 @@ Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps
 ## How it works
 
 ```
-00:23 UTC  GitHub Actions: collect.yml          (free Apple feeds, ~15 min)
+00:23 UTC  GitHub Actions: collect.yml          (free Apple feeds, ≤ 26 min, self-throttling)
            ├─ top free / paid / grossing charts, all ~175 storefronts
-           ├─ per-category charts for a rotating slice of storefronts (+ US, GB daily)
+           ├─ per-category charts for 8 rotating storefronts a day (+ US, GB daily)
            ├─ iTunes Lookup metadata (genre, ratings, price, last update) — cached
            ├─ drop games / medical / finance; keep "proven" apps (≥500 ratings or ≥3 storefronts)
-           ├─ most recent reviews for the ~150 highest-priority apps not scanned in 7 days
+           ├─ most-recent + most-helpful reviews from up to 6 storefronts for the top apps not scanned in 4 days
+           │   (skips mega-apps > 1.5M ratings; favours mid-sized apps that make money)
            └─ low-star reviews → `data` branch (single commit, rewritten daily) + digest.md
 
 06:44 Dubai  Claude scheduled task: follows SCOUT.md
@@ -47,5 +48,5 @@ Actions → **collect** → *Run workflow* triggers a pull on demand.
 
 ## Limits (by design)
 
-- Free sources only: Apple's public review feed returns the ~500 most recent reviews per storefront per app; Reddit is reached only through web search (its API closed to new developers on 31 Oct 2026).
-- GitHub Actions minutes: a private repo on the free plan gets 2,000 min/month; this job uses ~15 min/day. Lower `apps_to_scan_per_day` if needed.
+- Free sources only: Apple's public review feed currently serves ~50 reviews per sort order per storefront, so evidence builds up across storefronts and repeated scans over days; Reddit is reached only through web search (its API closed to new developers on 31 Oct 2026).
+- GitHub Actions minutes: a private repo on the free plan gets 2,000 min/month; this job uses ≤ 27 min/day (~800 min/month). Lower `apps_to_scan_per_day` if needed.
