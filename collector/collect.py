@@ -573,12 +573,17 @@ def main():
         history = load_json(out / "state/history.json", {})
         rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
         due = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut]
-        todo, taken = [], set()
+        reserved, taken = [], set()
         for seg, spec in (cfg.get("focus_segments") or {}).items():  # reserved slots per focus segment
             pick = [c for c in due if seg in c["focus"] and c["id"] not in taken][:spec.get("reserve_scan_slots", 0)]
-            todo += pick; taken.update(c["id"] for c in pick)
-        rest = [c for c in due if c["id"] not in taken][:max(0, cfg["apps_to_scan_per_day"] - len(todo))]
-        todo += rest
+            reserved += pick; taken.update(c["id"] for c in pick)
+        rest = [c for c in due if c["id"] not in taken][:max(0, cfg["apps_to_scan_per_day"] - len(reserved))]
+        # interleave (1 focus : 2 general) so a throttled, time-limited run still covers both
+        todo, fi, gi = [], 0, 0
+        while fi < len(reserved) or gi < len(rest):
+            if fi < len(reserved):
+                todo.append(reserved[fi]); fi += 1
+            todo += rest[gi:gi + 2]; gi += 2
         log(f"scan queue: {len(todo)} apps ({sum(1 for c in todo if c['focus'])} from focus segments)")
         log(f"scanning reviews for {len(todo)} apps")
         with ThreadPoolExecutor(cfg["workers"]) as ex:
