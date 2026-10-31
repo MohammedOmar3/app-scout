@@ -174,6 +174,17 @@ def parse_legacy(data):
 def chart_jobs(storefronts, cfg, today):
     lim = cfg["chart_limit"]
     jobs = []
+
+    def cat_jobs(cc):
+        for g in cfg["category_chart_genres"]:
+            jobs.append((cc, "free", g, f"{IT}/{cc}/rss/topfreeapplications/limit={lim}/genre={g}/json", "legacy"))
+            jobs.append((cc, "grossing", g, f"{IT}/{cc}/rss/topgrossingapplications/limit={lim}/genre={g}/json", "legacy"))
+
+    # 1) category charts for the big always-on storefronts first: richest non-game signal
+    always = [cc for cc in cfg["always_category_storefronts"] if cc in storefronts]
+    for cc in always:
+        cat_jobs(cc)
+    # 2) overall charts, every storefront
     for cc in storefronts:
         # legacy iTunes RSS is far more reliable than the v2 marketing-tools feed (v2 kept as fallback below)
         jobs.append((cc, "free", None, f"{IT}/{cc}/rss/topfreeapplications/limit={lim}/json", "legacy"))
@@ -183,11 +194,11 @@ def chart_jobs(storefronts, cfg, today):
     n = cfg["category_chart_storefronts_per_day"]
     start = (today.toordinal() * n) % len(storefronts)
     rot = [storefronts[(start + i) % len(storefronts)] for i in range(min(n, len(storefronts)))]
-    cat_sf = list(dict.fromkeys(cfg["always_category_storefronts"] + rot))
-    for cc in cat_sf:
-        for g in cfg["category_chart_genres"]:
-            jobs.append((cc, "free", g, f"{IT}/{cc}/rss/topfreeapplications/limit={lim}/genre={g}/json", "legacy"))
-            jobs.append((cc, "grossing", g, f"{IT}/{cc}/rss/topgrossingapplications/limit={lim}/genre={g}/json", "legacy"))
+    cat_sf = list(dict.fromkeys(always + rot))
+    # 3) category charts for today's rotating slice
+    for cc in rot:
+        if cc not in always:
+            cat_jobs(cc)
     return jobs, cat_sf
 
 
@@ -199,17 +210,18 @@ def collect_charts(f, storefronts, cfg, today, log):
 
     def run(job):
         cc, chart, genre, url, kind = job
-        data = f.get(url, kind="chart-" + kind)
+        skipped = f.past_deadline()
+        data = None if skipped else f.get(url, kind="chart-" + kind)
         rows = parse_v2(data) if kind == "v2" else parse_legacy(data)
-        return job, rows
+        return job, rows, skipped
 
     with ThreadPoolExecutor(cfg["workers"]) as ex:
         for fut in as_completed([ex.submit(run, j) for j in jobs]):
-            (cc, chart, genre, url, kind), rows = fut.result()
+            (cc, chart, genre, url, kind), rows, skipped = fut.result()
             key = f"{chart}{'/genre' if genre else ''}"
             with lock:
-                st = feed_stats.setdefault(key, {"ok": 0, "empty": 0})
-                st["ok" if rows else "empty"] += 1
+                st = feed_stats.setdefault(key, {"ok": 0, "empty": 0, "skipped": 0})
+                st["skipped" if skipped else ("ok" if rows else "empty")] += 1
                 for r in rows:
                     a = apps.setdefault(r["id"], {"id": r["id"], "name": r["name"], "artist": r["artist"],
                                                    "chart_genre": None, "positions": []})
