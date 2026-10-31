@@ -52,19 +52,41 @@ def save_json(path, obj, compact=False):
 
 
 class Fetcher:
-    """Polite JSON fetcher: global spacing between requests, retries with backoff."""
+    """Polite JSON fetcher: global spacing, adaptive slow-down on 429/403, hard deadline.
 
-    def __init__(self, timeout, spacing=0.12, lookup_spacing=2.5):
+    Retries only on 429 / 5xx / network errors (never on 400/403/404), and gives up
+    immediately once the deadline has passed, so a throttled run still finishes and
+    publishes what it has.
+    """
+
+    def __init__(self, timeout, spacing=0.12, lookup_spacing=2.5, deadline=None):
         self.timeout = timeout
         self.spacing = spacing
         self.lookup_spacing = lookup_spacing
+        self.deadline = deadline
         self._lock = threading.Lock()
         self._lookup_lock = threading.Lock()
         self._next = 0.0
         self._next_lookup = 0.0
+        self._pushback = 0
         self.requests = 0
         self.failures = 0
         self.errors = []
+        self.status = {}  # "<kind> <code>" -> count
+
+    def past_deadline(self):
+        return self.deadline is not None and time.monotonic() > self.deadline
+
+    def _count(self, kind, code):
+        k = f"{kind} {code}"
+        self.status[k] = self.status.get(k, 0) + 1
+
+    def _slow_down(self, lookup):
+        with self._lock:
+            self._pushback += 1
+            if self._pushback % 10 == 0:  # sustained pushback -> double spacing (cap 3s / 10s)
+                self.spacing = min(3.0, self.spacing * 2)
+                self.lookup_spacing = min(10.0, self.lookup_spacing * 2)
 
     def _wait(self, lookup):
         lock = self._lookup_lock if lookup else self._lock
@@ -79,24 +101,36 @@ class Fetcher:
             else:
                 self._next = stamp
 
-    def get(self, url, lookup=False, retries=3):
+    def get(self, url, lookup=False, retries=2, kind="other"):
         for attempt in range(retries + 1):
+            if self.past_deadline():
+                self._count(kind, "skipped-deadline")
+                return None
             self._wait(lookup)
             self.requests += 1
             try:
                 req = Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
                 with urlopen(req, timeout=self.timeout) as r:
                     body = r.read()
+                self._count(kind, 200)
                 if not body.strip():
                     return None
                 return json.loads(body)
             except HTTPError as e:
-                if e.code in (429, 403, 500, 502, 503, 504) and attempt < retries:
-                    time.sleep(min(60, 4 * (2 ** attempt)))
+                self._count(kind, e.code)
+                if e.code in (429, 403):
+                    self._slow_down(lookup)
+                if e.code in (429, 500, 502, 503, 504) and attempt < retries:
+                    time.sleep(3 * (attempt + 1))
                     continue
                 self._fail(url, f"HTTP {e.code}")
                 return None
-            except (URLError, TimeoutError, ConnectionError, json.JSONDecodeError, OSError) as e:
+            except json.JSONDecodeError:
+                self._count(kind, "bad-json")
+                self._fail(url, "bad json")
+                return None
+            except (URLError, TimeoutError, ConnectionError, OSError) as e:
+                self._count(kind, "net-" + type(e).__name__)
                 if attempt < retries:
                     time.sleep(2 * (attempt + 1))
                     continue
@@ -164,7 +198,7 @@ def collect_charts(f, storefronts, cfg, today, log):
 
     def run(job):
         cc, chart, genre, url, kind = job
-        data = f.get(url)
+        data = f.get(url, kind="chart-" + kind)
         rows = parse_v2(data) if kind == "v2" else parse_legacy(data)
         return job, rows
 
@@ -222,7 +256,7 @@ def collect_lookups(f, apps, cache, cfg, today, log):
                 batches.append((cc, ids[i:i + 150]))
         got = set()
         for cc, ids in batches:
-            data = f.get(f"{IT}/lookup?id={','.join(ids)}&country={cc}&entity=software", lookup=True)
+            data = f.get(f"{IT}/lookup?id={','.join(ids)}&country={cc}&entity=software", lookup=True, kind="lookup")
             for r in (data or {}).get("results") or []:
                 tid = str(r.get("trackId"))
                 if r.get("wrapperType") == "software" or r.get("kind") == "software":
@@ -327,7 +361,7 @@ def scan_app(f, cand, cfg, today, deadline):
         for page in range(1, cfg["review_pages_per_storefront"] + 1):
             if time.monotonic() > deadline:
                 break
-            rows = parse_reviews(f.get(f"{IT}/{cc}/rss/customerreviews/page={page}/id={cand['id']}/sortby=mostrecent/json"), cc)
+            rows = parse_reviews(f.get(f"{IT}/{cc}/rss/customerreviews/page={page}/id={cand['id']}/sortby=mostrecent/json", kind="reviews"), cc)
             if not rows:
                 break
             for r in rows:
@@ -384,76 +418,105 @@ def main():
         logs.append(line)
 
     f = Fetcher(cfg["request_timeout_seconds"])
-    apps, feed_stats, cat_sf = collect_charts(f, storefronts, cfg, today, log)
+    phases = {}
+    state = {"apps": {}, "feed_stats": {}, "cat_sf": [], "cands": [], "scanned": [], "fetched": 0, "low": 0, "partial": False}
 
-    cache = load_json(out / "state/lookup_cache.json", {})
-    cache = collect_lookups(f, apps, cache, cfg, today, log)
-    stale = (today - dt.timedelta(days=60)).isoformat()
-    cache = {k: v for k, v in cache.items() if v["fetched"] >= stale}
-    save_json(out / "state/lookup_cache.json", cache, compact=True)
+    def write_run(status):
+        run = {
+            "date": today.isoformat(), "status": status, "started": started.isoformat(timespec="seconds"),
+            "finished": now().isoformat(timespec="seconds"), "minutes": round((time.monotonic() - t0) / 60, 1),
+            "phase_minutes": phases, "partial": state["partial"], "storefronts": len(storefronts),
+            "category_storefronts_today": state["cat_sf"], "feeds": state["feed_stats"],
+            "unique_chart_apps": len(state["apps"]), "eligible_candidates": len(state["cands"]),
+            "apps_scanned": len(state["scanned"]), "reviews_fetched": state["fetched"], "low_star_kept": state["low"],
+            "review_files": len(list((out / "reviews").glob("*.json"))) if (out / "reviews").exists() else 0,
+            "requests": f.requests, "failures": f.failures, "http_status": f.status,
+            "final_spacing_s": {"feeds": f.spacing, "lookup": f.lookup_spacing},
+            "error_samples": f.errors, "log": logs,
+        }
+        save_json(out / "latest/run.json", run)
 
-    cands = build_candidates(apps, cache, cfg)
-    save_json(out / "latest/candidates.json", cands, compact=True)
-    log(f"candidates: {len(cands)} eligible proven apps (excluded genres removed)")
+    def phase_done(name, t_start):
+        phases[name] = round((time.monotonic() - t_start) / 60, 1)
+        write_run(f"running (after {name})")
 
-    history = load_json(out / "state/history.json", {})
-    rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
-    todo = [c for c in cands if history.get(c["id"], "") < rescan_cut][:cfg["apps_to_scan_per_day"]]
-    log(f"scanning reviews for {len(todo)} apps")
+    try:
+        tp = time.monotonic()
+        f.deadline = t0 + cfg["charts_budget_minutes"] * 60
+        state["apps"], state["feed_stats"], state["cat_sf"] = collect_charts(f, storefronts, cfg, today, log)
+        if f.past_deadline():
+            state["partial"] = True
+            log("charts: hit the charts time budget, continuing with what we have")
+        phase_done("charts", tp)
+        apps = state["apps"]
 
-    scanned, total_fetched, total_low, partial = [], 0, 0, False
-    with ThreadPoolExecutor(cfg["workers"]) as ex:
-        futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in todo}
-        for fut in as_completed(futs):
-            c = futs[fut]
-            try:
-                stats, low = fut.result()
-            except Exception as e:  # never let one app kill the run
-                f._fail(c["id"], f"scan error {e!r}"[:160])
-                continue
-            fetched = sum(s["fetched"] for s in stats.values())
-            if fetched == 0:
-                if time.monotonic() > deadline:
-                    partial = True
-                continue
-            doc = merge_reviews(out / f"reviews/{c['id']}.json", c, stats, low, cfg, today)
-            history[c["id"]] = today.isoformat()
-            hist = {str(s): sum(st["hist"][str(s)] for st in stats.values()) for s in range(1, 6)}
-            scanned.append({"id": c["id"], "name": c["name"], "genre": c["genre"], "fetched": fetched, "hist": hist,
-                            "low_new": len(low), "low_total": len(doc["reviews"]),
-                            "low_share": round((hist["1"] + hist["2"]) / fetched, 3)})
-            total_fetched += fetched
-            total_low += len(low)
-    if time.monotonic() > deadline:
-        partial = True
+        tp = time.monotonic()
+        f.deadline = t0 + cfg["lookup_budget_minutes"] * 60
+        cache = load_json(out / "state/lookup_cache.json", {})
+        cache = collect_lookups(f, apps, cache, cfg, today, log)
+        if f.past_deadline():
+            state["partial"] = True
+            log("lookup: hit the lookup time budget, uncached apps wait for tomorrow")
+        stale = (today - dt.timedelta(days=60)).isoformat()
+        cache = {k: v for k, v in cache.items() if v["fetched"] >= stale}
+        save_json(out / "state/lookup_cache.json", cache, compact=True)
 
-    # housekeeping: drop review files for apps not scanned in N days
-    drop_cut = (today - dt.timedelta(days=cfg["drop_app_files_after_days"])).isoformat()
-    for p in (out / "reviews").glob("*.json") if (out / "reviews").exists() else []:
-        if history.get(p.stem, "") < drop_cut:
-            p.unlink()
-            history.pop(p.stem, None)
-    save_json(out / "state/history.json", history, compact=True)
+        cands = build_candidates(apps, cache, cfg)
+        state["cands"] = cands
+        save_json(out / "latest/candidates.json", cands, compact=True)
+        log(f"candidates: {len(cands)} eligible proven apps (excluded genres removed)")
+        phase_done("lookup", tp)
 
-    scanned.sort(key=lambda s: s["low_new"], reverse=True)
-    save_json(out / "latest/scanned.json", scanned)
-    run = {
-        "date": today.isoformat(), "started": started.isoformat(timespec="seconds"),
-        "finished": now().isoformat(timespec="seconds"), "minutes": round((time.monotonic() - t0) / 60, 1),
-        "partial": partial, "storefronts": len(storefronts), "category_storefronts_today": cat_sf,
-        "feeds": feed_stats, "unique_chart_apps": len(apps), "eligible_candidates": len(cands),
-        "apps_scanned": len(scanned), "reviews_fetched": total_fetched, "low_star_kept": total_low,
-        "review_files": len(list((out / "reviews").glob("*.json"))) if (out / "reviews").exists() else 0,
-        "requests": f.requests, "failures": f.failures, "error_samples": f.errors, "log": logs,
-    }
-    save_json(out / "latest/run.json", run)
-    log(f"done: scanned {len(scanned)} apps, {total_fetched} reviews, {total_low} low-star kept, "
-        f"{f.requests} requests, {f.failures} failures, partial={partial}")
+        tp = time.monotonic()
+        f.deadline = deadline
+        history = load_json(out / "state/history.json", {})
+        rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
+        todo = [c for c in cands if history.get(c["id"], "") < rescan_cut][:cfg["apps_to_scan_per_day"]]
+        log(f"scanning reviews for {len(todo)} apps")
+        with ThreadPoolExecutor(cfg["workers"]) as ex:
+            futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in todo}
+            for fut in as_completed(futs):
+                c = futs[fut]
+                try:
+                    stats, low = fut.result()
+                except Exception as e:  # never let one app kill the run
+                    f._fail(c["id"], f"scan error {e!r}"[:160])
+                    continue
+                fetched = sum(s["fetched"] for s in stats.values())
+                if fetched == 0:
+                    continue
+                doc = merge_reviews(out / f"reviews/{c['id']}.json", c, stats, low, cfg, today)
+                history[c["id"]] = today.isoformat()
+                hist = {str(s): sum(st["hist"][str(s)] for st in stats.values()) for s in range(1, 6)}
+                state["scanned"].append({"id": c["id"], "name": c["name"], "genre": c["genre"], "fetched": fetched,
+                                         "hist": hist, "low_new": len(low), "low_total": len(doc["reviews"]),
+                                         "low_share": round((hist["1"] + hist["2"]) / fetched, 3)})
+                state["fetched"] += fetched
+                state["low"] += len(low)
+        if f.past_deadline():
+            state["partial"] = True
+
+        # housekeeping: drop review files for apps not scanned in N days
+        drop_cut = (today - dt.timedelta(days=cfg["drop_app_files_after_days"])).isoformat()
+        for p in (out / "reviews").glob("*.json") if (out / "reviews").exists() else []:
+            if history.get(p.stem, "") < drop_cut:
+                p.unlink()
+                history.pop(p.stem, None)
+        save_json(out / "state/history.json", history, compact=True)
+        state["scanned"].sort(key=lambda s: s["low_new"], reverse=True)
+        save_json(out / "latest/scanned.json", state["scanned"])
+        phases["reviews"] = round((time.monotonic() - tp) / 60, 1)
+        log(f"done: scanned {len(state['scanned'])} apps, {state['fetched']} reviews, {state['low']} low-star kept, "
+            f"{f.requests} requests, {f.failures} failures, partial={state['partial']}, status={f.status}")
+        write_run("ok")
+    except Exception as e:
+        log(f"FATAL: {e!r}")
+        write_run(f"error: {e!r}"[:300])
+        raise
     # fail the job only if nothing at all came back (Apple blocked us / endpoints changed)
-    if not apps:
+    if not state["apps"]:
         print("ERROR: no chart data at all", file=sys.stderr)
         sys.exit(2)
-
 
 if __name__ == "__main__":
     main()

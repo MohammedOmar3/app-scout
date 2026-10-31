@@ -1,10 +1,48 @@
 {
   "_comment": "Tuning knobs for the daily collector. Genre ids are Apple App Store primary genre ids.",
-  "excluded_genre_ids": [6014, 6020, 6015, 6025, 6022],
-  "excluded_genre_names": ["Games", "Medical", "Finance", "Stickers", "Catalogs"],
-  "category_chart_genres": [6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009, 6010, 6011, 6012, 6013, 6016, 6017, 6018, 6021, 6023, 6024, 6026, 6027],
+  "excluded_genre_ids": [
+    6014,
+    6020,
+    6015,
+    6025,
+    6022
+  ],
+  "excluded_genre_names": [
+    "Games",
+    "Medical",
+    "Finance",
+    "Stickers",
+    "Catalogs"
+  ],
+  "category_chart_genres": [
+    6000,
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010,
+    6011,
+    6012,
+    6013,
+    6016,
+    6017,
+    6018,
+    6021,
+    6023,
+    6024,
+    6026,
+    6027
+  ],
   "category_chart_storefronts_per_day": 25,
-  "always_category_storefronts": ["us", "gb"],
+  "always_category_storefronts": [
+    "us",
+    "gb"
+  ],
   "chart_limit": 100,
   "min_ratings": 500,
   "min_storefronts_if_few_ratings": 3,
@@ -20,5 +58,7 @@
   "lookup_cache_days": 7,
   "workers": 6,
   "time_budget_minutes": 22,
-  "request_timeout_seconds": 20
+  "request_timeout_seconds": 20,
+  "charts_budget_minutes": 7,
+  "lookup_budget_minutes": 12
 }

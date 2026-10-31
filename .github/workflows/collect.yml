@@ -6,6 +6,15 @@ on:
   schedule:
     - cron: "23 0 * * *"   # 00:23 UTC = 04:23 Dubai
   workflow_dispatch:
+    inputs:
+      storefronts:
+        description: "Comma list of storefronts (blank = all)"
+        required: false
+        default: ""
+      max_apps:
+        description: "Apps to scan (blank = config)"
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: ["collector/**", ".github/workflows/collect.yml"]
@@ -20,7 +29,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -38,13 +47,26 @@ jobs:
           python-version: "3.12"
 
       - name: Collect
-        run: python collector/collect.py --out data
+        timeout-minutes: 28
+        continue-on-error: true
+        env:
+          SF: ${{ github.event.inputs.storefronts }}
+          MAX: ${{ github.event.inputs.max_apps }}
+        run: |
+          args="--out data"
+          [ -n "$SF" ] && args="$args --storefronts $SF"
+          [ -n "$MAX" ] && args="$args --max-apps $MAX"
+          python collector/collect.py $args
 
       - name: Build digest
+        if: always()
+        continue-on-error: true
         run: python scout/digest.py --data data --out data/latest/digest.md
 
       - name: Publish data branch (single commit, no history growth)
+        if: always()
         run: |
+          [ -f data/latest/run.json ] || { echo "no run.json, nothing to publish"; exit 1; }
           cd data
           rm -rf .git
           git init -q -b data
