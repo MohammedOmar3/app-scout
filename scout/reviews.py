@@ -81,7 +81,7 @@ def main():
         shown = 0
         for n, doc, rs in hits:
             app = doc.get("app") or {}
-            print(f"\n## {app.get('name')} (id {doc['id']}, {app.get('genre')}, ★{app.get('rating')}, {app.get('ratings')} ratings): {n}")
+            print(f"\n## {app.get('name')} (id {doc['id']}, {app.get('genre')}, ★{round(app.get('rating') or 0, 1)}, {app.get('ratings')} ratings): {n}")
             for r in rs[:3]:
                 print(f"- {r['stars']}★ {r['cc']} {r['date']} — {clip(r['text'], 300)}")
             shown += 1
@@ -95,7 +95,7 @@ def main():
         rows.sort(key=lambda c: -(c.get("ratings") or 0))
         print(f"{len(rows)} charting eligible apps mention '{args.keyword}' (top {args.limit} by ratings):")
         for c in rows[: args.limit]:
-            print(f"- {c['name']} (id {c['id']}, {c.get('genre')}) ★{c.get('rating')} {c.get('ratings')} ratings, "
+            print(f"- {c['name']} (id {c['id']}, {c.get('genre')}) ★{round(c.get('rating') or 0, 1)} {c.get('ratings')} ratings, "
                   f"{c.get('price')}, {c.get('storefronts')} storefronts, updated {c.get('updated')} — {clip(c.get('description'), 140)}")
         print("Note: only apps currently in a chart are here. Also check the App Store with WebSearch.")
 

@@ -119,7 +119,7 @@ def main():
                    key=lambda c: -c.get("priority", 0))[:15]
     for c in stale:
         L.append(f"- {c['name']} ({c.get('genre')}) id {c['id']} — last update {c['updated']}, "
-                 f"{c.get('ratings')} ratings ★{c.get('rating')}, charts in {c.get('storefronts')} storefronts, {c.get('price')}")
+                 f"{c.get('ratings')} ratings ★{round(c.get('rating') or 0, 1)}, charts in {c.get('storefronts')} storefronts, {c.get('price')}")
     if not stale:
         L.append("_none_")
 
@@ -129,7 +129,7 @@ def main():
         th = ", ".join(f"{k} {v}" for k, v in a["themes"].most_common() if v)
         flag = " **[already used in ledger]**" if a["used"] else ""
         L.append(f"### {m.get('name')} — id {a['id']}{flag}")
-        L.append(f"{m.get('genre')} · ★{m.get('rating')} from {m.get('ratings')} ratings ({m.get('ratings_cc')}) · {m.get('price')} · "
+        L.append(f"{m.get('genre')} · ★{round(m.get('rating') or 0, 1)} from {m.get('ratings')} ratings ({m.get('ratings_cc')}) · {m.get('price')} · "
                  f"charts in {m.get('storefronts')} storefronts (grossing in {m.get('grossing_storefronts')}) · "
                  f"updated {m.get('updated')} · seller {clip(m.get('seller'), 40)}")
         L.append(f"Low-star last {args.recent}d: {a['recent']} (non-latin {a['non_latin']}) · low-star share of recent sample {a['low_share']} · "
