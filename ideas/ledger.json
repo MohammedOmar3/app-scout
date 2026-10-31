@@ -2,12 +2,7 @@
   "_comment": "Written by the daily run. ideas: proposed briefs. watchlist: promising but under-evidenced. rejected: looked at seriously and dropped. Incumbents are App Store app ids.",
   "ideas": [],
   "watchlist": [
-    {"key": "paywall:scrl:free-carousel-limits", "first_seen": "2026-10-31", "last_seen": "2026-10-31", "incumbents": ["1289057196"],
-     "evidence": "14 low-star reviews (us, in, za) 2026-10-03..10-29: templates/stickers moved to Premium, free photo/slide limits halved, forced pro IG account",
-     "promote_if": ">=15 reviews after rescan, or same complaint in a second carousel app; then kill-check one-time-purchase carousel makers"},
-    {"key": "abandoned:fitness-buddy:paid-workout", "first_seen": "2026-10-31", "last_seen": "2026-10-31", "incumbents": ["443646748"],
-     "evidence": "Last update 2024-05-20, $3.99, 11.7k ratings, paid charts in 50 mostly tiny storefronts; reviews not yet scanned",
-     "promote_if": "reviews show it's broken/unmaintained on current iOS and it charts in large storefronts"}
+    {"key": "paywall:scrl:free-carousel-limits", "first_seen": "2026-10-31", "last_seen": "2026-10-31", "incumbents": ["1289057196"], "evidence": "~14 relevant low-star reviews 2026-09-08..10-29 in us, in, za, ar, br (incl. es/pt): 10 on free-tier cuts (slide/photo limits halved, templates/stickers to Premium), 3-4 on forced professional/public IG account. Crowded splitter category: Panoslice, SWVY, Seam, Crsel, Grid Square Cut, SwipeMix", "promote_if": ">=15 relevant reviews after rescan AND a gap the existing carousel splitters don't fill (no account / one-time unlock / posts from any IG account); otherwise reject on 4.3 risk"}
   ],
   "rejected": [
     {"key": "trial-trap:many:trial-reminder-app", "date": "2026-10-31", "incumbents": ["1455009060", "1636235979", "6670430706", "416048305"], "reason": "fix already crowded (TrialGuard, Trial Alert, TrialHero, Bobby, ReSubs); no subscription API on iOS; finance-adjacent; 4.3 risk high"},
@@ -16,6 +11,9 @@
     {"key": "removed:photoroom:bg-colors", "date": "2026-10-31", "incumbents": ["1455009060"], "reason": "background removal built into iOS; rest is billing disputes"},
     {"key": "paywall:truecaller:caller-id", "date": "2026-10-31", "incumbents": ["448142450"], "reason": "needs caller/spam database and Call Directory extension"},
     {"key": "paywall:dating:likes-paywall", "date": "2026-10-31", "incumbents": ["1282966364", "1498407272", "595287172", "338701294", "690661663"], "reason": "two-sided dating marketplace; fails Gate B"},
-    {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706"], "reason": "licensed content; fails Gate B"}
+    {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706"], "reason": "licensed content; fails Gate B"},
+    {"key": "abandoned:fitness-buddy:paid-workout", "date": "2026-10-31", "incumbents": ["443646748"], "reason": "review scan found no recent complaints; paid charts only in tiny storefronts; generic workout category, high 4.3 risk"},
+    {"key": "paywall:ankimobile:price-ui", "date": "2026-10-31", "incumbents": ["373493387"], "reason": "only 5 low-star reviews in 90d; crowded with Anki-compatible apps (AnkiApp, Noji, RemNote)"},
+    {"key": "paywall:dropbox:over-quota-lockout", "date": "2026-10-31", "incumbents": ["327630330"], "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"}
   ]
 }
