@@ -60,5 +60,10 @@
   "time_budget_minutes": 22,
   "request_timeout_seconds": 20,
   "charts_budget_minutes": 7,
-  "lookup_budget_minutes": 12
+  "lookup_budget_minutes": 12,
+  "sweet_spot_ratings": [
+    2000,
+    300000
+  ],
+  "max_ratings_to_scan": 1500000
 }

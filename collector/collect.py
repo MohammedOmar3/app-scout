@@ -252,8 +252,8 @@ def collect_lookups(f, apps, cache, cfg, today, log):
     for cc_round in range(2):
         batches = []
         for cc, ids in by_cc.items():
-            for i in range(0, len(ids), 150):
-                batches.append((cc, ids[i:i + 150]))
+            for i in range(0, len(ids), 200):
+                batches.append((cc, ids[i:i + 200]))
         got = set()
         for cc, ids in batches:
             data = f.get(f"{IT}/lookup?id={','.join(ids)}&country={cc}&entity=software", lookup=True, kind="lookup")
@@ -317,11 +317,19 @@ def build_candidates(apps, cache, cfg):
             "best_rank": top_sf[0][1] if top_sf else None,
             "top_storefronts": [cc for cc, _ in top_sf[:10]],
         })
+    sweet_lo, sweet_hi = cfg.get("sweet_spot_ratings", [2000, 300000])
     for c in cands:
         r = c["rating"] or 0
-        c["priority"] = round(2 * math.log10(c["ratings"] + 1) + min(c["storefronts"], 30) / 10
-                              + (1.0 if c["grossing_storefronts"] else 0) + (0.5 if c["paid_storefronts"] else 0)
-                              + (1.0 if 0 < r < 4.5 else 0) + (0.5 if 0 < r < 4.0 else 0), 3)
+        rc = c["ratings"]
+        # size: proven but not a mega-app. Peaks inside the sweet spot, falls off above it.
+        size = math.log10(rc + 1)
+        if rc > sweet_hi:
+            size = math.log10(sweet_hi) - (math.log10(rc) - math.log10(sweet_hi)) * 1.5
+        c["scan"] = rc <= cfg.get("max_ratings_to_scan", 1500000)
+        c["priority"] = round(2 * size + min(c["storefronts"], 30) / 10
+                              + (1.5 if c["grossing_storefronts"] else 0) + (0.75 if c["paid_storefronts"] else 0)
+                              + (1.0 if 0 < r < 4.5 else 0) + (0.5 if 0 < r < 4.0 else 0)
+                              + (0.5 if sweet_lo <= rc <= sweet_hi else 0), 3)
     cands.sort(key=lambda c: c["priority"], reverse=True)
     return cands
 
@@ -351,6 +359,25 @@ def parse_reviews(data, cc):
     return out
 
 
+def fetch_review_page(f, cc, app_id, page):
+    """Apple's review feed often returns an empty 200 when hit quickly; retry with a pause
+    and the alternate URL form before treating the page as really empty."""
+    urls = [f"{IT}/{cc}/rss/customerreviews/page={page}/id={app_id}/sortby=mostrecent/json",
+            f"{IT}/{cc}/rss/customerreviews/id={app_id}/sortBy=mostRecent/page={page}/json"]
+    for attempt, pause in enumerate([0, 2, 6]):
+        if pause:
+            time.sleep(pause)
+        rows = parse_reviews(f.get(urls[attempt % 2], kind="reviews"), cc)
+        if rows:
+            if attempt:
+                f._count("reviews", f"ok-after-retry-{attempt}")
+            return rows
+        if f.past_deadline():
+            return []
+    f._count("reviews", "empty-after-retries")
+    return []
+
+
 def scan_app(f, cand, cfg, today, deadline):
     oldest_ok = (today - dt.timedelta(days=cfg["review_max_age_days"])).isoformat()
     stats, low = {}, []
@@ -361,7 +388,7 @@ def scan_app(f, cand, cfg, today, deadline):
         for page in range(1, cfg["review_pages_per_storefront"] + 1):
             if time.monotonic() > deadline:
                 break
-            rows = parse_reviews(f.get(f"{IT}/{cc}/rss/customerreviews/page={page}/id={cand['id']}/sortby=mostrecent/json", kind="reviews"), cc)
+            rows = fetch_review_page(f, cc, cand["id"], page)
             if not rows:
                 break
             for r in rows:
@@ -471,7 +498,7 @@ def main():
         f.deadline = deadline
         history = load_json(out / "state/history.json", {})
         rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
-        todo = [c for c in cands if history.get(c["id"], "") < rescan_cut][:cfg["apps_to_scan_per_day"]]
+        todo = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut][:cfg["apps_to_scan_per_day"]]
         log(f"scanning reviews for {len(todo)} apps")
         with ThreadPoolExecutor(cfg["workers"]) as ex:
             futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in todo}
