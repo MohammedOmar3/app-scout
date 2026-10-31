@@ -359,47 +359,54 @@ def parse_reviews(data, cc):
     return out
 
 
-def fetch_review_page(f, cc, app_id, page):
-    """Apple's review feed often returns an empty 200 when hit quickly; retry with a pause
-    and the alternate URL form before treating the page as really empty."""
-    urls = [f"{IT}/{cc}/rss/customerreviews/page={page}/id={app_id}/sortby=mostrecent/json",
-            f"{IT}/{cc}/rss/customerreviews/id={app_id}/sortBy=mostRecent/page={page}/json"]
-    for attempt, pause in enumerate([0, 2, 6]):
+def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
+    """Apple's review feed often returns an empty 200 when hit quickly; for page 1 retry with
+    a pause and the alternate URL form before treating it as empty. Deeper pages: one try."""
+    alt_sort = {"mostrecent": "mostRecent", "mosthelpful": "mostHelpful"}[sort]
+    urls = [f"{IT}/{cc}/rss/customerreviews/page={page}/id={app_id}/sortby={sort}/json",
+            f"{IT}/{cc}/rss/customerreviews/id={app_id}/sortBy={alt_sort}/page={page}/json"]
+    pauses = [0, 2, 6] if page == 1 else [0]
+    for attempt, pause in enumerate(pauses):
         if pause:
             time.sleep(pause)
         rows = parse_reviews(f.get(urls[attempt % 2], kind="reviews"), cc)
         if rows:
-            if attempt:
-                f._count("reviews", f"ok-after-retry-{attempt}")
+            f._count("reviews", f"{sort} p{page} ok" + (f" after retry {attempt}" if attempt else ""))
             return rows
         if f.past_deadline():
             return []
-    f._count("reviews", "empty-after-retries")
+    f._count("reviews", f"{sort} p{page} empty")
     return []
 
 
 def scan_app(f, cand, cfg, today, deadline):
+    """Pull the most recent AND most helpful reviews from several storefronts.
+    (Apple's feed currently serves ~50 reviews per sort/page; breadth beats depth.)"""
     oldest_ok = (today - dt.timedelta(days=cfg["review_max_age_days"])).isoformat()
     stats, low = {}, []
     sfs = cand["top_storefronts"][:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
     for cc in sfs:
         hist = {str(s): 0 for s in range(1, 6)}
-        fetched, newest, oldest = 0, None, None
-        for page in range(1, cfg["review_pages_per_storefront"] + 1):
-            if time.monotonic() > deadline:
-                break
-            rows = fetch_review_page(f, cc, cand["id"], page)
-            if not rows:
-                break
-            for r in rows:
-                hist[str(r["stars"])] += 1
-                fetched += 1
-                newest = max(newest or r["date"], r["date"])
-                oldest = min(oldest or r["date"], r["date"])
-                if r["stars"] <= cfg["low_star_max"] and r["date"] >= oldest_ok and r["text"].strip():
-                    low.append(r)
-            if oldest and oldest < oldest_ok:
-                break
+        fetched, newest, oldest, seen = 0, None, None, set()
+        for sort in cfg.get("review_sorts", ["mostrecent"]):
+            for page in range(1, cfg["review_pages_per_storefront"] + 1):
+                if time.monotonic() > deadline:
+                    break
+                rows = fetch_review_page(f, cc, cand["id"], page, sort)
+                if not rows:
+                    break
+                for r in rows:
+                    if r["rid"] in seen:
+                        continue
+                    seen.add(r["rid"])
+                    hist[str(r["stars"])] += 1
+                    fetched += 1
+                    newest = max(newest or r["date"], r["date"])
+                    oldest = min(oldest or r["date"], r["date"])
+                    if r["stars"] <= cfg["low_star_max"] and r["date"] >= oldest_ok and r["text"].strip():
+                        low.append(r)
+                if sort == "mostrecent" and oldest and oldest < oldest_ok:
+                    break
         stats[cc] = {"fetched": fetched, "hist": hist, "newest": newest, "oldest": oldest}
     return stats, low
 

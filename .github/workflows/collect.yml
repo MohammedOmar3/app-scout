@@ -47,7 +47,7 @@ jobs:
           python-version: "3.12"
 
       - name: Collect
-        timeout-minutes: 28
+        timeout-minutes: 30
         continue-on-error: true
         env:
           SF: ${{ github.event.inputs.storefronts }}

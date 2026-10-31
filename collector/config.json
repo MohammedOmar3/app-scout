@@ -46,10 +46,10 @@
   "chart_limit": 100,
   "min_ratings": 500,
   "min_storefronts_if_few_ratings": 3,
-  "apps_to_scan_per_day": 150,
-  "rescan_after_days": 7,
-  "storefronts_per_app": 3,
-  "review_pages_per_storefront": 10,
+  "apps_to_scan_per_day": 250,
+  "rescan_after_days": 4,
+  "storefronts_per_app": 6,
+  "review_pages_per_storefront": 2,
   "review_max_age_days": 365,
   "low_star_max": 2,
   "keep_reviews_days": 365,
@@ -57,13 +57,17 @@
   "drop_app_files_after_days": 90,
   "lookup_cache_days": 7,
   "workers": 6,
-  "time_budget_minutes": 22,
-  "request_timeout_seconds": 20,
-  "charts_budget_minutes": 7,
-  "lookup_budget_minutes": 12,
+  "time_budget_minutes": 26,
+  "request_timeout_seconds": 12,
+  "charts_budget_minutes": 9,
+  "lookup_budget_minutes": 15,
   "sweet_spot_ratings": [
     2000,
     300000
   ],
-  "max_ratings_to_scan": 1500000
+  "max_ratings_to_scan": 1500000,
+  "review_sorts": [
+    "mostrecent",
+    "mosthelpful"
+  ]
 }
