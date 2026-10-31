@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-10-31 — no ideas today (updated after second collector run; 1 on watchlist: SCRL free-tier cuts) — [report](reports/2026-10-31.md)
+**Latest:** 2026-10-31 — no ideas today (updated after third collector run, first with the islamic segment: ad complaints in Quran/prayer apps are real but already solved by free ad-free apps; 1 on watchlist: SCRL free-tier cuts) — [report](reports/2026-10-31.md)
 
 ## How it works
 

@@ -14,6 +14,10 @@
     {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706"], "reason": "licensed content; fails Gate B"},
     {"key": "abandoned:fitness-buddy:paid-workout", "date": "2026-10-31", "incumbents": ["443646748"], "reason": "review scan found no recent complaints; paid charts only in tiny storefronts; generic workout category, high 4.3 risk"},
     {"key": "paywall:ankimobile:price-ui", "date": "2026-10-31", "incumbents": ["373493387"], "reason": "only 5 low-star reviews in 90d; crowded with Anki-compatible apps (AnkiApp, Noji, RemNote)"},
-    {"key": "paywall:dropbox:over-quota-lockout", "date": "2026-10-31", "incumbents": ["327630330"], "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"}
+    {"key": "paywall:dropbox:over-quota-lockout", "date": "2026-10-31", "incumbents": ["327630330"], "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"},
+    {"key": "ads:quran-readers:inappropriate-ads", "date": "2026-10-31", "incumbents": ["365557665", "1164088669", "537070378", "366111277"], "reason": "~125 low-star reviews (sa, us, ae, gb, pk, my) on immodest ads while reading; killed by free ad-free Quran.com app (4.9, 33.9k), iQuran (4.8, 30.9k, no ads/no subs), Greentech Al Quran (4.8, 19.1k); 4.3 risk high"},
+    {"key": "ads:prayer-times:ads-before-adhan", "date": "2026-10-31", "incumbents": ["743843090", "388389451"], "reason": "~51 low-star reviews on ads blocking prayer times/adhan; killed by Pillars (4.8, 5.6k, free, no ads), MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), iPray ($1.99, 4.8, 9k)"},
+    {"key": "paywall:capcut:basic-features", "date": "2026-10-31", "incumbents": ["1500855883"], "reason": "VN (4.8, 323k, free, no watermark) and InShot already fill it; video editor not a 14-day build"},
+    {"key": "removed:procreate-pocket:v5-ui", "date": "2026-10-31", "incumbents": ["916366645"], "reason": "redesign backlash (~20 reviews); drawing engine not feasible in Expo/14 days"}
   ]
 }
