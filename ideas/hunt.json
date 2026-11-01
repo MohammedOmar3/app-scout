@@ -1,5 +1,20 @@
 {
   "updated": "2026-11-01",
-  "open_targets": [],
-  "closed": []
+  "open_targets": [
+    {"key": "paywall:vsco:free-tools-locked", "incumbents": ["588013838"], "terms": ["film filter", "photo presets"],
+     "why": "VSCO (278k ratings, grossing in 14 storefronts) keeps moving free tools behind a $14.99/mo Pro; reviewers have paid for years",
+     "evidence": "~13 relevant low-star reviews 2026-08-31..10-26 (us, gb, ar)",
+     "missing": "a rescan for >=15 relevant reviews in >=2 storefronts, plus reviews/threads asking for film presets as a one-time purchase that Snapseed/Lightroom free don't satisfy",
+     "rounds": 1, "last_round": "2026-11-01"},
+    {"key": "discovery:unscanned-utility-batch", "incumbents": ["6738537088", "1077455978", "1126370589", "414675976", "414676749", "325851015", "974683711", "486811622", "1057252115", "1472157401", "6754900760", "1538761576", "1476732439", "6446832902", "6447516226", "1639516366", "1483790257", "1436429074", "377989827", "821560738", "686077611", "6448484908", "939507215", "645746786", "1085047737", "1515533482", "1438388363", "1044867788", "1410126781", "1612792132", "1557446434", "6447482321", "1103530261", "1505173822", "1499198946", "608834326", "6742278016", "1429967544", "6457366208", "588013838"],
+     "terms": [],
+     "why": "charting, grossing, Expo-buildable single-purpose apps (craft counters, moon/solunar calendars, grocery and recipe lists, book trackers, habit, journal, plant care, authenticators, collage/feed planners) that the daily run has never scanned",
+     "evidence": "none yet: never scanned",
+     "missing": "a review scan; then the usual cross-app clustering",
+     "rounds": 0, "last_round": null}
+  ],
+  "closed": [
+    {"key": "paywall:scrl:free-carousel-limits", "outcome": "rejected", "date": "2026-11-01"},
+    {"key": "paywall:ar-tracing:weekly-sub", "outcome": "rejected", "date": "2026-11-01"}
+  ]
 }
