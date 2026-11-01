@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-01 — hunt in progress, no idea yet (daily data OK; targeted run 1 got empty review pages) — [report](reports/2026-11-01.md)
+**Latest:** 2026-11-01 — no ideas today (no idea passed after 3 hunt rounds; Apple soft-blocked the targeted runs) — [report](reports/2026-11-01.md)
 
 ## How it works
 

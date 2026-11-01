@@ -1,9 +1,7 @@
 {
   "_comment": "Written by the daily run. ideas: proposed briefs. watchlist: promising but under-evidenced. rejected: looked at seriously and dropped. Incumbents are App Store app ids.",
   "ideas": [],
-  "watchlist": [
-    {"key": "paywall:vsco:free-tools-locked", "first_seen": "2026-11-01", "last_seen": "2026-11-01", "incumbents": ["588013838"], "evidence": "~13 relevant low-star reviews 2026-08-31..10-26 in us, gb, ar: free filters/tools moved to Pro, copy-edits and save-to-camera-roll paywalled, $14.99/mo or $70/yr, mandatory sign-in, bought presets removed. VSCO 278k ratings, grossing in 14 storefronts. Same 'free features moved behind paywall' pattern in CapCut, Photoroom, Picsart, SCRL (all rejected for other reasons)", "promote_if": ">=15 relevant reviews in >=2 storefronts after a rescan AND a gap Snapseed (free, no account) and Lightroom's free tier don't fill, e.g. reviewers asking for VSCO-style film presets as a one-time purchase; otherwise reject on 4.3 risk (crowded filter-app category)"}
-  ],
+  "watchlist": [],
   "rejected": [
     {"key": "trial-trap:many:trial-reminder-app", "date": "2026-10-31", "incumbents": ["1455009060", "1636235979", "6670430706", "416048305"], "reason": "fix already crowded (TrialGuard, Trial Alert, TrialHero, Bobby, ReSubs); no subscription API on iOS; finance-adjacent; 4.3 risk high"},
     {"key": "ads:shareit:ad-free-transfer", "date": "2026-10-31", "incumbents": ["725215120"], "reason": "LocalSend already free, open-source, ad-free"},
@@ -32,6 +30,8 @@
     {"key": "paywall:celebs:lookalike", "date": "2026-11-01", "incumbents": ["1488127870"], "reason": "83 low-star reviews on a paywalled result after the photo; needs face matching against celebrity images (AI + image rights); fails Gate B"},
     {"key": "dark-patterns:cleaner-kit:forced-rating", "date": "2026-11-01", "incumbents": ["1194582243"], "reason": "18 reviews on forced rating prompts, manual one-by-one cleaning and trial charges; photo-cleaner category is crowded (Cleanup 750k ratings) and the pain is dark patterns, not a missing workflow"},
     {"key": "regressed:autosleep:watch-tracking", "date": "2026-11-01", "incumbents": ["1164801111"], "reason": "32 reviews (us, de, au) on tracking gaps since iOS 27 and dropped old watches; watchOS + deep HealthKit, fails Gate B"},
-    {"key": "bugs:alarmy:battery-drain", "date": "2026-11-01", "incumbents": ["1163786766"], "reason": "18 reviews (gb) on battery drain since v26.41 plus price; a recent regression, and reliable alarms need native AlarmKit work, fails Gate B"}
+    {"key": "bugs:alarmy:battery-drain", "date": "2026-11-01", "incumbents": ["1163786766"], "reason": "18 reviews (gb) on battery drain since v26.41 plus price; a recent regression, and reliable alarms need native AlarmKit work, fails Gate B"},
+    {"key": "paywall:vsco:free-tools-locked", "date": "2026-11-01", "incumbents": ["588013838", "6457366208"], "reason": "Gate A passes across 2 apps: VSCO ~13 reviews (us, gb, ar) on free tools moved to Pro, plus Esti ~12 (us) on 'pay for everything' and AI-filter credits. Killed by Dazz Cam (4.8, 103k ratings, film looks with a $19.99 one-time Pro) and Snapseed (free, no account); VSCO's paywall moves date back to 2022; crowded filter category, 4.3 risk"},
+    {"key": "paywall:package-tracker:pay-to-track", "date": "2026-11-01", "incumbents": ["6447516226"], "reason": "17 low-star reviews in 90d (gb only) from shoppers sent by merchants to an app charging £10/week to track one parcel; AfterShip (4.7, 333k, free tracking) and 17TRACK already do it free, and carrier data needs a paid tracking API (fails Gate B)"}
   ]
 }

@@ -2,69 +2,39 @@
   "updated": "2026-11-01",
   "open_targets": [
     {
-      "key": "paywall:vsco:free-tools-locked",
-      "incumbents": [
-        "588013838"
-      ],
-      "terms": [
-        "film filter",
-        "photo presets"
-      ],
-      "why": "VSCO (278k ratings, grossing in 14 storefronts) keeps moving free tools behind a $14.99/mo Pro; reviewers have paid for years",
-      "evidence": "~13 relevant low-star reviews 2026-08-31..10-26 (us, gb, ar). Off-store: the paywall moves date back to 2022 (Grain, Clarity, Split Tone, copy/paste edits; myphotoyear.com 2022 write-up, change.org petition 2022 with 54 signatures); one 2025 Trustpilot review about bought filter packs being locked. No 2025-26 Reddit threads surfaced in search. Snapseed (free, no account) is the usual recommended alternative",
-      "missing": "rescan (2 targeted runs today were soft-blocked) for >=15 relevant reviews in >=2 storefronts; >=3 independent 2025-26 threads for A2; a gap Snapseed doesn't fill (VSCO-style film presets as a one-time purchase)",
-      "rounds": 2,
-      "last_round": "2026-11-01"
-    },
-    {
       "key": "discovery:unscanned-utility-batch",
       "incumbents": [
         "6738537088",
-        "1077455978",
         "1126370589",
         "414675976",
         "414676749",
         "325851015",
-        "974683711",
         "486811622",
-        "1057252115",
         "1472157401",
         "6754900760",
         "1538761576",
         "1476732439",
-        "6446832902",
-        "6447516226",
         "1639516366",
         "1483790257",
         "1436429074",
         "377989827",
         "821560738",
-        "686077611",
-        "6448484908",
-        "939507215",
         "645746786",
         "1085047737",
-        "1515533482",
         "1438388363",
         "1044867788",
-        "1410126781",
         "1612792132",
         "1557446434",
         "6447482321",
-        "1103530261",
         "1505173822",
-        "1499198946",
-        "608834326",
         "6742278016",
-        "1429967544",
-        "6457366208",
-        "588013838"
+        "1429967544"
       ],
       "terms": [],
       "why": "charting, grossing, Expo-buildable single-purpose apps (craft counters, moon/solunar calendars, grocery and recipe lists, book trackers, habit, journal, plant care, authenticators, collage/feed planners) that the daily run has never scanned",
-      "evidence": "none: targeted run 41293067360 (round 2) was soft-blocked by Apple (empty review pages). Off-store spot checks: Bookly Pro $4.99/mo or $29.99/yr with old (2018-19) one-time-purchase requests; Planta subscription complaints (kimola 2025 sample); Day One premium pricing. Nothing at Gate A2 strength",
-      "missing": "a review scan; then the usual cross-app clustering",
-      "rounds": 1,
+      "evidence": "round 3 (targeted run 41295332761, 10:01 UTC) scanned 15 of the 40, but 278 of 316 review pages were still empty (us returned nothing for 14 of 15 apps). Of the scanned ones, only My Package Delivery Tracker (17 low-star, gb) and Esti (21, us) had pain, and both were rejected. The 25 ids left here were never scanned",
+      "missing": "a review scan of these 25 (start them first tomorrow, ideally in the daily run's queue rather than a targeted run, since the 3-shard daily scan got through while all 3 single-runner targeted runs were partly or fully soft-blocked)",
+      "rounds": 3,
       "last_round": "2026-11-01"
     }
   ],
@@ -76,6 +46,16 @@
     },
     {
       "key": "paywall:ar-tracing:weekly-sub",
+      "outcome": "rejected",
+      "date": "2026-11-01"
+    },
+    {
+      "key": "paywall:vsco:free-tools-locked",
+      "outcome": "rejected",
+      "date": "2026-11-01"
+    },
+    {
+      "key": "paywall:package-tracker:pay-to-track",
       "outcome": "rejected",
       "date": "2026-11-01"
     }
