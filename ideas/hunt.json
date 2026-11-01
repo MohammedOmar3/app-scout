@@ -4,11 +4,9 @@
     {
       "key": "discovery:unscanned-utility-batch",
       "incumbents": [
-        "6738537088",
         "1126370589",
         "414675976",
         "414676749",
-        "325851015",
         "486811622",
         "1472157401",
         "6754900760",
@@ -28,13 +26,15 @@
         "6447482321",
         "1505173822",
         "6742278016",
-        "1429967544"
+        "1429967544",
+        "6738537088",
+        "325851015"
       ],
       "terms": [],
       "why": "charting, grossing, Expo-buildable single-purpose apps (craft counters, moon/solunar calendars, grocery and recipe lists, book trackers, habit, journal, plant care, authenticators, collage/feed planners) that the daily run has never scanned",
-      "evidence": "round 3 (targeted run 41295332761, 10:01 UTC) scanned 15 of the 40, but 278 of 316 review pages were still empty (us returned nothing for 14 of 15 apps). Of the scanned ones, only My Package Delivery Tracker (17 low-star, gb) and Esti (21, us) had pain, and both were rejected. The 25 ids left here were never scanned",
+      "evidence": "round 3 (targeted run 41295332761, 10:01 UTC) scanned 15 of the 40, but 278 of 316 review pages were still empty (us returned nothing for 14 of 15 apps). Of the scanned ones, only My Package Delivery Tracker (17 low-star, gb) and Esti (21, us) had pain, and both were rejected. The 25 ids left here were never scanned. Round 4 (off-store only, targeted cap 3/3 reached): YarnPal looks AI-based ('AI patterns and paywall', grand-screen.com, Oct 2025), so it probably fails Gate B; Our Groceries' public reviews show no recurring price or ads pain (one-time $5-10 unlock is accepted). Deprioritize both",
       "missing": "a review scan of these 25 (start them first tomorrow, ideally in the daily run's queue rather than a targeted run, since the 3-shard daily scan got through while all 3 single-runner targeted runs were partly or fully soft-blocked)",
-      "rounds": 3,
+      "rounds": 4,
       "last_round": "2026-11-01"
     }
   ],
