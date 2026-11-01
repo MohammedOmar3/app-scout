@@ -158,6 +158,16 @@ def targeted(a):
     act = active_run()
     if act:
         wait(act["id"], a.timeout_min)
+    # cool-off: Apple soft-blocks runner IPs that hit it shortly after another collection
+    gap = c.get("targeted_cooloff_minutes", 30)
+    done = [r for r in runs(5) if r["status"] == "completed"]
+    if done:
+        last_end = dt.datetime.fromisoformat(done[0]["updated_at"].replace("Z", "+00:00"))
+        wait_s = gap * 60 - (dt.datetime.now(dt.timezone.utc) - last_end).total_seconds()
+        if wait_s > 0:
+            print(json.dumps({"info": f"cooling off {int(wait_s // 60)} min before the targeted run "
+                                      "(do off-store evidence meanwhile if you can run this in the background)"}), flush=True)
+            time.sleep(wait_s)
     inputs = {"mode": "targeted", "app_ids": a.app_ids, "terms": a.terms or ""}
     if a.storefronts_per_app:
         inputs["storefronts_per_app"] = str(a.storefronts_per_app)

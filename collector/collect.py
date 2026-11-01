@@ -74,7 +74,10 @@ class Fetcher:
         self.cooldowns = 0
         self.consec_403 = 0
         self.blocked = False
+        self.block_reason = ""
         self._paused_until = 0.0
+        self.consec_empty = 0
+        self._canary_lock = threading.Lock()
         self.spacing = spacing
         self.lookup_spacing = lookup_spacing
         self.deadline = deadline
@@ -105,6 +108,7 @@ class Fetcher:
                 self._count("breaker", f"cooldown-{self.cooldowns}")
             else:
                 self.blocked = True
+                self.block_reason = self.block_reason or "403s"
                 self._count("breaker", "blocked")
 
     def _count(self, kind, code):
@@ -461,6 +465,40 @@ def cfg_empty_retries():
     return int(_CFG.get("review_empty_retries", 0))
 
 
+CANARY = ("us", "310633997")  # WhatsApp, US storefront: always has fresh reviews
+
+
+def canary_ok(f):
+    cc, app_id = CANARY
+    data = f.get(f"{IT}/{cc}/rss/customerreviews/page=1/id={app_id}/sortby=mostrecent/json", kind="canary")
+    return bool(parse_reviews(data, cc))
+
+
+def check_soft_block(f, cooldown_s):
+    """Apple often answers a throttled IP with HTTP 200 and an empty feed instead of a 403.
+    Probe the canary; if it is empty too, cool down once, then mark the fetcher blocked."""
+    if not f._canary_lock.acquire(blocking=False):
+        return  # another thread is already probing
+    try:
+        if canary_ok(f):
+            f.consec_empty = 0
+            f._count("canary", "ok")
+            return
+        f._count("canary", "empty")
+        if f.cooldowns < f.max_cooldowns:
+            f.cooldowns += 1
+            time.sleep(cooldown_s)
+            if canary_ok(f):
+                f.consec_empty = 0
+                f._count("canary", "ok-after-cooldown")
+                return
+        f.blocked = True
+        f.block_reason = "soft-blocked: Apple returned empty pages, canary empty"
+        f._count("breaker", "soft-blocked")
+    finally:
+        f._canary_lock.release()
+
+
 def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
     """Apple's review feed often returns an empty 200 when hit quickly; for page 1 retry with
     a pause and the alternate URL form before treating it as empty. Deeper pages: one try."""
@@ -473,11 +511,16 @@ def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
             time.sleep(pause)
         rows = parse_reviews(f.get(urls[attempt % 2], kind="reviews"), cc)
         if rows:
+            f.consec_empty = 0
             f._count("reviews", f"{sort} p{page} ok" + (f" after retry {attempt}" if attempt else ""))
             return rows
         if f.past_deadline():
             return []
     f._count("reviews", f"{sort} p{page} empty")
+    if page == 1:
+        f.consec_empty += 1
+        if f.consec_empty >= int(_CFG.get("empty_streak_canary", 12)):
+            check_soft_block(f, int(_CFG.get("breaker_cooldown_s", 90)))
     return []
 
 
@@ -735,6 +778,10 @@ def phase_scan(ctx, shard, shards, shard_out):
     (shard_out / "reviews").mkdir(parents=True, exist_ok=True)
     scanned, fetched_total, low_total = [], 0, 0
     ctx.log(f"shard {shard}/{shards}: {len(items)} apps")
+    if items:
+        f.consec_empty = 10 ** 6  # force a canary probe before scanning
+        check_soft_block(f, cfg.get("breaker_cooldown_s", 90))
+        ctx.log(f"shard {shard}: canary {'blocked - ' + f.block_reason if f.blocked else 'ok'}")
     with ThreadPoolExecutor(cfg.get("scan_workers", 3)) as ex:
         futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in items}
         for fut in as_completed(futs):
@@ -760,7 +807,7 @@ def phase_scan(ctx, shard, shards, shard_out):
             low_total += len(low)
     res = {"shard": shard, "apps_queued": len(items), "apps_scanned": len(scanned), "scanned": scanned,
            "reviews_fetched": fetched_total, "low_star_kept": low_total, "requests": f.requests, "failures": f.failures,
-           "http_status": f.status, "blocked": f.blocked, "cooldowns": f.cooldowns,
+           "http_status": f.status, "blocked": f.blocked, "block_reason": f.block_reason, "cooldowns": f.cooldowns,
            "hit_deadline": time.monotonic() > deadline, "minutes": ctx.minutes(), "error_samples": f.errors[:15], "log": ctx.logs}
     save_json(shard_out / "scan.json", res)
     ctx.log(f"shard {shard}: scanned {len(scanned)}/{len(items)} apps, {fetched_total} reviews, blocked={f.blocked}, "
@@ -778,11 +825,11 @@ def health_of(run, cfg):
     elif scanned < cfg.get("health_min_apps", 40) and run.get("mode") != "targeted":
         level = "DEGRADED" if level == "OK" else level
         reasons.append(f"only {scanned} apps scanned (< {cfg.get('health_min_apps', 40)})")
-    blocked = [s["shard"] for s in run.get("shards_detail", []) if s.get("blocked")]
+    blocked = [f"{s['shard']} ({s.get('block_reason') or 'blocked'})" for s in run.get("shards_detail", []) if s.get("blocked")]
     missing = run.get("shards_missing", [])
     if blocked:
         level = "DEGRADED" if level == "OK" else level
-        reasons.append(f"shards blocked by Apple 403s: {blocked}")
+        reasons.append(f"shards blocked by Apple: {blocked}")
     if missing:
         level = "DEGRADED" if level == "OK" else level
         reasons.append(f"shards produced no output: {missing}")
@@ -840,7 +887,7 @@ def phase_merge(ctx, shards_dir):
         "unique_chart_apps": plan.get("unique_chart_apps"), "eligible_candidates": plan.get("eligible_candidates"),
         "carried_candidates": plan.get("carried_candidates"), "targets": plan.get("targets"), "terms": plan.get("terms"),
         "queued": plan.get("queued"), "shards": q.get("shards"), "shards_missing": missing,
-        "shards_detail": [{k: s[k] for k in ("shard", "apps_queued", "apps_scanned", "reviews_fetched", "blocked",
+        "shards_detail": [{k: s.get(k) for k in ("shard", "apps_queued", "apps_scanned", "reviews_fetched", "blocked", "block_reason",
                                              "cooldowns", "hit_deadline", "minutes", "requests", "failures")} for s in shard_results],
         "apps_scanned": len(scanned), "reviews_fetched": sum(s["reviews_fetched"] for s in shard_results),
         "low_star_kept": sum(s["low_star_kept"] for s in shard_results),

@@ -130,7 +130,7 @@ If you have **at least one idea now**, go to step 6. If not, go to step 7 (hunt)
 
 ### 7. Hunt loop: keep digging until one idea passes
 
-Run rounds until an idea passes Gates A (or A2) and B with a score ≥ 3.6, or the budget runs out: **at most 2 targeted collector runs per day** (the tool enforces this) and about **3 hours** of session time.
+Run rounds until an idea passes Gates A (or A2) and B with a score ≥ 3.6, or the budget runs out: **at most 3 targeted collector runs per day** (the tool enforces this, and waits for a 30-minute cool-off after the previous collection, because Apple soft-blocks runner IPs that come back too soon) and about **3 hours** of session time.
 
 **H1. Pick up to 3 targets for the round**, in this order:
 1. open targets in `ideas/hunt.json` (yesterday's unfinished hunt)
@@ -147,6 +147,8 @@ git -C ../data fetch -q --depth 1 origin data && git -C ../data checkout -q --de
 ```
 
 That scans the incumbents and up to ~40 competitors across 8 storefronts with both sort orders, so complaints shared across competitors (the strongest signal) show up. If the cap is reached (exit code 3), continue with H4 only.
+
+If the targeted run comes back FAILED with `soft-blocked` (Apple served empty pages to that runner; the canary check catches it in seconds), **don't conclude the apps have no complaints.** Do H4 for the same targets, then try the targeted run once more (the tool waits out the cool-off). Note both attempts in the report.
 
 **H3. Re-validate** the targets with the new data: re-run the digest and `reviews.py`, then the step 2 checks, the gates and the score. Competitors with the same complaint count toward "≥ 2 different apps".
 

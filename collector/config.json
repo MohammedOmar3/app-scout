@@ -167,8 +167,10 @@
   "targeted_storefronts_per_app": 8,
   "target_competitor_min_ratings": 300,
   "health_min_apps": 40,
-  "max_targeted_runs_per_day": 2,
+  "max_targeted_runs_per_day": 3,
   "daily_shards": 3,
   "review_empty_retries": 0,
-  "storefronts_to_try": 8
+  "storefronts_to_try": 8,
+  "empty_streak_canary": 12,
+  "targeted_cooloff_minutes": 30
 }
