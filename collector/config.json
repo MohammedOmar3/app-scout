@@ -157,9 +157,9 @@
     }
   },
   "scan_budget_minutes": 10,
-  "scan_workers": 3,
-  "scan_spacing_s": 0.5,
-  "scan_jitter_s": 0.5,
+  "scan_workers": 4,
+  "scan_spacing_s": 0.4,
+  "scan_jitter_s": 0.4,
   "breaker_consecutive_403": 25,
   "breaker_cooldown_s": 90,
   "breaker_max_cooldowns": 1,
@@ -168,5 +168,7 @@
   "target_competitor_min_ratings": 300,
   "health_min_apps": 40,
   "max_targeted_runs_per_day": 2,
-  "daily_shards": 3
+  "daily_shards": 3,
+  "review_empty_retries": 0,
+  "storefronts_to_try": 8
 }

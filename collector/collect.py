@@ -454,13 +454,20 @@ def parse_reviews(data, cc):
     return out
 
 
+_CFG = {}
+
+
+def cfg_empty_retries():
+    return int(_CFG.get("review_empty_retries", 0))
+
+
 def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
     """Apple's review feed often returns an empty 200 when hit quickly; for page 1 retry with
     a pause and the alternate URL form before treating it as empty. Deeper pages: one try."""
     alt_sort = {"mostrecent": "mostRecent", "mosthelpful": "mostHelpful"}[sort]
     urls = [f"{IT}/{cc}/rss/customerreviews/page={page}/id={app_id}/sortby={sort}/json",
             f"{IT}/{cc}/rss/customerreviews/id={app_id}/sortBy={alt_sort}/page={page}/json"]
-    pauses = [0, 2] if page == 1 else [0]
+    pauses = [0] + [2] * cfg_empty_retries() if page == 1 else [0]
     for attempt, pause in enumerate(pauses):
         if pause:
             time.sleep(pause)
@@ -475,15 +482,21 @@ def fetch_review_page(f, cc, app_id, page, sort="mostrecent"):
 
 
 def scan_app(f, cand, cfg, today, deadline):
-    """Pull the most recent AND most helpful reviews from several storefronts.
-    (Apple's feed currently serves ~50 reviews per sort/page; breadth beats depth.)"""
+    """Recent + most-helpful reviews from up to `storefronts_per_app` storefronts that actually
+    return data. Apple serves reviews for only some app/storefront pairs, so an empty first page
+    moves on to the next storefront (up to `storefronts_to_try`) instead of retrying."""
     oldest_ok = (today - dt.timedelta(days=cfg["review_max_age_days"])).isoformat()
     stats, low = {}, []
     order = cfg.get("_storefront_order", {})
-    charted = sorted(cand["all_storefronts"], key=lambda cc: order.get(cc, 999))
-    pool = list(dict.fromkeys(cand.get("search_storefronts", []) + charted))
-    sfs = pool[:cand.get("_sf_per_app") or cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
-    for cc in sfs:
+    charted = sorted(cand.get("all_storefronts", []), key=lambda cc: order.get(cc, 999))
+    pool = list(dict.fromkeys(cand.get("search_storefronts", []) + charted
+                              + ([cand["ratings_cc"]] if cand.get("ratings_cc") else []) + ["us", "gb"]))
+    want = cand.get("_sf_per_app") or cfg["storefronts_per_app"]
+    tries = max(want, cfg.get("storefronts_to_try", 8))
+    with_data = 0
+    for cc in pool[:tries]:
+        if with_data >= want or time.monotonic() > deadline or f.past_deadline():
+            break
         hist = {str(s): 0 for s in range(1, 6)}
         fetched, newest, oldest, seen = 0, None, None, set()
         for sort in cfg.get("review_sorts", ["mostrecent"]):
@@ -503,9 +516,13 @@ def scan_app(f, cand, cfg, today, deadline):
                     oldest = min(oldest or r["date"], r["date"])
                     if r["stars"] <= cfg["low_star_max"] and r["date"] >= oldest_ok and r["text"].strip():
                         low.append(r)
-                if sort == "mostrecent" and oldest and oldest < oldest_ok:
-                    break
+                if len(rows) < 50 or (sort == "mostrecent" and oldest and oldest < oldest_ok):
+                    break  # last page
+            if fetched == 0:
+                break  # nothing in this storefront: don't spend the other sort order on it
         stats[cc] = {"fetched": fetched, "hist": hist, "newest": newest, "oldest": oldest}
+        if fetched:
+            with_data += 1
     return stats, low
 
 
@@ -536,6 +553,7 @@ class Ctx:
     def __init__(self, args):
         self.args = args
         self.cfg = load_json(HERE / "config.json", {})
+        _CFG.update(self.cfg)
         all_sf = load_json(HERE / "storefronts.json", ["us"])
         self.cfg["_storefront_order"] = {cc: i for i, cc in enumerate(all_sf)}
         self.storefronts = args.storefronts.split(",") if getattr(args, "storefronts", None) else all_sf
