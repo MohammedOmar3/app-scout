@@ -11,7 +11,7 @@
     {"key": "removed:photoroom:bg-colors", "date": "2026-10-31", "incumbents": ["1455009060"], "reason": "background removal built into iOS; rest is billing disputes"},
     {"key": "paywall:truecaller:caller-id", "date": "2026-10-31", "incumbents": ["448142450"], "reason": "needs caller/spam database and Call Directory extension"},
     {"key": "paywall:dating:likes-paywall", "date": "2026-10-31", "incumbents": ["1282966364", "1498407272", "595287172", "338701294", "690661663"], "reason": "two-sided dating marketplace; fails Gate B"},
-    {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706"], "reason": "licensed content; fails Gate B"},
+    {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706", "6768593043"], "reason": "licensed content; fails Gate B"},
     {"key": "abandoned:fitness-buddy:paid-workout", "date": "2026-10-31", "incumbents": ["443646748"], "reason": "review scan found no recent complaints; paid charts only in tiny storefronts; generic workout category, high 4.3 risk"},
     {"key": "paywall:ankimobile:price-ui", "date": "2026-10-31", "incumbents": ["373493387"], "reason": "only 5 low-star reviews in 90d; crowded with Anki-compatible apps (AnkiApp, Noji, RemNote)"},
     {"key": "paywall:dropbox:over-quota-lockout", "date": "2026-10-31", "incumbents": ["327630330"], "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"},
@@ -22,6 +22,7 @@
     {"key": "paywall:islamic-apps:basic-worship-features", "date": "2026-10-31", "incumbents": ["743843090", "1137963102", "365557665", "537070378", "706037876", "451133186"], "reason": "14 low-star reviews, 7 apps (sa, ae, ca, us, gb, my) on paying for prayer times/adhan/reciters/widgets; killed by fully free ad-free MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), IslamApp (4.9, 6.0k), Quran.com (4.9, 33.9k), iQuran (4.8, 30.9k)"},
     {"key": "paywall:athan-pro:lifetime-not-honored", "date": "2026-10-31", "incumbents": ["743843090", "365557665", "388389451", "451133186"], "reason": "15 reviews of lifetime/one-time buyers re-charged or unable to restore; billing dispute, and iPray ($1.99 one-time, 4.8, 9.1k) plus free apps already serve one-time buyers"},
     {"key": "bugs:athan-pro:adhan-unreliable", "date": "2026-10-31", "incumbents": ["743843090", "388389451", "374050672"], "reason": "~13-16 reviews of missed adhan/wrong times since Athan Pro 9.0 + iOS 27 (Sept 2026); incumbent regression, and MAWAQIT, Pray Watch, iPray already reliable"},
-    {"key": "removed:quran-readers:bookmarks-tafsir", "date": "2026-10-31", "incumbents": ["365557665", "366111277", "537070378", "706037876"], "reason": "10 reviews (lost bookmarks/position, Quran Pro 6 redesign, Ayah removed Ibn Kathir/Sa'di tafsir); Quran.com and iQuran already do this free; tafsir is licensed"}
+    {"key": "removed:quran-readers:bookmarks-tafsir", "date": "2026-10-31", "incumbents": ["365557665", "366111277", "537070378", "706037876"], "reason": "10 reviews (lost bookmarks/position, Quran Pro 6 redesign, Ayah removed Ibn Kathir/Sa'di tafsir); Quran.com and iQuran already do this free; tafsir is licensed"},
+    {"key": "paywall:picsart:save-gate", "date": "2026-11-01", "incumbents": ["587366035"], "reason": "~9 low-star reviews, one storefront (in), on basic edits paywalled at save time; fails Gate A; Snapseed free/ad-free already covers it; full photo editor not a 14-day build"}
   ]
 }
