@@ -48,7 +48,7 @@
   "min_storefronts_if_few_ratings": 3,
   "apps_to_scan_per_day": 250,
   "rescan_after_days": 4,
-  "storefronts_per_app": 6,
+  "storefronts_per_app": 4,
   "review_pages_per_storefront": 2,
   "review_max_age_days": 365,
   "low_star_max": 2,
@@ -57,10 +57,9 @@
   "drop_app_files_after_days": 90,
   "lookup_cache_days": 7,
   "workers": 10,
-  "time_budget_minutes": 26,
   "request_timeout_seconds": 12,
-  "charts_budget_minutes": 7,
-  "lookup_budget_minutes": 15,
+  "charts_budget_minutes": 6,
+  "lookup_budget_minutes": 12,
   "sweet_spot_ratings": [
     2000,
     300000
@@ -70,7 +69,7 @@
     "mostrecent",
     "mosthelpful"
   ],
-  "focus_budget_minutes": 11,
+  "focus_budget_minutes": 9,
   "focus_segments": {
     "islamic": {
       "_comment": "Not an App Store genre: found by search. Finance (Islamic banking, zakat) and games stay excluded by genre.",
@@ -156,5 +155,18 @@
         }
       ]
     }
-  }
+  },
+  "scan_budget_minutes": 10,
+  "scan_workers": 3,
+  "scan_spacing_s": 0.5,
+  "scan_jitter_s": 0.5,
+  "breaker_consecutive_403": 25,
+  "breaker_cooldown_s": 90,
+  "breaker_max_cooldowns": 1,
+  "plan_breaker_consecutive_403": 60,
+  "targeted_storefronts_per_app": 8,
+  "target_competitor_min_ratings": 300,
+  "health_min_apps": 40,
+  "max_targeted_runs_per_day": 2,
+  "daily_shards": 3
 }

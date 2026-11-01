@@ -1,23 +1,32 @@
 name: collect
+run-name: collect ${{ inputs.mode || 'daily' }}
 
-# Daily free data pull from Apple's public feeds into the orphan `data` branch.
-# The daily Claude run (see SCOUT.md) reads that branch a couple of hours later.
+# Three stages so Apple's per-IP throttling hurts less:
+#   plan  (1 runner)  charts + focus search + lookup -> queue
+#   scan  (N runners) reviews only, each shard on a fresh runner IP, circuit breaker on 403s
+#   merge (1 runner)  fold shards into the `data` branch, write run.json with a health verdict
+# The daily Claude task (SCOUT.md step 0) dispatches this itself and waits for it.
+# The schedule below is only a backup in case the dispatch fails.
 on:
   schedule:
-    - cron: "23 0 * * *"   # 00:23 UTC = 04:23 Dubai
+    - cron: "7 21 * * *"   # 21:07 UTC = 01:07 Dubai (GitHub may start it hours late)
   workflow_dispatch:
     inputs:
-      storefronts:
-        description: "Comma list of storefronts (blank = all)"
-        required: false
+      mode:
+        description: "daily or targeted"
+        default: "daily"
+      app_ids:
+        description: "targeted: comma list of App Store ids"
         default: ""
-      max_apps:
-        description: "Apps to scan (blank = config)"
-        required: false
+      terms:
+        description: "targeted: comma list of search terms for competitors"
         default: ""
-  push:
-    branches: [main]
-    paths: ["collector/**", ".github/workflows/collect.yml"]
+      storefronts_per_app:
+        description: "targeted: storefronts per app (blank = config)"
+        default: ""
+      shards:
+        description: "parallel review shards (blank = 3 daily, 1 targeted)"
+        default: ""
 
 permissions:
   contents: write
@@ -27,55 +36,89 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 18
+    outputs:
+      shards: ${{ steps.plan.outputs.shards }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Check out previous data (if any)
+      - name: Check out previous data
         run: |
           if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
-            git fetch --depth 1 origin data
-            git worktree add data FETCH_HEAD
+            git fetch --depth 1 origin data && git worktree add data FETCH_HEAD && rm -f data/.git
           else
             mkdir -p data
           fi
-
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Collect
-        timeout-minutes: 30
-        continue-on-error: true
+        with: { python-version: "3.12" }
+      - id: plan
         env:
-          SF: ${{ github.event.inputs.storefronts }}
-          MAX: ${{ github.event.inputs.max_apps }}
+          MODE: ${{ inputs.mode || 'daily' }}
+          IDS: ${{ inputs.app_ids }}
+          TERMS: ${{ inputs.terms }}
+          SFA: ${{ inputs.storefronts_per_app }}
+          SHARDS: ${{ inputs.shards }}
         run: |
-          args="--out data"
-          [ -n "$SF" ] && args="$args --storefronts $SF"
-          [ -n "$MAX" ] && args="$args --max-apps $MAX"
-          python collector/collect.py $args
+          [ -n "$SHARDS" ] || { [ "$MODE" = targeted ] && SHARDS=1 || SHARDS=3; }
+          args="--phase plan --out data --mode $MODE --shards $SHARDS"
+          [ -n "$IDS" ] && args="$args --app-ids $IDS"
+          [ -n "$SFA" ] && args="$args --storefronts-per-app $SFA"
+          if [ -n "$TERMS" ]; then python collector/collect.py $args --terms "$TERMS"; else python collector/collect.py $args; fi
+      - uses: actions/upload-artifact@v4
+        with: { name: plan, path: data/, retention-days: 1, include-hidden-files: true }
 
-      - name: Build digest
+  scan:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: plan, path: data }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Scan shard
+        run: |
+          n=$(python -c "import json;print(json.load(open('data/work/queue.json'))['shards'])")
+          python collector/collect.py --phase scan --out data --shard ${{ matrix.shard }} --shards $n --shard-out shard
+      - uses: actions/upload-artifact@v4
         if: always()
+        with: { name: "scan-${{ matrix.shard }}", path: shard/, retention-days: 1, if-no-files-found: ignore }
+
+  merge:
+    needs: [plan, scan]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: plan, path: data }
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with: { pattern: "scan-*", path: shards }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Merge
+        run: python collector/collect.py --phase merge --out data --shards-dir shards
+      - name: Build digest
         continue-on-error: true
         run: python scout/digest.py --data data --out data/latest/digest.md
-
       - name: Publish data branch (single commit, no history growth)
-        if: always()
         run: |
-          [ -f data/latest/run.json ] || { echo "no run.json, nothing to publish"; exit 1; }
           cd data
-          rm -rf .git
+          rm -rf .git work/shard-* work/scan-*
           git init -q -b data
           git config user.name "app-scout-bot"
           git config user.email "app-scout-bot@users.noreply.github.com"
           git add -A
-          git commit -qm "data $(date -u +%F)"
+          git commit -qm "data $(date -u +%FT%H:%M)"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data:data
-
       - name: Summary
         if: always()
         run: |
@@ -85,9 +128,9 @@ jobs:
               r = json.load(open("data/latest/run.json"))
           except Exception as e:
               r = {"error": str(e)}
-          keys = ["date","minutes","partial","unique_chart_apps","eligible_candidates","apps_scanned","reviews_fetched","low_star_kept","requests","failures"]
+          h = r.get("health", {})
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
-              f.write("| metric | value |\n|---|---|\n")
-              for k in keys:
+              f.write(f"**Health: {h.get('level')}** {'; '.join(h.get('reasons', []))}\n\n| metric | value |\n|---|---|\n")
+              for k in ["date", "mode", "eligible_candidates", "queued", "shards", "apps_scanned", "reviews_fetched", "low_star_kept", "requests", "failures"]:
                   f.write(f"| {k} | {r.get(k)} |\n")
           PY

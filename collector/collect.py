@@ -18,6 +18,8 @@ import datetime as dt
 import json
 import math
 import os
+import random
+import shutil
 import sys
 import threading
 import time
@@ -60,8 +62,19 @@ class Fetcher:
     publishes what it has.
     """
 
-    def __init__(self, timeout, spacing=0.12, lookup_spacing=2.5, deadline=None):
+    def __init__(self, timeout, spacing=0.12, lookup_spacing=2.5, deadline=None, jitter=0.0,
+                 breaker=0, cooldown_s=90, max_cooldowns=1):
         self.timeout = timeout
+        self.jitter = jitter
+        # circuit breaker: after `breaker` consecutive 403s, pause `cooldown_s`; after the
+        # last allowed cooldown, mark blocked and stop making requests (fail fast, not slow)
+        self.breaker = breaker
+        self.cooldown_s = cooldown_s
+        self.max_cooldowns = max_cooldowns
+        self.cooldowns = 0
+        self.consec_403 = 0
+        self.blocked = False
+        self._paused_until = 0.0
         self.spacing = spacing
         self.lookup_spacing = lookup_spacing
         self.deadline = deadline
@@ -76,7 +89,23 @@ class Fetcher:
         self.status = {}  # "<kind> <code>" -> count
 
     def past_deadline(self):
-        return self.deadline is not None and time.monotonic() > self.deadline
+        return self.blocked or (self.deadline is not None and time.monotonic() > self.deadline)
+
+    def _on_403(self):
+        if not self.breaker:
+            return
+        with self._lock:
+            self.consec_403 += 1
+            if self.consec_403 < self.breaker:
+                return
+            self.consec_403 = 0
+            if self.cooldowns < self.max_cooldowns:
+                self.cooldowns += 1
+                self._paused_until = time.monotonic() + self.cooldown_s
+                self._count("breaker", f"cooldown-{self.cooldowns}")
+            else:
+                self.blocked = True
+                self._count("breaker", "blocked")
 
     def _count(self, kind, code):
         k = f"{kind} {code}"
@@ -90,13 +119,19 @@ class Fetcher:
                 self.lookup_spacing = min(10.0, self.lookup_spacing * 2)
 
     def _wait(self, lookup):
+        pause = self._paused_until - time.monotonic()
+        if pause > 0:
+            time.sleep(pause)
         lock = self._lookup_lock if lookup else self._lock
         with lock:
             t = time.monotonic()
             nxt = self._next_lookup if lookup else self._next
             if nxt > t:
                 time.sleep(nxt - t)
-            stamp = time.monotonic() + (self.lookup_spacing if lookup else self.spacing)
+            gap = self.lookup_spacing if lookup else self.spacing
+            if self.jitter:
+                gap += random.uniform(0, self.jitter)
+            stamp = time.monotonic() + gap
             if lookup:
                 self._next_lookup = stamp
             else:
@@ -114,6 +149,7 @@ class Fetcher:
                 with urlopen(req, timeout=self.timeout) as r:
                     body = r.read()
                 self._count(kind, 200)
+                self.consec_403 = 0
                 if not body.strip():
                     return None
                 return json.loads(body)
@@ -121,6 +157,8 @@ class Fetcher:
                 self._count(kind, e.code)
                 if e.code in (429, 403):
                     self._slow_down(lookup)
+                if e.code == 403:
+                    self._on_403()
                 if e.code in (429, 500, 502, 503, 504) and attempt < retries:
                     time.sleep(3 * (attempt + 1))
                     continue
@@ -444,7 +482,7 @@ def scan_app(f, cand, cfg, today, deadline):
     order = cfg.get("_storefront_order", {})
     charted = sorted(cand["all_storefronts"], key=lambda cc: order.get(cc, 999))
     pool = list(dict.fromkeys(cand.get("search_storefronts", []) + charted))
-    sfs = pool[:cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
+    sfs = pool[:cand.get("_sf_per_app") or cfg["storefronts_per_app"]] or [cand.get("ratings_cc") or "us"]
     for cc in sfs:
         hist = {str(s): 0 for s in range(1, 6)}
         fetched, newest, oldest, seen = 0, None, None, set()
@@ -486,150 +524,363 @@ def merge_reviews(path, cand, stats, low, cfg, today):
     return doc
 
 
-# ---------------------------------------------------------------- main
+# ---------------------------------------------------------------- phases
+#
+#  plan  : charts + focus search + lookup -> candidates + work/queue.json   (one runner)
+#  scan  : one shard of the queue, reviews only, fresh runner IP            (N parallel runners)
+#  merge : fold shard results into the data dir, history, run.json, health (one runner)
+#  all   : plan -> scan (every shard, sequentially) -> merge, for local runs / fallback
+
+
+class Ctx:
+    def __init__(self, args):
+        self.args = args
+        self.cfg = load_json(HERE / "config.json", {})
+        all_sf = load_json(HERE / "storefronts.json", ["us"])
+        self.cfg["_storefront_order"] = {cc: i for i, cc in enumerate(all_sf)}
+        self.storefronts = args.storefronts.split(",") if getattr(args, "storefronts", None) else all_sf
+        if getattr(args, "max_apps", None) is not None:
+            self.cfg["apps_to_scan_per_day"] = args.max_apps
+        self.out = Path(args.out)
+        self.today = now().date()
+        self.started = now()
+        self.t0 = time.monotonic()
+        self.logs = []
+
+    def log(self, msg):
+        line = f"[{now().strftime('%H:%M:%S')}] {msg}"
+        print(line, flush=True)
+        self.logs.append(line)
+
+    def minutes(self):
+        return round((time.monotonic() - self.t0) / 60, 1)
+
+
+def fresh_fetcher(cfg, kind):
+    if kind == "scan":
+        return Fetcher(cfg["request_timeout_seconds"], spacing=cfg.get("scan_spacing_s", 0.5),
+                       jitter=cfg.get("scan_jitter_s", 0.5), breaker=cfg.get("breaker_consecutive_403", 25),
+                       cooldown_s=cfg.get("breaker_cooldown_s", 90), max_cooldowns=cfg.get("breaker_max_cooldowns", 1))
+    return Fetcher(cfg["request_timeout_seconds"], breaker=cfg.get("plan_breaker_consecutive_403", 60),
+                   cooldown_s=30, max_cooldowns=1)
+
+
+def build_queue(ctx, cands):
+    cfg, today = ctx.cfg, ctx.today
+    history = load_json(ctx.out / "state/history.json", {})
+    rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
+    due = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut]
+    reserved, taken = [], set()
+    for seg, spec in (cfg.get("focus_segments") or {}).items():
+        pick = [c for c in due if seg in c["focus"] and c["id"] not in taken][:spec.get("reserve_scan_slots", 0)]
+        reserved += pick
+        taken.update(c["id"] for c in pick)
+    rest = [c for c in due if c["id"] not in taken][:max(0, cfg["apps_to_scan_per_day"] - len(reserved))]
+    todo, fi, gi = [], 0, 0  # interleave 1 focus : 2 general
+    while fi < len(reserved) or gi < len(rest):
+        if fi < len(reserved):
+            todo.append(reserved[fi]); fi += 1
+        todo += rest[gi:gi + 2]; gi += 2
+    return todo
+
+
+def lookup_ids(f, ids, cache, today, ccs=("us", "gb", "sa", "ae", "in", "de", "jp")):
+    missing = list(ids)
+    for cc in ccs:
+        if not missing:
+            break
+        got = set()
+        for i in range(0, len(missing), 200):
+            data = f.get(f"{IT}/lookup?id={','.join(missing[i:i + 200])}&country={cc}&entity=software", lookup=True, kind="lookup")
+            for r in (data or {}).get("results") or []:
+                tid = str(r.get("trackId"))
+                if tid and (r.get("wrapperType") == "software" or r.get("kind") == "software"):
+                    cache[tid] = {"fetched": today.isoformat(), "data": trim_lookup(r, cc)}
+                    got.add(tid)
+        missing = [i for i in missing if i not in got]
+    return missing
+
+
+def phase_plan(ctx):
+    cfg, out, today, a = ctx.cfg, ctx.out, ctx.today, ctx.args
+    stats = {"mode": a.mode, "phase_minutes": {}, "partial": False}
+    cache = load_json(out / "state/lookup_cache.json", {})
+    prev = {c["id"]: c for c in load_json(out / "latest/candidates.json", [])}
+
+    if a.mode == "targeted":
+        f = fresh_fetcher(cfg, "plan")
+        ids = [x.strip() for x in (a.app_ids or "").split(",") if x.strip()]
+        terms = [x.strip() for x in (a.terms or "").split(",") if x.strip()]
+        lookup_ids(f, ids, cache, today)
+        apps, focus = {}, {}
+        for tid in ids:
+            apps[tid] = {"id": tid, "name": None, "artist": None, "chart_genre": None, "positions": []}
+            focus[tid] = {"segments": {"target"}, "storefronts": []}
+        term_sf = (a.term_storefronts or "us,gb").split(",")
+        for term in terms:
+            for cc in term_sf:
+                data = f.get(f"{IT}/search?term={quote(term)}&country={cc}&entity=software&limit=25", lookup=True, kind="target-search")
+                for r in (data or {}).get("results") or []:
+                    tid = str(r.get("trackId") or "")
+                    if not tid:
+                        continue
+                    cache[tid] = {"fetched": today.isoformat(), "data": trim_lookup(r, cc)}
+                    apps.setdefault(tid, {"id": tid, "name": r.get("trackName"), "artist": r.get("sellerName"),
+                                          "chart_genre": r.get("primaryGenreId"), "positions": []})
+                    fe = focus.setdefault(tid, {"segments": set(), "storefronts": []})
+                    fe["segments"].add("target" if tid in ids else "target-competitor")
+                    if cc not in fe["storefronts"]:
+                        fe["storefronts"].append(cc)
+        cfg.setdefault("focus_segments", {})
+        cfg["focus_segments"]["target"] = {"min_ratings": 0}
+        cfg["focus_segments"]["target-competitor"] = {"min_ratings": cfg.get("target_competitor_min_ratings", 300)}
+        new = build_candidates(apps, cache, cfg, focus)
+        for c in new:  # keep chart stats we already know
+            old = prev.get(c["id"])
+            if old:
+                for k in ("storefronts", "grossing_storefronts", "paid_storefronts", "best_rank", "top_storefronts", "all_storefronts"):
+                    c[k] = old.get(k, c[k])
+                c["focus"] = sorted(set(old.get("focus", [])) | set(c["focus"]))
+        order = {tid: i for i, tid in enumerate(ids)}
+        new.sort(key=lambda c: (0 if c["id"] in order else 1, order.get(c["id"], 0), -c["priority"]))
+        queue = new[: a.max_targets or 40]
+        for c in queue:
+            c["_sf_per_app"] = a.storefronts_per_app or cfg.get("targeted_storefronts_per_app", 8)
+        merged = dict(prev)
+        merged.update({c["id"]: {k: v for k, v in c.items() if not k.startswith("_")} for c in new})
+        cands = sorted(merged.values(), key=lambda c: -(c.get("priority") or 0))
+        stats.update({"targets": ids, "terms": terms, "unique_chart_apps": len(apps), "requests": f.requests,
+                      "failures": f.failures, "http_status": f.status})
+        ctx.log(f"targeted plan: {len(ids)} ids, {len(terms)} terms -> {len(queue)} apps queued")
+    else:
+        tp = time.monotonic()
+        f = fresh_fetcher(cfg, "plan")
+        f.deadline = ctx.t0 + cfg["charts_budget_minutes"] * 60
+        apps, feed_stats, cat_sf = collect_charts(f, ctx.storefronts, cfg, today, ctx.log)
+        if f.past_deadline():
+            stats["partial"] = True
+            ctx.log("charts: stopped early (time budget or 403 breaker) - continuing with what we have")
+        stats["phase_minutes"]["charts"] = round((time.monotonic() - tp) / 60, 1)
+        all_status, req, fail = dict(f.status), f.requests, f.failures
+
+        tp = time.monotonic()
+        f = fresh_fetcher(cfg, "plan")
+        f.deadline = ctx.t0 + cfg["focus_budget_minutes"] * 60
+        focus = collect_focus(f, apps, cache, cfg, today, ctx.log)
+        f.deadline = ctx.t0 + cfg["lookup_budget_minutes"] * 60
+        cache = collect_lookups(f, apps, cache, cfg, today, ctx.log)
+        if f.past_deadline():
+            stats["partial"] = True
+        stats["phase_minutes"]["focus+lookup"] = round((time.monotonic() - tp) / 60, 1)
+        for k, v in f.status.items():
+            all_status[k] = all_status.get(k, 0) + v
+        new = build_candidates(apps, cache, cfg, focus)
+        for c in new:
+            c["seen"] = today.isoformat()
+        # resilience: if charts were cut short, keep yesterday's candidates we didn't see today (<= 7 days old)
+        keep_cut = (today - dt.timedelta(days=7)).isoformat()
+        new_ids = {c["id"] for c in new}
+        carried = [c for c in prev.values() if c["id"] not in new_ids and c.get("seen", "") >= keep_cut]
+        for c in carried:
+            c["stale_chart"] = True
+        cands = sorted(new + carried, key=lambda c: -(c.get("priority") or 0))
+        queue = build_queue(ctx, cands)
+        stats.update({"category_storefronts_today": cat_sf, "feeds": feed_stats, "unique_chart_apps": len(apps),
+                      "carried_candidates": len(carried), "requests": req + f.requests,
+                      "failures": fail + f.failures, "http_status": all_status})
+        ctx.log(f"plan: {len(cands)} candidates ({len(carried)} carried over), queue {len(queue)} "
+                f"({sum(1 for c in queue if c.get('focus'))} focus)")
+
+    stale = (today - dt.timedelta(days=60)).isoformat()
+    cache = {k: v for k, v in cache.items() if v["fetched"] >= stale}
+    save_json(out / "state/lookup_cache.json", cache, compact=True)
+    save_json(out / "latest/candidates.json", [{k: v for k, v in c.items() if not k.startswith("_")} for c in cands], compact=True)
+    n_shards = max(1, min(a.shards, math.ceil(len(queue) / 8))) if queue else 1
+    save_json(out / "work/queue.json", {"mode": a.mode, "date": today.isoformat(), "shards": n_shards, "items": queue})
+    stats.update({"date": today.isoformat(), "eligible_candidates": len(cands), "queued": len(queue),
+                  "shards": n_shards, "plan_minutes": ctx.minutes(), "log": ctx.logs})
+    save_json(out / "work/plan.json", stats)
+    if a.github_output:
+        with open(a.github_output, "a") as fh:
+            fh.write(f"shards={json.dumps(list(range(n_shards)))}\n")
+    return stats
+
+
+def phase_scan(ctx, shard, shards, shard_out):
+    cfg, out, today = ctx.cfg, ctx.out, ctx.today
+    q = load_json(out / "work/queue.json", {"items": []})
+    items = [c for i, c in enumerate(q["items"]) if i % shards == shard]
+    f = fresh_fetcher(cfg, "scan")
+    deadline = ctx.t0 + cfg["scan_budget_minutes"] * 60
+    f.deadline = deadline
+    shard_out = Path(shard_out)
+    (shard_out / "reviews").mkdir(parents=True, exist_ok=True)
+    scanned, fetched_total, low_total = [], 0, 0
+    ctx.log(f"shard {shard}/{shards}: {len(items)} apps")
+    with ThreadPoolExecutor(cfg.get("scan_workers", 3)) as ex:
+        futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in items}
+        for fut in as_completed(futs):
+            c = futs[fut]
+            try:
+                stats, low = fut.result()
+            except Exception as e:
+                f._fail(c["id"], f"scan error {e!r}"[:160])
+                continue
+            fetched = sum(s["fetched"] for s in stats.values())
+            if fetched == 0:
+                continue
+            src = out / f"reviews/{c['id']}.json"
+            dst = shard_out / f"reviews/{c['id']}.json"
+            if src.exists():
+                shutil.copy(src, dst)
+            doc = merge_reviews(dst, c, stats, low, cfg, today)
+            hist = {str(s): sum(st["hist"][str(s)] for st in stats.values()) for s in range(1, 6)}
+            scanned.append({"id": c["id"], "name": c["name"], "genre": c["genre"], "focus": c.get("focus", []),
+                            "fetched": fetched, "hist": hist, "low_new": len(low), "low_total": len(doc["reviews"]),
+                            "low_share": round((hist["1"] + hist["2"]) / fetched, 3)})
+            fetched_total += fetched
+            low_total += len(low)
+    res = {"shard": shard, "apps_queued": len(items), "apps_scanned": len(scanned), "scanned": scanned,
+           "reviews_fetched": fetched_total, "low_star_kept": low_total, "requests": f.requests, "failures": f.failures,
+           "http_status": f.status, "blocked": f.blocked, "cooldowns": f.cooldowns,
+           "hit_deadline": time.monotonic() > deadline, "minutes": ctx.minutes(), "error_samples": f.errors[:15], "log": ctx.logs}
+    save_json(shard_out / "scan.json", res)
+    ctx.log(f"shard {shard}: scanned {len(scanned)}/{len(items)} apps, {fetched_total} reviews, blocked={f.blocked}, "
+            f"status={f.status}")
+    return res
+
+
+def health_of(run, cfg):
+    reasons, level = [], "OK"
+    scanned = run.get("apps_scanned", 0)
+    if run.get("status", "").startswith("error"):
+        level = "FAILED"; reasons.append(run["status"])
+    if scanned == 0:
+        level = "FAILED"; reasons.append("no apps scanned")
+    elif scanned < cfg.get("health_min_apps", 40) and run.get("mode") != "targeted":
+        level = "DEGRADED" if level == "OK" else level
+        reasons.append(f"only {scanned} apps scanned (< {cfg.get('health_min_apps', 40)})")
+    blocked = [s["shard"] for s in run.get("shards_detail", []) if s.get("blocked")]
+    missing = run.get("shards_missing", [])
+    if blocked:
+        level = "DEGRADED" if level == "OK" else level
+        reasons.append(f"shards blocked by Apple 403s: {blocked}")
+    if missing:
+        level = "DEGRADED" if level == "OK" else level
+        reasons.append(f"shards produced no output: {missing}")
+    st = run.get("http_status", {})
+    rv_403 = st.get("reviews 403", 0)
+    rv_ok = st.get("reviews 200", 0)
+    if rv_403 + rv_ok and rv_403 / (rv_403 + rv_ok) > 0.3:
+        level = "DEGRADED" if level == "OK" else level
+        reasons.append(f"review 403 rate {rv_403}/{rv_403 + rv_ok}")
+    return {"level": level, "reasons": reasons}
+
+
+def phase_merge(ctx, shards_dir):
+    cfg, out, today = ctx.cfg, ctx.out, ctx.today
+    plan = load_json(out / "work/plan.json", {})
+    q = load_json(out / "work/queue.json", {"shards": 1, "items": []})
+    history = load_json(out / "state/history.json", {})
+    shard_results, missing = [], []
+    shards_dir = Path(shards_dir)
+    for k in range(q.get("shards", 1)):
+        d = next((p for p in [shards_dir / f"scan-{k}", shards_dir / str(k), shards_dir] if (p / "scan.json").exists()
+                  and load_json(p / "scan.json", {}).get("shard") == k), None)
+        if not d:
+            missing.append(k)
+            continue
+        res = load_json(d / "scan.json", {})
+        (out / "reviews").mkdir(parents=True, exist_ok=True)
+        for fp in (d / "reviews").glob("*.json"):
+            shutil.copy(fp, out / "reviews" / fp.name)
+        for srow in res.get("scanned", []):
+            history[srow["id"]] = today.isoformat()
+        shard_results.append(res)
+    drop_cut = (today - dt.timedelta(days=cfg["drop_app_files_after_days"])).isoformat()
+    for p in (out / "reviews").glob("*.json") if (out / "reviews").exists() else []:
+        if history.get(p.stem, "") < drop_cut:
+            p.unlink()
+            history.pop(p.stem, None)
+    save_json(out / "state/history.json", history, compact=True)
+    scanned = sorted([r for s in shard_results for r in s["scanned"]], key=lambda r: -r["low_new"])
+    mode = plan.get("mode", "daily")
+    if mode == "targeted":  # keep the daily scanned list, add the targeted results on top
+        prev = {r["id"]: r for r in load_json(out / "latest/scanned.json", [])}
+        prev.update({r["id"]: r for r in scanned})
+        save_json(out / "latest/scanned.json", sorted(prev.values(), key=lambda r: -r["low_new"]))
+    else:
+        save_json(out / "latest/scanned.json", scanned)
+    status = dict(plan.get("http_status", {}))
+    for s in shard_results:
+        for k, v in s["http_status"].items():
+            status[k] = status.get(k, 0) + v
+    run = {
+        "date": today.isoformat(), "mode": mode, "status": "ok", "finished": now().isoformat(timespec="seconds"),
+        "plan_minutes": plan.get("plan_minutes"), "phase_minutes": plan.get("phase_minutes"), "partial": plan.get("partial"),
+        "category_storefronts_today": plan.get("category_storefronts_today"), "feeds": plan.get("feeds"),
+        "unique_chart_apps": plan.get("unique_chart_apps"), "eligible_candidates": plan.get("eligible_candidates"),
+        "carried_candidates": plan.get("carried_candidates"), "targets": plan.get("targets"), "terms": plan.get("terms"),
+        "queued": plan.get("queued"), "shards": q.get("shards"), "shards_missing": missing,
+        "shards_detail": [{k: s[k] for k in ("shard", "apps_queued", "apps_scanned", "reviews_fetched", "blocked",
+                                             "cooldowns", "hit_deadline", "minutes", "requests", "failures")} for s in shard_results],
+        "apps_scanned": len(scanned), "reviews_fetched": sum(s["reviews_fetched"] for s in shard_results),
+        "low_star_kept": sum(s["low_star_kept"] for s in shard_results),
+        "review_files": len(list((out / "reviews").glob("*.json"))) if (out / "reviews").exists() else 0,
+        "requests": plan.get("requests", 0) + sum(s["requests"] for s in shard_results),
+        "failures": plan.get("failures", 0) + sum(s["failures"] for s in shard_results),
+        "http_status": status, "error_samples": [e for s in shard_results for e in s.get("error_samples", [])][:30],
+        "log": plan.get("log", []) + [l for s in shard_results for l in s.get("log", [])] + ctx.logs,
+    }
+    run["health"] = health_of(run, cfg)
+    if mode == "targeted":
+        save_json(out / "latest/targeted_run.json", run)
+        daily = load_json(out / "latest/run.json", None)
+        if daily:
+            daily.setdefault("targeted_runs", []).append({k: run[k] for k in ("finished", "targets", "terms", "apps_scanned", "low_star_kept", "health")})
+            save_json(out / "latest/run.json", daily)
+        else:
+            save_json(out / "latest/run.json", run)
+    else:
+        save_json(out / "latest/run.json", run)
+    ctx.log(f"merge: {len(scanned)} apps scanned across {len(shard_results)} shards, missing {missing}, health {run['health']}")
+    return run
+
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--phase", choices=["plan", "scan", "merge", "all"], default="all")
     ap.add_argument("--out", required=True, help="checked-out data branch directory")
+    ap.add_argument("--mode", choices=["daily", "targeted"], default="daily")
+    ap.add_argument("--app-ids", default="")
+    ap.add_argument("--terms", default="")
+    ap.add_argument("--term-storefronts", default="")
+    ap.add_argument("--storefronts-per-app", type=int, default=0)
+    ap.add_argument("--max-targets", type=int, default=0)
+    ap.add_argument("--shards", type=int, default=3)
+    ap.add_argument("--shard", type=int, default=0)
+    ap.add_argument("--shard-out", default="")
+    ap.add_argument("--shards-dir", default="")
+    ap.add_argument("--github-output", default=os.environ.get("GITHUB_OUTPUT", ""))
     ap.add_argument("--storefronts", help="comma list override (testing)")
     ap.add_argument("--max-apps", type=int, help="override apps_to_scan_per_day")
     args = ap.parse_args()
+    ctx = Ctx(args)
+    if args.phase == "plan":
+        phase_plan(ctx)
+    elif args.phase == "scan":
+        phase_scan(ctx, args.shard, args.shards, args.shard_out or str(ctx.out / f"work/shard-{args.shard}"))
+    elif args.phase == "merge":
+        run = phase_merge(ctx, args.shards_dir or str(ctx.out / "work"))
+        if run["health"]["level"] == "FAILED":
+            print("HEALTH FAILED: " + "; ".join(run["health"]["reasons"]), file=sys.stderr)
+    else:
+        args.github_output = ""
+        stats = phase_plan(ctx)
+        for k in range(stats["shards"]):
+            phase_scan(Ctx(args), k, stats["shards"], str(ctx.out / f"work/scan-{k}"))
+        phase_merge(ctx, str(ctx.out / "work"))
 
-    cfg = load_json(HERE / "config.json", {})
-    all_sf = load_json(HERE / "storefronts.json", ["us"])
-    cfg["_storefront_order"] = {cc: i for i, cc in enumerate(all_sf)}
-    storefronts = args.storefronts.split(",") if args.storefronts else all_sf
-    if args.max_apps is not None:
-        cfg["apps_to_scan_per_day"] = args.max_apps
-    out = Path(args.out)
-    today = now().date()
-    started = now()
-    t0 = time.monotonic()
-    deadline = t0 + cfg["time_budget_minutes"] * 60
-    logs = []
-
-    def log(msg):
-        line = f"[{now().strftime('%H:%M:%S')}] {msg}"
-        print(line, flush=True)
-        logs.append(line)
-
-    f = Fetcher(cfg["request_timeout_seconds"])
-    phases = {}
-    state = {"apps": {}, "feed_stats": {}, "cat_sf": [], "cands": [], "scanned": [], "fetched": 0, "low": 0, "partial": False}
-
-    def write_run(status):
-        run = {
-            "date": today.isoformat(), "status": status, "started": started.isoformat(timespec="seconds"),
-            "finished": now().isoformat(timespec="seconds"), "minutes": round((time.monotonic() - t0) / 60, 1),
-            "phase_minutes": phases, "partial": state["partial"], "storefronts": len(storefronts),
-            "category_storefronts_today": state["cat_sf"], "feeds": state["feed_stats"],
-            "unique_chart_apps": len(state["apps"]), "eligible_candidates": len(state["cands"]),
-            "apps_scanned": len(state["scanned"]), "reviews_fetched": state["fetched"], "low_star_kept": state["low"],
-            "review_files": len(list((out / "reviews").glob("*.json"))) if (out / "reviews").exists() else 0,
-            "requests": f.requests, "failures": f.failures, "http_status": f.status,
-            "final_spacing_s": {"feeds": f.spacing, "lookup": f.lookup_spacing},
-            "error_samples": f.errors, "log": logs,
-        }
-        save_json(out / "latest/run.json", run)
-
-    def phase_done(name, t_start):
-        phases[name] = round((time.monotonic() - t_start) / 60, 1)
-        write_run(f"running (after {name})")
-
-    try:
-        tp = time.monotonic()
-        f.deadline = t0 + cfg["charts_budget_minutes"] * 60
-        state["apps"], state["feed_stats"], state["cat_sf"] = collect_charts(f, storefronts, cfg, today, log)
-        if f.past_deadline():
-            state["partial"] = True
-            log("charts: hit the charts time budget, continuing with what we have")
-        phase_done("charts", tp)
-        apps = state["apps"]
-
-        tp = time.monotonic()
-        cache = load_json(out / "state/lookup_cache.json", {})
-        f.deadline = t0 + cfg.get("focus_budget_minutes", cfg["charts_budget_minutes"] + 4) * 60
-        focus = collect_focus(f, apps, cache, cfg, today, log)
-        phase_done("focus", tp)
-
-        tp = time.monotonic()
-        f.deadline = t0 + cfg["lookup_budget_minutes"] * 60
-        cache = collect_lookups(f, apps, cache, cfg, today, log)
-        if f.past_deadline():
-            state["partial"] = True
-            log("lookup: hit the lookup time budget, uncached apps wait for tomorrow")
-        stale = (today - dt.timedelta(days=60)).isoformat()
-        cache = {k: v for k, v in cache.items() if v["fetched"] >= stale}
-        save_json(out / "state/lookup_cache.json", cache, compact=True)
-
-        cands = build_candidates(apps, cache, cfg, focus)
-        state["cands"] = cands
-        save_json(out / "latest/candidates.json", cands, compact=True)
-        log(f"candidates: {len(cands)} eligible proven apps (excluded genres removed)")
-        phase_done("lookup", tp)
-
-        tp = time.monotonic()
-        f.deadline = deadline
-        history = load_json(out / "state/history.json", {})
-        rescan_cut = (today - dt.timedelta(days=cfg["rescan_after_days"])).isoformat()
-        due = [c for c in cands if c["scan"] and history.get(c["id"], "") < rescan_cut]
-        reserved, taken = [], set()
-        for seg, spec in (cfg.get("focus_segments") or {}).items():  # reserved slots per focus segment
-            pick = [c for c in due if seg in c["focus"] and c["id"] not in taken][:spec.get("reserve_scan_slots", 0)]
-            reserved += pick; taken.update(c["id"] for c in pick)
-        rest = [c for c in due if c["id"] not in taken][:max(0, cfg["apps_to_scan_per_day"] - len(reserved))]
-        # interleave (1 focus : 2 general) so a throttled, time-limited run still covers both
-        todo, fi, gi = [], 0, 0
-        while fi < len(reserved) or gi < len(rest):
-            if fi < len(reserved):
-                todo.append(reserved[fi]); fi += 1
-            todo += rest[gi:gi + 2]; gi += 2
-        log(f"scan queue: {len(todo)} apps ({sum(1 for c in todo if c['focus'])} from focus segments)")
-        log(f"scanning reviews for {len(todo)} apps")
-        with ThreadPoolExecutor(cfg["workers"]) as ex:
-            futs = {ex.submit(scan_app, f, c, cfg, today, deadline): c for c in todo}
-            for fut in as_completed(futs):
-                c = futs[fut]
-                try:
-                    stats, low = fut.result()
-                except Exception as e:  # never let one app kill the run
-                    f._fail(c["id"], f"scan error {e!r}"[:160])
-                    continue
-                fetched = sum(s["fetched"] for s in stats.values())
-                if fetched == 0:
-                    continue
-                doc = merge_reviews(out / f"reviews/{c['id']}.json", c, stats, low, cfg, today)
-                history[c["id"]] = today.isoformat()
-                hist = {str(s): sum(st["hist"][str(s)] for st in stats.values()) for s in range(1, 6)}
-                state["scanned"].append({"id": c["id"], "name": c["name"], "genre": c["genre"], "fetched": fetched,
-                                         "hist": hist, "low_new": len(low), "low_total": len(doc["reviews"]),
-                                         "low_share": round((hist["1"] + hist["2"]) / fetched, 3)})
-                state["fetched"] += fetched
-                state["low"] += len(low)
-        if f.past_deadline():
-            state["partial"] = True
-
-        # housekeeping: drop review files for apps not scanned in N days
-        drop_cut = (today - dt.timedelta(days=cfg["drop_app_files_after_days"])).isoformat()
-        for p in (out / "reviews").glob("*.json") if (out / "reviews").exists() else []:
-            if history.get(p.stem, "") < drop_cut:
-                p.unlink()
-                history.pop(p.stem, None)
-        save_json(out / "state/history.json", history, compact=True)
-        state["scanned"].sort(key=lambda s: s["low_new"], reverse=True)
-        save_json(out / "latest/scanned.json", state["scanned"])
-        phases["reviews"] = round((time.monotonic() - tp) / 60, 1)
-        log(f"done: scanned {len(state['scanned'])} apps, {state['fetched']} reviews, {state['low']} low-star kept, "
-            f"{f.requests} requests, {f.failures} failures, partial={state['partial']}, status={f.status}")
-        write_run("ok")
-    except Exception as e:
-        log(f"FATAL: {e!r}")
-        write_run(f"error: {e!r}"[:300])
-        raise
-    # fail the job only if nothing at all came back (Apple blocked us / endpoints changed)
-    if not state["apps"]:
-        print("ERROR: no chart data at all", file=sys.stderr)
-        sys.exit(2)
 
 if __name__ == "__main__":
     main()

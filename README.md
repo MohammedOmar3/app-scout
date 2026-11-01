@@ -7,24 +7,24 @@ Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps
 ## How it works
 
 ```
-00:23 UTC  GitHub Actions: collect.yml          (free Apple feeds, ≤ 26 min, self-throttling)
-           ├─ top free / paid / grossing charts, all ~175 storefronts
-           ├─ per-category charts for 8 rotating storefronts a day (+ US, GB daily)
-           ├─ iTunes Lookup metadata (genre, ratings, price, last update) — cached
-           ├─ focus segments by App Store search (not genres): islamic — Quran, prayer times, qibla, adhkar,
-           │   hadith — in EN/AR/ID/TR/FR/DE storefronts; 40 review-scan slots reserved daily
-           ├─ drop games / medical / finance; keep "proven" apps (≥500 ratings or ≥3 storefronts)
-           ├─ most-recent + most-helpful reviews from up to 6 storefronts for the top apps not scanned in 4 days
-           │   (skips mega-apps > 1.5M ratings; favours mid-sized apps that make money)
-           └─ low-star reviews → `data` branch (single commit, rewritten daily) + digest.md
-
-06:44 Dubai  Claude scheduled task: follows SCOUT.md
-           ├─ triage the 7-day digest, read the real reviews behind each cluster
-           ├─ validate: spread across apps/storefronts, recency, Reddit/web via search, kill check
-           ├─ Gate A (pain is real) + Gate B (fits app-factory: Expo/Supabase/RevenueCat, 14 days)
-           ├─ score; ≥3.6 → idea (max 3/day, zero is fine), else watchlist / rejected
-           └─ commit reports/, briefs/, ideas/ledger.json → push notification
+06:44 Dubai  Claude scheduled task = orchestrator + analyst (SCOUT.md)
+  step 0     collector_ctl.py ensure-fresh: use fresh healthy data, or start the GitHub
+             `collect` workflow and wait; retry wider if it FAILS; health.py go/no-go
+             └─ collect.yml (free Apple feeds)
+                plan  (1 runner)  charts all ~175 storefronts + category charts + islamic
+                                  search + lookup -> candidates + queue (mega-apps skipped,
+                                  mid-sized grossing / abandoned apps first)
+                scan  (3 runners) reviews only, one shard per fresh runner IP, gentle rate,
+                                  circuit breaker on Apple 403s (stop fast, never burn the run)
+                merge (1 runner)  data branch + run.json with a health verdict + digest
+  steps 1-5  triage -> validate (cross-app, Reddit/web, kill check) -> Gate A/A2 + Gate B -> score
+  step 7     no idea yet? hunt loop: targeted scans of the best leads + competitors (<=2/day),
+             off-store evidence, re-score; repeat until one passes or budget is spent;
+             unfinished hunts carry over in ideas/hunt.json
+  step 6     report, briefs, ledger, hunt.json -> push after every round -> notification
 ```
+
+The gates never move: the hunt makes the evidence stronger, it doesn't lower the bar.
 
 ## Where things are
 
@@ -33,9 +33,10 @@ Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps
 | `reports/YYYY-MM-DD.md` | Daily report: ideas, watchlist, rejections, data health |
 | `briefs/YYYY-MM-DD-slug.md` | One per idea — hand to `/app-factory idea` |
 | `ideas/ledger.json` | Memory across days: proposed, watchlist, rejected (no repeats) |
+| `ideas/hunt.json` | Open hunt targets and exactly what evidence each still needs |
 | `SCOUT.md` | The analysis playbook (gates, scoring, outputs) |
 | `collector/` | Data collector + `config.json` knobs |
-| `scout/` | `digest.py` (triage digest), `reviews.py` (query CLI), `themes.py` (keywords) |
+| `scout/` | `collector_ctl.py` (start/wait/targeted runs), `health.py` (go/no-go), `digest.py`, `reviews.py`, `themes.py` |
 | `data` branch | Latest snapshot: `latest/run.json`, `latest/candidates.json`, `latest/digest.md`, `reviews/<appId>.json` |
 
 ## Running by hand
@@ -51,4 +52,4 @@ Actions → **collect** → *Run workflow* triggers a pull on demand.
 ## Limits (by design)
 
 - Free sources only: Apple's public review feed currently serves ~50 reviews per sort order per storefront, so evidence builds up across storefronts and repeated scans over days; Reddit is reached only through web search (its API closed to new developers on 31 Oct 2026).
-- GitHub Actions minutes: a private repo on the free plan gets 2,000 min/month; this job uses ≤ 27 min/day (~800 min/month). Lower `apps_to_scan_per_day` if needed.
+- GitHub Actions minutes: a private repo on the free plan gets 2,000 min/month; daily ≈ 45 runner-min (plan + 3 shards + merge) plus ≤ 2 targeted runs ≈ 10 min each → ~1,900 min/month, right at the limit. Moving the collector to a public repo makes Actions minutes free. Lower `apps_to_scan_per_day` if needed.
