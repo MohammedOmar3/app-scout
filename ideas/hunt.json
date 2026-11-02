@@ -12,9 +12,9 @@
         "beer rating"
       ],
       "why": "Untappd 5.0 redesign (2026-10-15) drew a wave of 1-2 star reviews from long-time users: cluttered UI, own history harder to browse, ads, Insider paywall",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU)",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 2 (run 41382514592) rescanned Untappd, but the collector only tries chart storefronts plus us/gb, so it came back with the same us/gb data; 'beer journal' found no charting competitor",
       "missing": "persistence (backlash is only 2.5 weeks old; needs to survive v5.1+), spread beyond us/gb, ≥3 off-store threads of people leaving for a private log, and Bruwia's App Store rating count",
-      "rounds": 1,
+      "rounds": 2,
       "last_round": "2026-11-02"
     }
   ],
@@ -51,6 +51,11 @@
     },
     {
       "key": "fleeceware:authenticator:weekly-sub",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "discovery:round2-batch",
       "outcome": "rejected",
       "date": "2026-11-02"
     }
