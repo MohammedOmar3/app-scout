@@ -2,19 +2,36 @@
   "updated": "2026-11-02",
   "open_targets": [
     {
-      "key": "removed:untappd:simple-beer-log",
+      "key": "removed:drink-logs:private-journal",
       "incumbents": [
-        "449141888"
+        "449141888",
+        "414461255"
       ],
       "terms": [
         "beer journal",
-        "beer tracker",
-        "beer rating"
+        "wine journal",
+        "beer tracker"
       ],
-      "why": "Untappd 5.0 redesign (2026-10-15) drew a wave of 1-2 star reviews from long-time users: cluttered UI, own history harder to browse, ads, Insider paywall",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 2 (run 41382514592) rescanned Untappd, but the collector only tries chart storefronts plus us/gb, so it came back with the same us/gb data; 'beer journal' found no charting competitor",
-      "missing": "persistence (backlash is only 2.5 weeks old; needs to survive v5.1+), spread beyond us/gb, ≥3 off-store threads of people leaving for a private log, and Bruwia's App Store rating count",
-      "rounds": 2,
+      "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15)",
+      "missing": "persistence: rescan both in about a week and count new low-star reviews on v5.1+ / 2026.44+ (needs ≥15 in the newer versions); other storefronts (the targeted pool can't reach ca/au/de/nl for apps that chart only in us/gb, so ca/au evidence needs the pool fix or WebFetch of public review pages); ≥3 off-store threads (none found by search on 2026-11-02); willingness to pay (asks for a paid private journal, or Insider/Premium cancellations citing logging); Bruwia's App Store rating count",
+      "rounds": 4,
+      "last_round": "2026-11-02"
+    },
+    {
+      "key": "discovery:unscanned-focused-tools",
+      "incumbents": [
+        "1469553582",
+        "604836034",
+        "1658514439",
+        "1240871878",
+        "1114387800"
+      ],
+      "terms": [],
+      "why": "charting, grossing, Expo-buildable focused tools the daily run has never scanned (Clay story templates, Speed Tracker, Forma PDF editor, PDF Scanner Pro, Fitness App: Gym Workout Plan)",
+      "evidence": "none yet; all 3 targeted runs on 2026-11-02 went to other batches",
+      "missing": "one review scan, lower priority than the drink-logs persistence check",
+      "rounds": 0,
       "last_round": "2026-11-02"
     }
   ],
@@ -56,6 +73,21 @@
     },
     {
       "key": "discovery:round2-batch",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "paywall:stronglifts:lifetime-revoked",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "paywall:workout-loggers:forced-sub",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "discovery:round3-batch",
       "outcome": "rejected",
       "date": "2026-11-02"
     }
