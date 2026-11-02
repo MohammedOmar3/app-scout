@@ -1,41 +1,21 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "open_targets": [
     {
-      "key": "discovery:unscanned-utility-batch",
+      "key": "removed:untappd:simple-beer-log",
       "incumbents": [
-        "1126370589",
-        "414675976",
-        "414676749",
-        "486811622",
-        "1472157401",
-        "6754900760",
-        "1538761576",
-        "1476732439",
-        "1639516366",
-        "1483790257",
-        "1436429074",
-        "377989827",
-        "821560738",
-        "645746786",
-        "1085047737",
-        "1438388363",
-        "1044867788",
-        "1612792132",
-        "1557446434",
-        "6447482321",
-        "1505173822",
-        "6742278016",
-        "1429967544",
-        "6738537088",
-        "325851015"
+        "449141888"
       ],
-      "terms": [],
-      "why": "charting, grossing, Expo-buildable single-purpose apps (craft counters, moon/solunar calendars, grocery and recipe lists, book trackers, habit, journal, plant care, authenticators, collage/feed planners) that the daily run has never scanned",
-      "evidence": "round 3 (targeted run 41295332761, 10:01 UTC) scanned 15 of the 40, but 278 of 316 review pages were still empty (us returned nothing for 14 of 15 apps). Of the scanned ones, only My Package Delivery Tracker (17 low-star, gb) and Esti (21, us) had pain, and both were rejected. The 25 ids left here were never scanned. Round 4 (off-store only, targeted cap 3/3 reached): YarnPal looks AI-based ('AI patterns and paywall', grand-screen.com, Oct 2025), so it probably fails Gate B; Our Groceries' public reviews show no recurring price or ads pain (one-time $5-10 unlock is accepted). Deprioritize both",
-      "missing": "a review scan of these 25 (start them first tomorrow, ideally in the daily run's queue rather than a targeted run, since the 3-shard daily scan got through while all 3 single-runner targeted runs were partly or fully soft-blocked)",
-      "rounds": 4,
-      "last_round": "2026-11-01"
+      "terms": [
+        "beer journal",
+        "beer tracker",
+        "beer rating"
+      ],
+      "why": "Untappd 5.0 redesign (2026-10-15) drew a wave of 1-2 star reviews from long-time users: cluttered UI, own history harder to browse, ads, Insider paywall",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU)",
+      "missing": "persistence (backlash is only 2.5 weeks old; needs to survive v5.1+), spread beyond us/gb, ≥3 off-store threads of people leaving for a private log, and Bruwia's App Store rating count",
+      "rounds": 1,
+      "last_round": "2026-11-02"
     }
   ],
   "closed": [
@@ -58,6 +38,21 @@
       "key": "paywall:package-tracker:pay-to-track",
       "outcome": "rejected",
       "date": "2026-11-01"
+    },
+    {
+      "key": "discovery:unscanned-utility-batch",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "paywall:yarnpal:ai-patterns",
+      "outcome": "rejected",
+      "date": "2026-11-02"
+    },
+    {
+      "key": "fleeceware:authenticator:weekly-sub",
+      "outcome": "rejected",
+      "date": "2026-11-02"
     }
   ]
 }
