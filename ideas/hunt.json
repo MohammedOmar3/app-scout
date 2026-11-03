@@ -2,24 +2,6 @@
   "updated": "2026-11-03",
   "open_targets": [
     {
-      "key": "removed:roadready:teen-driving-log",
-      "incumbents": [
-        "699534935",
-        "6748363429"
-      ],
-      "terms": [
-        "teen driving log",
-        "learner log book",
-        "permit hours",
-        "student driver"
-      ],
-      "why": "RoadReady (2.9★, 19k ratings, the DMV-recommended US teen driving log) was rewritten in June 2026: logins fail, hours vanish, ads before logging",
-      "evidence": "87 low-star reviews in 90d (us only), 128 since May 2026, rising monthly, across v3.4.0-3.4.15. Competitors are many but tiny (Teen Driving Log 159 ratings, last update 2020; the rest 0-16; Moda and DriveClock $4.99 one-time; LaneUp free). Off-store: Moda blog, Google Play reviews (Sept 2026)",
-      "missing": "Gate A spread: a second storefront or second app with the same complaint (RoadReady Ohio and competitors scanning in round 2)",
-      "rounds": 1,
-      "last_round": "2026-11-03"
-    },
-    {
       "key": "removed:drink-logs:private-journal",
       "incumbents": [
         "449141888",
@@ -31,26 +13,25 @@
         "beer tracker"
       ],
       "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15)",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6)",
       "missing": "persistence: rescan both in about a week and count new low-star reviews on v5.1+ / 2026.44+ (needs ≥15 in the newer versions); other storefronts (the targeted pool can't reach ca/au/de/nl for apps that chart only in us/gb, so ca/au evidence needs the pool fix or WebFetch of public review pages); ≥3 off-store threads (none found by search on 2026-11-02); willingness to pay (asks for a paid private journal, or Insider/Premium cancellations citing logging); Bruwia's App Store rating count",
-      "rounds": 4,
-      "last_round": "2026-11-02"
+      "rounds": 5,
+      "last_round": "2026-11-03"
     },
     {
-      "key": "discovery:unscanned-focused-tools",
+      "key": "ads:timehop:daily-memories",
       "incumbents": [
-        "1469553582",
-        "604836034",
-        "1658514439",
-        "1240871878",
-        "1114387800"
+        "569077959"
       ],
-      "terms": [],
-      "why": "charting, grossing, Expo-buildable focused tools the daily run has never scanned (Clay story templates, Speed Tracker, Forma PDF editor, PDF Scanner Pro, Fitness App: Gym Workout Plan)",
-      "evidence": "none yet; all 3 targeted runs on 2026-11-02 went to other batches",
-      "missing": "one review scan, lower priority than the drink-logs persistence check",
-      "rounds": 0,
-      "last_round": "2026-11-02"
+      "terms": [
+        "on this day",
+        "photo memories"
+      ],
+      "why": "Timehop v5.0 (2026-07) added unskippable ads and paywalled memories and streaks; on the watchlist at 3.5",
+      "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings",
+      "missing": "a differentiator the clones lack, off-store threads of people leaving, explicit willingness to pay",
+      "rounds": 1,
+      "last_round": "2026-11-03"
     }
   ],
   "closed": [
@@ -108,6 +89,16 @@
       "key": "discovery:round3-batch",
       "outcome": "rejected",
       "date": "2026-11-02"
+    },
+    {
+      "key": "removed:roadready:teen-driving-log",
+      "outcome": "idea",
+      "date": "2026-11-03"
+    },
+    {
+      "key": "discovery:unscanned-focused-tools",
+      "outcome": "rejected",
+      "date": "2026-11-03"
     }
   ]
 }

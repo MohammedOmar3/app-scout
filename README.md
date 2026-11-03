@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-02 — no ideas today (no idea passed after 4 hunt rounds; best lead `removed:drink-logs:private-journal` on the watchlist at 3.55) — [report](reports/2026-11-02.md)
+**Latest:** 2026-11-03 — 1 idea: [Fifty Hours (working name)](briefs/2026-11-03-fifty-hours.md), a no-login teen driving log — [report](reports/2026-11-03.md)
 
 ## How it works
 
