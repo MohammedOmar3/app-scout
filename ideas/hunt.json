@@ -1,6 +1,24 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "open_targets": [
+    {
+      "key": "removed:roadready:teen-driving-log",
+      "incumbents": [
+        "699534935",
+        "6748363429"
+      ],
+      "terms": [
+        "teen driving log",
+        "learner log book",
+        "permit hours",
+        "student driver"
+      ],
+      "why": "RoadReady (2.9★, 19k ratings, the DMV-recommended US teen driving log) was rewritten in June 2026: logins fail, hours vanish, ads before logging",
+      "evidence": "87 low-star reviews in 90d (us only), 128 since May 2026, rising monthly, across v3.4.0-3.4.15. Competitors are many but tiny (Teen Driving Log 159 ratings, last update 2020; the rest 0-16; Moda and DriveClock $4.99 one-time; LaneUp free). Off-store: Moda blog, Google Play reviews (Sept 2026)",
+      "missing": "Gate A spread: a second storefront or second app with the same complaint (RoadReady Ohio and competitors scanning in round 2)",
+      "rounds": 1,
+      "last_round": "2026-11-03"
+    },
     {
       "key": "removed:drink-logs:private-journal",
       "incumbents": [
