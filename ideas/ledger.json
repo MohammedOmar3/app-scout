@@ -1,60 +1,522 @@
 {
   "_comment": "Written by the daily run. ideas: proposed briefs. watchlist: promising but under-evidenced. rejected: looked at seriously and dropped. Incumbents are App Store app ids.",
   "ideas": [
-    {"key": "removed:roadready:teen-driving-log", "date": "2026-11-03", "title": "Fifty Hours (working name)", "status": "proposed", "score": 3.7, "brief": "briefs/2026-11-03-fifty-hours.md", "incumbents": ["699534935", "6748363429"], "evidence": "RoadReady (2.9, 19k ratings): 87 low-star reviews in 90d, 128 since May 2026, us only, rising monthly after the June rewrite: login 51, lost hours 27, ads 14. RoadReady Ohio 6 in 90d and Aceable's log 2 share the complaint"}
+    {
+      "key": "removed:roadready:teen-driving-log",
+      "date": "2026-11-03",
+      "title": "Fifty Hours (working name)",
+      "status": "proposed",
+      "score": 3.7,
+      "brief": "briefs/2026-11-03-fifty-hours.md",
+      "incumbents": [
+        "699534935",
+        "6748363429"
+      ],
+      "evidence": "RoadReady (2.9, 19k ratings): 87 low-star reviews in 90d, 128 since May 2026, us only, rising monthly after the June rewrite: login 51, lost hours 27, ads 14. RoadReady Ohio 6 in 90d and Aceable's log 2 share the complaint"
+    }
   ],
   "watchlist": [
-    {"key": "removed:drink-logs:private-journal", "first_seen": "2026-11-02", "last_seen": "2026-11-03", "incumbents": ["449141888", "414461255"], "score": 3.55, "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43", "promote_if": "the Untappd/Vivino complaints are still coming 4+ weeks on (after Untappd 5.1 and the next Vivino release), appear in ≥3 more storefronts, ≥3 independent off-store threads show people leaving for a private log, and there's evidence of willingness to pay (asks for a one-time paid journal, or Insider/Premium cancellations citing logging). Otherwise reject: drinkers are used to free apps, and Bruwia already imports Untappd history for free"},
-    {"key": "ads:timehop:daily-memories", "first_seen": "2026-11-03", "last_seen": "2026-11-03", "incumbents": ["569077959"], "score": 3.5, "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction", "promote_if": "a differentiator the clones lack, shown on the first screen (e.g. a real daily-streak ritual with streak carry-over that long-time users respond to), off-store threads of people leaving, and explicit willingness to pay; most reviewers are angry about paying at all"}
+    {
+      "key": "removed:drink-logs:private-journal",
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-04",
+      "incumbents": [
+        "449141888",
+        "414461255"
+      ],
+      "score": 3.55,
+      "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43. 2026-11-04 rescan: Untappd 92 low-star in 90d (us 70, gb 28 all-time stored), still 1-6 a day to 11-01, 1 in November so far; Vivino 27",
+      "promote_if": "the Untappd/Vivino complaints are still coming 4+ weeks on (after Untappd 5.1 and the next Vivino release), appear in ≥3 more storefronts, ≥3 independent off-store threads show people leaving for a private log, and there's evidence of willingness to pay (asks for a one-time paid journal, or Insider/Premium cancellations citing logging). Otherwise reject: drinkers are used to free apps, and Bruwia already imports Untappd history for free"
+    },
+    {
+      "key": "ads:timehop:daily-memories",
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
+      "incumbents": [
+        "569077959"
+      ],
+      "score": 3.5,
+      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found",
+      "promote_if": "a differentiator the clones lack, shown on the first screen (e.g. a real daily-streak ritual with streak carry-over that long-time users respond to), off-store threads of people leaving, and explicit willingness to pay; most reviewers are angry about paying at all"
+    }
   ],
   "rejected": [
-    {"key": "trial-trap:many:trial-reminder-app", "date": "2026-10-31", "incumbents": ["1455009060", "1636235979", "6670430706", "416048305"], "reason": "fix already crowded (TrialGuard, Trial Alert, TrialHero, Bobby, ReSubs); no subscription API on iOS; finance-adjacent; 4.3 risk high"},
-    {"key": "ads:shareit:ad-free-transfer", "date": "2026-10-31", "incumbents": ["725215120"], "reason": "LocalSend already free, open-source, ad-free"},
-    {"key": "ads:remini:ad-gated-enhance", "date": "2026-10-31", "incumbents": ["1470373330"], "reason": "AI inference cost drives the ads; fails Gate B economics; evidence mostly one storefront"},
-    {"key": "removed:photoroom:bg-colors", "date": "2026-10-31", "incumbents": ["1455009060"], "reason": "background removal built into iOS; rest is billing disputes"},
-    {"key": "paywall:truecaller:caller-id", "date": "2026-10-31", "incumbents": ["448142450"], "reason": "needs caller/spam database and Call Directory extension"},
-    {"key": "paywall:dating:likes-paywall", "date": "2026-10-31", "incumbents": ["1282966364", "1498407272", "595287172", "338701294", "690661663"], "reason": "two-sided dating marketplace; fails Gate B"},
-    {"key": "paywall:drama-shorts:coins", "date": "2026-10-31", "incumbents": ["1636235979", "6445905219", "6670430706", "6768593043"], "reason": "licensed content; fails Gate B"},
-    {"key": "abandoned:fitness-buddy:paid-workout", "date": "2026-10-31", "incumbents": ["443646748"], "reason": "review scan found no recent complaints; paid charts only in tiny storefronts; generic workout category, high 4.3 risk"},
-    {"key": "paywall:ankimobile:price-ui", "date": "2026-10-31", "incumbents": ["373493387"], "reason": "only 5 low-star reviews in 90d; crowded with Anki-compatible apps (AnkiApp, Noji, RemNote)"},
-    {"key": "paywall:dropbox:over-quota-lockout", "date": "2026-10-31", "incumbents": ["327630330"], "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"},
-    {"key": "ads:quran-readers:inappropriate-ads", "date": "2026-10-31", "incumbents": ["365557665", "1164088669", "537070378", "366111277"], "reason": "~125 low-star reviews (sa, us, ae, gb, pk, my) on immodest ads while reading; killed by free ad-free Quran.com app (4.9, 33.9k), iQuran (4.8, 30.9k, no ads/no subs), Greentech Al Quran (4.8, 19.1k); 4.3 risk high"},
-    {"key": "ads:prayer-times:ads-before-adhan", "date": "2026-10-31", "incumbents": ["743843090", "388389451"], "reason": "~51 low-star reviews on ads blocking prayer times/adhan; killed by Pillars (4.8, 5.6k, free, no ads), MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), iPray ($1.99, 4.8, 9k)"},
-    {"key": "paywall:capcut:basic-features", "date": "2026-10-31", "incumbents": ["1500855883"], "reason": "VN (4.8, 323k, free, no watermark) and InShot already fill it; video editor not a 14-day build"},
-    {"key": "removed:procreate-pocket:v5-ui", "date": "2026-10-31", "incumbents": ["916366645"], "reason": "redesign backlash (~20 reviews); drawing engine not feasible in Expo/14 days"},
-    {"key": "paywall:islamic-apps:basic-worship-features", "date": "2026-10-31", "incumbents": ["743843090", "1137963102", "365557665", "537070378", "706037876", "451133186"], "reason": "14 low-star reviews, 7 apps (sa, ae, ca, us, gb, my) on paying for prayer times/adhan/reciters/widgets; killed by fully free ad-free MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), IslamApp (4.9, 6.0k), Quran.com (4.9, 33.9k), iQuran (4.8, 30.9k)"},
-    {"key": "paywall:athan-pro:lifetime-not-honored", "date": "2026-10-31", "incumbents": ["743843090", "365557665", "388389451", "451133186"], "reason": "15 reviews of lifetime/one-time buyers re-charged or unable to restore; billing dispute, and iPray ($1.99 one-time, 4.8, 9.1k) plus free apps already serve one-time buyers"},
-    {"key": "bugs:athan-pro:adhan-unreliable", "date": "2026-10-31", "incumbents": ["743843090", "388389451", "374050672"], "reason": "~13-16 reviews of missed adhan/wrong times since Athan Pro 9.0 + iOS 27 (Sept 2026); incumbent regression, and MAWAQIT, Pray Watch, iPray already reliable"},
-    {"key": "removed:quran-readers:bookmarks-tafsir", "date": "2026-10-31", "incumbents": ["365557665", "366111277", "537070378", "706037876"], "reason": "10 reviews (lost bookmarks/position, Quran Pro 6 redesign, Ayah removed Ibn Kathir/Sa'di tafsir); Quran.com and iQuran already do this free; tafsir is licensed"},
-    {"key": "paywall:picsart:save-gate", "date": "2026-11-01", "incumbents": ["587366035"], "reason": "~9 low-star reviews, one storefront (in), on basic edits paywalled at save time; fails Gate A; Snapseed free/ad-free already covers it; full photo editor not a 14-day build"},
-    {"key": "paywall:scrl:free-carousel-limits", "date": "2026-11-01", "incumbents": ["1289057196", "1460724055", "1592547810", "6752507767"], "reason": "~15 relevant reviews, still one app (targeted rescan of SCRL + 9 carousel competitors 2026-11-01 got 0 reviews); SwipeMix (4.8, 6k) already sells one-time packs, Seam is free/ad-supported, ~10 other splitters (Panoslice, SWVY, Crsel, FlowGrid, Unfurl, InstaSlide); the 'needs IG professional account' pain disappears with any save-to-camera-roll splitter; high 4.3 risk"},
-    {"key": "ads:fontmaker:handwriting-font", "date": "2026-11-01", "incumbents": ["1573791613"], "reason": "43 low-star reviews (us, gb, hr, rs) on an ad every 2-3 letters and $15/week to use your handwriting font; fails Gate B: iOS keyboards can only insert Unicode text, so a custom font can't be typed into Messages/WhatsApp (reviewers say Fontmaker's doesn't work either); mostly young users"},
-    {"key": "paywall:bible-path:verse-widget", "date": "2026-11-01", "incumbents": ["6504798650"], "reason": "9 reviews on $9.99/week for a Bible + widget; YouVersion Bible (4.9, 178k, free) and many free KJV/verse-of-the-day apps already do it"},
-    {"key": "missing:paprika:social-recipe-import", "date": "2026-11-01", "incumbents": ["1303222868"], "reason": "7 reviews (us) wanting Instagram/Facebook import and photo-of-handwritten-recipe; ReciMe (4.8, 324k) already does social import and scanning; fails Gate A"},
-    {"key": "paywall:ar-tracing:weekly-sub", "date": "2026-11-01", "incumbents": ["6450824634", "6451083449"], "reason": "tracing-projector apps are a clone category (dozens of AR tracing apps, mostly weekly subs) and free ones exist; a cheaper copy is a 4.3 risk; targeted scan returned no reviews"},
-    {"key": "paywall:celebs:lookalike", "date": "2026-11-01", "incumbents": ["1488127870"], "reason": "83 low-star reviews on a paywalled result after the photo; needs face matching against celebrity images (AI + image rights); fails Gate B"},
-    {"key": "dark-patterns:cleaner-kit:forced-rating", "date": "2026-11-01", "incumbents": ["1194582243"], "reason": "18 reviews on forced rating prompts, manual one-by-one cleaning and trial charges; photo-cleaner category is crowded (Cleanup 750k ratings) and the pain is dark patterns, not a missing workflow"},
-    {"key": "regressed:autosleep:watch-tracking", "date": "2026-11-01", "incumbents": ["1164801111"], "reason": "32 reviews (us, de, au) on tracking gaps since iOS 27 and dropped old watches; watchOS + deep HealthKit, fails Gate B"},
-    {"key": "bugs:alarmy:battery-drain", "date": "2026-11-01", "incumbents": ["1163786766"], "reason": "18 reviews (gb) on battery drain since v26.41 plus price; a recent regression, and reliable alarms need native AlarmKit work, fails Gate B"},
-    {"key": "paywall:vsco:free-tools-locked", "date": "2026-11-01", "incumbents": ["588013838", "6457366208"], "reason": "Gate A passes across 2 apps: VSCO ~13 reviews (us, gb, ar) on free tools moved to Pro, plus Esti ~12 (us) on 'pay for everything' and AI-filter credits. Killed by Dazz Cam (4.8, 103k ratings, film looks with a $19.99 one-time Pro) and Snapseed (free, no account); VSCO's paywall moves date back to 2022; crowded filter category, 4.3 risk"},
-    {"key": "paywall:package-tracker:pay-to-track", "date": "2026-11-01", "incumbents": ["6447516226"], "reason": "17 low-star reviews in 90d (gb only) from shoppers sent by merchants to an app charging £10/week to track one parcel; AfterShip (4.7, 333k, free tracking) and 17TRACK already do it free, and carrier data needs a paid tracking API (fails Gate B)"},
-    {"key": "paywall:yarnpal:ai-patterns", "date": "2026-11-02", "incumbents": ["6738537088"], "reason": "72 low-star reviews in 90d (us, gb) about AI-made, inaccurate patterns and nearly every pattern being Pro-only; the fix is a pattern library (content you can't license or produce in 14 days, fails Gate B), and Ravelry/YouTube already give free patterns"},
-    {"key": "fleeceware:authenticator:weekly-sub", "date": "2026-11-02", "incumbents": ["6754900760", "1538761576"], "reason": "50 + 20 low-star reviews (us, gb) from people sent to look-alike authenticator apps charging $9.99/week; free Google/Microsoft Authenticator and the built-in iOS Passwords codes already do it, so there is no gap to build into"},
-    {"key": "paywall:recime:forced-trial", "date": "2026-11-02", "incumbents": ["1593779280"], "reason": "143 low-star reviews in 90d (gb, us, ca, au), ~50 about being forced into a trial of a 'free' recipe saver; killed by a crowded field: Mela+ ($6.99 one-time) reads Instagram/TikTok/YouTube descriptions, Recipe Keeper ($19.99 one-time), Paprika ($4.99), plus free tiers of Peel, Recipe Notes, Flavorish; video import needs AI; high 4.3 risk"},
-    {"key": "abandoned:voice-recorder:trim-save", "date": "2026-11-02", "incumbents": ["685310398"], "reason": "76 low-star reviews in 90d (us, gb); no update since 2025-07 and trimmed recordings can't be saved for ~a year; Apple Voice Memos is free and built in, with trimming and transcription"},
-    {"key": "regressed:storm-radar:free-tier", "date": "2026-11-02", "incumbents": ["1216396545"], "reason": "45 low-star reviews in 90d (us) about the free tier losing radar and storm tracks after the 2026 redesign; free radar is already in Apple Weather and MyRadar, and radar data beyond US NEXRAD needs licensing"},
-    {"key": "paywall:islamic-apps:survey-onboarding", "date": "2026-11-02", "incumbents": ["1559086853", "6760214927"], "reason": "33 low-star reviews in 90d across Pillars (14; us, gb, ae) and Niyat (19; us, au, ca) about a long unskippable onboarding survey ending in a paywall before basic prayer/Quran features; same kill as paywall:islamic-apps:basic-worship-features: MAWAQIT, Quran.com, Pray Watch and IslamApp are free and ad-free with no survey"},
-    {"key": "paywall:evernote:price-hike", "date": "2026-11-02", "incumbents": ["281796108"], "reason": "110 low-star reviews in 90d (us) about the price going from ~$99 to ~$250/yr and the free tier shrinking; notes apps are a crowded category (Apple Notes free, UpNote lifetime, Obsidian, Bear), so a cheaper notes app is a 4.3 risk with no clear gap"},
-    {"key": "paywall:earthquake:push-alerts", "date": "2026-11-02", "incumbents": ["632040358"], "reason": "14 low-star reviews in 90d (us, gb; several in Spanish) about push alerts being Pro-only and arriving late; under Gate A volume, and free MyShake, LastQuake (EMSC) and Earthquake Network already send alerts; real early warning needs a sensor network"},
-    {"key": "paywall:stronglifts:lifetime-revoked", "date": "2026-11-02", "incumbents": ["488580022"], "reason": "91 low-star reviews in 90d (us 77, gb 14) since StrongLifts went subscription-only (free tier and lifetime Power Pack dropped, $59.99/yr), plus a disliked 4.4 watch/UI redesign; the strongest pain of the day, but killed: Lift5x5 (free core 5x5 with auto-progression, imports StrongLifts CSV, lifetime option), 5x5 Workout Lifting Tracker ($9.99 one-time, watch), 5x5 Workout by Zen Labs (4.7, 1.6k, $8.99 Pro) and other 2025-26 clones already do it, so another 'same but one-time' 5x5 app is a 4.3 risk; watch logging (much loved) is out of Expo scope"},
-    {"key": "paywall:workout-loggers:forced-sub", "date": "2026-11-02", "incumbents": ["6448081563", "1041517543", "1048454034"], "reason": "Liftoff (39), Fitbod (36), Gymverse (20) low-star reviews in 90d (us, gb) about being forced into a subscription after onboarding; Hevy (4.9, 101k ratings) logs unlimited workouts free, so a generic logger has no gap"},
-    {"key": "ads:podcast-app:fullscreen-ads", "date": "2026-11-02", "incumbents": ["1199070742"], "reason": "30 low-star reviews in 90d (us, gb) about unskippable full-screen ads; Apple Podcasts is free and built in, and Pocket Casts/Overcast have free ad-light tiers"},
-    {"key": "removed:soundtouch:presets-radio", "date": "2026-11-03", "incumbents": ["708379313"], "reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test"},
-    {"key": "paywall:bettersleep:free-mixes", "date": "2026-11-03", "incumbents": ["314498713"], "reason": "75 low-star reviews in 90d (us 68, gb 7) from long-time users losing free sounds and mixes to a ~$70/yr subscription; White Noise is $0.99 one-time (⋆4.8, 46k), iOS Background Sounds are free and built in, and sound mixers are a crowded category"},
-    {"key": "ads:unit-converter:ads-over-keypad", "date": "2026-11-03", "incumbents": ["623691968"], "reason": "46 stored low-star reviews, ~35 in 90d (us, gb), on ads covering the keypad and $24.99/yr; a template category with a high 4.3 risk, and the iOS Calculator has converted units since iOS 18"},
-    {"key": "ads:dc-metro:ad-walls", "date": "2026-11-03", "incumbents": ["578496721"], "reason": "~30 low-star reviews in 90d (us) on unskippable ads in DC Metro and Bus; one-city audience, and Citymapper, Transit and Apple Maps cover DC for free"},
-    {"key": "abandoned:study-bunny:ads", "date": "2026-11-03", "incumbents": ["1478345385"], "reason": "22 low-star reviews in 90d (gb 16, us 6) on ads after every tap in a cute study timer; focus timers are a crowded template category (Forest, Flora, Focus Friend), and the audience is students who rarely pay"},
-    {"key": "discovery:round1-batch-2026-11-03", "date": "2026-11-03", "incumbents": ["1103318574", "493763132", "1191605967", "336456412", "1293175325", "1434023161", "1134998522"], "reason": "targeted scan: PetrolPrices (7 low-star), Lanetalk (10), Rec-all (0), Hours Tracker (4), Melodista (0) had no recurring pain; Musicana (19) is an abandoned streaming player whose songs stopped playing (grey-area content); Fitbit to Apple Health Sync (35) is mostly Google Health migration anger aimed at the wrong app"},
-    {"key": "discovery:unscanned-focused-tools", "date": "2026-11-03", "incumbents": ["1469553582", "604836034", "1658514439", "1240871878", "1114387800"], "reason": "round 2 scan: Forma 6, Speed Tracker 2, Clay 1, Fitness App 1, PDF Scanner Pro 0 low-star in 90d; nothing recurring"}
+    {
+      "key": "trial-trap:many:trial-reminder-app",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1455009060",
+        "1636235979",
+        "6670430706",
+        "416048305"
+      ],
+      "reason": "fix already crowded (TrialGuard, Trial Alert, TrialHero, Bobby, ReSubs); no subscription API on iOS; finance-adjacent; 4.3 risk high"
+    },
+    {
+      "key": "ads:shareit:ad-free-transfer",
+      "date": "2026-10-31",
+      "incumbents": [
+        "725215120"
+      ],
+      "reason": "LocalSend already free, open-source, ad-free"
+    },
+    {
+      "key": "ads:remini:ad-gated-enhance",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1470373330"
+      ],
+      "reason": "AI inference cost drives the ads; fails Gate B economics; evidence mostly one storefront"
+    },
+    {
+      "key": "removed:photoroom:bg-colors",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1455009060"
+      ],
+      "reason": "background removal built into iOS; rest is billing disputes"
+    },
+    {
+      "key": "paywall:truecaller:caller-id",
+      "date": "2026-10-31",
+      "incumbents": [
+        "448142450"
+      ],
+      "reason": "needs caller/spam database and Call Directory extension"
+    },
+    {
+      "key": "paywall:dating:likes-paywall",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1282966364",
+        "1498407272",
+        "595287172",
+        "338701294",
+        "690661663"
+      ],
+      "reason": "two-sided dating marketplace; fails Gate B"
+    },
+    {
+      "key": "paywall:drama-shorts:coins",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1636235979",
+        "6445905219",
+        "6670430706",
+        "6768593043"
+      ],
+      "reason": "licensed content; fails Gate B"
+    },
+    {
+      "key": "abandoned:fitness-buddy:paid-workout",
+      "date": "2026-10-31",
+      "incumbents": [
+        "443646748"
+      ],
+      "reason": "review scan found no recent complaints; paid charts only in tiny storefronts; generic workout category, high 4.3 risk"
+    },
+    {
+      "key": "paywall:ankimobile:price-ui",
+      "date": "2026-10-31",
+      "incumbents": [
+        "373493387"
+      ],
+      "reason": "only 5 low-star reviews in 90d; crowded with Anki-compatible apps (AnkiApp, Noji, RemNote)"
+    },
+    {
+      "key": "paywall:dropbox:over-quota-lockout",
+      "date": "2026-10-31",
+      "incumbents": [
+        "327630330"
+      ],
+      "reason": "dropbox.com web already lets over-quota users get files out; API-dependent one-off export, no recurring value"
+    },
+    {
+      "key": "ads:quran-readers:inappropriate-ads",
+      "date": "2026-10-31",
+      "incumbents": [
+        "365557665",
+        "1164088669",
+        "537070378",
+        "366111277"
+      ],
+      "reason": "~125 low-star reviews (sa, us, ae, gb, pk, my) on immodest ads while reading; killed by free ad-free Quran.com app (4.9, 33.9k), iQuran (4.8, 30.9k, no ads/no subs), Greentech Al Quran (4.8, 19.1k); 4.3 risk high"
+    },
+    {
+      "key": "ads:prayer-times:ads-before-adhan",
+      "date": "2026-10-31",
+      "incumbents": [
+        "743843090",
+        "388389451"
+      ],
+      "reason": "~51 low-star reviews on ads blocking prayer times/adhan; killed by Pillars (4.8, 5.6k, free, no ads), MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), iPray ($1.99, 4.8, 9k)"
+    },
+    {
+      "key": "paywall:capcut:basic-features",
+      "date": "2026-10-31",
+      "incumbents": [
+        "1500855883"
+      ],
+      "reason": "VN (4.8, 323k, free, no watermark) and InShot already fill it; video editor not a 14-day build"
+    },
+    {
+      "key": "removed:procreate-pocket:v5-ui",
+      "date": "2026-10-31",
+      "incumbents": [
+        "916366645"
+      ],
+      "reason": "redesign backlash (~20 reviews); drawing engine not feasible in Expo/14 days"
+    },
+    {
+      "key": "paywall:islamic-apps:basic-worship-features",
+      "date": "2026-10-31",
+      "incumbents": [
+        "743843090",
+        "1137963102",
+        "365557665",
+        "537070378",
+        "706037876",
+        "451133186"
+      ],
+      "reason": "14 low-star reviews, 7 apps (sa, ae, ca, us, gb, my) on paying for prayer times/adhan/reciters/widgets; killed by fully free ad-free MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), IslamApp (4.9, 6.0k), Quran.com (4.9, 33.9k), iQuran (4.8, 30.9k)"
+    },
+    {
+      "key": "paywall:athan-pro:lifetime-not-honored",
+      "date": "2026-10-31",
+      "incumbents": [
+        "743843090",
+        "365557665",
+        "388389451",
+        "451133186"
+      ],
+      "reason": "15 reviews of lifetime/one-time buyers re-charged or unable to restore; billing dispute, and iPray ($1.99 one-time, 4.8, 9.1k) plus free apps already serve one-time buyers"
+    },
+    {
+      "key": "bugs:athan-pro:adhan-unreliable",
+      "date": "2026-10-31",
+      "incumbents": [
+        "743843090",
+        "388389451",
+        "374050672"
+      ],
+      "reason": "~13-16 reviews of missed adhan/wrong times since Athan Pro 9.0 + iOS 27 (Sept 2026); incumbent regression, and MAWAQIT, Pray Watch, iPray already reliable"
+    },
+    {
+      "key": "removed:quran-readers:bookmarks-tafsir",
+      "date": "2026-10-31",
+      "incumbents": [
+        "365557665",
+        "366111277",
+        "537070378",
+        "706037876"
+      ],
+      "reason": "10 reviews (lost bookmarks/position, Quran Pro 6 redesign, Ayah removed Ibn Kathir/Sa'di tafsir); Quran.com and iQuran already do this free; tafsir is licensed"
+    },
+    {
+      "key": "paywall:picsart:save-gate",
+      "date": "2026-11-01",
+      "incumbents": [
+        "587366035"
+      ],
+      "reason": "~9 low-star reviews, one storefront (in), on basic edits paywalled at save time; fails Gate A; Snapseed free/ad-free already covers it; full photo editor not a 14-day build"
+    },
+    {
+      "key": "paywall:scrl:free-carousel-limits",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1289057196",
+        "1460724055",
+        "1592547810",
+        "6752507767"
+      ],
+      "reason": "~15 relevant reviews, still one app (targeted rescan of SCRL + 9 carousel competitors 2026-11-01 got 0 reviews); SwipeMix (4.8, 6k) already sells one-time packs, Seam is free/ad-supported, ~10 other splitters (Panoslice, SWVY, Crsel, FlowGrid, Unfurl, InstaSlide); the 'needs IG professional account' pain disappears with any save-to-camera-roll splitter; high 4.3 risk"
+    },
+    {
+      "key": "ads:fontmaker:handwriting-font",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1573791613"
+      ],
+      "reason": "43 low-star reviews (us, gb, hr, rs) on an ad every 2-3 letters and $15/week to use your handwriting font; fails Gate B: iOS keyboards can only insert Unicode text, so a custom font can't be typed into Messages/WhatsApp (reviewers say Fontmaker's doesn't work either); mostly young users"
+    },
+    {
+      "key": "paywall:bible-path:verse-widget",
+      "date": "2026-11-01",
+      "incumbents": [
+        "6504798650"
+      ],
+      "reason": "9 reviews on $9.99/week for a Bible + widget; YouVersion Bible (4.9, 178k, free) and many free KJV/verse-of-the-day apps already do it"
+    },
+    {
+      "key": "missing:paprika:social-recipe-import",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1303222868"
+      ],
+      "reason": "7 reviews (us) wanting Instagram/Facebook import and photo-of-handwritten-recipe; ReciMe (4.8, 324k) already does social import and scanning; fails Gate A"
+    },
+    {
+      "key": "paywall:ar-tracing:weekly-sub",
+      "date": "2026-11-01",
+      "incumbents": [
+        "6450824634",
+        "6451083449"
+      ],
+      "reason": "tracing-projector apps are a clone category (dozens of AR tracing apps, mostly weekly subs) and free ones exist; a cheaper copy is a 4.3 risk; targeted scan returned no reviews"
+    },
+    {
+      "key": "paywall:celebs:lookalike",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1488127870"
+      ],
+      "reason": "83 low-star reviews on a paywalled result after the photo; needs face matching against celebrity images (AI + image rights); fails Gate B"
+    },
+    {
+      "key": "dark-patterns:cleaner-kit:forced-rating",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1194582243"
+      ],
+      "reason": "18 reviews on forced rating prompts, manual one-by-one cleaning and trial charges; photo-cleaner category is crowded (Cleanup 750k ratings) and the pain is dark patterns, not a missing workflow"
+    },
+    {
+      "key": "regressed:autosleep:watch-tracking",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1164801111"
+      ],
+      "reason": "32 reviews (us, de, au) on tracking gaps since iOS 27 and dropped old watches; watchOS + deep HealthKit, fails Gate B"
+    },
+    {
+      "key": "bugs:alarmy:battery-drain",
+      "date": "2026-11-01",
+      "incumbents": [
+        "1163786766"
+      ],
+      "reason": "18 reviews (gb) on battery drain since v26.41 plus price; a recent regression, and reliable alarms need native AlarmKit work, fails Gate B"
+    },
+    {
+      "key": "paywall:vsco:free-tools-locked",
+      "date": "2026-11-01",
+      "incumbents": [
+        "588013838",
+        "6457366208"
+      ],
+      "reason": "Gate A passes across 2 apps: VSCO ~13 reviews (us, gb, ar) on free tools moved to Pro, plus Esti ~12 (us) on 'pay for everything' and AI-filter credits. Killed by Dazz Cam (4.8, 103k ratings, film looks with a $19.99 one-time Pro) and Snapseed (free, no account); VSCO's paywall moves date back to 2022; crowded filter category, 4.3 risk"
+    },
+    {
+      "key": "paywall:package-tracker:pay-to-track",
+      "date": "2026-11-01",
+      "incumbents": [
+        "6447516226"
+      ],
+      "reason": "17 low-star reviews in 90d (gb only) from shoppers sent by merchants to an app charging £10/week to track one parcel; AfterShip (4.7, 333k, free tracking) and 17TRACK already do it free, and carrier data needs a paid tracking API (fails Gate B)"
+    },
+    {
+      "key": "paywall:yarnpal:ai-patterns",
+      "date": "2026-11-02",
+      "incumbents": [
+        "6738537088"
+      ],
+      "reason": "72 low-star reviews in 90d (us, gb) about AI-made, inaccurate patterns and nearly every pattern being Pro-only; the fix is a pattern library (content you can't license or produce in 14 days, fails Gate B), and Ravelry/YouTube already give free patterns"
+    },
+    {
+      "key": "fleeceware:authenticator:weekly-sub",
+      "date": "2026-11-02",
+      "incumbents": [
+        "6754900760",
+        "1538761576"
+      ],
+      "reason": "50 + 20 low-star reviews (us, gb) from people sent to look-alike authenticator apps charging $9.99/week; free Google/Microsoft Authenticator and the built-in iOS Passwords codes already do it, so there is no gap to build into"
+    },
+    {
+      "key": "paywall:recime:forced-trial",
+      "date": "2026-11-02",
+      "incumbents": [
+        "1593779280"
+      ],
+      "reason": "143 low-star reviews in 90d (gb, us, ca, au), ~50 about being forced into a trial of a 'free' recipe saver; killed by a crowded field: Mela+ ($6.99 one-time) reads Instagram/TikTok/YouTube descriptions, Recipe Keeper ($19.99 one-time), Paprika ($4.99), plus free tiers of Peel, Recipe Notes, Flavorish; video import needs AI; high 4.3 risk"
+    },
+    {
+      "key": "abandoned:voice-recorder:trim-save",
+      "date": "2026-11-02",
+      "incumbents": [
+        "685310398"
+      ],
+      "reason": "76 low-star reviews in 90d (us, gb); no update since 2025-07 and trimmed recordings can't be saved for ~a year; Apple Voice Memos is free and built in, with trimming and transcription"
+    },
+    {
+      "key": "regressed:storm-radar:free-tier",
+      "date": "2026-11-02",
+      "incumbents": [
+        "1216396545"
+      ],
+      "reason": "45 low-star reviews in 90d (us) about the free tier losing radar and storm tracks after the 2026 redesign; free radar is already in Apple Weather and MyRadar, and radar data beyond US NEXRAD needs licensing"
+    },
+    {
+      "key": "paywall:islamic-apps:survey-onboarding",
+      "date": "2026-11-02",
+      "incumbents": [
+        "1559086853",
+        "6760214927"
+      ],
+      "reason": "33 low-star reviews in 90d across Pillars (14; us, gb, ae) and Niyat (19; us, au, ca) about a long unskippable onboarding survey ending in a paywall before basic prayer/Quran features; same kill as paywall:islamic-apps:basic-worship-features: MAWAQIT, Quran.com, Pray Watch and IslamApp are free and ad-free with no survey"
+    },
+    {
+      "key": "paywall:evernote:price-hike",
+      "date": "2026-11-02",
+      "incumbents": [
+        "281796108"
+      ],
+      "reason": "110 low-star reviews in 90d (us) about the price going from ~$99 to ~$250/yr and the free tier shrinking; notes apps are a crowded category (Apple Notes free, UpNote lifetime, Obsidian, Bear), so a cheaper notes app is a 4.3 risk with no clear gap"
+    },
+    {
+      "key": "paywall:earthquake:push-alerts",
+      "date": "2026-11-02",
+      "incumbents": [
+        "632040358"
+      ],
+      "reason": "14 low-star reviews in 90d (us, gb; several in Spanish) about push alerts being Pro-only and arriving late; under Gate A volume, and free MyShake, LastQuake (EMSC) and Earthquake Network already send alerts; real early warning needs a sensor network"
+    },
+    {
+      "key": "paywall:stronglifts:lifetime-revoked",
+      "date": "2026-11-02",
+      "incumbents": [
+        "488580022"
+      ],
+      "reason": "91 low-star reviews in 90d (us 77, gb 14) since StrongLifts went subscription-only (free tier and lifetime Power Pack dropped, $59.99/yr), plus a disliked 4.4 watch/UI redesign; the strongest pain of the day, but killed: Lift5x5 (free core 5x5 with auto-progression, imports StrongLifts CSV, lifetime option), 5x5 Workout Lifting Tracker ($9.99 one-time, watch), 5x5 Workout by Zen Labs (4.7, 1.6k, $8.99 Pro) and other 2025-26 clones already do it, so another 'same but one-time' 5x5 app is a 4.3 risk; watch logging (much loved) is out of Expo scope"
+    },
+    {
+      "key": "paywall:workout-loggers:forced-sub",
+      "date": "2026-11-02",
+      "incumbents": [
+        "6448081563",
+        "1041517543",
+        "1048454034"
+      ],
+      "reason": "Liftoff (39), Fitbod (36), Gymverse (20) low-star reviews in 90d (us, gb) about being forced into a subscription after onboarding; Hevy (4.9, 101k ratings) logs unlimited workouts free, so a generic logger has no gap"
+    },
+    {
+      "key": "ads:podcast-app:fullscreen-ads",
+      "date": "2026-11-02",
+      "incumbents": [
+        "1199070742"
+      ],
+      "reason": "30 low-star reviews in 90d (us, gb) about unskippable full-screen ads; Apple Podcasts is free and built in, and Pocket Casts/Overcast have free ad-light tiers"
+    },
+    {
+      "key": "removed:soundtouch:presets-radio",
+      "date": "2026-11-03",
+      "incumbents": [
+        "708379313"
+      ],
+      "reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test"
+    },
+    {
+      "key": "paywall:bettersleep:free-mixes",
+      "date": "2026-11-03",
+      "incumbents": [
+        "314498713"
+      ],
+      "reason": "75 low-star reviews in 90d (us 68, gb 7) from long-time users losing free sounds and mixes to a ~$70/yr subscription; White Noise is $0.99 one-time (⋆4.8, 46k), iOS Background Sounds are free and built in, and sound mixers are a crowded category"
+    },
+    {
+      "key": "ads:unit-converter:ads-over-keypad",
+      "date": "2026-11-03",
+      "incumbents": [
+        "623691968"
+      ],
+      "reason": "46 stored low-star reviews, ~35 in 90d (us, gb), on ads covering the keypad and $24.99/yr; a template category with a high 4.3 risk, and the iOS Calculator has converted units since iOS 18"
+    },
+    {
+      "key": "ads:dc-metro:ad-walls",
+      "date": "2026-11-03",
+      "incumbents": [
+        "578496721"
+      ],
+      "reason": "~30 low-star reviews in 90d (us) on unskippable ads in DC Metro and Bus; one-city audience, and Citymapper, Transit and Apple Maps cover DC for free"
+    },
+    {
+      "key": "abandoned:study-bunny:ads",
+      "date": "2026-11-03",
+      "incumbents": [
+        "1478345385"
+      ],
+      "reason": "22 low-star reviews in 90d (gb 16, us 6) on ads after every tap in a cute study timer; focus timers are a crowded template category (Forest, Flora, Focus Friend), and the audience is students who rarely pay"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-03",
+      "date": "2026-11-03",
+      "incumbents": [
+        "1103318574",
+        "493763132",
+        "1191605967",
+        "336456412",
+        "1293175325",
+        "1434023161",
+        "1134998522"
+      ],
+      "reason": "targeted scan: PetrolPrices (7 low-star), Lanetalk (10), Rec-all (0), Hours Tracker (4), Melodista (0) had no recurring pain; Musicana (19) is an abandoned streaming player whose songs stopped playing (grey-area content); Fitbit to Apple Health Sync (35) is mostly Google Health migration anger aimed at the wrong app"
+    },
+    {
+      "key": "discovery:unscanned-focused-tools",
+      "date": "2026-11-03",
+      "incumbents": [
+        "1469553582",
+        "604836034",
+        "1658514439",
+        "1240871878",
+        "1114387800"
+      ],
+      "reason": "round 2 scan: Forma 6, Speed Tracker 2, Clay 1, Fitness App 1, PDF Scanner Pro 0 low-star in 90d; nothing recurring"
+    },
+    {
+      "key": "paywall:avenza:custom-map-import",
+      "date": "2026-11-04",
+      "incumbents": [
+        "388424049"
+      ],
+      "reason": "Avenza Maps (128k ratings): ~70 low-star reviews since May 2026, 23 in 90d, us only, after the Blue Marble merger put custom GeoPDF import behind $35-50/yr Plus (20 imports) and ~$170 Pro and froze the map store. Strong pain but killed: Topo Maps+ (4.7, 9.4k ratings) lets free users import up to 10 GeoPDFs; ArcGIS Field Maps (free, no sign-in, GeoPDF since 2026-03) is what wildfire incident pages now point to; MapNero has no import limit even free; ArkenMap $3.99 one-time; NomadTracks free; plus MapCheck, Mapio, FO Maps"
+    },
+    {
+      "key": "paywall:hurricane-tracker:forced-sub",
+      "date": "2026-11-04",
+      "incumbents": [
+        "327193945"
+      ],
+      "reason": "Hurricane Tracker (45k ratings): 68 low-star reviews since July 2026 (28 in October, us) after a sale, redesign and forced subscription, one-time buyers locked out; NHC data is public, but National Hurricane Center Data (4.8, 76k, free) and My Hurricane Tracker Pro (4.8, 5.8k, $3.99 one-time) already fill it"
+    },
+    {
+      "key": "paywall:wonder-weeks:lifetime-revoked",
+      "date": "2026-11-04",
+      "incumbents": [
+        "529815782"
+      ],
+      "reason": "The Wonder Weeks (122k ratings): 25 low-star in 90d (us, gb), ~10 in the days after v14.0 (2026-10-28) moved one-time buyers to $5/month; the leap framework is the publisher's proprietary content, reviewers also call it inaccurate, and clones already exist (Baby Leaps $6.99/yr, LittleLeaps, Baby Tracker: Leaps & Weeks); fails Gate B on content rights"
+    },
+    {
+      "key": "removed:photo-widget:watermark",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1074246199"
+      ],
+      "reason": "Photo Widget. (2.5k ratings): 49 low-star in 90d (us, gb) on a new watermark, ads and ~$12/yr to remove it; the widget is the whole product, so native extension work is the core and fails Gate B; Widgetsmith-style and lifetime photo widget apps already exist"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-04",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1481006495",
+        "506512797",
+        "1141755970",
+        "650377962",
+        "993160329",
+        "288419283",
+        "1482562954",
+        "327370808"
+      ],
+      "reason": "round 1 scan: Countdown App (28; a horror-film novelty, not a tool), Bible Gateway (22; ads, YouVersion free), Magic Poser (43; 3D posing engine), VLC (37; bugs), Airmail (34; mail client), RadarScope (15), Photo Recovery (57; trial traps), Planning Center (12; a church's own system); nothing small and recurring"
+    }
   ]
 }
