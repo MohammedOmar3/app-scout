@@ -2,6 +2,25 @@
   "updated": "2026-11-04",
   "open_targets": [
     {
+      "key": "abandoned:fuelly:fuel-service-log",
+      "incumbents": [
+        "295905460",
+        "298398207",
+        "1206041425",
+        "1487753318"
+      ],
+      "terms": [
+        "fuel log",
+        "gas mileage",
+        "car maintenance log"
+      ],
+      "why": "Fuelly (4.7, ~30k ratings) hasn't been updated since 2024-06-03; its forum has threads titled 'Fuelly gone - what to use next', 'Goodbye Fuelly - Tired of the lack of support', 'Is Fuelly no longer supported?' and 'Is Fuelly no longer being updated?'",
+      "evidence": "Web only, 2026-11-04. App Store page shows login failures, a 'hasn't been updated' review and broken reminders. Forum pages wouldn't load (titles from search only). Field looks thin: Road Trip MPG ($6.99 one-time, 4.9, 629 ratings), Drivvo (4.8, 95 in gb), Fuelio (4.5, 171, $17.99/yr), Fuel Monitor Pro ($1.99, 790), My Car (1.1k), Odobook (web, $9.99 one-time, imports Fuelly CSV), RevLog; CARFAX Car Care not checked. Not in candidates.json, so no store reviews yet",
+      "missing": "everything for Gate A: a targeted scan of 295905460 and competitors (no run left on 2026-11-04). Needs ≥15 relevant low-star in 90d, or ≥8 across 2 apps, plus a storefront count; the kill check on CARFAX Car Care and Drivvo's US rating count; a differentiator past 'same log, no account'. Reject quickly if recent reviews are few, since the app still works",
+      "rounds": 1,
+      "last_round": "2026-11-04"
+    },
+    {
       "key": "removed:drink-logs:private-journal",
       "incumbents": [
         "449141888",

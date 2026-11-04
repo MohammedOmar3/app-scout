@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-03 — 1 idea: [Fifty Hours (working name)](briefs/2026-11-03-fifty-hours.md), a no-login teen driving log — [report](reports/2026-11-03.md)
+**Latest:** 2026-11-04 — no ideas today after 4 hunt rounds; Withings' Apple Health paywall was the strongest pain, but the same rule closes the API — [report](reports/2026-11-04.md)
 
 ## How it works
 

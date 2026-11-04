@@ -485,7 +485,7 @@
       "incumbents": [
         "327193945"
       ],
-      "reason": "Hurricane Tracker (45k ratings): 68 low-star reviews since July 2026 (28 in October, us) after a sale, redesign and forced subscription, one-time buyers locked out; NHC data is public, but National Hurricane Center Data (4.8, 76k, free) and My Hurricane Tracker Pro (4.8, 5.8k, $3.99 one-time) already fill it"
+      "reason": "Hurricane Tracker (45k ratings): 68 low-star reviews since July 2026 (28 in October, us) after a redesign and forced subscription, one-time buyers locked out; NHC data is public, but National Hurricane Center Data (4.8, 76k, free) and My Hurricane Tracker Pro (4.8, 5.8k, $3.99 one-time) already fill it"
     },
     {
       "key": "paywall:wonder-weeks:lifetime-revoked",
@@ -501,7 +501,7 @@
       "incumbents": [
         "1074246199"
       ],
-      "reason": "Photo Widget. (2.5k ratings): 49 low-star in 90d (us, gb) on a new watermark, ads and ~$12/yr to remove it; the widget is the whole product, so native extension work is the core and fails Gate B; Widgetsmith-style and lifetime photo widget apps already exist"
+      "reason": "Photo Widget. (2.5k ratings): 49 low-star in 90d (us, gb) on a new watermark, ads and ~$12/yr to remove it; the widget is the whole product, so native extension work is the core and fails Gate B; a reviewer already moved to a $9.99 lifetime photo widget app"
     },
     {
       "key": "discovery:round1-batch-2026-11-04",
@@ -525,7 +525,7 @@
         "1279716547",
         "475816966"
       ],
-      "reason": "Timer Plus (61k ratings): 131 low-star reviews in the last 30 days (us 86, gb 51 stored), nearly all since 2026-10-28, when a free interval timer put a hard paywall (~$20) in front of Start and the paid build then crashed on launch on iOS 27; Seconds (24k) got 31 in 90d after its v26 redesign. Biggest surge of the day, but killed: Tabata Timer and HIIT Timer (4.8, 73.7k, free), SmartWOD Timer (4.9, 54k, free), Tabata Timer: Interval Timer (4.9, 9.5k, free), Seconds Pro ($7.99 one-time, 4.8, 12k), plus a wave of 2026 free timers (IntervalFree, PureTimer, GymPulseTimer, Gym Timer); template category with high 4.3 risk"
+      "reason": "Timer Plus (61k ratings): 131 low-star reviews in the last 30 days (us 86, gb 51 stored), nearly all since 2026-10-28, when a free interval timer put a hard paywall (~$20) in front of Start and the paid build then crashed on launch on iOS 27; Seconds (24k) got 31 in 90d after its v26 redesign. Biggest paywall surge of the day, but killed: Seconds Pro ($7.99 one-time, 4.8, 12k), Tabata Timer and HIIT Timer (4.8, 73.7k, free to download), SmartWOD Timer (4.9, 54k, free to download), Tabata Timer: Interval Timer (4.9, 9.5k, free to download), plus a wave of new 2026 timers; template category with high 4.3 risk"
     },
     {
       "key": "ads:alarm-clock-hd:unskippable",
@@ -559,7 +559,7 @@
         "987986743",
         "370820516"
       ],
-      "reason": "round 2 vertical scan: Fabulous (138; billing disputes), RV LIFE (55; routing data), TimeTree (36; mostly a jp update), Songsterr (26) and Oxford Dictionary (24; licensed content), Ride with GPS (21), iCollect (20; ~$100 unlock, 10 relevant, one app), BIGVU (26) and PromptSmart (18; bugs), Trailforks (17), AllStays (17); nothing passed Gate A with a buildable fix. Quiet: Sortly 0, knitCompanion 0, TonalEnergy 2, Strides 2, Days Since 2, Reading List 4, LogTen 4, UDisc 5, FarOut 6"
+      "reason": "round 2 vertical scan: Fabulous (138; billing disputes), RV LIFE (55; buggy trip planner on routing data), TimeTree (36; mostly jp UI complaints), Songsterr (26) and Oxford Dictionary (24; licensed content), Ride with GPS (21), iCollect (20; ~$100 unlock, 10 relevant, one app), BIGVU (26) and PromptSmart (18; bugs), Trailforks (17), AllStays (17); nothing passed Gate A with a buildable fix. Quiet: Sortly 0, knitCompanion 0, TonalEnergy 2, Strides 2, Days Since 2, Reading List 4, LogTen 4, UDisc 5, FarOut 6"
     },
     {
       "key": "paywall:withings:apple-health-sync",
@@ -605,7 +605,7 @@
         "1507917112",
         "885367198"
       ],
-      "reason": "round 3 scan of recently updated tools: Facts (46; trial and content), Layout (37; save paywall, crowded collage category), SongShift (31; TuneMyMusic free, needs streaming APIs), Collectr (28; pricing data), Tiimo (28; review prompts), Find Air (20; device-finder fleeceware), Evermusic (16); nothing passed. Quiet: mSecure 0, Device Tracker 0, Geocaching 1, Happy Scale 1, magicplan 1, Moon Phase apps 1-2, Countdown 7, Waterllama 10"
+      "reason": "round 3 scan of recently updated tools: Facts (46; trial and content), Layout (37; save paywall, crowded collage category), SongShift (31; TuneMyMusic free, needs streaming APIs), Collectr (28; price accuracy, needs market data), Tiimo (28; review prompts), Find Air (20; $9.99/week fleeceware), Evermusic (16); nothing passed. Quiet: mSecure 0, Device Tracker 0, Geocaching 1, Happy Scale 1, magicplan 1, Moon Phase apps 1-2, Countdown 7, Waterllama 10"
     }
   ]
 }
