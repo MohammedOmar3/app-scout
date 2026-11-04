@@ -560,6 +560,52 @@
         "370820516"
       ],
       "reason": "round 2 vertical scan: Fabulous (138; billing disputes), RV LIFE (55; routing data), TimeTree (36; mostly a jp update), Songsterr (26) and Oxford Dictionary (24; licensed content), Ride with GPS (21), iCollect (20; ~$100 unlock, 10 relevant, one app), BIGVU (26) and PromptSmart (18; bugs), Trailforks (17), AllStays (17); nothing passed Gate A with a buildable fix. Quiet: Sortly 0, knitCompanion 0, TonalEnergy 2, Strides 2, Days Since 2, Reading List 4, LogTen 4, UDisc 5, FarOut 6"
+    },
+    {
+      "key": "paywall:withings:apple-health-sync",
+      "date": "2026-11-04",
+      "incumbents": [
+        "542701020"
+      ],
+      "reason": "Withings (369k ratings): 128 low-star reviews in 90d, 125 of them since 2026-10-13 (us 81, gb 56 stored), 64 naming Apple Health, after accounts created from 10-13 need Withings+ ($99.50/yr) for automatic sync. Heavy press and a 200+ comment support thread, no reversal. Fails Gate B: the same rule covers the free API plan (Partner Hub, from 10-12) and the terms bar routing data around it, so a sync bridge can't get the data; the only free route is manual CSV export, and Health CSV Importer (4.2, 292, free for weight) already takes that. Recheck if Withings reverses or Apple acts on guideline 4.10"
+    },
+    {
+      "key": "ads:swipewipe:photo-swipe",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1583884012"
+      ],
+      "reason": "Swipewipe (100k ratings): 103 low-star in 90d, 83 in the last 30 (us, gb), ads every two minutes and a paywall; Slidebox (4.8, 16.7k, free) does the same swipe-to-sort, and photo cleaners are a crowded template category with a high 4.3 risk"
+    },
+    {
+      "key": "bugs:discogs:logouts-collection",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1036449551"
+      ],
+      "reason": "Discogs (67k ratings): 31 low-star in 90d (us, gb), about 11 on forced logouts and password resets, 8 on collection sort resets, 7 on a broken video player, 3 on an upsell sheet; mostly bugs, and VinylBox ($0.99-1.99/mo, Discogs sync) and iCollect Music (4.5, 2.5k) already cover the collection"
+    },
+    {
+      "key": "paywall:touchretouch:save-gate",
+      "date": "2026-11-04",
+      "incumbents": [
+        "373311252"
+      ],
+      "reason": "TouchRetouch (58k ratings): 25 low-star in 90d (us, gb) from one-time buyers now asked for $15-30/yr to save; object removal is built into iOS Photos (Clean Up) and Snapseed is free, and inpainting isn't a 14-day build"
+    },
+    {
+      "key": "discovery:round3-batch-2026-11-04",
+      "date": "2026-11-04",
+      "incumbents": [
+        "924977069",
+        "785638228",
+        "1097974566",
+        "1603892248",
+        "1480220328",
+        "1507917112",
+        "885367198"
+      ],
+      "reason": "round 3 scan of recently updated tools: Facts (46; trial and content), Layout (37; save paywall, crowded collage category), SongShift (31; TuneMyMusic free, needs streaming APIs), Collectr (28; pricing data), Tiimo (28; review prompts), Find Air (20; device-finder fleeceware), Evermusic (16); nothing passed. Quiet: mSecure 0, Device Tracker 0, Geocaching 1, Happy Scale 1, magicplan 1, Moon Phase apps 1-2, Countdown 7, Waterllama 10"
     }
   ]
 }
