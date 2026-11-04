@@ -517,6 +517,49 @@
         "327370808"
       ],
       "reason": "round 1 scan: Countdown App (28; a horror-film novelty, not a tool), Bible Gateway (22; ads, YouVersion free), Magic Poser (43; 3D posing engine), VLC (37; bugs), Airmail (34; mail client), RadarScope (15), Photo Recovery (57; trial traps), Planning Center (12; a church's own system); nothing small and recurring"
+    },
+    {
+      "key": "paywall:timer-plus:forced-paywall",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1279716547",
+        "475816966"
+      ],
+      "reason": "Timer Plus (61k ratings): 131 low-star reviews in the last 30 days (us 86, gb 51 stored), nearly all since 2026-10-28, when a free interval timer put a hard paywall (~$20) in front of Start and the paid build then crashed on launch on iOS 27; Seconds (24k) got 31 in 90d after its v26 redesign. Biggest surge of the day, but killed: Tabata Timer and HIIT Timer (4.8, 73.7k, free), SmartWOD Timer (4.9, 54k, free), Tabata Timer: Interval Timer (4.9, 9.5k, free), Seconds Pro ($7.99 one-time, 4.8, 12k), plus a wave of 2026 free timers (IntervalFree, PureTimer, GymPulseTimer, Gym Timer); template category with high 4.3 risk"
+    },
+    {
+      "key": "ads:alarm-clock-hd:unskippable",
+      "date": "2026-11-04",
+      "incumbents": [
+        "476555713"
+      ],
+      "reason": "Alarm Clock HD (104k ratings): 35 low-star in 90d (us), 26 on unskippable ads, from 10-15 year users; reliable alarms need native AlarmKit work (same Gate B failure as bugs:alarmy:battery-drain), and the iOS Clock is free"
+    },
+    {
+      "key": "paywall:fishbrain:everything-pro",
+      "date": "2026-11-04",
+      "incumbents": [
+        "477967747"
+      ],
+      "reason": "Fishbrain (76k ratings): 41 low-star in 90d (us), 25 on nearly everything needing ~$80/yr Pro; the value is its catch data and community, a two-sided network a new app can't copy (Fishing Points 4.7, 31k has 3 low-star)"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-04",
+      "date": "2026-11-04",
+      "incumbents": [
+        "1203637303",
+        "1275803975",
+        "952578473",
+        "399211291",
+        "978674211",
+        "893687399",
+        "559036969",
+        "1124958568",
+        "894811756",
+        "987986743",
+        "370820516"
+      ],
+      "reason": "round 2 vertical scan: Fabulous (138; billing disputes), RV LIFE (55; routing data), TimeTree (36; mostly a jp update), Songsterr (26) and Oxford Dictionary (24; licensed content), Ride with GPS (21), iCollect (20; ~$100 unlock, 10 relevant, one app), BIGVU (26) and PromptSmart (18; bugs), Trailforks (17), AllStays (17); nothing passed Gate A with a buildable fix. Quiet: Sortly 0, knitCompanion 0, TonalEnergy 2, Strides 2, Days Since 2, Reading List 4, LogTen 4, UDisc 5, FarOut 6"
     }
   ]
 }

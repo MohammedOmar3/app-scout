@@ -124,6 +124,26 @@
       "key": "discovery:round1-batch-2026-11-04",
       "outcome": "rejected",
       "date": "2026-11-04"
+    },
+    {
+      "key": "paywall:timer-plus:forced-paywall",
+      "outcome": "rejected",
+      "date": "2026-11-04"
+    },
+    {
+      "key": "ads:alarm-clock-hd:unskippable",
+      "outcome": "rejected",
+      "date": "2026-11-04"
+    },
+    {
+      "key": "paywall:fishbrain:everything-pro",
+      "outcome": "rejected",
+      "date": "2026-11-04"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-04",
+      "outcome": "rejected",
+      "date": "2026-11-04"
     }
   ]
 }
