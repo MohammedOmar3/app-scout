@@ -1,24 +1,23 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "open_targets": [
     {
-      "key": "abandoned:fuelly:fuel-service-log",
+      "key": "data-loss:vehicle-maintenance:owner-held-log",
       "incumbents": [
-        "295905460",
-        "298398207",
-        "1206041425",
-        "1487753318"
+        "1315913699",
+        "552472249",
+        "295905460"
       ],
       "terms": [
-        "fuel log",
-        "gas mileage",
-        "car maintenance log"
+        "vehicle maintenance",
+        "car maintenance log",
+        "small engine maintenance"
       ],
-      "why": "Fuelly (4.7, ~30k ratings) hasn't been updated since 2024-06-03; its forum has threads titled 'Fuelly gone - what to use next', 'Goodbye Fuelly - Tired of the lack of support', 'Is Fuelly no longer supported?' and 'Is Fuelly no longer being updated?'",
-      "evidence": "Web only, 2026-11-04. App Store page shows login failures, a 'hasn't been updated' review and broken reminders. Forum pages wouldn't load (titles from search only). Field looks thin: Road Trip MPG ($6.99 one-time, 4.9, 629 ratings), Drivvo (4.8, 95 in gb), Fuelio (4.5, 171, $17.99/yr), Fuel Monitor Pro ($1.99, 790), My Car (1.1k), Odobook (web, $9.99 one-time, imports Fuelly CSV), RevLog; CARFAX Car Care not checked. Not in candidates.json, so no store reviews yet",
-      "missing": "everything for Gate A: a targeted scan of 295905460 and competitors (no run left on 2026-11-04). Needs ≥15 relevant low-star in 90d, or ≥8 across 2 apps, plus a storefront count; the kill check on CARFAX Car Care and Drivvo's US rating count; a differentiator past 'same log, no account'. Reject quickly if recent reviews are few, since the app still works",
-      "rounds": 1,
-      "last_round": "2026-11-04"
+      "why": "Vehicle Maintenance Tracker wiped service dates after its May 2026 redesign and has had no release since 2026-06-27; CARFAX Car Care loses records too; Fuelly is unmaintained. Replaces abandoned:fuelly:fuel-service-log",
+      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Scored 3.5 (range 3.43-3.64). About 25 small logs exist; Car Cave (4.7, 376, $4.99) is good for cars, and Kelvik, MaintainAll, Maintenance Tracker, Recur.it and Loggy already pitch all-machine local logs",
+      "missing": "a differentiator past 'all machines, local, backed up'; real VMT and Fuelly CSV samples; Fuelly's own reviews (Finance genre is dropped by the collector even for named ids); ≥3 dated off-store threads from the last 12 months (BITOG pages show no dates, fuelly.com and garagejournal.com won't load)",
+      "rounds": 2,
+      "last_round": "2026-11-05"
     },
     {
       "key": "removed:drink-logs:private-journal",
@@ -32,10 +31,10 @@
         "beer tracker"
       ],
       "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round)",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store",
       "missing": "persistence: rescan both in about a week and count new low-star reviews on v5.1+ / 2026.44+ (needs ≥15 in the newer versions); other storefronts (the targeted pool can't reach ca/au/de/nl for apps that chart only in us/gb, so ca/au evidence needs the pool fix or WebFetch of public review pages); ≥3 off-store threads (none found by search on 2026-11-02); willingness to pay (asks for a paid private journal, or Insider/Premium cancellations citing logging); Bruwia's App Store rating count",
-      "rounds": 6,
-      "last_round": "2026-11-04"
+      "rounds": 7,
+      "last_round": "2026-11-05"
     },
     {
       "key": "ads:timehop:daily-memories",
@@ -47,10 +46,10 @@
         "photo memories"
       ],
       "why": "Timehop v5.0 (2026-07) added unskippable ads and paywalled memories and streaks; on the watchlist at 3.5",
-      "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings. 2026-11-04 rescan: 44 in 90d, 22 in the last 30; off-store search found nothing new",
+      "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings. 2026-11-04 rescan: 44 in 90d, 22 in the last 30; off-store search found nothing new. 2026-11-05 daily data: 43 in 90d, 4 since 10-28",
       "missing": "a differentiator the clones lack, off-store threads of people leaving, explicit willingness to pay",
-      "rounds": 2,
-      "last_round": "2026-11-04"
+      "rounds": 3,
+      "last_round": "2026-11-05"
     }
   ],
   "closed": [
@@ -188,6 +187,46 @@
       "key": "discovery:round3-batch-2026-11-04",
       "outcome": "rejected",
       "date": "2026-11-04"
+    },
+    {
+      "key": "abandoned:fuelly:fuel-service-log",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "abandoned:tv-time:show-tracker",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "paywall:simply-draw:learn-to-draw",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "removed:lapse:social-disposable",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "regressed:hotschedules:v6",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "removed:home-design-3d:gold-edition",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "ads:accuweather:bloat",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-05",
+      "outcome": "rejected",
+      "date": "2026-11-05"
     }
   ]
 }

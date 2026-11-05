@@ -19,25 +19,38 @@
     {
       "key": "removed:drink-logs:private-journal",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "incumbents": [
         "449141888",
         "414461255"
       ],
       "score": 3.55,
-      "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43. 2026-11-04 rescan: Untappd 92 low-star in 90d (us 70, gb 28 all-time stored), still 1-6 a day to 11-01, 1 in November so far; Vivino 27",
+      "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43. 2026-11-04 rescan: Untappd 92 low-star in 90d (us 70, gb 28 all-time stored), still 1-6 a day to 11-01, 1 in November so far; Vivino 27. 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28 on v5.0.x, us 70 and gb 28 stored; Vivino 27, now on 2026.43+; no new storefronts",
       "promote_if": "the Untappd/Vivino complaints are still coming 4+ weeks on (after Untappd 5.1 and the next Vivino release), appear in ≥3 more storefronts, ≥3 independent off-store threads show people leaving for a private log, and there's evidence of willingness to pay (asks for a one-time paid journal, or Insider/Premium cancellations citing logging). Otherwise reject: drinkers are used to free apps, and Bruwia already imports Untappd history for free"
     },
     {
       "key": "ads:timehop:daily-memories",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "incumbents": [
         "569077959"
       ],
       "score": 3.5,
-      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found",
+      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found. 2026-11-05 daily data: 43 in 90d, 4 since 10-28, no update since 2026-10-01",
       "promote_if": "a differentiator the clones lack, shown on the first screen (e.g. a real daily-streak ritual with streak carry-over that long-time users respond to), off-store threads of people leaving, and explicit willingness to pay; most reviewers are angry about paying at all"
+    },
+    {
+      "key": "data-loss:vehicle-maintenance:owner-held-log",
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05",
+      "incumbents": [
+        "1315913699",
+        "552472249",
+        "295905460"
+      ],
+      "score": 3.5,
+      "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. Score range 3.43-3.64 depending on how much credit the all-machines wedge gets; only 6 VMT reviews since Nov 2025 mention non-car machines",
+      "promote_if": "a differentiator the small logs lack, shown on the first screen (Gate B 4.3 isn't cleared by all-machines plus local backup, since Kelvik and MaintainAll already say that); confirmation that VMT and Fuelly CSV exports can be imported with dates intact; Fuelly's reviews measured (needs the Finance-genre exclusion relaxed for named targets); ≥3 dated off-store threads in the last 12 months. A draft brief exists in the 2026-11-05 report notes"
     }
   ],
   "rejected": [
@@ -606,6 +619,68 @@
         "885367198"
       ],
       "reason": "round 3 scan of recently updated tools: Facts (46; trial and content), Layout (37; save paywall, crowded collage category), SongShift (31; TuneMyMusic free, needs streaming APIs), Collectr (28; price accuracy, needs market data), Tiimo (28; review prompts), Find Air (20; $9.99/week fleeceware), Evermusic (16); nothing passed. Quiet: mSecure 0, Device Tracker 0, Geocaching 1, Happy Scale 1, magicplan 1, Moon Phase apps 1-2, Countdown 7, Waterllama 10"
+    },
+    {
+      "key": "abandoned:tv-time:show-tracker",
+      "date": "2026-11-05",
+      "incumbents": [],
+      "reason": "TV Time shut down on 2026-07-15 (free-only model), but ithinkdiff lists 10 replacements with imports, among them Trakt, Simkl (free), Showly ($14.99 lifetime) and Sofa Time ($9.99 lifetime). Filled"
+    },
+    {
+      "key": "paywall:simply-draw:learn-to-draw",
+      "date": "2026-11-05",
+      "incumbents": [
+        "1639875485"
+      ],
+      "reason": "Simply Draw (139k ratings): 91 low-star in 90d, 85 in 30 (us, gb), v1.20.0: one free drawing, then ~$100/yr. Reviewers are mostly children and an original lesson library is a content build, not 14 days. YouTube is free"
+    },
+    {
+      "key": "removed:lapse:social-disposable",
+      "date": "2026-11-05",
+      "incumbents": [
+        "1636699256"
+      ],
+      "reason": "Lapse (3.7k ratings): 46 low-star since its pivot, friends feed removed and old photos deleted. The loved part was social, which fails Gate B"
+    },
+    {
+      "key": "regressed:hotschedules:v6",
+      "date": "2026-11-05",
+      "incumbents": [
+        "294934058"
+      ],
+      "reason": "HotSchedules (67k ratings): 69 low-star since v6.0 on 2026-09-10, shift swaps and store logs broken. Staff use whatever their employer buys, so it's a B2B platform sale, not a 14-day consumer app"
+    },
+    {
+      "key": "removed:home-design-3d:gold-edition",
+      "date": "2026-11-05",
+      "incumbents": [
+        "463768717"
+      ],
+      "reason": "Home Design 3D (105k ratings): 31 low-star in 90d, Gold Edition one-time buyers moved to a paid tier. A 3D floor-plan editor with an item catalog doesn't fit 14 days"
+    },
+    {
+      "key": "ads:accuweather:bloat",
+      "date": "2026-11-05",
+      "incumbents": [
+        "300048137"
+      ],
+      "reason": "AccuWeather (98k ratings): 96 low-star in 90d, 80 in 30, slow loads, ads and notifications after v21. Crowded category; Apple Weather is free"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-05",
+      "date": "2026-11-05",
+      "incumbents": [
+        "355833469",
+        "592163563",
+        "286616280",
+        "527588389",
+        "1074367771",
+        "1358823008",
+        "316126557",
+        "952050883",
+        "6745179920"
+      ],
+      "reason": "Goodreads (34, Amazon ads after v4.37; StoryGraph and Fable exist, its value is the network), Joist (8), iNavX (0), GuitarTuna (28; trial billing, free tuners abound), Welltory (48; billing), Flighty (30; review prompts), MapQuest (28; routing), VLLO (19; AI update), e-Diyanet (38; a location bug in a Turkish state app)"
     }
   ]
 }
