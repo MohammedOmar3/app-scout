@@ -48,9 +48,9 @@
         "552472249",
         "295905460"
       ],
-      "score": 3.5,
-      "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. Score range 3.43-3.64 depending on how much credit the all-machines wedge gets; only 6 VMT reviews since Nov 2025 mention non-car machines",
-      "promote_if": "a differentiator the small logs lack, shown on the first screen (Gate B 4.3 isn't cleared by all-machines plus local backup, since Kelvik and MaintainAll already say that); confirmation that VMT and Fuelly CSV exports can be imported with dates intact; Fuelly's reviews measured (needs the Finance-genre exclusion relaxed for named targets); ≥3 dated off-store threads in the last 12 months. A draft brief exists in the 2026-11-05 report notes"
+      "score": 3.4,
+      "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. LookOver (4.9, 5,000+ downloads by its own count, free for one machine, $24.99/yr) already tracks mowers, generators and powersports by engine hours. Only 6 VMT reviews since Nov 2025 mention non-car machines",
+      "promote_if": "a differentiator the small logs lack, shown on the first screen (all machines plus local backup isn't one: Kelvik, MaintainAll and LookOver already offer it, and Car Cave covers cars well); confirmation that VMT and Fuelly CSV exports import with dates intact; Fuelly's reviews measured (needs the Finance-genre exclusion relaxed for named targets); ≥3 dated off-store threads in the last 12 months"
     }
   ],
   "rejected": [
@@ -681,6 +681,22 @@
         "6745179920"
       ],
       "reason": "Goodreads (34, Amazon ads after v4.37; StoryGraph and Fable exist, its value is the network), Joist (8), iNavX (0), GuitarTuna (28; trial billing, free tuners abound), Welltory (48; billing), Flighty (30; review prompts), MapQuest (28; routing), VLLO (19; AI update), e-Diyanet (38; a location bug in a Turkish state app)"
+    },
+    {
+      "key": "discovery:round3-batch-2026-11-05",
+      "date": "2026-11-05",
+      "incumbents": [
+        "606173978",
+        "1410126781",
+        "1076159017",
+        "622851626",
+        "892700751",
+        "794462227",
+        "1085047737",
+        "1438388363",
+        "533785308"
+      ],
+      "reason": "round 3 scan of non-charting log and tool apps: Planner 5D (93; 3D, billing), Home Planner AI (26; 3D), Planta (21; plant ID is AI and there are many rivals), Golfshot (18), 18Birdies (17) and Hole19 (10) need course data, Bookly (9), Habit Tracker (34; ads, generic category), Good Food (25; licensed recipes). Quiet: Reading List, Stop Motion Studio Pro, Ravit, BookBuddy Pro, Tunable, Typic, Universalis, Cloud Baby Monitor, FishTrack, Units Plus, 7 Minute Workout Challenge"
     }
   ]
 }

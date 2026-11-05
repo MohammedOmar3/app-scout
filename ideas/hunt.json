@@ -14,9 +14,9 @@
         "small engine maintenance"
       ],
       "why": "Vehicle Maintenance Tracker wiped service dates after its May 2026 redesign and has had no release since 2026-06-27; CARFAX Car Care loses records too; Fuelly is unmaintained. Replaces abandoned:fuelly:fuel-service-log",
-      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Scored 3.5 (range 3.43-3.64). About 25 small logs exist; Car Cave (4.7, 376, $4.99) is good for cars, and Kelvik, MaintainAll, Maintenance Tracker, Recur.it and Loggy already pitch all-machine local logs",
+      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Fails Gate B's 4.3 test for now; scored 3.4. About 30 small logs exist. Car Cave (4.7, 376, $4.99) is good for cars and a VMT reviewer moved to it; LookOver (4.9, 5,000+ downloads, $24.99/yr) tracks small engines by hours; Kelvik, MaintainAll, Maintenance Tracker and Recur.it pitch all-machine local logs",
       "missing": "a differentiator past 'all machines, local, backed up'; real VMT and Fuelly CSV samples; Fuelly's own reviews (Finance genre is dropped by the collector even for named ids); ≥3 dated off-store threads from the last 12 months (BITOG pages show no dates, fuelly.com and garagejournal.com won't load)",
-      "rounds": 2,
+      "rounds": 4,
       "last_round": "2026-11-05"
     },
     {
@@ -49,6 +49,25 @@
       "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings. 2026-11-04 rescan: 44 in 90d, 22 in the last 30; off-store search found nothing new. 2026-11-05 daily data: 43 in 90d, 4 since 10-28",
       "missing": "a differentiator the clones lack, off-store threads of people leaving, explicit willingness to pay",
       "rounds": 3,
+      "last_round": "2026-11-05"
+    },
+    {
+      "key": "discovery:non-charting-logs",
+      "incumbents": [],
+      "terms": [
+        "pilot logbook",
+        "dive log",
+        "hours worked",
+        "shift calendar",
+        "chore chart",
+        "coin collection",
+        "wine cellar",
+        "hunting log"
+      ],
+      "why": "Vehicle Maintenance Tracker never charted and only surfaced through a term search. Long-lived personal logs outside the chart pool may hide similar failures",
+      "evidence": "Round 3 tried home inventory, book, pet, diary, recipe, practice, warranty, garden, golf and fishing terms: nothing",
+      "missing": "a first scan of these terms",
+      "rounds": 1,
       "last_round": "2026-11-05"
     }
   ],
@@ -225,6 +244,11 @@
     },
     {
       "key": "discovery:round1-batch-2026-11-05",
+      "outcome": "rejected",
+      "date": "2026-11-05"
+    },
+    {
+      "key": "discovery:round3-batch-2026-11-05",
       "outcome": "rejected",
       "date": "2026-11-05"
     }
