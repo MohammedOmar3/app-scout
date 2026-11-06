@@ -256,6 +256,46 @@
       "key": "discovery:round1-batch-2026-11-06",
       "outcome": "rejected",
       "date": "2026-11-06"
+    },
+    {
+      "key": "regressed:forest:new-ui",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "removed:mealime:shutdown",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "removed:post-it:capture-board",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "paywall:night-sky:aura-ai",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-06",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "ads:case-tracker:uscis-status",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "fleeceware:fax:weekly-sub",
+      "outcome": "rejected",
+      "date": "2026-11-06"
+    },
+    {
+      "key": "paywall:tv-remotes:forced-sub",
+      "outcome": "rejected",
+      "date": "2026-11-06"
     }
   ]
 }

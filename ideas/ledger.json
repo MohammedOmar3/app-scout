@@ -781,6 +781,48 @@
         "1400078107"
       ],
       "reason": "term scan of non-charting logs (pilot, dive, hours, shift, chore, coins, wine cellar, hunting): nothing. Hours Tracker 11 low-star, When I Work 10, NurseGrid 7, Punch Time Clock 6, ForeFlight 6, Oceanic+ 12 (watch app); shift calendars (Spark, FireSync, Supershift, My Shift Planner) have 0-3"
+    },
+    {
+      "key": "regressed:forest:new-ui",
+      "date": "2026-11-06",
+      "incumbents": [
+        "866450515"
+      ],
+      "reason": "Forest (50k us ratings): 123 low-star in 90d (us 73, gb 49), Aug 5, Sep 46, Oct 66, 103 on the redesign since v5.26: 3-5 taps and animations to restart a timer, favourites and the time ring gone, one-time Pro retired for Plus at $5.99/mo or $35.99/yr. Biggest regression of the day, and Gate A passes. Killed: Flora (4.8, 85k ratings, free, only 6 low-star in 90d) already does the job and Forest reviewers name it; Focus Friend, FocusFlight, Focus Keeper, Focus Tree and Pomodoro are all 4.7+; crowded template category with high 4.3 risk, as in abandoned:study-bunny:ads"
+    },
+    {
+      "key": "removed:mealime:shutdown",
+      "date": "2026-11-06",
+      "incumbents": [
+        "1079999103"
+      ],
+      "reason": "Mealime (4.8, 53k ratings) shut down on 2026-10-21 with no export, after Albertsons moved it to Meals Hub. Reviews are gone with the listing, so Gate A can't be measured. Killed anyway: the product is a recipe library, and Paprika, AnyList, Plan to Eat, eMeals, Samsung Food, Eat This Much and at least five small new apps are already chasing these users"
+    },
+    {
+      "key": "removed:post-it:capture-board",
+      "date": "2026-11-06",
+      "incumbents": [
+        "920127738"
+      ],
+      "reason": "3M retired the Post-it App (4.7, 13k ratings) on 2026-09-29 with no replacement. Its reviews are gone with the listing and searches found no threads from users, so neither Gate A nor A2 can pass. Miro's Stickies Capture already digitises photographed notes"
+    },
+    {
+      "key": "paywall:night-sky:aura-ai",
+      "date": "2026-11-06",
+      "incumbents": [
+        "475772902"
+      ],
+      "reason": "Night Sky (498k ratings): 34 low-star in 90d (us 31, gb 3) on search moving behind an AI 'Aura' subscription and paywall pop-ups. Needs a sky engine and catalog plus AR compass work; Sky Guide, SkyView and Stellarium already serve the category"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-06",
+      "date": "2026-11-06",
+      "incumbents": [
+        "1110145109",
+        "1533254320",
+        "867374917"
+      ],
+      "reason": "round 2 side findings: Apple Notes (49; iOS 27 bugs, not an opportunity), Sticky Widgets (24; widget is the core), Focus Keeper (13)"
     }
   ]
 }
