@@ -19,7 +19,7 @@
     {
       "key": "removed:drink-logs:private-journal",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "incumbents": [
         "449141888",
         "414461255"
@@ -31,7 +31,7 @@
     {
       "key": "ads:timehop:daily-memories",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "incumbents": [
         "569077959"
       ],
@@ -42,7 +42,7 @@
     {
       "key": "data-loss:vehicle-maintenance:owner-held-log",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "incumbents": [
         "1315913699",
         "552472249",
@@ -697,6 +697,90 @@
         "533785308"
       ],
       "reason": "round 3 scan of non-charting log and tool apps: Planner 5D (93; 3D, billing), Home Planner AI (26; 3D), Planta (21; plant ID is AI and there are many rivals), Golfshot (18), 18Birdies (17) and Hole19 (10) need course data, Bookly (9), Habit Tracker (34; ads, generic category), Good Food (25; licensed recipes). Quiet: Reading List, Stop Motion Studio Pro, Ravit, BookBuddy Pro, Tunable, Typic, Universalis, Cloud Baby Monitor, FishTrack, Units Plus, 7 Minute Workout Challenge"
+    },
+    {
+      "key": "ads:case-tracker:uscis-status",
+      "date": "2026-11-06",
+      "incumbents": [
+        "921827126",
+        "1435063223"
+      ],
+      "reason": "Case Tracker for USCIS & NVC (319k ratings): 56 low-star in 90d (us), 28 on ads or Pro not unlocking, nearly all since v11.27. Killed: Lawfully (4.8, 174k) and tip-funded trackers like U.S. Immigration Case Tracker already exist, and the USCIS Case Status API needs an approved production demo and is described for customers and representatives, so the data can't be counted on in 14 days"
+    },
+    {
+      "key": "fleeceware:fax:weekly-sub",
+      "date": "2026-11-06",
+      "incumbents": [
+        "978931264",
+        "1151406354"
+      ],
+      "reason": "FAX from iPhone (379k) 35 low-star and FaxFree (175k) 33, us: 'free' fax apps that bill about $9/week at the send step. Killed: Genius Fax (4.9, 44k) already sells $0.99 per-page credits with no subscription needed to send, every page costs a carrier fee so there is no useful free tier, and Gate B wants one pro entitlement, not consumables"
+    },
+    {
+      "key": "paywall:tv-remotes:forced-sub",
+      "date": "2026-11-06",
+      "incumbents": [
+        "1581765635",
+        "1539090879",
+        "6477382010",
+        "1625553531",
+        "1439422220",
+        "6443877058"
+      ],
+      "reason": "10 universal remote apps: ~280 paywall complaints in 90d (us, gb). Largest cross-app paywall cluster today, but killed: Roku, Samsung SmartThings, LG ThinQ, Google TV and Fire TV all have free official remotes, each brand needs its own LAN protocol, and it's a template category with high 4.3 risk"
+    },
+    {
+      "key": "ads:hilal-calendar:hijri-calendar",
+      "date": "2026-11-06",
+      "incumbents": [
+        "410453117"
+      ],
+      "reason": "Hilal Calendar (16k ratings): 17 low-star in 90d, sa only, about 10 on ads, plus lost lifetime purchases. Below Gate A: one storefront, one app. Many other Hijri calendars exist and a reviewer already moved to the official Umm al-Qura app (KACST), and iOS shows the Islamic calendar natively"
+    },
+    {
+      "key": "removed:nyt-cooking:forced-ai",
+      "date": "2026-11-06",
+      "incumbents": [
+        "911422904"
+      ],
+      "reason": "NYT Cooking (549k ratings): 44 low-star in 60d (us), ~19 on an AI feature you can't turn off since v4.171. Subscribers pay for the recipe library, which can't be replaced"
+    },
+    {
+      "key": "regressed:scanner-pro:v9",
+      "date": "2026-11-06",
+      "incumbents": [
+        "333710667"
+      ],
+      "reason": "Scanner Pro (338k ratings): 35 low-star in 60d after v9.0 broke saving and pushed a subscription on one-time buyers. Killed: Notes and Files scan free, and Genius Scan and Adobe Scan are free; template category"
+    },
+    {
+      "key": "removed:vocabulary:ai-definitions",
+      "date": "2026-11-06",
+      "incumbents": [
+        "1084540807"
+      ],
+      "reason": "Vocabulary (222k ratings): 67 low-star in 90d (us, gb), only 14 on AI-made or wrong definitions; the rest is billing. Its core is the home-screen widget, which needs native extension work, and free dictionary word-of-the-day apps exist"
+    },
+    {
+      "key": "regressed:marinetraffic:new-app",
+      "date": "2026-11-06",
+      "incumbents": [
+        "563910324"
+      ],
+      "reason": "MarineTraffic (65k ratings): 87 low-star in 90d (us, gb) on the new app and paywall, with explicit willingness to pay for the old one. Vessel positions are AIS data you can't get for free; fails Gate B"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-06",
+      "date": "2026-11-06",
+      "incumbents": [
+        "1468092377",
+        "949731866",
+        "383126470",
+        "1610517133",
+        "333252638",
+        "1400078107"
+      ],
+      "reason": "term scan of non-charting logs (pilot, dive, hours, shift, chore, coins, wine cellar, hunting): nothing. Hours Tracker 11 low-star, When I Work 10, NurseGrid 7, Punch Time Clock 6, ForeFlight 6, Oceanic+ 12 (watch app); shift calendars (Spark, FireSync, Supershift, My Shift Planner) have 0-3"
     }
   ]
 }
