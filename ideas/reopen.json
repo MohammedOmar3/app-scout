@@ -1,0 +1,383 @@
+{
+ "_comment": "Clusters rejected only because an alternative existed (old rule), with >=25 reviews of evidence. Re-evaluate with SCOUT.md step 1b.",
+ "created": "2026-11-07",
+ "items": [
+  {
+   "key": "paywall:tv-remotes:forced-sub",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "1581765635",
+    "1539090879",
+    "6477382010",
+    "1625553531",
+    "1439422220",
+    "6443877058"
+   ],
+   "evidence_reviews": 280,
+   "old_reason": "10 universal remote apps: ~280 paywall complaints in 90d (us, gb). Largest cross-app paywall cluster today, but killed: Roku, Samsung SmartThings, LG ThinQ, Google TV and Fire TV all have free official remotes, each brand needs its own LAN protocol, and it's a template category with high 4.3 risk",
+   "status": "open"
+  },
+  {
+   "key": "paywall:recime:forced-trial",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "1593779280"
+   ],
+   "evidence_reviews": 143,
+   "old_reason": "143 low-star reviews in 90d (gb, us, ca, au), ~50 about being forced into a trial of a 'free' recipe saver; killed by a crowded field: Mela+ ($6.99 one-time) reads Instagram/TikTok/YouTube descriptions, Recipe Keeper ($19.99 one-time), Paprika ($4.99), plus free tiers of Peel, Recipe Notes, Flavorish; video import needs AI; high 4.3 risk",
+   "status": "open"
+  },
+  {
+   "key": "paywall:timer-plus:forced-paywall",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "1279716547",
+    "475816966"
+   ],
+   "evidence_reviews": 131,
+   "old_reason": "Timer Plus (61k ratings): 131 low-star reviews in the last 30 days (us 86, gb 51 stored), nearly all since 2026-10-28, when a free interval timer put a hard paywall (~$20) in front of Start and the paid build then crashed on launch on iOS 27; Seconds (24k) got 31 in 90d after its v26 redesign. Biggest paywall surge of the day, but killed: Seconds Pro ($7.99 one-time, 4.8, 12k), Tabata Timer and HIIT Timer (4.8, 73.7k, free to download), SmartWOD Timer (4.9, 54k, free to download), Tabata Timer: Interval Timer (4.9, 9.5k, free to download), plus a wave of new 2026 timers; template category with high 4.3 risk",
+   "status": "open"
+  },
+  {
+   "key": "paywall:withings:apple-health-sync",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "542701020"
+   ],
+   "evidence_reviews": 128,
+   "old_reason": "Withings (369k ratings): 128 low-star reviews in 90d, 125 of them since 2026-10-13 (us 81, gb 56 stored), 64 naming Apple Health, after accounts created from 10-13 need Withings+ ($99.50/yr) for automatic sync. Heavy press and a 200+ comment support thread, no reversal. Fails Gate B: the same rule covers the free API plan (Partner Hub, from 10-12) and the terms bar routing data around it, so a sync bridge can't get the data; the only free route is manual CSV export, and Health CSV Importer (4.2, 292, free for weight) already takes that. Recheck if Withings reverses or Apple acts on guideline 4.10",
+   "status": "open"
+  },
+  {
+   "key": "ads:quran-readers:inappropriate-ads",
+   "rejected_on": "2026-10-31",
+   "incumbents": [
+    "365557665",
+    "1164088669",
+    "537070378",
+    "366111277"
+   ],
+   "evidence_reviews": 125,
+   "old_reason": "~125 low-star reviews (sa, us, ae, gb, pk, my) on immodest ads while reading; killed by free ad-free Quran.com app (4.9, 33.9k), iQuran (4.8, 30.9k, no ads/no subs), Greentech Al Quran (4.8, 19.1k); 4.3 risk high",
+   "status": "open"
+  },
+  {
+   "key": "paywall:yazio:ads-and-extras",
+   "rejected_on": "2026-11-07",
+   "incumbents": [
+    "946099227",
+    "286906691"
+   ],
+   "evidence_reviews": 123,
+   "old_reason": "Yazio (52k us ratings): 123 low-star in 60d outside English storefronts (de 57, fr 46, it 20): ads on every meal, long forced onboarding, everything extra paid, no offline use; Lifesum 18 (se). Calorie counting is a crowded template category that needs a food database (MyFitnessPal, Cronometer, FDDB, Lose It), so a cleaner copy is a 4.3 risk",
+   "status": "open"
+  },
+  {
+   "key": "paywall:evernote:price-hike",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "281796108"
+   ],
+   "evidence_reviews": 110,
+   "old_reason": "110 low-star reviews in 90d (us) about the price going from ~$99 to ~$250/yr and the free tier shrinking; notes apps are a crowded category (Apple Notes free, UpNote lifetime, Obsidian, Bear), so a cheaper notes app is a 4.3 risk with no clear gap",
+   "status": "open"
+  },
+  {
+   "key": "ads:reverse-audio:sing-challenge",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "6754755473"
+   ],
+   "evidence_reviews": 106,
+   "old_reason": "Reverse Audio: Sing Challenge (32k ratings): 106 low-star in 90d (us, gb), 73 on ads every few seconds and $9.99/week. A novelty with about five near-identical clones (Reverse Audio 4.7, 40k; Reverse Singing 4.7, 8k) and little reason to pay",
+   "status": "open"
+  },
+  {
+   "key": "ads:swipewipe:photo-swipe",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "1583884012"
+   ],
+   "evidence_reviews": 103,
+   "old_reason": "Swipewipe (100k ratings): 103 low-star in 90d, 83 in the last 30 (us, gb), ads every two minutes and a paywall; Slidebox (4.8, 16.7k, free) does the same swipe-to-sort, and photo cleaners are a crowded template category with a high 4.3 risk",
+   "status": "open"
+  },
+  {
+   "key": "ads:accuweather:bloat",
+   "rejected_on": "2026-11-05",
+   "incumbents": [
+    "300048137"
+   ],
+   "evidence_reviews": 96,
+   "old_reason": "AccuWeather (98k ratings): 96 low-star in 90d, 80 in 30, slow loads, ads and notifications after v21. Crowded category; Apple Weather is free",
+   "status": "open"
+  },
+  {
+   "key": "paywall:stronglifts:lifetime-revoked",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "488580022"
+   ],
+   "evidence_reviews": 91,
+   "old_reason": "91 low-star reviews in 90d (us 77, gb 14) since StrongLifts went subscription-only (free tier and lifetime Power Pack dropped, $59.99/yr), plus a disliked 4.4 watch/UI redesign; the strongest pain of the day, but killed: Lift5x5 (free core 5x5 with auto-progression, imports StrongLifts CSV, lifetime option), 5x5 Workout Lifting Tracker ($9.99 one-time, watch), 5x5 Workout by Zen Labs (4.7, 1.6k, $8.99 Pro) and other 2025-26 clones already do it, so another 'same but one-time' 5x5 app is a 4.3 risk; watch logging (much loved) is out of Expo scope",
+   "status": "open"
+  },
+  {
+   "key": "removed:soundtouch:presets-radio",
+   "rejected_on": "2026-11-03",
+   "incumbents": [
+    "708379313"
+   ],
+   "evidence_reviews": 91,
+   "old_reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
+   "status": "open"
+  },
+  {
+   "key": "paywall:simply-draw:learn-to-draw",
+   "rejected_on": "2026-11-05",
+   "incumbents": [
+    "1639875485"
+   ],
+   "evidence_reviews": 91,
+   "old_reason": "Simply Draw (139k ratings): 91 low-star in 90d, 85 in 30 (us, gb), v1.20.0: one free drawing, then ~$100/yr. Reviewers are mostly children and an original lesson library is a content build, not 14 days. YouTube is free",
+   "status": "open"
+  },
+  {
+   "key": "regressed:marinetraffic:new-app",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "563910324"
+   ],
+   "evidence_reviews": 87,
+   "old_reason": "MarineTraffic (65k ratings): 87 low-star in 90d (us, gb) on the new app and paywall, with explicit willingness to pay for the old one. Vessel positions are AIS data you can't get for free; fails Gate B",
+   "status": "open"
+  },
+  {
+   "key": "paywall:yarnpal:ai-patterns",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "6738537088"
+   ],
+   "evidence_reviews": 72,
+   "old_reason": "72 low-star reviews in 90d (us, gb) about AI-made, inaccurate patterns and nearly every pattern being Pro-only; the fix is a pattern library (content you can't license or produce in 14 days, fails Gate B), and Ravelry/YouTube already give free patterns",
+   "status": "open"
+  },
+  {
+   "key": "paywall:avenza:custom-map-import",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "388424049"
+   ],
+   "evidence_reviews": 70,
+   "old_reason": "Avenza Maps (128k ratings): ~70 low-star reviews since May 2026, 23 in 90d, us only, after the Blue Marble merger put custom GeoPDF import behind $35-50/yr Plus (20 imports) and ~$170 Pro and froze the map store. Strong pain but killed: Topo Maps+ (4.7, 9.4k ratings) lets free users import up to 10 GeoPDFs; ArcGIS Field Maps (free, no sign-in, GeoPDF since 2026-03) is what wildfire incident pages now point to; MapNero has no import limit even free; ArkenMap $3.99 one-time; NomadTracks free; plus MapCheck, Mapio, FO Maps",
+   "status": "open"
+  },
+  {
+   "key": "paywall:hurricane-tracker:forced-sub",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "327193945"
+   ],
+   "evidence_reviews": 68,
+   "old_reason": "Hurricane Tracker (45k ratings): 68 low-star reviews since July 2026 (28 in October, us) after a redesign and forced subscription, one-time buyers locked out; NHC data is public, but National Hurricane Center Data (4.8, 76k, free) and My Hurricane Tracker Pro (4.8, 5.8k, $3.99 one-time) already fill it",
+   "status": "open"
+  },
+  {
+   "key": "removed:vocabulary:ai-definitions",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "1084540807"
+   ],
+   "evidence_reviews": 67,
+   "old_reason": "Vocabulary (222k ratings): 67 low-star in 90d (us, gb), only 14 on AI-made or wrong definitions; the rest is billing. Its core is the home-screen widget, which needs native extension work, and free dictionary word-of-the-day apps exist",
+   "status": "open"
+  },
+  {
+   "key": "ads:case-tracker:uscis-status",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "921827126",
+    "1435063223"
+   ],
+   "evidence_reviews": 56,
+   "old_reason": "Case Tracker for USCIS & NVC (319k ratings): 56 low-star in 90d (us), 28 on ads or Pro not unlocking, nearly all since v11.27. Killed: Lawfully (4.8, 174k) and tip-funded trackers like U.S. Immigration Case Tracker already exist, and the USCIS Case Status API needs an approved production demo and is described for customers and representatives, so the data can't be counted on in 14 days",
+   "status": "open"
+  },
+  {
+   "key": "paywall:quizlet:learn-rounds",
+   "rejected_on": "2026-11-07",
+   "incumbents": [
+    "546473125"
+   ],
+   "evidence_reviews": 53,
+   "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected",
+   "status": "open"
+  },
+  {
+   "key": "ads:prayer-times:ads-before-adhan",
+   "rejected_on": "2026-10-31",
+   "incumbents": [
+    "743843090",
+    "388389451"
+   ],
+   "evidence_reviews": 51,
+   "old_reason": "~51 low-star reviews on ads blocking prayer times/adhan; killed by Pillars (4.8, 5.6k, free, no ads), MAWAQIT (4.9, 6.3k), Pray Watch (4.8, 9.3k), iPray ($1.99, 4.8, 9k)",
+   "status": "open"
+  },
+  {
+   "key": "fleeceware:authenticator:weekly-sub",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "6754900760",
+    "1538761576"
+   ],
+   "evidence_reviews": 50,
+   "old_reason": "50 + 20 low-star reviews (us, gb) from people sent to look-alike authenticator apps charging $9.99/week; free Google/Microsoft Authenticator and the built-in iOS Passwords codes already do it, so there is no gap to build into",
+   "status": "open"
+  },
+  {
+   "key": "removed:photo-widget:watermark",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "1074246199"
+   ],
+   "evidence_reviews": 49,
+   "old_reason": "Photo Widget. (2.5k ratings): 49 low-star in 90d (us, gb) on a new watermark, ads and ~$12/yr to remove it; the widget is the whole product, so native extension work is the core and fails Gate B; a reviewer already moved to a $9.99 lifetime photo widget app",
+   "status": "open"
+  },
+  {
+   "key": "paywall:photomyne:ai-restore-credits",
+   "rejected_on": "2026-11-07",
+   "incumbents": [
+    "1037784828",
+    "951627022"
+   ],
+   "evidence_reviews": 46,
+   "old_reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, ★4.8 from 91k ratings (last update 2022, still listed)",
+   "status": "open"
+  },
+  {
+   "key": "regressed:storm-radar:free-tier",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "1216396545"
+   ],
+   "evidence_reviews": 45,
+   "old_reason": "45 low-star reviews in 90d (us) about the free tier losing radar and storm tracks after the 2026 redesign; free radar is already in Apple Weather and MyRadar, and radar data beyond US NEXRAD needs licensing",
+   "status": "open"
+  },
+  {
+   "key": "ads:timehop:daily-memories",
+   "rejected_on": "2026-11-07",
+   "incumbents": [
+    "569077959"
+   ],
+   "evidence_reviews": 42,
+   "old_reason": "Timehop (187k ratings) v5.0: 42 low-star in 90d (us, gb) on unskippable ads and paywalled memories, fading to 4 since 10-28. After 5 hunt rounds no differentiator beyond ~14 on-device 'on this day' clones (Photo Flashback free, On This Day Rewind) and Apple Photos Memories, no off-store threads, no willingness to pay. Was on the watchlist at 3.5 since 2026-11-03",
+   "status": "open"
+  },
+  {
+   "key": "ads:alarm-clock-hd:unskippable",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "476555713"
+   ],
+   "evidence_reviews": 35,
+   "old_reason": "Alarm Clock HD (104k ratings): 35 low-star in 90d (us), 26 on unskippable ads, from 10-15 year users; reliable alarms need native AlarmKit work (same Gate B failure as bugs:alarmy:battery-drain), and the iOS Clock is free",
+   "status": "open"
+  },
+  {
+   "key": "fleeceware:fax:weekly-sub",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "978931264",
+    "1151406354"
+   ],
+   "evidence_reviews": 35,
+   "old_reason": "FAX from iPhone (379k) 35 low-star and FaxFree (175k) 33, us: 'free' fax apps that bill about $9/week at the send step. Killed: Genius Fax (4.9, 44k) already sells $0.99 per-page credits with no subscription needed to send, every page costs a carrier fee so there is no useful free tier, and Gate B wants one pro entitlement, not consumables",
+   "status": "open"
+  },
+  {
+   "key": "regressed:scanner-pro:v9",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "333710667"
+   ],
+   "evidence_reviews": 35,
+   "old_reason": "Scanner Pro (338k ratings): 35 low-star in 60d after v9.0 broke saving and pushed a subscription on one-time buyers. Killed: Notes and Files scan free, and Genius Scan and Adobe Scan are free; template category",
+   "status": "open"
+  },
+  {
+   "key": "paywall:night-sky:aura-ai",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "475772902"
+   ],
+   "evidence_reviews": 34,
+   "old_reason": "Night Sky (498k ratings): 34 low-star in 90d (us 31, gb 3) on search moving behind an AI 'Aura' subscription and paywall pop-ups. Needs a sky engine and catalog plus AR compass work; Sky Guide, SkyView and Stellarium already serve the category",
+   "status": "open"
+  },
+  {
+   "key": "paywall:islamic-apps:survey-onboarding",
+   "rejected_on": "2026-11-02",
+   "incumbents": [
+    "1559086853",
+    "6760214927"
+   ],
+   "evidence_reviews": 33,
+   "old_reason": "33 low-star reviews in 90d across Pillars (14; us, gb, ae) and Niyat (19; us, au, ca) about a long unskippable onboarding survey ending in a paywall before basic prayer/Quran features; same kill as paywall:islamic-apps:basic-worship-features: MAWAQIT, Quran.com, Pray Watch and IslamApp are free and ad-free with no survey",
+   "status": "open"
+  },
+  {
+   "key": "regressed:readdle-calendars:events-lost",
+   "rejected_on": "2026-11-07",
+   "incumbents": [
+    "608834326"
+   ],
+   "evidence_reviews": 33,
+   "old_reason": "Calendars by Readdle (122k ratings): 33 low-star in 90d (us, gb): events vanishing (~8), repeat events moved to Pro (~4), month-view redesign (~4). Calendar is a crowded category and Apple Calendar is free, local-capable and repeats events",
+   "status": "open"
+  },
+  {
+   "key": "bugs:discogs:logouts-collection",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "1036449551"
+   ],
+   "evidence_reviews": 31,
+   "old_reason": "Discogs (67k ratings): 31 low-star in 90d (us, gb), about 11 on forced logouts and password resets, 8 on collection sort resets, 7 on a broken video player, 3 on an upsell sheet; mostly bugs, and VinylBox ($0.99-1.99/mo, Discogs sync) and iCollect Music (4.5, 2.5k) already cover the collection",
+   "status": "open"
+  },
+  {
+   "key": "paywall:google-forms:third-party-clients",
+   "rejected_on": "2026-11-06",
+   "incumbents": [
+    "1619382448",
+    "1544827472"
+   ],
+   "evidence_reviews": 31,
+   "old_reason": "Forms for Google Docs (62k ratings): 31 low-star in 90d (us, gb), mostly subscription pop-ups and people expecting Google's own app. Form+ (4.8, 45k) and two others already exist, and the app depends on Google's API and OAuth review",
+   "status": "open"
+  },
+  {
+   "key": "ads:dc-metro:ad-walls",
+   "rejected_on": "2026-11-03",
+   "incumbents": [
+    "578496721"
+   ],
+   "evidence_reviews": 30,
+   "old_reason": "~30 low-star reviews in 90d (us) on unskippable ads in DC Metro and Bus; one-city audience, and Citymapper, Transit and Apple Maps cover DC for free",
+   "status": "open"
+  },
+  {
+   "key": "paywall:wonder-weeks:lifetime-revoked",
+   "rejected_on": "2026-11-04",
+   "incumbents": [
+    "529815782"
+   ],
+   "evidence_reviews": 25,
+   "old_reason": "The Wonder Weeks (122k ratings): 25 low-star in 90d (us, gb), ~10 in the days after v14.0 (2026-10-28) moved one-time buyers to $5/month; the leap framework is the publisher's proprietary content, reviewers also call it inaccurate, and clones already exist (Baby Leaps $6.99/yr, LittleLeaps, Baby Tracker: Leaps & Weeks); fails Gate B on content rights",
+   "status": "open"
+  }
+ ]
+}

@@ -71,6 +71,14 @@ python scout/reviews.py --data ../data search "lifetime"                        
 python scout/reviews.py --data ../data competitors "habit"                      # who else charts in this space
 ```
 
+### 1b. Re-open queue (do this before new clusters)
+
+`ideas/reopen.json` lists clusters rejected under the old rule ("an alternative exists, so drop it") with strong evidence. They didn't fail on pain or build fit. Each day, re-evaluate the **top 4 still open** (highest `evidence_reviews` first) with the current rules: wedge, alternative's own reviews, hard-kill test, gates, score. Refresh their evidence with `reviews.py` if they're in the 7-day window, and add them to a targeted run's ids if not. Mark each `reopened: <date>` with the outcome. One that scores ≥ 3.6 is an idea; remove it from `rejected` in the ledger and add it to `ideas`.
+
+### 1c. Self-audit (catch a broken rule early)
+
+Count `ideas/ledger.json` → `rejected` by `reason_type` for the **last 3 days**. If there were 0 ideas in those 3 days and one reason type accounts for more than half of the rejections, add a **Calibration warning** at the top of the report: the rule, the count, and 2 examples where it may be wrong. A single rule killing most clusters is a sign the rule is miscalibrated, not that pain is absent. Every new `rejected` entry must carry a `reason_type`, one of `evidence` (Gate A), `build` (Gate B), `excluded`, `ios-builtin`, `dominant-free-alternative` (hard kill b), `no-wedge`, `score`, `other`.
+
 ### 2. Validate (top 3–6 clusters)
 
 For each cluster, gather:
@@ -80,7 +88,10 @@ For each cluster, gather:
 3. **Proven demand** — incumbent ratings count, charts presence, grossing presence, price. Big, paying user bases with a shared frustration are the best signal.
 4. **Willingness to pay** — "I'd pay", "I paid for", complaints about price (people already pay for this category), paid-chart presence.
 5. **Off-store corroboration** — 2–4 WebSearch queries, e.g. `<app name> alternative reddit`, `<app name> <complaint> reddit`, `"<app name>" removed <feature>`, `best <category> app without subscription`. Reddit is only reachable through search results; fetch a result page if it loads, otherwise use the snippet. Record URLs.
-6. **Existing fix (kill check)** — does an app already solve this well? Use `reviews.py competitors` plus WebSearch (`<category> app no subscription`, `<category> app one time purchase`, `<feature> app ios`). If a well-rated (★4.5+, thousands of ratings), cheap or free app already does exactly this, the cluster is dead: put it in `rejected` with the app name.
+6. **Competition and wedge** (scored, not a kill): find the best 2–3 alternatives (`reviews.py competitors` plus WebSearch: `<category> app no subscription`, `<category> app one time purchase`, `<feature> app ios`, `<incumbent> alternative reddit`). In a proven category an alternative almost always exists. That's normal and isn't a reason to drop the cluster. Instead:
+   - **Name the wedge**: one concrete thing the idea does that *both* the incumbent and the best alternative don't (one-time purchase where they're subscription-only, no account, imports the incumbent's export, works offline, Arabic/RTL done right, a niche workflow they ignore, no AI, the old feature back). If you can't name a wedge in one sentence, that's a real reason to reject.
+   - **Check the alternative's own reviews** (`reviews.py app <id>` if it's in the data, otherwise its App Store page via WebSearch). An alternative with its own paywall or ad complaints is weak competition.
+   - **Hard kill only when**: (a) iOS itself does it free (AirPrint, Photos, Files, built-in Passwords/2FA, Apple Podcasts…), or (b) the alternative is free, no ads, no account, ★4.6+ with 20k+ ratings, has the exact thing users ask for, *and* its own low-star reviews don't share the complaint. Write which of (a)/(b) applied. "Alternatives exist" on its own is never the reason.
 
 ### 3. Gate A — is the pain real? (all must pass)
 
@@ -102,7 +113,7 @@ For each cluster, gather:
 - No social features, chat, feeds, maps, AI features or admin panel **unless they are the core loop** (and then flag the cost).
 - No hardware or Apple-only APIs Expo can't reach well: watchOS apps, CarPlay, keyboard extensions, Screen Time / FamilyControls, Safari extensions, deep HealthKit work, always-on background location. Home-screen widgets and Live Activities need native extension work: allowed only if not the core, and flag them.
 - No licensed content or data you can't get (music catalogs, sports data, live TV, bank feeds), no marketplace that needs two sides, no regulated domain (the excluded categories).
-- Guideline 4.3 (spam / copycat) risk is acceptable: the differentiator must be visible on the first screen, not "the same app but cheaper" in a crowded template category (flashlight, QR scanner, generic habit tracker) unless the evidence is overwhelming.
+- Guideline 4.3 (spam / copycat): Apple rejects templated clones, near-duplicates and fleeceware, not good alternatives. Risk is **high** only for an undifferentiated clone in a template category (flashlight, QR scanner, generic tracker) with no visible wedge. A quality app whose wedge shows on the first screen is acceptable even in a crowded category. Note the risk in the brief; don't use it as a blanket rejection.
 
 #### Extra checks for the islamic segment
 
@@ -121,7 +132,7 @@ For each cluster, gather:
 | Proven demand (incumbent size, grossing, paid) | 20% | 100k+ ratings or top-grossing in many storefronts |
 | Willingness to pay | 15% | people explicitly paying or asking to pay |
 | Gap clarity (one clear thing to do better) | 15% | the fix fits in one sentence |
-| Weak competition (kill-check margin) | 15% | no good alternative found |
+| Competition and wedge | 15% | 5: no good alternative; 4: alternatives have their own complaints and a clear wedge; 3: a strong alternative exists but the wedge is clear and visible; 2: weak wedge; 1: no wedge |
 | Build fit (how comfortably it fits 14 days) | 10% | 3 screens, no native extensions, simple data |
 
 Weighted score ≥ **3.6** → idea (max 3 per day, highest first). 3.0–3.6 → `watchlist` with what evidence would promote it. Below 3.0 or failed a gate → `rejected` with the one-line reason (only for clusters you seriously looked at).
