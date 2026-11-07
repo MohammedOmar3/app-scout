@@ -31,7 +31,7 @@
         "beer tracker"
       ],
       "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27. Kill check grew again: Drinkist (free, no ads, iOS and Android, multi-drink), Brewver (web, imports Untappd ratings) and Taphouse (import and export) are listed in drinkist.app/blog/untappd-alternative (2026-06-26, vendor post)",
       "missing": "persistence: rescan both in about a week and count new low-star reviews on v5.1+ / 2026.44+ (needs ≥15 in the newer versions); other storefronts (the targeted pool can't reach ca/au/de/nl for apps that chart only in us/gb, so ca/au evidence needs the pool fix or WebFetch of public review pages); ≥3 off-store threads (none found by search on 2026-11-02); willingness to pay (asks for a paid private journal, or Insider/Premium cancellations citing logging); Bruwia's App Store rating count",
       "rounds": 8,
       "last_round": "2026-11-07"
@@ -330,6 +330,21 @@
     },
     {
       "key": "discovery:round1-batch-2026-11-07",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:guitar-tuners:trial-traps",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:yazio:ads-and-extras",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-07",
       "outcome": "rejected",
       "date": "2026-11-07"
     }

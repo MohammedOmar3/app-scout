@@ -920,6 +920,41 @@
         "852497554"
       ],
       "reason": "round 1 side findings: document scanners CamScanner (153), Adobe Scan (47, crash bug since v26.10.15), iScanner (33): Notes and Files scan free; IMDb (96) and Letterboxd (32): licensed film data; Google Photos (86): full-library access and layout, iCloud Shared Albums covers selective sharing; Golden Quran (34): v17 badges interrupting reading, Quran.com free and ad-free. Quiet: setlist, chess clock, aquarium, film log, sermon notes"
+    },
+    {
+      "key": "paywall:guitar-tuners:trial-traps",
+      "date": "2026-11-07",
+      "incumbents": [
+        "527588389",
+        "1573260863",
+        "1107017950",
+        "453056916",
+        "1438248122"
+      ],
+      "reason": "GuitarTuna 34, Guitar Tuner – Simply Tune 26, Fender Tune 19, Tuner T1 13, Tuner Pro 13 low-star in 90d (us, gb): trial charges and paywalls mixed with wrong-string and octave errors that snap strings. No single gap: accuracy is an audio-engineering problem, real-time pitch detection needs a native audio module outside comfortable Expo work, tuners are a template category (4.3 risk) and Fender Tune's basic tuner is free"
+    },
+    {
+      "key": "paywall:yazio:ads-and-extras",
+      "date": "2026-11-07",
+      "incumbents": [
+        "946099227",
+        "286906691"
+      ],
+      "reason": "Yazio (52k us ratings): 123 low-star in 60d outside English storefronts (de 57, fr 46, it 20): ads on every meal, long forced onboarding, everything extra paid, no offline use; Lifesum 18 (se). Calorie counting is a crowded template category that needs a food database (MyFitnessPal, Cronometer, FDDB, Lose It), so a cleaner copy is a 4.3 risk"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-07",
+      "date": "2026-11-07",
+      "incumbents": [
+        "357828853",
+        "835731296",
+        "959883039",
+        "1476695335",
+        "1242321076",
+        "672904239",
+        "864076487"
+      ],
+      "reason": "round 2 term scan (baby tracker, breastfeeding, grocery list, chore chart, pickleball, time tracker, metronome, guitar tuner): Ultimate Guitar (107) and MuseScore (85) are licensed tabs and scores; Yousician (63) and Simply Guitar (62) are lesson content; QuickBooks Workforce (77) is employer payroll; Playtomic (30) is a court-booking marketplace; I Am Sober (14) is recovery (health). Huckleberry wasn't scanned (likely Medical genre). Quiet: grocery lists, metronomes, time trackers, baby feed timers"
     }
   ]
 }
