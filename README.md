@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-07 — no ideas today after 4 hunt rounds; guitar tuners, Yazio and Photomyne had loud complaints but free fixes already exist; Maple's shutdown is tomorrow's first lead — [report](reports/2026-11-07.md)
+**Latest:** 2026-11-07 — 1 idea: [Recipe Drop (working name)](briefs/2026-11-07-recipe-drop.md), ReciMe's social recipe import without the trial wall or weekly cap (score 3.8, conditional on a day-1 Instagram test) — [report](reports/2026-11-07.md)
 
 ## How it works
 

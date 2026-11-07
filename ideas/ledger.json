@@ -13,6 +13,20 @@
     "6748363429"
    ],
    "evidence": "RoadReady (2.9, 19k ratings): 87 low-star reviews in 90d, 128 since May 2026, us only, rising monthly after the June rewrite: login 51, lost hours 27, ads 14. RoadReady Ohio 6 in 90d and Aceable's log 2 share the complaint"
+  },
+  {
+   "key": "paywall:recime:forced-trial",
+   "date": "2026-11-07",
+   "title": "Recipe Drop (working name)",
+   "status": "proposed",
+   "score": 3.8,
+   "brief": "briefs/2026-11-07-recipe-drop.md",
+   "incumbents": [
+    "1593779280",
+    "1303222868"
+   ],
+   "evidence": "ReciMe (4.8, 328k, grossing us/gb/nz): 168 low-star in 90d (us 58, gb 56, ca 35, au 17), ~134 on forced 7-day trial / 'not free' / 5-imports-a-week cap / price; non-US rising Aug 21, Sep 40, Oct 46; still on v8.2.2. Paprika (4.9, 54k, $4.99): 6 low-star since June on no Instagram/Facebook/YouTube import. Re-opened from the 2026-11-02 rejection (alternatives were paid, so hard kill b never applied). Conditional on a day-1 Instagram caption test; ~3.5 if Instagram is paste-only",
+   "reopened_from": "rejected 2026-11-02"
   }
  ],
  "watchlist": [
@@ -40,6 +54,18 @@
    "score": 3.4,
    "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. LookOver (4.9, 5,000+ downloads by its own count, free for one machine, $24.99/yr) already tracks mowers, generators and powersports by engine hours. Only 6 VMT reviews since Nov 2025 mention non-car machines 2026-11-06 daily data: VMT 40 in 90d, 1 since 10-28; dated-thread search found only old forum threads 2026-11-07 daily data: VMT 39 in 90d, 1 since 10-28; CARFAX 10",
    "promote_if": "a differentiator the small logs lack, shown on the first screen (all machines plus local backup isn't one: Kelvik, MaintainAll and LookOver already offer it, and Car Cave covers cars well); confirmation that VMT and Fuelly CSV exports import with dates intact; Fuelly's reviews measured (needs the Finance-genre exclusion relaxed for named targets); ≥3 dated off-store threads in the last 12 months"
+  },
+  {
+   "key": "paywall:timer-plus:forced-paywall",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-07",
+   "incumbents": [
+    "1279716547",
+    "475816966"
+   ],
+   "score": 3.5,
+   "evidence": "Re-opened 2026-11-07 from rejected. Timer Plus (4.8, 61k, grossing gb): 134 low-star in 90d (us 85, gb 49), surge from 10-16 peaking 10-27..29 (15/20/22 a day), tapering to 2 on 11-02, still paywalled on v1.8.6; long-time users, gym instructors, no Family Sharing. Seconds (23.8k) 31 after its v26 redesign. Hard kill (b) doesn't apply: Tabata Timer & HIIT (156k) has ads and a 7-day limit, SmartWOD (54k) has ads and a subscription, Seconds Pro is $7.99 paid. Scores: evidence 4, demand 4, WTP 2 ('for an interval timer??'), gap 4, competition 2 (the only wedge is price, and IntervalFree, free with no ads and Live Activities, 37 ratings, already ships it), build 5 = 3.5. 4.3 risk high (template category, the wedge is pricing only)",
+   "promote_if": "the paywall holds and complaints continue past 2026-12-01; a concrete non-price wedge (e.g. coach or class mode, sharing workouts with clients) shows up in reviews or threads; or explicit asks to pay a fair one-time price"
   }
  ],
  "rejected": [
@@ -365,15 +391,6 @@
    "reason_type": "dominant-free-alternative"
   },
   {
-   "key": "paywall:recime:forced-trial",
-   "date": "2026-11-02",
-   "incumbents": [
-    "1593779280"
-   ],
-   "reason": "143 low-star reviews in 90d (gb, us, ca, au), ~50 about being forced into a trial of a 'free' recipe saver; killed by a crowded field: Mela+ ($6.99 one-time) reads Instagram/TikTok/YouTube descriptions, Recipe Keeper ($19.99 one-time), Paprika ($4.99), plus free tiers of Peel, Recipe Notes, Flavorish; video import needs AI; high 4.3 risk",
-   "reason_type": "dominant-free-alternative"
-  },
-  {
    "key": "abandoned:voice-recorder:trim-save",
    "date": "2026-11-02",
    "incumbents": [
@@ -574,16 +591,6 @@
    "reason_type": "dominant-free-alternative"
   },
   {
-   "key": "paywall:timer-plus:forced-paywall",
-   "date": "2026-11-04",
-   "incumbents": [
-    "1279716547",
-    "475816966"
-   ],
-   "reason": "Timer Plus (61k ratings): 131 low-star reviews in the last 30 days (us 86, gb 51 stored), nearly all since 2026-10-28, when a free interval timer put a hard paywall (~$20) in front of Start and the paid build then crashed on launch on iOS 27; Seconds (24k) got 31 in 90d after its v26 redesign. Biggest paywall surge of the day, but killed: Seconds Pro ($7.99 one-time, 4.8, 12k), Tabata Timer and HIIT Timer (4.8, 73.7k, free to download), SmartWOD Timer (4.9, 54k, free to download), Tabata Timer: Interval Timer (4.9, 9.5k, free to download), plus a wave of new 2026 timers; template category with high 4.3 risk",
-   "reason_type": "dominant-free-alternative"
-  },
-  {
    "key": "ads:alarm-clock-hd:unskippable",
    "date": "2026-11-04",
    "incumbents": [
@@ -626,8 +633,9 @@
    "incumbents": [
     "542701020"
    ],
-   "reason": "Withings (369k ratings): 128 low-star reviews in 90d, 125 of them since 2026-10-13 (us 81, gb 56 stored), 64 naming Apple Health, after accounts created from 10-13 need Withings+ ($99.50/yr) for automatic sync. Heavy press and a 200+ comment support thread, no reversal. Fails Gate B: the same rule covers the free API plan (Partner Hub, from 10-12) and the terms bar routing data around it, so a sync bridge can't get the data; the only free route is manual CSV export, and Health CSV Importer (4.2, 292, free for weight) already takes that. Recheck if Withings reverses or Apple acts on guideline 4.10",
-   "reason_type": "dominant-free-alternative"
+   "reason": "Withings (369k ratings): 128 low-star reviews in 90d, 125 of them since 2026-10-13 (us 81, gb 56 stored), 64 naming Apple Health, after accounts created from 10-13 need Withings+ ($99.50/yr) for automatic sync. Heavy press and a 200+ comment support thread, no reversal. Fails Gate B: the same rule covers the free API plan (Partner Hub, from 10-12) and the terms bar routing data around it, so a sync bridge can't get the data; the only free route is manual CSV export, and Health CSV Importer (4.2, 292, free for weight) already takes that. Recheck if Withings reverses or Apple acts on guideline 4.10 | 2026-11-07 re-open: unchanged. Fails Gate B on data access (the Withings API sits behind the same rule), not on competition",
+   "reason_type": "build",
+   "reopened": "2026-11-07"
   },
   {
    "key": "ads:swipewipe:photo-swipe",
@@ -788,8 +796,9 @@
     "1439422220",
     "6443877058"
    ],
-   "reason": "10 universal remote apps: ~280 paywall complaints in 90d (us, gb). Largest cross-app paywall cluster today, but killed: Roku, Samsung SmartThings, LG ThinQ, Google TV and Fire TV all have free official remotes, each brand needs its own LAN protocol, and it's a template category with high 4.3 risk",
-   "reason_type": "dominant-free-alternative"
+   "reason": "10 universal remote apps: ~280 paywall complaints in 90d (us, gb). Largest cross-app paywall cluster today, but killed: Roku, Samsung SmartThings, LG ThinQ, Google TV and Fire TV all have free official remotes, each brand needs its own LAN protocol, and it's a template category with high 4.3 risk | 2026-11-07 re-open (new rules): still rejected, now on Gate B. Hard kill (b) doesn't strictly apply (Samsung and LG official remotes need accounts), but each brand needs its own LAN protocol: Roku over HTTP; Samsung and LG over wss with self-signed certificates, which needs a native WebSocket patch; Google TV needs TLS client certificates. Discovery needs SSDP plus the multicast entitlement or a Bonjour workaround. That doesn't fit 14 days. Willingness to pay is weak ('should be free', 'cheaper to buy a remote'), and an honest-priced remote is an undifferentiated clone in a template category with hundreds of copies, so 4.3 risk is high",
+   "reason_type": "build",
+   "reopened": "2026-11-07"
   },
   {
    "key": "ads:hilal-calendar:hijri-calendar",

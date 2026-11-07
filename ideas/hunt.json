@@ -358,6 +358,11 @@
       "key": "discovery:round3-batch-2026-11-07",
       "outcome": "rejected",
       "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:recime:forced-trial",
+      "outcome": "idea",
+      "date": "2026-11-07"
     }
   ]
 }
