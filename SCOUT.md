@@ -46,6 +46,8 @@ Rebuild the digest with the ledger so used apps are flagged:
 python scout/digest.py --data ../data --out /tmp/digest.md --ledger ideas/ledger.json && cat /tmp/digest.md
 ```
 
+Read the digest's **Early surges** table first. A surge (a pain that started in the last 14 days in a mid-sized app) is the highest-value lead, because fast followers haven't shipped yet. Always put the top 1–2 non-platform surges on the shortlist, and check how many alternatives already have the wedge: few or small ones means the window is open.
+
 From the digest, shortlist **8–12 pain clusters**. A cluster is one specific frustration ("lifetime unlock removed, now subscription only"; "can't export to CSV"; "forced account just to log water"), not an app. Look for:
 
 | Opportunity type | What it looks like | Typical idea shape |

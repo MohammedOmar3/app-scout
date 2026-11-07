@@ -97,6 +97,35 @@ def main():
     L.append(f"Window: apps scanned in the last {args.window} days ({len(apps)} with low-star reviews in the last {args.recent} days). "
              "Theme counts are English keyword hits only; non-latin reviews are counted separately and must be read.\n")
 
+    # early surges: pain that started in the last 14 days, before clones exist
+    L.append("## Early surges (low-star reviews in the last 14 days vs the app's own earlier rate)\n")
+    L.append("Mid-sized apps only (2k-300k ratings), services and platforms excluded. A surge is the best moment to "
+             "build: refugees are looking for an alternative and fast followers haven't shipped yet.\n")
+    skip_g = {"Social Networking", "Entertainment", "Shopping", "News", "Music", "Magazines & Newspapers", "Food & Drink", "Travel"}
+    d14 = (today - dt.timedelta(days=14)).isoformat()
+    surges = []
+    for a in apps:
+        m = a["meta"]
+        rc = m.get("ratings") or 0
+        if not (2000 <= rc <= 300000) or m.get("genre") in skip_g:
+            continue
+        r14 = sum(1 for r, _ in a["tagged"] if r["date"] >= d14)
+        r_before = a["recent"] - r14
+        base = r_before / max(1, args.recent - 14) * 14
+        spike = r14 / (base + 1)
+        if r14 >= 10 and spike >= 3:
+            surges.append((r14 * min(spike, 10), r14, round(spike, 1), a))
+    surges.sort(key=lambda x: -x[0])
+    if surges:
+        L.append("| app | id | genre | ratings | last 14 d | spike | storefronts |\n|---|---|---|---|---|---|---|")
+        for _, r14, spike, a in surges[:15]:
+            m = a["meta"]
+            ccs = sorted({r["cc"] for r, _ in a["tagged"] if r["date"] >= d14})
+            L.append(f"| {clip(m.get('name'), 34)}{' [used]' if a['used'] else ''} | {a['id']} | {m.get('genre')} | {m.get('ratings')} | {r14} | x{spike} | {', '.join(ccs[:6])} |")
+    else:
+        L.append("_no surges in mid-sized tool apps today_")
+    L.append("")
+
     L.append("## Cross-app themes by genre (same complaint in several apps = stronger evidence)\n")
     rows = []
     for g, tm in genre_theme.items():
