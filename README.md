@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-06 — no ideas today after 4 hunt rounds; Forest's redesign was the strongest pain (123 low-star reviews in 90 days), but Flora already does the job for free — [report](reports/2026-11-06.md)
+**Latest:** 2026-11-07 — hunt in progress, no idea yet — [report](reports/2026-11-07.md)
 
 ## How it works
 

@@ -19,37 +19,37 @@
     {
       "key": "removed:drink-logs:private-journal",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-06",
+      "last_seen": "2026-11-07",
       "incumbents": [
         "449141888",
         "414461255"
       ],
       "score": 3.55,
-      "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43. 2026-11-04 rescan: Untappd 92 low-star in 90d (us 70, gb 28 all-time stored), still 1-6 a day to 11-01, 1 in November so far; Vivino 27. 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28 on v5.0.x, us 70 and gb 28 stored; Vivino 27, now on 2026.43+; no new storefronts 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; forum searches again found no threads about 5.0. New rival noted: Crumble, a free private multi-drink tracker on the web that imports Untappd exports",
+      "evidence": "Untappd 5.0 redesign (2026-10-15): 87 low-star reviews on v5.0.x 2026-10-16..10-31 (us 66, gb 21; only 1 low-star in the 2 months before), themes UI clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider paywall 7 (Untappd 216k ratings us, grossing in 2). Vivino 2026.33-2026.43 rebuild: ~15 of 25 low-star reviews (us, gb, 2026-08-13..10-30) about personal logging getting worse: can't edit wine/year, no manual entry, tasted wines lost, cellar notes removed (Vivino 140k ratings us). Competitors are tiny or single-drink: Bruwia (free, beer, imports Untappd history), Vinocell ($9.99, wine cellar, 1.8k), CellarTracker (650), Beerstory/Tastings/BrewGene/Pint Please (0-75 ratings). Untappd check-in export is Insider-only (GDPR request in the EU). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2, still 2-6 a day at month end; Vivino 26 (us 20, gb 6), still on 2026.42-43. 2026-11-04 rescan: Untappd 92 low-star in 90d (us 70, gb 28 all-time stored), still 1-6 a day to 11-01, 1 in November so far; Vivino 27. 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28 on v5.0.x, us 70 and gb 28 stored; Vivino 27, now on 2026.43+; no new storefronts 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; forum searches again found no threads about 5.0. New rival noted: Crumble, a free private multi-drink tracker on the web that imports Untappd exports 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01 (v5.0.2); Vivino 27",
       "promote_if": "the Untappd/Vivino complaints are still coming 4+ weeks on (after Untappd 5.1 and the next Vivino release), appear in ≥3 more storefronts, ≥3 independent off-store threads show people leaving for a private log, and there's evidence of willingness to pay (asks for a one-time paid journal, or Insider/Premium cancellations citing logging). Otherwise reject: drinkers are used to free apps, and Bruwia already imports Untappd history for free"
     },
     {
       "key": "ads:timehop:daily-memories",
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-06",
+      "last_seen": "2026-11-07",
       "incumbents": [
         "569077959"
       ],
       "score": 3.5,
-      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found. 2026-11-05 daily data: 43 in 90d, 4 since 10-28, no update since 2026-10-01 2026-11-06 daily data: 43 in 90d, 4 since 10-28, 1 since 11-01; forum search found nothing",
+      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found. 2026-11-05 daily data: 43 in 90d, 4 since 10-28, no update since 2026-10-01 2026-11-06 daily data: 43 in 90d, 4 since 10-28, 1 since 11-01; forum search found nothing 2026-11-07 daily data: 42 in 90d, 4 since 10-28, 1 since 11-01",
       "promote_if": "a differentiator the clones lack, shown on the first screen (e.g. a real daily-streak ritual with streak carry-over that long-time users respond to), off-store threads of people leaving, and explicit willingness to pay; most reviewers are angry about paying at all"
     },
     {
       "key": "data-loss:vehicle-maintenance:owner-held-log",
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-06",
+      "last_seen": "2026-11-07",
       "incumbents": [
         "1315913699",
         "552472249",
         "295905460"
       ],
       "score": 3.4,
-      "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. LookOver (4.9, 5,000+ downloads by its own count, free for one machine, $24.99/yr) already tracks mowers, generators and powersports by engine hours. Only 6 VMT reviews since Nov 2025 mention non-car machines 2026-11-06 daily data: VMT 40 in 90d, 1 since 10-28; dated-thread search found only old forum threads",
+      "evidence": "Vehicle Maintenance Tracker (4.3, 2.9k ratings): 40 of 40 low-star reviews in 90d are about lost or unreliable records (us 39, gb 1), 87 since June 2026 (Jun 6, Jul 37, Aug 22, Sep 12, Oct 9): service dates reset to 01/01/1900 after the May redesign, no release since 2026-06-27, at least 13 reviewers leaving for other apps, paper or Excel. CARFAX Car Care (4.8, 128k): 7 in 90d (3 lost records, 4 forced logouts), 12 since February across v4.11-5.9. Fuelly (4.7, ~30k, Finance genre, not scannable): no update since 2024-06-03. Passes Gate A on reviews (47 in 90d, 2 apps). Competition is the problem: about 25 small logs; Car Cave (4.7, 376, no login, iCloud, Premium $4.99, a VMT reviewer moved to it and praised it), My Car (4.7, 1.2k), Drivvo (982), Road Trip MPG (629), and all-machine local logs Kelvik, MaintainAll, Maintenance Tracker, Recur.it, Loggy (88) already make the same pitch. LookOver (4.9, 5,000+ downloads by its own count, free for one machine, $24.99/yr) already tracks mowers, generators and powersports by engine hours. Only 6 VMT reviews since Nov 2025 mention non-car machines 2026-11-06 daily data: VMT 40 in 90d, 1 since 10-28; dated-thread search found only old forum threads 2026-11-07 daily data: VMT 39 in 90d, 1 since 10-28; CARFAX 10",
       "promote_if": "a differentiator the small logs lack, shown on the first screen (all machines plus local backup isn't one: Kelvik, MaintainAll and LookOver already offer it, and Car Cave covers cars well); confirmation that VMT and Fuelly CSV exports import with dates intact; Fuelly's reviews measured (needs the Finance-genre exclusion relaxed for named targets); ≥3 dated off-store threads in the last 12 months"
     }
   ],
@@ -863,6 +863,63 @@
         "852691916"
       ],
       "reason": "term scan of hobby and household tools: Merlin Bird ID (71; a boycott over Cornell plus an iPad layout bug, and it is free), Moonpig (37; orders), Countdown (24) and Countdown@ (12; ads, but the widget is the core), BIGVU (25), PromptSmart (17) and Teleprompter (15; assorted bugs and billing, no shared pain), Zola (17), The Knot (14). Quiet: knitting and row counters, packing lists, scorekeepers, gift lists, birthday reminders, tally counters"
+    },
+    {
+      "key": "paywall:photomyne:ai-restore-credits",
+      "date": "2026-11-07",
+      "incumbents": [
+        "1037784828",
+        "951627022"
+      ],
+      "reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, ★4.8 from 91k ratings (last update 2022, still listed)"
+    },
+    {
+      "key": "paywall:lists-to-do:list-limit",
+      "date": "2026-11-07",
+      "incumbents": [
+        "571626623"
+      ],
+      "reason": "Lists To do (106k ratings): 20 low-star in 90d (us 17, gb 3) since v3.0/3.1 capped free lists and asked about $1.99 to add more. Small one-time price, and Apple Reminders and Notes give unlimited lists free"
+    },
+    {
+      "key": "regressed:readdle-calendars:events-lost",
+      "date": "2026-11-07",
+      "incumbents": [
+        "608834326"
+      ],
+      "reason": "Calendars by Readdle (122k ratings): 33 low-star in 90d (us, gb): events vanishing (~8), repeat events moved to Pro (~4), month-view redesign (~4). Calendar is a crowded category and Apple Calendar is free, local-capable and repeats events"
+    },
+    {
+      "key": "paywall:quizlet:learn-rounds",
+      "date": "2026-11-07",
+      "incumbents": [
+        "546473125"
+      ],
+      "reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected"
+    },
+    {
+      "key": "ads:qibla-compass:ads-before-direction",
+      "date": "2026-11-07",
+      "incumbents": [
+        "824927276",
+        "440224767",
+        "6748598501"
+      ],
+      "reason": "Qibla Compass (41k) 11, iSalam (38k) 6 and Compass App – Qibla finder 13 low-star in 90d (gb, sa, ae, us, ca, au): ads before the direction, immodest ads, a $19.99/week fake-ad compass. Killed like ads:prayer-times: Pillars and MAWAQIT are free, ad-free and include a qibla compass"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-07",
+      "date": "2026-11-07",
+      "incumbents": [
+        "388627783",
+        "1199564834",
+        "1040093707",
+        "342792525",
+        "962194608",
+        "1054271011",
+        "852497554"
+      ],
+      "reason": "round 1 side findings: document scanners CamScanner (153), Adobe Scan (47, crash bug since v26.10.15), iScanner (33): Notes and Files scan free; IMDb (96) and Letterboxd (32): licensed film data; Google Photos (86): full-library access and layout, iCloud Shared Albums covers selective sharing; Golden Quran (34): v17 badges interrupting reading, Quran.com free and ad-free. Quiet: setlist, chess clock, aquarium, film log, sermon notes"
     }
   ]
 }

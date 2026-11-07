@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "open_targets": [
     {
       "key": "data-loss:vehicle-maintenance:owner-held-log",
@@ -14,10 +14,10 @@
         "small engine maintenance"
       ],
       "why": "Vehicle Maintenance Tracker wiped service dates after its May 2026 redesign and has had no release since 2026-06-27; CARFAX Car Care loses records too; Fuelly is unmaintained. Replaces abandoned:fuelly:fuel-service-log",
-      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Fails Gate B's 4.3 test for now; scored 3.4. About 30 small logs exist. Car Cave (4.7, 376, $4.99) is good for cars and a VMT reviewer moved to it; LookOver (4.9, 5,000+ downloads, $24.99/yr) tracks small engines by hours; Kelvik, MaintainAll, Maintenance Tracker and Recur.it pitch all-machine local logs. 2026-11-06: VMT 40 in 90d, 1 since 10-28, so complaints are fading; searches returned only undated or old threads",
+      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Fails Gate B's 4.3 test for now; scored 3.4. About 30 small logs exist. Car Cave (4.7, 376, $4.99) is good for cars and a VMT reviewer moved to it; LookOver (4.9, 5,000+ downloads, $24.99/yr) tracks small engines by hours; Kelvik, MaintainAll, Maintenance Tracker and Recur.it pitch all-machine local logs. 2026-11-06: VMT 40 in 90d, 1 since 10-28, so complaints are fading; searches returned only undated or old threads 2026-11-07 daily data: VMT 39 in 90d, 1 since 10-28",
       "missing": "a differentiator past 'all machines, local, backed up'; real VMT and Fuelly CSV samples; Fuelly's own reviews (Finance genre is dropped by the collector even for named ids); ≥3 dated off-store threads from the last 12 months (BITOG pages show no dates, fuelly.com and garagejournal.com won't load)",
       "rounds": 5,
-      "last_round": "2026-11-06"
+      "last_round": "2026-11-07"
     },
     {
       "key": "removed:drink-logs:private-journal",
@@ -31,10 +31,10 @@
         "beer tracker"
       ],
       "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27",
       "missing": "persistence: rescan both in about a week and count new low-star reviews on v5.1+ / 2026.44+ (needs ≥15 in the newer versions); other storefronts (the targeted pool can't reach ca/au/de/nl for apps that chart only in us/gb, so ca/au evidence needs the pool fix or WebFetch of public review pages); ≥3 off-store threads (none found by search on 2026-11-02); willingness to pay (asks for a paid private journal, or Insider/Premium cancellations citing logging); Bruwia's App Store rating count",
       "rounds": 8,
-      "last_round": "2026-11-06"
+      "last_round": "2026-11-07"
     },
     {
       "key": "ads:timehop:daily-memories",
@@ -46,29 +46,10 @@
         "photo memories"
       ],
       "why": "Timehop v5.0 (2026-07) added unskippable ads and paywalled memories and streaks; on the watchlist at 3.5",
-      "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings. 2026-11-04 rescan: 44 in 90d, 22 in the last 30; off-store search found nothing new. 2026-11-05 daily data: 43 in 90d, 4 since 10-28. 2026-11-06 daily data: 43 in 90d, 4 since 10-28; off-store search found nothing",
+      "evidence": "43 low-star reviews in 90d, 70 in 12 months (us, gb). About 14 on-device clones, none with traction: Photo Flashback free, 256 ratings; On This Day Rewind $4.99, streaks, 8 ratings. 2026-11-04 rescan: 44 in 90d, 22 in the last 30; off-store search found nothing new. 2026-11-05 daily data: 43 in 90d, 4 since 10-28. 2026-11-06 daily data: 43 in 90d, 4 since 10-28; off-store search found nothing 2026-11-07 daily data: 42 in 90d, 4 since 10-28",
       "missing": "a differentiator the clones lack, off-store threads of people leaving, explicit willingness to pay",
       "rounds": 4,
-      "last_round": "2026-11-06"
-    },
-    {
-      "key": "discovery:non-charting-logs",
-      "incumbents": [],
-      "terms": [
-        "setlist",
-        "chess clock",
-        "aquarium",
-        "film log",
-        "sermon notes",
-        "cycling log",
-        "tennis score",
-        "flashcards"
-      ],
-      "why": "Vehicle Maintenance Tracker never charted and only surfaced through a term search. Long-lived personal logs outside the chart pool may hide similar failures",
-      "evidence": "Round 3 tried home inventory, book, pet, diary, recipe, practice, warranty, garden, golf and fishing terms: nothing. 2026-11-06 round 1 scanned pilot, dive, hours, shift, chore, coin, wine cellar and hunting terms: nothing. 2026-11-06 round 3 scanned knitting, row counter, birthday, packing, scorekeeper, gift, teleprompter, wedding, bird and tally terms: nothing",
-      "missing": "a first scan of these terms. Term scans have now covered 28 terms with nothing, so stop after this set",
-      "rounds": 2,
-      "last_round": "2026-11-06"
+      "last_round": "2026-11-07"
     }
   ],
   "closed": [
@@ -316,6 +297,41 @@
       "key": "discovery:round3-batch-2026-11-06",
       "outcome": "rejected",
       "date": "2026-11-06"
+    },
+    {
+      "key": "discovery:non-charting-logs",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:photomyne:ai-restore-credits",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:lists-to-do:list-limit",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "regressed:readdle-calendars:events-lost",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "paywall:quizlet:learn-rounds",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "ads:qibla-compass:ads-before-direction",
+      "outcome": "rejected",
+      "date": "2026-11-07"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-07",
+      "outcome": "rejected",
+      "date": "2026-11-07"
     }
   ]
 }
