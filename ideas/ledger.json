@@ -29,17 +29,6 @@
       "promote_if": "the Untappd/Vivino complaints are still coming 4+ weeks on (after Untappd 5.1 and the next Vivino release), appear in ≥3 more storefronts, ≥3 independent off-store threads show people leaving for a private log, and there's evidence of willingness to pay (asks for a one-time paid journal, or Insider/Premium cancellations citing logging). Otherwise reject: drinkers are used to free apps, and Bruwia already imports Untappd history for free"
     },
     {
-      "key": "ads:timehop:daily-memories",
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-07",
-      "incumbents": [
-        "569077959"
-      ],
-      "score": 3.5,
-      "evidence": "Timehop (186k ratings, ~12M installs, 74% ad revenue per AppGoblin): 43 low-star reviews in 90d, 70 in 12 months (us, gb), rising since v5.0 (2026-07), from 8-12 year users with long streaks: unskippable ads, camera-roll photos stuck at 0%, memories and streaks moved behind Timehop+. Competitors are on-device and tiny: Photo Flashback (free, 4.9, 256 ratings), On This Day Rewind ($4.99 one-time, streaks, widgets, MacStories review, 8 ratings), Ayer, Latent, Tiny Whale, ThenNow, Photura, Memozie, ChronoPics. About 14 clones, none with traction. 2026-11-04 rescan: 44 in 90d (22 in the last 30); no off-store threads of people leaving found. 2026-11-05 daily data: 43 in 90d, 4 since 10-28, no update since 2026-10-01 2026-11-06 daily data: 43 in 90d, 4 since 10-28, 1 since 11-01; forum search found nothing 2026-11-07 daily data: 42 in 90d, 4 since 10-28, 1 since 11-01",
-      "promote_if": "a differentiator the clones lack, shown on the first screen (e.g. a real daily-streak ritual with streak carry-over that long-time users respond to), off-store threads of people leaving, and explicit willingness to pay; most reviewers are angry about paying at all"
-    },
-    {
       "key": "data-loss:vehicle-maintenance:owner-held-log",
       "first_seen": "2026-11-05",
       "last_seen": "2026-11-07",
@@ -955,6 +944,28 @@
         "864076487"
       ],
       "reason": "round 2 term scan (baby tracker, breastfeeding, grocery list, chore chart, pickleball, time tracker, metronome, guitar tuner): Ultimate Guitar (107) and MuseScore (85) are licensed tabs and scores; Yousician (63) and Simply Guitar (62) are lesson content; QuickBooks Workforce (77) is employer payroll; Playtomic (30) is a court-booking marketplace; I Am Sober (14) is recovery (health). Huckleberry wasn't scanned (likely Medical genre). Quiet: grocery lists, metronomes, time trackers, baby feed timers"
+    },
+    {
+      "key": "ads:timehop:daily-memories",
+      "date": "2026-11-07",
+      "incumbents": [
+        "569077959"
+      ],
+      "reason": "Timehop (187k ratings) v5.0: 42 low-star in 90d (us, gb) on unskippable ads and paywalled memories, fading to 4 since 10-28. After 5 hunt rounds no differentiator beyond ~14 on-device 'on this day' clones (Photo Flashback free, On This Day Rewind) and Apple Photos Memories, no off-store threads, no willingness to pay. Was on the watchlist at 3.5 since 2026-11-03"
+    },
+    {
+      "key": "discovery:round3-batch-2026-11-07",
+      "date": "2026-11-07",
+      "incumbents": [
+        "570060128",
+        "1252497129",
+        "1527399597",
+        "874656917",
+        "6447391597",
+        "1547252782",
+        "1391009396"
+      ],
+      "reason": "round 3 term scan (dream journal, gratitude journal, moon phase, tide times, kanji, sign language, rosary, plant watering): Duolingo (205, 178 in 30d, 8 storefronts; path redesign and AI on a content platform), PictureThis (45) and PlantIn (38): AI plant ID; I am (32): affirmation content and billing; Apple's Journal (28): Apple's own free app; Lingvano (21): lesson content; Tarteel (25; sa, ae, gb, us): AI recitation checking is the core and it misreads accents. Quiet: moon, tide, gratitude, rosary, plant-water apps"
     }
   ]
 }
