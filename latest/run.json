@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-07",
+ "mode": "daily",
+ "status": "ok",
+ "finished": "2026-11-07T01:09:32+00:00",
+ "plan_minutes": 10.4,
+ "phase_minutes": {
+  "charts": 5.5,
+  "focus+lookup": 4.9
+ },
+ "partial": true,
+ "category_storefronts_today": [
+  "us",
+  "gb",
+  "pa",
+  "gt",
+  "hn",
+  "sv",
+  "ni",
+  "do",
+  "jm",
+  "tt"
+ ],
+ "feeds": {
+  "free/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "grossing/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "paid": {
+   "ok": 95,
+   "empty": 44,
+   "skipped": 35
+  },
+  "free": {
+   "ok": 93,
+   "empty": 46,
+   "skipped": 35
+  },
+  "grossing": {
+   "ok": 93,
+   "empty": 45,
+   "skipped": 36
+  }
+ },
+ "unique_chart_apps": 13067,
+ "eligible_candidates": 10980,
+ "carried_candidates": 5350,
+ "targets": null,
+ "terms": null,
+ "queued": 250,
+ "shards": 3,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 84,
+   "apps_scanned": 83,
+   "reviews_fetched": 26656,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 8.0,
+   "requests": 795,
+   "failures": 0
+  },
+  {
+   "shard": 1,
+   "apps_queued": 83,
+   "apps_scanned": 83,
+   "reviews_fetched": 26192,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 7.4,
+   "requests": 732,
+   "failures": 0
+  },
+  {
+   "shard": 2,
+   "apps_queued": 83,
+   "apps_scanned": 83,
+   "reviews_fetched": 24275,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 6.8,
+   "requests": 683,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 249,
+ "reviews_fetched": 77123,
+ "low_star_kept": 13214,
+ "review_files": 1870,
+ "requests": 2831,
+ "failures": 132,
+ "http_status": {
+  "chart-legacy 200": 372,
+  "chart-legacy 403": 132,
+  "breaker cooldown-1": 1,
+  "breaker blocked": 1,
+  "focus-islamic 200": 85,
+  "lookup 200": 32,
+  "canary 200": 3,
+  "canary ok": 3,
+  "reviews 200": 2207,
+  "reviews mostrecent p1 ok": 667,
+  "reviews mostrecent p2 ok": 265,
+  "reviews mosthelpful p1 ok": 657,
+  "reviews mosthelpful p1 empty": 10,
+  "reviews mosthelpful p2 ok": 476,
+  "reviews mostrecent p1 empty": 123,
+  "reviews mosthelpful p2 empty": 8,
+  "reviews mostrecent p2 empty": 1
+ },
+ "error_samples": [],
+ "log": [
+  "[00:56:18] charts: 962 feeds, 11904 unique apps, category storefronts today: us,gb,pa,gt,hn,sv,ni,do,jm,tt",
+  "[00:56:18] charts: stopped early (time budget or 403 breaker) - continuing with what we have",
+  "[00:59:49] focus 'islamic': 1222 apps found by search",
+  "[01:01:10] lookup: 436 needed, 43 not in US store, cache size 34068",
+  "[01:01:10] plan: 10980 candidates (5350 carried over), queue 250 (40 focus)",
+  "[01:01:22] shard 0/3: 84 apps",
+  "[01:01:23] shard 0: canary ok",
+  "[01:01:25] shard 1/3: 83 apps",
+  "[01:01:25] shard 1: canary ok",
+  "[01:01:25] shard 2/3: 83 apps",
+  "[01:01:25] shard 2: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ },
+ "targeted_runs": [
+  {
+   "finished": "2026-11-07T02:52:18+00:00",
+   "targets": [
+    "1037784828",
+    "951627022",
+    "571626623",
+    "608834326"
+   ],
+   "terms": [
+    "photo scanner",
+    "old photos",
+    "setlist",
+    "chess clock",
+    "aquarium",
+    "film log",
+    "sermon notes",
+    "flashcards"
+   ],
+   "apps_scanned": 40,
+   "low_star_kept": 1860,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  {
+   "finished": "2026-11-07T03:27:05+00:00",
+   "targets": [
+    "1169136078"
+   ],
+   "terms": [
+    "baby tracker",
+    "breastfeeding",
+    "grocery list",
+    "chore chart",
+    "pickleball",
+    "time tracker",
+    "metronome",
+    "guitar tuner"
+   ],
+   "apps_scanned": 40,
+   "low_star_kept": 1784,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  {
+   "finished": "2026-11-07T04:01:37+00:00",
+   "targets": [
+    "1169136078"
+   ],
+   "terms": [
+    "dream journal",
+    "gratitude journal",
+    "moon phase",
+    "tide times",
+    "kanji",
+    "sign language",
+    "rosary",
+    "plant watering"
+   ],
+   "apps_scanned": 40,
+   "low_star_kept": 1108,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ ]
+}

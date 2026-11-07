@@ -1,0 +1,74 @@
+{
+ "date": "2026-11-07",
+ "mode": "targeted",
+ "status": "ok",
+ "finished": "2026-11-07T04:01:37+00:00",
+ "plan_minutes": 0.7,
+ "phase_minutes": {},
+ "partial": false,
+ "category_storefronts_today": null,
+ "feeds": null,
+ "unique_chart_apps": 253,
+ "eligible_candidates": 11108,
+ "carried_candidates": null,
+ "targets": [
+  "1169136078"
+ ],
+ "terms": [
+  "dream journal",
+  "gratitude journal",
+  "moon phase",
+  "tide times",
+  "kanji",
+  "sign language",
+  "rosary",
+  "plant watering"
+ ],
+ "queued": 40,
+ "shards": 1,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 40,
+   "apps_scanned": 40,
+   "reviews_fetched": 12617,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 3.0,
+   "requests": 297,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 40,
+ "reviews_fetched": 12617,
+ "low_star_kept": 1108,
+ "review_files": 1934,
+ "requests": 314,
+ "failures": 0,
+ "http_status": {
+  "lookup 200": 1,
+  "target-search 200": 16,
+  "canary 200": 1,
+  "canary ok": 1,
+  "reviews 200": 296,
+  "reviews mostrecent p1 ok": 86,
+  "reviews mosthelpful p1 ok": 86,
+  "reviews mostrecent p2 ok": 42,
+  "reviews mosthelpful p2 empty": 1,
+  "reviews mostrecent p1 empty": 7,
+  "reviews mosthelpful p2 ok": 74
+ },
+ "error_samples": [],
+ "log": [
+  "[03:58:12] targeted plan: 1 ids, 8 terms -> 40 apps queued",
+  "[03:58:26] shard 0/1: 40 apps",
+  "[03:58:27] shard 0: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ }
+}

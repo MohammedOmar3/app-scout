@@ -1,0 +1,33 @@
+{
+ "mode": "targeted",
+ "phase_minutes": {},
+ "partial": false,
+ "targets": [
+  "1169136078"
+ ],
+ "terms": [
+  "dream journal",
+  "gratitude journal",
+  "moon phase",
+  "tide times",
+  "kanji",
+  "sign language",
+  "rosary",
+  "plant watering"
+ ],
+ "unique_chart_apps": 253,
+ "requests": 17,
+ "failures": 0,
+ "http_status": {
+  "lookup 200": 1,
+  "target-search 200": 16
+ },
+ "date": "2026-11-07",
+ "eligible_candidates": 11108,
+ "queued": 40,
+ "shards": 1,
+ "plan_minutes": 0.7,
+ "log": [
+  "[03:58:12] targeted plan: 1 ids, 8 terms -> 40 apps queued"
+ ]
+}

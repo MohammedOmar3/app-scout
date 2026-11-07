@@ -1,0 +1,1464 @@
+{
+ "mode": "targeted",
+ "date": "2026-11-07",
+ "shards": 1,
+ "items": [
+  {
+   "id": "1673397906",
+   "name": "Plantion - Plant Identifier",
+   "seller": "HASKINGO - FZCO",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.25599,
+   "ratings": 9727,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2023-09-23",
+   "released": "2023-04-08",
+   "url": "https://apps.apple.com/us/app/plantion-plant-identifier/id1673397906?uo=4",
+   "description": "Are you struggling to keep your green pets happy and healthy? Look no further than Plantion!\n\nOur comprehensive care plans will help you identify your plants, determine watering frequency, and troubleshoot issues like brown leaves.\n\nWe offer a range of features that will delight any green thumb, inc",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 10.976,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1252497129",
+   "name": "PictureThis - Plant Identifier",
+   "seller": "Glority Global Group Ltd.",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.74468,
+   "ratings": 167743,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-29",
+   "released": "2017-09-25",
+   "url": "https://apps.apple.com/gb/app/picturethis-plant-identifier/id1252497129?uo=4",
+   "description": "PictureThis® identifies millions of plants daily with over 98% accuracy, making plant care simple and accessible. Whether you're a seasoned gardener or a new plant parent, PictureThis is your essential tool for plant identification and care.\n\nKey Features:\nAccurate Plant Identifier\nRenowned as the b",
+   "storefronts": 3,
+   "grossing_storefronts": 3,
+   "paid_storefronts": 0,
+   "best_rank": 3,
+   "top_storefronts": [
+    "us",
+    "gb",
+    "nz"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb",
+    "nz"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 10.949,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1660909501",
+   "name": "Ascension: Catholic Bible",
+   "seller": "Ascension Publishing Group, LLC",
+   "genre": "Reference",
+   "genre_id": 6006,
+   "rating": 4.91669,
+   "ratings": 91835,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-10-19",
+   "released": "2023-06-25",
+   "url": "https://apps.apple.com/us/app/ascension-catholic-bible/id1660909501?uo=4",
+   "description": "** The #1 Catholic Bible App**\n\nDesigned to help Catholics read and understand the Bible, learn the teachings and tradition of the Catholic Church, and grow to live the life God is calling them to more fully.\n\nFeaturing the most popular Catholic Bible in America, the Great Adventure Catholic Bible, ",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 17,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 10.426,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "282935706",
+   "name": "Bible",
+   "seller": "Life.Church",
+   "genre": "Reference",
+   "genre_id": 6006,
+   "rating": 4.8891,
+   "ratings": 585774,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-30",
+   "released": "2019-02-12",
+   "url": "https://apps.apple.com/gb/app/bible/id282935706?uo=4",
+   "description": "Get God’s Word for free on your devices with the Bible App by YouVersion. Connect with God through Scripture by reading, listening, Plans, Daily Refresh, Verse of the Day, and so much more!\n\nChoose from 1,750+ languages and 2,500+ Bible versions. Make it your Bible by adding Friends, choosing Plans,",
+   "storefronts": 2,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": 3,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "islamic",
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 10.082,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1485310935",
+   "name": "Planner & Journal - Zinnia",
+   "seller": "Pixite Inc.",
+   "genre": "Lifestyle",
+   "genre_id": 6012,
+   "rating": 4.56724,
+   "ratings": 56823,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-10-22",
+   "released": "2020-02-26",
+   "url": "https://apps.apple.com/us/app/planner-journal-zinnia/id1485310935?uo=4",
+   "description": "Zinnia is the most fun and creative way to keep a digital journal and planner. Enjoy calendars, trackers, stickers and more - with new content added every month. There are a couple of options to get you started: a free version with limited content, or a free 1 week trial with all the bells and whist",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 10.009,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "322103952",
+   "name": "MSW Surf Forecast",
+   "seller": "Surfline/Wavetrak",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.78442,
+   "ratings": 8563,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2023-05-24",
+   "released": "2009-09-09",
+   "url": "https://apps.apple.com/gb/app/msw-surf-forecast/id322103952?uo=4",
+   "description": "Magicseaweed has joined Surfline and the MSW app is no longer being supported. You can now get all your favourite features on Surfline: ​\n\n​Keep track of current surf conditions.​\n-View live surf cams at 950+ breaks around the world.​\n-Get daily surf reports from our team of experts.​\n-View wave hei",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.865,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "6505012222",
+   "name": "PlantLush: Plant ID & Care Pro",
+   "seller": "Umut Koray Melek",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 3.98243,
+   "ratings": 8197,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-06-16",
+   "released": "2024-07-04",
+   "url": "https://apps.apple.com/us/app/plantlush-plant-id-care-pro/id6505012222?uo=4",
+   "description": "Identify plants instantly, diagnose diseases, and keep your indoor garden thriving with PlantLush!\n\nTurn your iPhone into a professional botanist. Whether you are dealing with a sick plant, need a watering reminder, or just found a beautiful flower on your walk, PlantLush is your all-in-one plant do",
+   "storefronts": 1,
+   "grossing_storefronts": 1,
+   "paid_storefronts": 0,
+   "best_rank": 52,
+   "top_storefronts": [
+    "us"
+   ],
+   "all_storefronts": [
+    "us"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.827,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "874656917",
+   "name": "I am - Daily Affirmations",
+   "seller": "Monkey Taps",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.78071,
+   "ratings": 45644,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-06",
+   "released": "2014-05-13",
+   "url": "https://apps.apple.com/gb/app/i-am-daily-affirmations/id874656917?uo=4",
+   "description": "How many negative thoughts have been endlessly repeating in your mind? Daily affirmations help rewire our brains, build self-esteem, and change negative thought patterns. Empower yourself by verbally affirming your dreams and ambitions. Choose from many daily intentions and set reminders to be deliv",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 31,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.819,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1352211125",
+   "name": "Tide Alert (NOAA) - Tide Chart",
+   "seller": "Rivolu LLC",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.7967,
+   "ratings": 44785,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-11-04",
+   "released": "2018-04-10",
+   "url": "https://apps.apple.com/us/app/tide-alert-noaa-tide-chart/id1352211125?uo=4",
+   "description": "Tide Alert is the #1 app for tide predictions, tidal currents, and lunar phases, all in one beautiful interface. Powered by NOAA tide forecasts, it delivers accurate high tide and low tide times, current speeds, slack tide windows, swell data, water temperature, and wind conditions for thousands of ",
+   "storefronts": 1,
+   "grossing_storefronts": 1,
+   "paid_storefronts": 0,
+   "best_rank": 35,
+   "top_storefronts": [
+    "us"
+   ],
+   "all_storefronts": [
+    "us"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.802,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "777280890",
+   "name": "My Tide Times - Tables & Chart",
+   "seller": "JRustonApps B.V.",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.80114,
+   "ratings": 41583,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-07",
+   "released": "2014-01-05",
+   "url": "https://apps.apple.com/gb/app/my-tide-times-tables-chart/id777280890?uo=4",
+   "description": "My Tide Times is the only tide times application you'll ever need. Whether you're surfing, fishing or just going to the beach you'll be able to use it to get quick and easy access to the times. We think it's the most beautiful tide times application on the market to date. \n\nFEATURES \n- Supports over",
+   "storefronts": 1,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": 24,
+   "top_storefronts": [
+    "gb"
+   ],
+   "all_storefronts": [
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.738,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "6447391597",
+   "name": "Journal",
+   "seller": "Apple Distribution International",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.72872,
+   "ratings": 41521,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-19",
+   "released": "2023-10-26",
+   "url": "https://apps.apple.com/gb/app/journal/id6447391597?uo=4",
+   "description": "Take a moment to reflect on your day. Capture and write about the details of everyday moments and special events using photos, videos, audio recordings, places, your state of mind and more. Journaling suggestions make it easy to remember your daily experiences — so you can add them to your journal a",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.737,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1135246410",
+   "name": "Gardenia - Plant Organizer",
+   "seller": "Fabio Prati",
+   "genre": "Productivity",
+   "genre_id": 6007,
+   "rating": 4.27285,
+   "ratings": 2056,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2017-12-04",
+   "released": "2016-07-19",
+   "url": "https://apps.apple.com/us/app/gardenia-plant-organizer/id1135246410?uo=4",
+   "description": "Manage your garden with style and discover precious tips on how to take care of your plants! Organize tasks and set smart gardening reminders: Gardenia will be your essential green helper!\n\nExplore Plants: browse a 90000+ species database and get precious gardening tips such as sun exposure, waterin",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.626,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1072585547",
+   "name": "Tide Times UK : British Tides",
+   "seller": "Rory Buckley",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.56003,
+   "ratings": 6055,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2021-03-06",
+   "released": "2016-01-14",
+   "url": "https://apps.apple.com/gb/app/tide-times-uk-british-tides/id1072585547?uo=4",
+   "description": "Tide Times UK (Free) brings you instant 7 day tide times for over 600 UK locations.\n\nWhether you are planning a beach trip, walk, surfing or fishing - Tide Times UK will give you fast & cleanly presented tide information for your chosen location.\n\nFeatures:\n\n• A simple and effective way to view your",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.564,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "570060128",
+   "name": "Duolingo: Language & Chess",
+   "seller": "Duolingo, Inc",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.69555,
+   "ratings": 999851,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-04",
+   "released": "2012-11-13",
+   "url": "https://apps.apple.com/gb/app/duolingo-language-chess/id570060128?uo=4",
+   "description": "Learn a new language, chess & more with the world's most downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening & writing to build your vocabulary & grammar skills.\n\nDesigned by learning experts & lo",
+   "storefronts": 93,
+   "grossing_storefronts": 89,
+   "paid_storefronts": 0,
+   "best_rank": 1,
+   "top_storefronts": [
+    "us",
+    "gb",
+    "cz",
+    "hu",
+    "de",
+    "at",
+    "sk",
+    "es",
+    "nl",
+    "ch"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb",
+    "cz",
+    "hu",
+    "de",
+    "at",
+    "sk",
+    "es",
+    "nl",
+    "ch",
+    "pl",
+    "si",
+    "fi",
+    "be",
+    "is",
+    "lu",
+    "md",
+    "rs",
+    "ee",
+    "co",
+    "pt",
+    "me",
+    "br",
+    "lt",
+    "lv",
+    "ie",
+    "fr",
+    "kr",
+    "ca",
+    "it",
+    "kz",
+    "no",
+    "cl",
+    "ge",
+    "mk",
+    "se",
+    "jp",
+    "gr",
+    "mx",
+    "ua",
+    "ro",
+    "vn",
+    "am",
+    "il",
+    "ar",
+    "mn",
+    "sg",
+    "nz",
+    "ma",
+    "dk",
+    "ba",
+    "au",
+    "tr",
+    "hr",
+    "cy",
+    "bg",
+    "pe",
+    "hk",
+    "lb",
+    "bn",
+    "uz",
+    "mm",
+    "al",
+    "za",
+    "ng",
+    "mo",
+    "az",
+    "jo",
+    "la",
+    "kh",
+    "id",
+    "lk",
+    "ae",
+    "mt",
+    "by",
+    "xk",
+    "in",
+    "cn",
+    "th",
+    "tn",
+    "tw",
+    "om",
+    "pk",
+    "dz",
+    "eg",
+    "bh",
+    "ke",
+    "ph",
+    "my",
+    "sa",
+    "qa",
+    "kw",
+    "np"
+   ],
+   "focus": [
+    "islamic",
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.386,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1553223828",
+   "name": "DailyBean - simplest journal",
+   "seller": "BlueSignum Corp.",
+   "genre": "Lifestyle",
+   "genre_id": 6012,
+   "rating": 4.76614,
+   "ratings": 21765,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-05",
+   "released": "2021-03-11",
+   "url": "https://apps.apple.com/gb/app/dailybean-simplest-journal/id1553223828?uo=4",
+   "description": "Effortlessly remember your daily life with the ultimate no-writing journal and mood tracker.\n\nLooking for a daily journal and mood diary that's a joy, not a chore? \n\nMeet DailyBean, the easiest private diary and life log designed to help you capture your day.\n\nTransform your everyday moments into a ",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.176,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "660036257",
+   "name": "MOON - Current Moon Phase",
+   "seller": "MOON CALENDAR LTD",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.80037,
+   "ratings": 3822,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2025-04-07",
+   "released": "2013-06-17",
+   "url": "https://apps.apple.com/gb/app/moon-current-moon-phase/id660036257?uo=4",
+   "description": "MOON is your personal lunar portal.\n\n++ Best User Experience - Webby Awards 2017 Honoree ++\n\nNever be caught off-guard by moon-related craziness again. View the current moon phase or what the moon will look like on a certain date, see countdowns to moon events, receive notifications with enough time",
+   "storefronts": 2,
+   "grossing_storefronts": 1,
+   "paid_storefronts": 0,
+   "best_rank": 64,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.165,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1512912236",
+   "name": "Greg: Plant Identifier & Care",
+   "seller": "GREGARIOUS, INC",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.59209,
+   "ratings": 20730,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-10-25",
+   "released": "2020-10-06",
+   "url": "https://apps.apple.com/us/app/greg-plant-identifier-care/id1512912236?uo=4",
+   "description": "Welcome to Greg, the zero-guesswork plant care app & community!\n\nWe make growing indoor plants super easy and fun.\n\nUnsure of how much to water your plant babies? We got you! We'll identify your specific plant type, tell you exactly how much to water it, and remind you when it's time.\n\nBy downloadin",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.133,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "290664053",
+   "name": "Japanese",
+   "seller": "Mark Gänsicke",
+   "genre": "Reference",
+   "genre_id": 6006,
+   "rating": 4.78278,
+   "ratings": 3600,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2019-12-28",
+   "released": "2019-02-12",
+   "url": "https://apps.apple.com/us/app/japanese/id290664053?uo=4",
+   "description": "Japanese is the ultimate study companion for any Japanese language learner. Japanese is comprehensive, with over 175,000 dictionary entries and 58,000 example sentences, and fits perfectly in your pocket. It comes complete with references, flashcard study tools and all you need to master the Japanes",
+   "storefronts": 2,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": 70,
+   "top_storefronts": [
+    "is",
+    "ee"
+   ],
+   "all_storefronts": [
+    "is",
+    "ee"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.113,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "585223877",
+   "name": "Tides Near Me",
+   "seller": "Shelter Island Mapping Company, LLC",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.75851,
+   "ratings": 19790,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-21",
+   "released": "2013-06-22",
+   "url": "https://apps.apple.com/gb/app/tides-near-me/id585223877?uo=4",
+   "description": "Tide charts and currents near you - fast.\n\nSee the last and next tide at a glance, with clear tide charts, tide tables, current predictions and marine weather for stations across the UK and worldwide.\n\nDesigned for real planning:\n• See whether the water is rising or falling right now\n• Check high an",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 43,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.093,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1527399597",
+   "name": "PlantIn・Plant Care Identifier",
+   "seller": "Vortemol Limited",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.4032,
+   "ratings": 6245,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-04",
+   "released": "2020-08-14",
+   "url": "https://apps.apple.com/gb/app/plantin-plant-care-identifier/id1527399597?uo=4",
+   "description": "PlantIn is always there for you!\nWith our care plans, you will learn how to identify a plant, how often to water your trees, or why the leaf on your flower turned brown.\n\nWe have a wide variety of features that every green thumb would fall in love with: \n\n► Watering Calculator\n\nThis feature will hel",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 17,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 9.091,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1279720052",
+   "name": "Bunpo: Language Learning",
+   "seller": "Bunpo Language Learning",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.91037,
+   "ratings": 18209,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-11-05",
+   "released": "2018-03-13",
+   "url": "https://apps.apple.com/us/app/bunpo-language-learning/id1279720052?uo=4",
+   "description": "Learn languages with Bunpo! Learn Japanese, Korean, Spanish, French, German, Chinese, Italian, Portuguese, Dutch, Arabic, English and more!\n\nMaster speaking, grammar, and vocabulary from beginner to advanced, trusted by over 5 million learners worldwide. From your first Hiragana あ to JLPT N1, from \"",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 9.021,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1044867788",
+   "name": "Day One: Daily Journal & Diary",
+   "seller": "Bloom Built Inc",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.74946,
+   "ratings": 16592,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-23",
+   "released": "2016-02-04",
+   "url": "https://apps.apple.com/gb/app/day-one-daily-journal-diary/id1044867788?uo=4",
+   "description": "Apple’s App of the Year with over 15 million downloads and 200,000 5-star ratings globally, Day One has reinvented journaling, letting you record your life as you live it. Securely save audio, video, photos, notes, and more wherever you are, whenever you want. \n\n“Day One creates something so rare it",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 81,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.94,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "997079492",
+   "name": "Windy.app — Wind, Tides, Radar",
+   "seller": "Windy Weather World Inc",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.65582,
+   "ratings": 14347,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-28",
+   "released": "2015-06-26",
+   "url": "https://apps.apple.com/gb/app/windy-app-wind-tides-radar/id997079492?uo=4",
+   "description": "Windy.app - wind, waves and weather forecast app for surfers, kitesurfers, windsurfers, sailors, fishermen and other wind sports. \n\nFEATURES:\n•  Wind report, forecast and statistics: wind map, accurate wind compass, wind meter, wind gusts and wind directions. It’s very useful for extreme wind sports",
+   "storefronts": 3,
+   "grossing_storefronts": 3,
+   "paid_storefronts": 0,
+   "best_rank": 2,
+   "top_storefronts": [
+    "gb",
+    "us",
+    "mm"
+   ],
+   "all_storefronts": [
+    "gb",
+    "us",
+    "mm"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.814,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1194023242",
+   "name": "Daylio Journal - Mood Tracker",
+   "seller": "Relaxio s.r.o.",
+   "genre": "Lifestyle",
+   "genre_id": 6012,
+   "rating": 4.69015,
+   "ratings": 14294,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-05",
+   "released": "2017-01-25",
+   "url": "https://apps.apple.com/gb/app/daylio-journal-mood-tracker/id1194023242?uo=4",
+   "description": "Self-Care Bullet Journal with Goals - Mood Diary & Happiness Tracker\n\nDaylio enables you to keep a private journal without having to type a single line. Try this beautifully designed & stunningly simple micro-diary app right now for FREE!\n\n\n** WHAT IS DAYLIO **\n\nDaylio is a very versatile app, and y",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.81,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1410126781",
+   "name": "Planta: Plant & Garden Care",
+   "seller": "Planta AB",
+   "genre": "Lifestyle",
+   "genre_id": 6012,
+   "rating": 4.72461,
+   "ratings": 13933,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-05",
+   "released": "2018-11-07",
+   "url": "https://apps.apple.com/gb/app/planta-plant-garden-care/id1410126781?uo=4",
+   "description": "*EDITORS' CHOICE & APP OF THE DAY*\n\nKeep your plants alive. Without guesswork.\nPlanta helps you identify plants, understand their needs and care for them with confidence. Get clear guidance at the exact moment your plants need it.\n\nIdentify any plant in seconds\nTake a photo to instantly identify you",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 49,
+   "top_storefronts": [
+    "gb",
+    "us"
+   ],
+   "all_storefronts": [
+    "gb",
+    "us"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.788,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1161387262",
+   "name": "Windy.com",
+   "seller": "Windyty, SE",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.8139,
+   "ratings": 13670,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-27",
+   "released": "2016-10-31",
+   "url": "https://apps.apple.com/gb/app/windy-com/id1161387262?uo=4",
+   "description": "A UNIQUE WEATHER FORECAST VISUALISATION\nWhile most weather forecasting apps rely solely on free global models, Windy has gone a step further by investing heavily in the most accurate weather models available, always at the highest possible resolution, to deliver you the most accurate forecasts in th",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 3,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.772,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1104649246",
+   "name": "My Moon Phase - Lunar Calendar",
+   "seller": "JRustonApps B.V.",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.82685,
+   "ratings": 12463,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-02",
+   "released": "2016-04-27",
+   "url": "https://apps.apple.com/gb/app/my-moon-phase-lunar-calendar/id1104649246?uo=4",
+   "description": "My Moon Phase is the best app for tracking the lunar calendar. It has a sleek dark design which makes it easy to view information such as the current moon cycle, moonrise & moonset times as well as extras such as when the next full moon will be. If you're interested in moon photography, you can also",
+   "storefronts": 2,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": 44,
+   "top_storefronts": [
+    "gb",
+    "us"
+   ],
+   "all_storefronts": [
+    "gb",
+    "us"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.691,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1077455978",
+   "name": "The Moon: Calendar Moon Phases",
+   "seller": "Vitalii Gryniuk",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.78533,
+   "ratings": 12000,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-03-12",
+   "released": "2016-03-11",
+   "url": "https://apps.apple.com/gb/app/the-moon-calendar-moon-phases/id1077455978?uo=4",
+   "description": "Moon Phases Calendar - universal lunar calendar for any Locations from 0001 to 2100 years.\n\nLunar calendar is one of the oldest calendars in modern society.\nA lunar month can only be 29 or 30 days long. This is different than a solar based calendar, where the length is arbitrarily fixed.\n\nFeatures:\n",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 66,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.658,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1436713096",
+   "name": "Saged: Daily Spiritual Rituals",
+   "seller": "Smudge Tech, Inc",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.79239,
+   "ratings": 11637,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-11-06",
+   "released": "2018-11-01",
+   "url": "https://apps.apple.com/us/app/saged-daily-spiritual-rituals/id1436713096?uo=4",
+   "description": "1.5 Million Downloads and 4.8 rating! Spiritual seekers, meet your new daily ritual! Saged blends astrology, tarot, oracle readings, and moon rituals into one guided spiritual practice, built to help you feel grounded, aligned, and connected every single day.\n\nWe believe that connecting with your di",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 8.632,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1424178757",
+   "name": "Plant Nanny Cute Water Tracker",
+   "seller": "SPARKFUL INC.",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.70045,
+   "ratings": 10396,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-02",
+   "released": "2019-01-17",
+   "url": "https://apps.apple.com/gb/app/plant-nanny-cute-water-tracker/id1424178757?uo=4",
+   "description": "Essential to life, water is often under-consumed leading to dehydration, fatigue, skin problems, and other serious health issues. Address these problems with Plant Nanny, your cute and friendly hydration companion! This water reminder app motivates you to drink water daily and lets you grow adorable",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.534,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1547252782",
+   "name": "Lingvano - Learn Sign Language",
+   "seller": "Lingvano GmbH",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.82228,
+   "ratings": 10241,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-27",
+   "released": "2021-03-18",
+   "url": "https://apps.apple.com/gb/app/lingvano-learn-sign-language/id1547252782?uo=4",
+   "description": "Join 5 million people and start building bridges by learning BSL with the most popular sign language learning app.\n\nLingvano is the perfect starting point for beginners, with video lessons made by Deaf teachers that can be done anywhere, anytime. You'll start signing in your very first lesson, and c",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 24,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.521,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1372575227",
+   "name": "Gratitude: Self-Care Journal",
+   "seller": "Hapjoy Technologies Private Limited",
+   "genre": "Health & Fitness",
+   "genre_id": 6013,
+   "rating": 4.8483,
+   "ratings": 9954,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-29",
+   "released": "2018-04-22",
+   "url": "https://apps.apple.com/gb/app/gratitude-self-care-journal/id1372575227?uo=4",
+   "description": "The Gratitude app is a carefully-designed self-care tool to help you focus on your mental health.\n\nWith a gratitude journal, affirmations, vision board, and daily motivation content, Gratitude provides you with all the tools and reminders you need to gain motivation and develop a healthy self-love r",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.496,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1612792132",
+   "name": "Plant Parent: Plant Care Guide",
+   "seller": "Glority Global Group Ltd.",
+   "genre": "Lifestyle",
+   "genre_id": 6012,
+   "rating": 4.6665,
+   "ratings": 9847,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-27",
+   "released": "2022-04-24",
+   "url": "https://apps.apple.com/gb/app/plant-parent-plant-care-guide/id1612792132?uo=4",
+   "description": "Want to become a better plant parent for your green babies?\nMeet Plant Parent – the app that offers solid plant care guides. With Plant Parent, you can become an instant green thumb and keep your plants not just happy, but thriving!\n\nWhat you'll love about Plant Parent:\n\n- Smart Care Reminders\nNot s",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 61,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.487,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1146936296",
+   "name": "ASL American Sign Language",
+   "seller": "Saeed Bashir",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.47276,
+   "ratings": 3048,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-06-01",
+   "released": "2016-09-10",
+   "url": "https://apps.apple.com/us/app/asl-american-sign-language/id1146936296?uo=4",
+   "description": "Knowing American sign language (ASL) will enable you to meet and interact with a whole new group of people.\nIt is our goal to deliver a convenient, enjoyable, learning experience that goes beyond the basics.\nFEATURES\n1 It is Free.\n2 Not mixing with your privacy, no extra permissions.\n1 American Sign",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 8.468,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1405323394",
+   "name": "Hallow: Prayer & Meditation",
+   "seller": "Hallow, Inc.",
+   "genre": "Reference",
+   "genre_id": 6006,
+   "rating": 4.85912,
+   "ratings": 8461,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-11-06",
+   "released": "2018-12-06",
+   "url": "https://apps.apple.com/gb/app/hallow-prayer-meditation/id1405323394?uo=4",
+   "description": "** The #1 Prayer App & #1 Catholic App **\n\nWHAT IS HALLOW\nHallow is a Christian prayer app that offers audio-guided meditation sessions to help us grow in our faith & spiritual lives and find peace in God. Explore over 10,000 different sessions on contemplative prayer, meditation, Catholic Bible rea",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 4,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.355,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "593308377",
+   "name": "Tide Chart USA",
+   "seller": "Yasunori Kuroki",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.76743,
+   "ratings": 8217,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2025-12-17",
+   "released": "2013-01-21",
+   "url": "https://apps.apple.com/us/app/tide-chart-usa/id593308377?uo=4",
+   "description": "\"Tide Chart USA\" is an application to display tidal information. \n\nI made for fun fishing. \n\nThis program is not available for commercial purposes, and navigation. THERE IS NO WARRANTY OF ANY KIND.",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 8.33,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "482361332",
+   "name": "Deluxe Moon Pro • App & Widget",
+   "seller": "Sergey Vdovenko",
+   "genre": "Weather",
+   "genre_id": 6001,
+   "rating": 4.71671,
+   "ratings": 7353,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-11-06",
+   "released": "2011-11-23",
+   "url": "https://apps.apple.com/us/app/deluxe-moon-pro-app-widget/id482361332?uo=4",
+   "description": "Find your lunar rhythm. Explore personal forecasts, follow the Moon in detail and plan the moments that matter to you with Deluxe Moon Pro.\n\nCurious about your birth chart? Choosing a day for a fresh start? Waiting for the perfect moonrise photo? Bring your questions to a world of lunar calendars, p",
+   "storefronts": 2,
+   "grossing_storefronts": 2,
+   "paid_storefronts": 0,
+   "best_rank": 57,
+   "top_storefronts": [
+    "us",
+    "gb"
+   ],
+   "all_storefronts": [
+    "us",
+    "gb"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 8.233,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "600547573",
+   "name": "PlantNet",
+   "seller": "CTRE COOP INTERNAT RECHERCHE AGRO DEV",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.59157,
+   "ratings": 7049,
+   "ratings_cc": "us",
+   "price": "Free",
+   "updated": "2026-10-07",
+   "released": "2013-02-15",
+   "url": "https://apps.apple.com/us/app/plantnet/id600547573?uo=4",
+   "description": "Pl@ntNet is an application that allows you to identify plants simply by photographing them with your smartphone. Very useful when you don't have a botanist on hand!\n\nPl@ntNet is also a great citizen science project: all the plants you photograph are collected and analysed by scientists around the wo",
+   "storefronts": 3,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": 50,
+   "top_storefronts": [
+    "si",
+    "sk",
+    "ee"
+   ],
+   "all_storefronts": [
+    "si",
+    "sk",
+    "ee"
+   ],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us"
+   ],
+   "scan": true,
+   "priority": 8.196,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1487975394",
+   "name": "Bright BSL - Sign Language",
+   "seller": "SignLab AS",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.87387,
+   "ratings": 6993,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-10-31",
+   "released": "2022-03-14",
+   "url": "https://apps.apple.com/gb/app/bright-bsl-sign-language/id1487975394?uo=4",
+   "description": "Learning sign language has never been this easy!\n\nBright BSL enables you to learn British Sign Language anywhere and at any time in a fun and effective way. The learning experience consists of 20 modules, each on a different topic and with specific learning outcomes. Within each module, you will hav",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.189,
+   "_sf_per_app": 8
+  },
+  {
+   "id": "1487453649",
+   "name": "Blossom - AI Plant Identifier",
+   "seller": "Mosaic S.r.l.",
+   "genre": "Education",
+   "genre_id": 6017,
+   "rating": 4.55943,
+   "ratings": 6453,
+   "ratings_cc": "gb",
+   "price": "Free",
+   "updated": "2026-03-19",
+   "released": "2020-02-27",
+   "url": "https://apps.apple.com/gb/app/blossom-ai-plant-identifier/id1487453649?uo=4",
+   "description": "Want to become a better plant parent?\n\nMeet Blossom – the app that guides you through plant parenthood. With Blossom, you can confidently grow and care for your plants with the support and inspiration you need.\n\nFEATURES\n\nPLANT CARE INFO\nGet your plant care questions answered! Learn more about your ",
+   "storefronts": 0,
+   "grossing_storefronts": 0,
+   "paid_storefronts": 0,
+   "best_rank": null,
+   "top_storefronts": [],
+   "all_storefronts": [],
+   "focus": [
+    "target-competitor"
+   ],
+   "search_storefronts": [
+    "us",
+    "gb"
+   ],
+   "scan": true,
+   "priority": 8.12,
+   "_sf_per_app": 8
+  }
+ ]
+}
