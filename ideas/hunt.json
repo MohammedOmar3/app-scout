@@ -1,40 +1,6 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "open_targets": [
-    {
-      "key": "removed:maple:family-organizer-shutdown",
-      "incumbents": [
-        "1551070188"
-      ],
-      "terms": [
-        "family organizer",
-        "family calendar",
-        "shared family list"
-      ],
-      "why": "Maple Family Organizer (★4.3, 1.2k ratings us; shared family calendar, lists, meal plans, reminders, $40-76/yr) shuts down on 2026-11-30 (in-app notice) or 12-31 (website) after Wander acqui-hired the team on 2026-07-29; data is deleted afterwards (nagmelater.com/blog/maple-shutting-down-family-reminders.html, a vendor post)",
-      "evidence": "Found by web search on 2026-11-07 after the daily cap was spent; Maple isn't in the review pool. Listing still up (apps.apple.com/us/app/id1551070188)",
-      "missing": "read Maple's reviews before the listing goes (targeted run with its id first thing); Gate A volume (≥15 relevant low-star in 90d or ≥8 across 2 apps); kill check against Cozi, TimeTree, FamilyWall and Kunba; whether its loved part (one parent's 'mental load' list + nudges) fits ≤5 screens without social features",
-      "rounds": 0,
-      "last_round": "2026-11-07"
-    },
-    {
-      "key": "data-loss:vehicle-maintenance:owner-held-log",
-      "incumbents": [
-        "1315913699",
-        "552472249",
-        "295905460"
-      ],
-      "terms": [
-        "vehicle maintenance",
-        "car maintenance log",
-        "small engine maintenance"
-      ],
-      "why": "Vehicle Maintenance Tracker wiped service dates after its May 2026 redesign and has had no release since 2026-06-27; CARFAX Car Care loses records too; Fuelly is unmaintained. Replaces abandoned:fuelly:fuel-service-log",
-      "evidence": "Gate A passes: 47 relevant low-star in 90d across 2 apps (VMT 40, CARFAX 7). Fails Gate B's 4.3 test for now; scored 3.4. About 30 small logs exist. Car Cave (4.7, 376, $4.99) is good for cars and a VMT reviewer moved to it; LookOver (4.9, 5,000+ downloads, $24.99/yr) tracks small engines by hours; Kelvik, MaintainAll, Maintenance Tracker and Recur.it pitch all-machine local logs. 2026-11-06: VMT 40 in 90d, 1 since 10-28, so complaints are fading; searches returned only undated or old threads 2026-11-07 daily data: VMT 39 in 90d, 1 since 10-28",
-      "missing": "Final check next run: if VMT has <3 new low-star since 11-07 and no dated threads turn up, reject (fading, Car Cave and LookOver cover it). Otherwise still a differentiator past 'all machines, local, backed up'",
-      "rounds": 6,
-      "last_round": "2026-11-07"
-    },
     {
       "key": "removed:drink-logs:private-journal",
       "incumbents": [
@@ -47,10 +13,10 @@
         "beer tracker"
       ],
       "why": "Untappd 5.0 (2026-10-15) and Vivino's 2026 rebuild both made personal drink logging worse for long-time users; on the watchlist at 3.55",
-      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27. Kill check grew again: Drinkist (free, no ads, iOS and Android, multi-drink), Brewver (web, imports Untappd ratings) and Taphouse (import and export) are listed in drinkist.app/blog/untappd-alternative (2026-06-26, vendor post)",
+      "evidence": "88 low-star reviews in 90d, 87 of them on v5.0.x since 2026-10-16 (us 66, gb 21); before v5 only 1 in 2+ months. Themes: UI/clutter 48, friends feed 17, own history/tracking 12, ads 10, Insider/paywall 7. Kill check: personal beer journals are tiny (Beerstory 0 ratings, Tastings 3, BrewGene 75, Pint Please 35), but Bruwia is free, no subscription, and already imports Untappd history (takeoutday.org guide, 2026-10-15). Untappd's own check-in export is Insider-only (GDPR request in EU). Round 3 added Vivino: ~15 of its 25 low-star reviews (us, gb, Aug–Oct 2026) are about the rebuild breaking manual entry, editing and saved tastings. Off-store searches (round 4) found no Reddit/forum threads, only press about 5.0 (thebeertimes.com, 2026-10-15). 2026-11-03 rescan: Untappd 91 low-star in 90d (us 69, gb 22), now on 5.0.2; Vivino 26 (us 20, gb 6). 2026-11-04 rescan: Untappd 92 in 90d, tapering to 1-6 a day by 10-31, Vivino 27; no new storefronts, no Reddit or forum threads (one more search round). 2026-11-05 daily data: Untappd 92 in 90d, 13 since 10-28; Vivino 27; nothing new off-store. 2026-11-06 daily data: Untappd 92 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27; nothing new off-store. Crumble (free, web, imports Untappd exports) added to the kill check 2026-11-07 daily data: Untappd 91 in 90d, 13 since 10-28, 1 since 11-01; Vivino 27. Kill check grew again: Drinkist (free, no ads, iOS and Android, multi-drink), Brewver (web, imports Untappd ratings) and Taphouse (import and export) are listed in drinkist.app/blog/untappd-alternative (2026-06-26, vendor post) 2026-11-08 daily data: Untappd 91 in 90d, 1 since 11-01 (last scanned 11-04), still v5.0.2",
       "missing": "Decide on the 2026-11-09 recheck: ≥15 low-star on v5.1+ (or Vivino 2026.44+) keeps it; fewer, and it goes to rejected (complaints fading and Drinkist, Bruwia, Crumble, Brewver already serve private logs free). Also still: a storefront beyond us/gb, ≥3 off-store threads, real willingness to pay",
       "rounds": 9,
-      "last_round": "2026-11-07"
+      "last_round": "2026-11-08"
     }
   ],
   "closed": [
@@ -363,6 +329,21 @@
       "key": "paywall:recime:forced-trial",
       "outcome": "idea",
       "date": "2026-11-07"
+    },
+    {
+      "key": "removed:maple:family-organizer-shutdown",
+      "outcome": "rejected",
+      "date": "2026-11-08"
+    },
+    {
+      "key": "data-loss:vehicle-maintenance:owner-held-log",
+      "outcome": "rejected",
+      "date": "2026-11-08"
+    },
+    {
+      "key": "paywall:yazio:ads-and-extras",
+      "outcome": "idea",
+      "date": "2026-11-08"
     }
   ]
 }

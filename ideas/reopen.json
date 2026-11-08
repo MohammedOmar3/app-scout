@@ -67,7 +67,9 @@
    ],
    "evidence_reviews": 125,
    "old_reason": "~125 low-star reviews (sa, us, ae, gb, pk, my) on immodest ads while reading; killed by free ad-free Quran.com app (4.9, 33.9k), iQuran (4.8, 30.9k, no ads/no subs), Greentech Al Quran (4.8, 19.1k); 4.3 risk high",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-08",
+   "outcome": "still rejected (dominant-free-alternative): Quran.com (4.9, 33.9k, free, no ads, no account) and iQuran have the exact thing; Quran Majeed 127 low-star stored, same themes"
   },
   {
    "key": "paywall:yazio:ads-and-extras",
@@ -78,7 +80,9 @@
    ],
    "evidence_reviews": 123,
    "old_reason": "Yazio (52k us ratings): 123 low-star in 60d outside English storefronts (de 57, fr 46, it 20): ads on every meal, long forced onboarding, everything extra paid, no offline use; Lifesum 18 (se). Calorie counting is a crowded template category that needs a food database (MyFitnessPal, Cronometer, FDDB, Lose It), so a cleaner copy is a 4.3 risk",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-08",
+   "outcome": "idea, score 3.9 (briefs/2026-11-08-plain-kcal.md); grew to 289 low-star / 140 relevant in 90d, food data is free (BLS CC BY, CIQUAL Licence Ouverte)"
   },
   {
    "key": "paywall:evernote:price-hike",
@@ -88,7 +92,9 @@
    ],
    "evidence_reviews": 110,
    "old_reason": "110 low-star reviews in 90d (us) about the price going from ~$99 to ~$250/yr and the free tier shrinking; notes apps are a crowded category (Apple Notes free, UpNote lifetime, Obsidian, Bear), so a cheaper notes app is a 4.3 risk with no clear gap",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-08",
+   "outcome": "still rejected (ios-builtin): Apple Notes is free; the pain is price on a notes platform, with no wedge beyond 'cheaper'"
   },
   {
    "key": "ads:reverse-audio:sing-challenge",
@@ -98,7 +104,9 @@
    ],
    "evidence_reviews": 106,
    "old_reason": "Reverse Audio: Sing Challenge (32k ratings): 106 low-star in 90d (us, gb), 73 on ads every few seconds and $9.99/week. A novelty with about five near-identical clones (Reverse Audio 4.7, 40k; Reverse Singing 4.7, 8k) and little reason to pay",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-08",
+   "outcome": "still rejected (no-wedge): a novelty with ~5 near-identical clones, reviewers won't pay, and reversing recorded audio needs native audio processing"
   },
   {
    "key": "ads:swipewipe:photo-swipe",
