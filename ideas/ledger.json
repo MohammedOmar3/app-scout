@@ -68,6 +68,18 @@
    "score": 3.4,
    "evidence": "Re-opened 2026-11-09 from rejected. StrongLifts (4.86, 77k us ratings; 1M+ Android installs) has had no free tier since its 2026 change ('free to download, but requires a subscription to use'; support page 2026-10-07 says the 2014-18 Power Pack never was lifetime, offers 50% off year one). 93 low-star in 90d (us 80, gb 13), 74 on the paywall or revoked lifetime, Sep 48, Oct 44, Nov 1 (the wave is over: 7 in the last 14 days). Export to CSV still works, even behind the paywall (support article 131, 2026-10-17). Hard kill (b) doesn't apply (Hevy 4.9/31k free has no 5x5 auto-progression and needs an account). But the exact wedge is already shipped by several small apps: Lift5x5 (full 5x5 free, no ads, StrongLifts CSV import, lifetime option; 92 App Store ratings, ~1.5k active lifters), LiftStrong 5x5 (2026), 5x5 Workout Lifting Tracker ($9.99 one-time, Apple Watch; 71 ratings), 5x5 Workout Tracker, Zen Labs 5x5 (1.6k). Scores: evidence 3.5, demand 3.5, WTP 3.5, gap 4.5, competition 1.5 (no wedge against the free clones), build 4.5 (no Watch) = 3.4",
    "promote_if": "complaints come back (>=15 in a month, e.g. after a price change) and a wedge appears that Lift5x5 and the other free 5x5 clones lack (their own paywall or ad complaints, or a request they ignore); otherwise reject on the next look"
+  },
+  {
+   "key": "paywall:cookidoo:price-hike",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-09",
+   "incumbents": [
+    "714004506",
+    "1470401164"
+   ],
+   "score": 3.2,
+   "evidence": "Official Cookidoo App (4.87, 41.7k ratings, charts in 9 storefronts): 78 low-star in 90d (de 36, es 14, it 12, fr 7, at 7, pt 2), 28 in the last 14 days, 35 on price. Vorwerk is moving legacy 36/48 EUR (PL 139/199 zl) subscribers to 60 EUR (259 zl) from 2026-12-10 (finanse.wp.pl 2026-11-04; mixbuch.app 2026-11-02); reviewers say they'll cancel. But the fix we can build doesn't reach the pain: guided cooking and TM6/TM7 functions need Cookidoo, and only 4 reviews ask for somewhere to keep their own recipes. MixBuch (own recipes with TM step settings, import, cook mode; free tier with ads and a 2-recipe limit; 1.99/mo, 14.99/yr, 49.99 one-time) already serves that, plus Rezeptwelt (free) and generic recipe keepers. 'Thermomix' is a trademark, so naming and ASO are constrained. Scores: evidence 3.5, demand 4, WTP 3, gap 2, competition 2.5, build 4 = 3.2",
+   "promote_if": "after the 2026-12-10 switch, >=10 low-star reviews (or threads) ask for a place to keep their own or created recipes, or for manual TM-step recipes without Cookidoo, and MixBuch draws its own complaints (ads, limits, AI)"
   }
  ],
  "rejected": [
@@ -1120,6 +1132,24 @@
    ],
    "reason": "Decision day after 10 hunt rounds (watchlist 3.55): Untappd still has 102 low-star in 90d (us 80, gb 22) and 12 since 11-01, but on v5.0.2/5.0.3; v5.1 never shipped, so the '>=15 on v5.1+' test can't pass, and Vivino has 2 since 11-01. The other gaps never closed: no storefront beyond us/gb, no Reddit or forum threads, no willingness to pay. Free private logs already import Untappd history (Bruwia, Crumble, Drinkist, Brewver)",
    "reason_type": "no-wedge"
+  },
+  {
+   "key": "regressed:google-health:fitbit-app",
+   "date": "2026-11-09",
+   "incumbents": [
+    "462638897"
+   ],
+   "reason": "Google Health (Fitbit) (710k ratings): 351 low-star in 90d (us 137, gb 105, ca 87, ie 17), 195 in 14 days after the Fitbit app became Google Health. Most of it is device sync (81) and sleep-tracking accuracy (66), which is firmware and hardware; only ~35 are about the dashboard or removed trends. A third-party viewer would depend on Google's Fitbit/Health API during its migration, and SpO2/sleep-apnea data drifts toward medical",
+   "reason_type": "build"
+  },
+  {
+   "key": "regressed:kuwait-prayer-times:v8-update",
+   "date": "2026-11-09",
+   "incumbents": [
+    "395107915"
+   ],
+   "reason": "Kuwait Prayer Times (7k ratings): 16 low-star in 90d (kw, us) since v8.1.0 broke the countdown, widget, adhan alerts and qibla. A regression the developer can ship a fix for, a one-country audience, and free no-ads prayer apps (Pillars, MAWAQIT) already offer the Kuwait method",
+   "reason_type": "evidence"
   }
  ]
 }
