@@ -116,7 +116,9 @@
    ],
    "evidence_reviews": 103,
    "old_reason": "Swipewipe (100k ratings): 103 low-star in 90d, 83 in the last 30 (us, gb), ads every two minutes and a paywall; Slidebox (4.8, 16.7k, free) does the same swipe-to-sort, and photo cleaners are a crowded template category with a high 4.3 risk",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-09",
+   "outcome": "still rejected (dominant-free-alternative): 126 low-star in 90d (us 83, gb 43), 63 in 14 days on full-screen ads before deleting and $9.99/week (Swipewipe is top-10 grossing in us/gb). Hard kill (b): Clever Cleaner (4.77, 205k, free, no ads, no IAP, swipe left to delete, right to keep); plus dozens of 2025-26 swipe-cleaner clones and a mostly young audience"
   },
   {
    "key": "ads:accuweather:bloat",
@@ -126,7 +128,9 @@
    ],
    "evidence_reviews": 96,
    "old_reason": "AccuWeather (98k ratings): 96 low-star in 90d, 80 in 30, slow loads, ads and notifications after v21. Crowded category; Apple Weather is free",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-09",
+   "outcome": "still rejected (ios-builtin): 109 low-star in 90d (us 93, gb 16), 88 in October, on v21 slowness, ads and widgets moved to a \u00a34.99/mo plan; Apple Weather is free and has widgets, and weather data is the core"
   },
   {
    "key": "paywall:stronglifts:lifetime-revoked",
@@ -136,7 +140,9 @@
    ],
    "evidence_reviews": 91,
    "old_reason": "91 low-star reviews in 90d (us 77, gb 14) since StrongLifts went subscription-only (free tier and lifetime Power Pack dropped, $59.99/yr), plus a disliked 4.4 watch/UI redesign; the strongest pain of the day, but killed: Lift5x5 (free core 5x5 with auto-progression, imports StrongLifts CSV, lifetime option), 5x5 Workout Lifting Tracker ($9.99 one-time, watch), 5x5 Workout by Zen Labs (4.7, 1.6k, $8.99 Pro) and other 2025-26 clones already do it, so another 'same but one-time' 5x5 app is a 4.3 risk; watch logging (much loved) is out of Expo scope",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-09",
+   "outcome": "watchlist, 3.4: 74 paywall/lifetime low-star in 90d, but the wave ended (1 in November) and Lift5x5, LiftStrong and 5x5 Workout Lifting Tracker already sell free or one-time 5x5 logging with StrongLifts import"
   },
   {
    "key": "removed:soundtouch:presets-radio",
@@ -145,8 +151,10 @@
     "708379313"
    ],
    "evidence_reviews": 91,
-   "old_reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
-   "status": "open"
+   "old_reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (\u22c64.8, 49 ratings, \u00a36.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
+   "status": "closed",
+   "reopened": "2026-11-09",
+   "outcome": "still rejected (dominant-free-alternative): 18 low-star in 90d, 0 since 11-01; SoundTouch Reborn (free, open source), Better ST and Bosman already restore presets and radio, and it needs the hardware"
   },
   {
    "key": "paywall:simply-draw:learn-to-draw",
@@ -226,7 +234,7 @@
     "546473125"
    ],
    "evidence_reviews": 53,
-   "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected",
+   "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt \u26054.7 11k free, Anki); AnkiMobile already rejected",
    "status": "open"
   },
   {
@@ -269,7 +277,7 @@
     "951627022"
    ],
    "evidence_reviews": 46,
-   "old_reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, ★4.8 from 91k ratings (last update 2022, still listed)",
+   "old_reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, \u26054.8 from 91k ratings (last update 2022, still listed)",
    "status": "open"
   },
   {
