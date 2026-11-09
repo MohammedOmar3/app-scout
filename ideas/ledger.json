@@ -80,6 +80,23 @@
    "score": 3.2,
    "evidence": "Official Cookidoo App (4.87, 41.7k ratings, charts in 9 storefronts): 78 low-star in 90d (de 36, es 14, it 12, fr 7, at 7, pt 2), 28 in the last 14 days, 35 on price. Vorwerk is moving legacy 36/48 EUR (PL 139/199 zl) subscribers to 60 EUR (259 zl) from 2026-12-10 (finanse.wp.pl 2026-11-04; mixbuch.app 2026-11-02); reviewers say they'll cancel. But the fix we can build doesn't reach the pain: guided cooking and TM6/TM7 functions need Cookidoo, and only 4 reviews ask for somewhere to keep their own recipes. MixBuch (own recipes with TM step settings, import, cook mode; free tier with ads and a 2-recipe limit; 1.99/mo, 14.99/yr, 49.99 one-time) already serves that, plus Rezeptwelt (free) and generic recipe keepers. 'Thermomix' is a trademark, so naming and ASO are constrained. Scores: evidence 3.5, demand 4, WTP 3, gap 2, competition 2.5, build 4 = 3.2",
    "promote_if": "after the 2026-12-10 switch, >=10 low-star reviews (or threads) ask for a place to keep their own or created recipes, or for manual TM-step recipes without Cookidoo, and MixBuch draws its own complaints (ads, limits, AI)"
+  },
+  {
+   "key": "ads:turkish-prayer-apps:inappropriate-ads",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-09",
+   "incumbents": [
+    "951344270",
+    "1372054007",
+    "905678482",
+    "918200941",
+    "1148428454",
+    "428747288",
+    "852500166"
+   ],
+   "score": 3.1,
+   "evidence": "\u0130slam Vakti (4.7, 58.6k ratings in the de storefront): 22 low-star in 90d (de 18, tr 3), 20 about ads: nudity, casino and betting, interest/loan and dating ads in a prayer app, and an ad that blocks the times. Some say they'd have paid if it had been paid from the start. Same complaint in Ezan Vakti Pro (4 low-star, tr; plus 5 sikayetvar.com complaints about obscene, betting and loan ads), Kuran-\u0131 Kerim Sesli (2), Kuran-\u0131 Kerim T\u00fcrk\u00e7e Meali (2), Namaz Hocas\u0131 (2), Ezan ALARMI (1), Namaz Vakti (1): about 31 across 7 apps, de and tr. But \u0130slam Vakti already sells ad removal for 3.99 EUR one-time, and free ad-free Turkish apps with official Diyanet times exist: forislam (Fame Medya, 'Reklams\u0131z'), Namaz Vakti (islamveihsan), 'Namaz Vakti - Reklams\u0131z', plus e-Diyanet (official, free) and MAWAQIT (free, no ads, German UI, mosque times). Scores: evidence 3, demand 3.5, WTP 3, gap 4, competition 1.5, build 4 = 3.1. Ramadan 2027 (around 02-08) is the why-now",
+   "promote_if": ">=15 ad complaints across >=3 Turkish prayer apps in 90 days, in a storefront beyond de and tr (nl, at, be, fr), and the ad-free Turkish apps turn out to have their own complaints (missing German cities, no German UI, no widget or adhan sound) so there's a wedge beyond 'no ads'"
   }
  ],
  "rejected": [
@@ -1149,6 +1166,42 @@
     "395107915"
    ],
    "reason": "Kuwait Prayer Times (7k ratings): 16 low-star in 90d (kw, us) since v8.1.0 broke the countdown, widget, adhan alerts and qibla. A regression the developer can ship a fix for, a one-country audience, and free no-ads prayer apps (Pillars, MAWAQIT) already offer the Kuwait method",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "paywall:komoot:bending-spoons",
+   "date": "2026-11-09",
+   "incumbents": [
+    "447374873"
+   ],
+   "reason": "komoot: 179 low-star in 90d (de 53, nl 29, ch 26, gb 22, it 13, at 12, us 18), rising to 71 in 14 days, about Bending Spoons-era bloat, constant UI changes, broken navigation and price. Route planning with turn-by-turn navigation, offline maps and routing data is the core, so it fails Gate B (maps, licensed data, far beyond 14 days)",
+   "reason_type": "build"
+  },
+  {
+   "key": "regressed:weatherpro:v5",
+   "date": "2026-11-09",
+   "incumbents": [
+    "294631159"
+   ],
+   "reason": "WeatherPro (paid, de/fr): 64 low-star in 90d (de 34, fr 18), about v5 shrinking the radar and maps while subscribers keep paying, and premium not restoring. Fading (6 in 14 days), weather data is licensed, and Apple Weather is free",
+   "reason_type": "ios-builtin"
+  },
+  {
+   "key": "discovery:round3-batch-2026-11-09",
+   "date": "2026-11-09",
+   "incumbents": [
+    "6449003064",
+    "379869627",
+    "466388978",
+    "949490225",
+    "1164423781",
+    "499470113",
+    "777310222",
+    "342115564",
+    "679454835",
+    "1307736395"
+   ],
+   "reason": "Round 3 scan of unscanned, mid-sized grossing or paid apps: Goblin Tools (14 low-star, AI features), GoodReader (6), Waking Up (7), Print to Size (4), Gronda (1), and 0 for Living Earth, My Contacts Backup Pro, FE File Explorer, Hipstamatic Classic and Rarevision VHS. No recurring pain",
    "reason_type": "evidence"
   }
  ]

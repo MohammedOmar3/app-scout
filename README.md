@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-08 — 1 idea: [Plain Kcal (working name)](briefs/2026-11-08-plain-kcal.md), a calorie diary without Yazio's ads after every entry, questionnaire and streak popups, on free national food tables (score 3.9) — [report](reports/2026-11-08.md)
+**Latest:** 2026-11-09 — no ideas today (3 hunt rounds; best lead `paywall:timer-plus:forced-paywall`, which needs a non-price wedge) — [report](reports/2026-11-09.md)
 
 ## How it works
 
