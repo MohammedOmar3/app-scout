@@ -49,13 +49,13 @@
   {
    "key": "paywall:timer-plus:forced-paywall",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-11",
    "incumbents": [
     "1279716547",
     "475816966"
    ],
    "score": 3.5,
-   "evidence": "Re-opened 2026-11-07 from rejected. Timer Plus (4.8, 61k, grossing gb): 134 low-star in 90d (us 85, gb 49), surge from 10-16 peaking 10-27..29 (15/20/22 a day), tapering to 2 on 11-02, still paywalled on v1.8.6; long-time users, gym instructors, no Family Sharing. Seconds (23.8k) 31 after its v26 redesign. Hard kill (b) doesn't apply: Tabata Timer & HIIT (156k) has ads and a 7-day limit, SmartWOD (54k) has ads and a subscription, Seconds Pro is $7.99 paid. Scores: evidence 4, demand 4, WTP 2 ('for an interval timer??'), gap 4, competition 2 (the only wedge is price, and IntervalFree, free with no ads and Live Activities, 37 ratings, already ships it), build 5 = 3.5. 4.3 risk high (template category, the wedge is pricing only) 2026-11-08 daily data: 134 in 90d, 6 since 11-01, still v1.8.6 2026-11-09 targeted rescan: 149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6 with the paywall on Start; Seconds 36 in 90d (6 since 11-01, v26.1: saved timers/folders and JSON import gone for free users). Only ~10 reviews across both mention coaching or classes, so the non-price wedge is still thin",
+   "evidence": "Re-opened 2026-11-07 from rejected. Timer Plus (4.8, 61k, grossing gb): 134 low-star in 90d (us 85, gb 49), surge from 10-16 peaking 10-27..29 (15/20/22 a day), tapering to 2 on 11-02, still paywalled on v1.8.6; long-time users, gym instructors, no Family Sharing. Seconds (23.8k) 31 after its v26 redesign. Hard kill (b) doesn't apply: Tabata Timer & HIIT (156k) has ads and a 7-day limit, SmartWOD (54k) has ads and a subscription, Seconds Pro is $7.99 paid. Scores: evidence 4, demand 4, WTP 2 ('for an interval timer??'), gap 4, competition 2 (the only wedge is price, and IntervalFree, free with no ads and Live Activities, 37 ratings, already ships it), build 5 = 3.5. 4.3 risk high (template category, the wedge is pricing only) 2026-11-08 daily data: 134 in 90d, 6 since 11-01, still v1.8.6 2026-11-09 targeted rescan: 149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6 with the paywall on Start; Seconds 36 in 90d (6 since 11-01, v26.1: saved timers/folders and JSON import gone for free users). Only ~10 reviews across both mention coaching or classes, so the non-price wedge is still thin | 2026-11-11: digest early-surge table shows 73 low-star in 14 days (x4.9), but by day the wave is tapering: 15/20/22 on 10-27..29, then 4-6 a day, 1 on 11-05, 2 on 11-07 (last scan 11-09). Of 149 in 90d, 19 mention switching to another app, 8 one-time/lifetime, 3 Apple Watch, 3 classes or coaching: still no non-price wedge",
    "promote_if": "the paywall holds and complaints continue past 2026-12-01; a concrete non-price wedge (e.g. coach or class mode, sharing workouts with clients) shows up in reviews or threads; or explicit asks to pay a fair one-time price"
   },
   {
@@ -80,23 +80,6 @@
    "score": 3.2,
    "evidence": "Official Cookidoo App (4.87, 41.7k ratings, charts in 9 storefronts): 78 low-star in 90d (de 36, es 14, it 12, fr 7, at 7, pt 2), 28 in the last 14 days, 35 on price. Vorwerk is moving legacy 36/48 EUR (PL 139/199 zl) subscribers to 60 EUR (259 zl) from 2026-12-10 (finanse.wp.pl 2026-11-04; mixbuch.app 2026-11-02); reviewers say they'll cancel. But the fix we can build doesn't reach the pain: guided cooking and TM6/TM7 functions need Cookidoo, and only 4 reviews ask for somewhere to keep their own recipes. MixBuch (own recipes with TM step settings, import, cook mode; free tier with ads and a 2-recipe limit; 1.99/mo, 14.99/yr, 49.99 one-time) already serves that, plus Rezeptwelt (free) and generic recipe keepers. 'Thermomix' is a trademark, so naming and ASO are constrained. Scores: evidence 3.5, demand 4, WTP 3, gap 2, competition 2.5, build 4 = 3.2",
    "promote_if": "after the 2026-12-10 switch, >=10 low-star reviews (or threads) ask for a place to keep their own or created recipes, or for manual TM-step recipes without Cookidoo, and MixBuch draws its own complaints (ads, limits, AI)"
-  },
-  {
-   "key": "ads:turkish-prayer-apps:inappropriate-ads",
-   "first_seen": "2026-11-09",
-   "last_seen": "2026-11-09",
-   "incumbents": [
-    "951344270",
-    "1372054007",
-    "905678482",
-    "918200941",
-    "1148428454",
-    "428747288",
-    "852500166"
-   ],
-   "score": 3.1,
-   "evidence": "\u0130slam Vakti (4.7, 58.6k ratings in the de storefront): 22 low-star in 90d (de 18, tr 3), 20 about ads: nudity, casino and betting, interest/loan and dating ads in a prayer app, and an ad that blocks the times. Some say they'd have paid if it had been paid from the start. Same complaint in Ezan Vakti Pro (4 low-star, tr; plus 5 sikayetvar.com complaints about obscene, betting and loan ads), Kuran-\u0131 Kerim Sesli (2), Kuran-\u0131 Kerim T\u00fcrk\u00e7e Meali (2), Namaz Hocas\u0131 (2), Ezan ALARMI (1), Namaz Vakti (1): about 31 across 7 apps, de and tr. But \u0130slam Vakti already sells ad removal for 3.99 EUR one-time, and free ad-free Turkish apps with official Diyanet times exist: forislam (Fame Medya, 'Reklams\u0131z'), Namaz Vakti (islamveihsan), 'Namaz Vakti - Reklams\u0131z', plus e-Diyanet (official, free) and MAWAQIT (free, no ads, German UI, mosque times). Scores: evidence 3, demand 3.5, WTP 3, gap 4, competition 1.5, build 4 = 3.1. Ramadan 2027 (around 02-08) is the why-now",
-   "promote_if": ">=15 ad complaints across >=3 Turkish prayer apps in 90 days, in a storefront beyond de and tr (nl, at, be, fr), and the ad-free Turkish apps turn out to have their own complaints (missing German cities, no German UI, no widget or adhan sound) so there's a wedge beyond 'no ads'"
   }
  ],
  "rejected": [
@@ -399,7 +382,7 @@
    "incumbents": [
     "6447516226"
    ],
-   "reason": "17 low-star reviews in 90d (gb only) from shoppers sent by merchants to an app charging \u00a310/week to track one parcel; AfterShip (4.7, 333k, free tracking) and 17TRACK already do it free, and carrier data needs a paid tracking API (fails Gate B)",
+   "reason": "17 low-star reviews in 90d (gb only) from shoppers sent by merchants to an app charging £10/week to track one parcel; AfterShip (4.7, 333k, free tracking) and 17TRACK already do it free, and carrier data needs a paid tracking API (fails Gate B)",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -493,7 +476,7 @@
    "incumbents": [
     "708379313"
    ],
-   "reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (\u22c64.8, 49 ratings, \u00a36.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
+   "reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -502,7 +485,7 @@
    "incumbents": [
     "314498713"
    ],
-   "reason": "75 low-star reviews in 90d (us 68, gb 7) from long-time users losing free sounds and mixes to a ~$70/yr subscription; White Noise is $0.99 one-time (\u22c64.8, 46k), iOS Background Sounds are free and built in, and sound mixers are a crowded category",
+   "reason": "75 low-star reviews in 90d (us 68, gb 7) from long-time users losing free sounds and mixes to a ~$70/yr subscription; White Noise is $0.99 one-time (⋆4.8, 46k), iOS Background Sounds are free and built in, and sound mixers are a crowded category",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -979,7 +962,7 @@
     "1037784828",
     "951627022"
    ],
-   "reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, \u26054.8 from 91k ratings (last update 2022, still listed)",
+   "reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, ★4.8 from 91k ratings (last update 2022, still listed)",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -1006,7 +989,7 @@
    "incumbents": [
     "546473125"
    ],
-   "reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt \u26054.7 11k free, Anki); AnkiMobile already rejected",
+   "reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -1017,7 +1000,7 @@
     "440224767",
     "6748598501"
    ],
-   "reason": "Qibla Compass (41k) 11, iSalam (38k) 6 and Compass App \u2013 Qibla finder 13 low-star in 90d (gb, sa, ae, us, ca, au): ads before the direction, immodest ads, a $19.99/week fake-ad compass. Killed like ads:prayer-times: Pillars and MAWAQIT are free, ad-free and include a qibla compass",
+   "reason": "Qibla Compass (41k) 11, iSalam (38k) 6 and Compass App – Qibla finder 13 low-star in 90d (gb, sa, ae, us, ca, au): ads before the direction, immodest ads, a $19.99/week fake-ad compass. Killed like ads:prayer-times: Pillars and MAWAQIT are free, ad-free and include a qibla compass",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -1045,7 +1028,7 @@
     "453056916",
     "1438248122"
    ],
-   "reason": "GuitarTuna 34, Guitar Tuner \u2013 Simply Tune 26, Fender Tune 19, Tuner T1 13, Tuner Pro 13 low-star in 90d (us, gb): trial charges and paywalls mixed with wrong-string and octave errors that snap strings. No single gap: accuracy is an audio-engineering problem, real-time pitch detection needs a native audio module outside comfortable Expo work, tuners are a template category (4.3 risk) and Fender Tune's basic tuner is free",
+   "reason": "GuitarTuna 34, Guitar Tuner – Simply Tune 26, Fender Tune 19, Tuner T1 13, Tuner Pro 13 low-star in 90d (us, gb): trial charges and paywalls mixed with wrong-string and octave errors that snap strings. No single gap: accuracy is an audio-engineering problem, real-time pitch detection needs a native audio module outside comfortable Expo work, tuners are a template category (4.3 risk) and Fender Tune's basic tuner is free",
    "reason_type": "dominant-free-alternative"
   },
   {
@@ -1203,6 +1186,70 @@
    ],
    "reason": "Round 3 scan of unscanned, mid-sized grossing or paid apps: Goblin Tools (14 low-star, AI features), GoodReader (6), Waking Up (7), Print to Size (4), Gronda (1), and 0 for Living Earth, My Contacts Backup Pro, FE File Explorer, Hipstamatic Classic and Rarevision VHS. No recurring pain",
    "reason_type": "evidence"
+  },
+  {
+   "key": "ads:turkish-prayer-apps:inappropriate-ads",
+   "date": "2026-11-11",
+   "incumbents": [
+    "951344270",
+    "1372054007",
+    "905678482",
+    "918200941",
+    "1148428454",
+    "428747288",
+    "852500166",
+    "1337705945",
+    "1460522683"
+   ],
+   "reason": "Hunt round 1 (targeted run 42948496123): the targeted collector only reached us and gb for these apps, so the nl/at/be/fr/ch check couldn't be done, and nothing new turned up (İslam Vakti still 22 low-star in 90d, Ezan Vakti Pro 4, forislam 2, MAWAQIT 1). Off-store, the App Store now holds a crowd of new ad-free Turkish prayer apps ('Namaz Vakti -Reklamsiz', 'Namaz Saatleri & Kıble', 'Namaz & Huzur', 'Ezan Vakti: Namaz Saatleri', islamveihsan, forislam) on top of e-Diyanet and MAWAQIT. 'No ads' is the only wedge, the fast followers have shipped it, and a template prayer-times app here carries high 4.3 risk",
+   "reason_type": "no-wedge"
+  },
+  {
+   "key": "breach:msecure:password-manager",
+   "date": "2026-11-11",
+   "incumbents": [
+    "1063795594"
+   ],
+   "reason": "Early surge (77 low-star in 14 days, x44, us 58, gb 19): a customer data breach and vague communication on v7.1.0. A security incident, not a missing feature; a new password manager needs the AutoFill credential-provider extension (native) and iOS's built-in Passwords app is free with sync and AutoFill",
+   "reason_type": "ios-builtin"
+  },
+  {
+   "key": "paywall:plant-apps:trial-traps",
+   "date": "2026-11-11",
+   "incumbents": [
+    "1252497129",
+    "1527399597",
+    "1410126781",
+    "1612792132",
+    "1595795215",
+    "1476047194"
+   ],
+   "reason": "Hunt round 1 (terms plant care): about 170 low-star in 90d across 11 plant apps (PictureThis 46, PlantIn 41, Planta 20, Plant Parent 19, Plant App 18; us and gb). 85 are trial charges and refunds (billing disputes), 61 wrong AI identification or diagnosis (needs a paid ID model, an AI feature); only 10 are about reminders or watering logs, the part we could build. Free PlantNet and Seek already cover identification",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "discovery:grocery-lists-2026-11-11",
+   "date": "2026-11-11",
+   "incumbents": [
+    "564974992",
+    "325851015",
+    "771220733",
+    "522167641",
+    "507605066",
+    "331302745",
+    "580669177"
+   ],
+   "reason": "Hunt round 1 (terms grocery list): quiet. Shopping UK 8 low-star in 90d, Out of Milk 6, Our Groceries 6, AnyList 4, List Ease 4, Listonic 3, Bring! 2. No recurring pain",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "ads:flitsmeister:push-ads",
+   "date": "2026-11-11",
+   "incumbents": [
+    "354936286"
+   ],
+   "reason": "Flitsmeister v15.0 (nl): 19 low-star in 14 days about ad push notifications that can't be turned off without losing speed-camera alerts. Speed-camera and traffic data is crowd/licensed data plus navigation and background location: fails Gate B",
+   "reason_type": "build"
   }
  ]
 }

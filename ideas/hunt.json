@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "open_targets": [
     {
       "key": "paywall:timer-plus:forced-paywall",
@@ -15,26 +15,6 @@
       "why": "Best near-miss (watchlist 3.5): a free interval timer (61k ratings) put a hard paywall on Start; Seconds removed free saved timers",
       "evidence": "149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6. Seconds 36 (6 since 11-01). Only ~10 reviews mention classes or coaching. IntervalFree (free, no ads) and coach timers (Coach Clock, Timer for Instructors, PushPress) already exist",
       "missing": "A non-price wedge that IntervalFree and the coach timers lack, named by >=10 reviews or threads, and the paywall still holding with complaints after 2026-12-01. Next check: daily data on 12-02; no targeted run needed before then",
-      "rounds": 1,
-      "last_round": "2026-11-09"
-    },
-    {
-      "key": "ads:turkish-prayer-apps:inappropriate-ads",
-      "incumbents": [
-        "951344270",
-        "1372054007",
-        "905678482",
-        "918200941"
-      ],
-      "terms": [
-        "namaz vakti",
-        "ezan vakti",
-        "gebetszeiten",
-        "imsakiye"
-      ],
-      "why": "Watchlist 3.1: inappropriate ads in Turkish prayer apps used by the Turkish diaspora in Germany; Ramadan 2027 is the why-now",
-      "evidence": "~31 low-star ad complaints across 7 Turkish apps in 90d (İslam Vakti 20, de 18), plus 5 sikayetvar.com complaints about Ezan Vakti Pro. Ad-free Diyanet apps exist (forislam, islamveihsan, Namaz Vakti - Reklamsız, e-Diyanet, MAWAQIT)",
-      "missing": "A storefront beyond de and tr (scan nl, at, be, fr, ch), >=15 ad complaints across >=3 apps, and a wedge beyond 'no ads': check forislam's and MAWAQIT's own low-star reviews for missing German cities or UI, widgets, or adhan sounds",
       "rounds": 1,
       "last_round": "2026-11-09"
     },
@@ -410,6 +390,21 @@
       "key": "discovery:round3-batch-2026-11-09",
       "outcome": "rejected",
       "date": "2026-11-09"
+    },
+    {
+      "key": "ads:turkish-prayer-apps:inappropriate-ads",
+      "outcome": "rejected",
+      "date": "2026-11-11"
+    },
+    {
+      "key": "paywall:plant-apps:trial-traps",
+      "outcome": "rejected",
+      "date": "2026-11-11"
+    },
+    {
+      "key": "discovery:grocery-lists-2026-11-11",
+      "outcome": "rejected",
+      "date": "2026-11-11"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: simply-draw (91), marinetraffic (87), yarnpal (72), avenza (70). All are content or data builds, so check quickly for anything new. 2) The targeted run goes first to Turkish prayer apps in nl/at/be/fr/ch (951344270, 1372054007, 1337705945, plus MAWAQIT 1460522683 for its own complaints) and to English-market calorie counters as extra evidence for Plain Kcal (341232718 MyFitnessPal 239 low-star, 297368629 Lose It 37). 3) Discovery: non-English surges (de, fr, it, tr) from the daily digest, because English theme counts miss them."

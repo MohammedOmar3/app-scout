@@ -130,7 +130,7 @@
    "old_reason": "AccuWeather (98k ratings): 96 low-star in 90d, 80 in 30, slow loads, ads and notifications after v21. Crowded category; Apple Weather is free",
    "status": "closed",
    "reopened": "2026-11-09",
-   "outcome": "still rejected (ios-builtin): 109 low-star in 90d (us 93, gb 16), 88 in October, on v21 slowness, ads and widgets moved to a \u00a34.99/mo plan; Apple Weather is free and has widgets, and weather data is the core"
+   "outcome": "still rejected (ios-builtin): 109 low-star in 90d (us 93, gb 16), 88 in October, on v21 slowness, ads and widgets moved to a £4.99/mo plan; Apple Weather is free and has widgets, and weather data is the core"
   },
   {
    "key": "paywall:stronglifts:lifetime-revoked",
@@ -151,7 +151,7 @@
     "708379313"
    ],
    "evidence_reviews": 91,
-   "old_reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (\u22c64.8, 49 ratings, \u00a36.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
+   "old_reason": "Bose ended the SoundTouch cloud on 2026-05-06: 91 low-star reviews in 2026 (us, gb), 18 in the last 90d and falling, presets and internet radio gone. Bose published the local API, and the gap is already filled: free open-source SoundTouch Reborn (installs on the speaker, restores buttons, radio, Spotify, multiroom), Better ST (⋆4.8, 49 ratings, £6.99, #1 paid Music in be), Bosman (4.5, 39), Mast ($1.99), ST Remote Pro. A fifth controller for a shrinking installed base fails Gate B on 4.3 risk, and needs the hardware to test",
    "status": "closed",
    "reopened": "2026-11-09",
    "outcome": "still rejected (dominant-free-alternative): 18 low-star in 90d, 0 since 11-01; SoundTouch Reborn (free, open source), Better ST and Bosman already restore presets and radio, and it needs the hardware"
@@ -164,7 +164,9 @@
    ],
    "evidence_reviews": 91,
    "old_reason": "Simply Draw (139k ratings): 91 low-star in 90d, 85 in 30 (us, gb), v1.20.0: one free drawing, then ~$100/yr. Reviewers are mostly children and an original lesson library is a content build, not 14 days. YouTube is free",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-11",
+   "outcome": "still rejected (other): now a surge (115 low-star in 14 days, us and gb, v1.21.0 one free drawing then paywall), but reviewers are mostly children and the product is a lesson library (content build); ArtWorkout shows the same energy-and-paywall pain"
   },
   {
    "key": "regressed:marinetraffic:new-app",
@@ -174,7 +176,9 @@
    ],
    "evidence_reviews": 87,
    "old_reason": "MarineTraffic (65k ratings): 87 low-star in 90d (us, gb) on the new app and paywall, with explicit willingness to pay for the old one. Vessel positions are AIS data you can't get for free; fails Gate B",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-11",
+   "outcome": "still rejected (build): 11 low-star since 10-28 on the Kpler redesign and paywalled past tracks; vessel positions are AIS data we can't get free"
   },
   {
    "key": "paywall:yarnpal:ai-patterns",
@@ -184,7 +188,9 @@
    ],
    "evidence_reviews": 72,
    "old_reason": "72 low-star reviews in 90d (us, gb) about AI-made, inaccurate patterns and nearly every pattern being Pro-only; the fix is a pattern library (content you can't license or produce in 14 days, fails Gate B), and Ravelry/YouTube already give free patterns",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-11",
+   "outcome": "still rejected (build): 5 low-star since 10-28 (99% of patterns Pro); the fix is a pattern library, content we can't license or write in 14 days"
   },
   {
    "key": "paywall:avenza:custom-map-import",
@@ -194,7 +200,9 @@
    ],
    "evidence_reviews": 70,
    "old_reason": "Avenza Maps (128k ratings): ~70 low-star reviews since May 2026, 23 in 90d, us only, after the Blue Marble merger put custom GeoPDF import behind $35-50/yr Plus (20 imports) and ~$170 Pro and froze the map store. Strong pain but killed: Topo Maps+ (4.7, 9.4k ratings) lets free users import up to 10 GeoPDFs; ArcGIS Field Maps (free, no sign-in, GeoPDF since 2026-03) is what wildfire incident pages now point to; MapNero has no import limit even free; ArkenMap $3.99 one-time; NomadTracks free; plus MapCheck, Mapio, FO Maps",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-11",
+   "outcome": "still rejected (dominant-free-alternative): 3 low-star since 10-28, fading; Topo Maps+ and ArcGIS Field Maps already import GeoPDFs free"
   },
   {
    "key": "paywall:hurricane-tracker:forced-sub",
@@ -234,7 +242,7 @@
     "546473125"
    ],
    "evidence_reviews": 53,
-   "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt \u26054.7 11k free, Anki); AnkiMobile already rejected",
+   "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected",
    "status": "open"
   },
   {
@@ -277,7 +285,7 @@
     "951627022"
    ],
    "evidence_reviews": 46,
-   "old_reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, \u26054.8 from 91k ratings (last update 2022, still listed)",
+   "old_reason": "Photomyne (15k ratings): 46 low-star in 90d (us, gb), on trial charges, AI restore changing faces, and credits on top of the subscription to restore or export full size. Killed: PhotoScan by Google Photos is free, no in-app purchases, ★4.8 from 91k ratings (last update 2022, still listed)",
    "status": "open"
   },
   {
