@@ -8,16 +8,18 @@
         "1420515755",
         "1124958568",
         "894811756",
-        "941070561"
+        "941070561",
+        "1590820344"
       ],
       "terms": [
         "teleprompter",
-        "prompter"
+        "prompter",
+        "teleprompter para video"
       ],
       "why": "Best lead today (watchlist 3.45): basic teleprompter features (mirroring, remote, export) paywalled across 9 apps",
-      "evidence": "104 low-star in 90d across 9 apps (us, gb), 47 on paywall or price, paying users name $30-$140",
-      "missing": "Competition: check Telepromptr (572401027), TeleprompterPAD, Prompt+ and the 2026 entrants for their own complaints; a storefront beyond us/gb",
-      "rounds": 1,
+      "evidence": "About 65 basics-paywall low-star in 90d across 11 apps (us 40, br 15, gb 10), steady at about 20 a month. Alternatives quiet but small; Telepromptr (one-time, free mirroring) stale since 2024-12; Instagram/CapCut teleprompters are short-form only. Watchlist 3.43",
+      "missing": "Proven demand: a teleprompter app with 20k+ ratings or grossing in 3+ storefronts with the same complaint, or a 4th storefront (de, fr, es, jp) at >=10 a month. The targeted collector only reaches us/gb (plus charted storefronts) for these apps, so a de/fr/es/jp check needs a storefront option in collector_ctl.py",
+      "rounds": 2,
       "last_round": "2026-11-11"
     },
     {
@@ -32,7 +34,7 @@
         "tabata"
       ],
       "why": "Best near-miss (watchlist 3.5): a free interval timer (61k ratings) put a hard paywall on Start; Seconds removed free saved timers",
-      "evidence": "149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6. Seconds 36 (6 since 11-01). Only ~10 reviews mention classes or coaching. IntervalFree (free, no ads) and coach timers (Coach Clock, Timer for Instructors, PushPress) already exist",
+      "evidence": "149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6. Seconds 36 (6 since 11-01). Only ~10 reviews mention classes or coaching. IntervalFree (free, no ads) and coach timers (Coach Clock, Timer for Instructors, PushPress) already exist | 11-11: 73 low-star in 14 days, but tapering to 1-2 a day by 11-05..07; 19 of 149 mention switching apps, only 3 classes or coaching",
       "missing": "A non-price wedge that IntervalFree and the coach timers lack, named by >=10 reviews or threads, and the paywall still holding with complaints after 2026-12-01. Next check: daily data on 12-02; no targeted run needed before then",
       "rounds": 1,
       "last_round": "2026-11-09"
@@ -52,6 +54,20 @@
       "missing": "Re-check after 2026-12-10: >=10 reviews or threads asking to keep their own or created recipes outside Cookidoo, plus a pl storefront scan. Not before 12-11",
       "rounds": 1,
       "last_round": "2026-11-09"
+    },
+    {
+      "key": "paywall:zero:forced-trial-history",
+      "incumbents": [
+        "1168348542"
+      ],
+      "terms": [
+        "intermittent fasting"
+      ],
+      "why": "Watchlist 3.3: Zero forces a trial and locks users' own fasting history behind the subscription",
+      "evidence": "53 low-star in 90d (us 45, gb 7), steady 16-21 a month since Aug",
+      "missing": ">=15 reviews asking to import or export Zero history, or the indie no-subscription timers drawing their own complaints",
+      "rounds": 1,
+      "last_round": "2026-11-11"
     }
   ],
   "closed": [
@@ -434,7 +450,17 @@
       "key": "discovery:tasbih-counters-2026-11-11",
       "outcome": "rejected",
       "date": "2026-11-11"
+    },
+    {
+      "key": "paywall:invoice-makers:tier-limits",
+      "outcome": "rejected",
+      "date": "2026-11-11"
+    },
+    {
+      "key": "discovery:teleprompter-alternatives-2026-11-11",
+      "outcome": "rejected",
+      "date": "2026-11-11"
     }
   ],
-  "plan_next_run": "1) Re-open queue, the next 4 open: simply-draw (91), marinetraffic (87), yarnpal (72), avenza (70). All are content or data builds, so check quickly for anything new. 2) The targeted run goes first to Turkish prayer apps in nl/at/be/fr/ch (951344270, 1372054007, 1337705945, plus MAWAQIT 1460522683 for its own complaints) and to English-market calorie counters as extra evidence for Plain Kcal (341232718 MyFitnessPal 239 low-star, 297368629 Lose It 37). 3) Discovery: non-English surges (de, fr, it, tr) from the daily digest, because English theme counts miss them."
+  "plan_next_run": "1) Re-open queue, the next 4 open: hurricane-tracker (68), vocabulary (67), case-tracker (56), quizlet (53). Quick checks: each was killed by a strong free alternative or a data/extension build. 2) Teleprompters (watchlist 3.43) go first in the targeted run: Teleprompter.com 1420515755, BIGVU 1124958568, VILO 1590820344, Teleprompter 941620509, plus terms 'teleprompter para video', 'souffleur' to pull non-English apps; the question is demand (a 20k+ app or 3+ grossing storefronts with the same complaint). 3) Zero (1168348542) and the indie fasting timers only if a slot is spare. 4) Timer Plus waits for the 12-02 daily data; Cookidoo waits until after 12-10. 5) Discovery: categories not yet scanned with app-factory fit (metronome, score keeper, packing list, chore chart, kids reward chart, reading log), one run's worth of terms."
 }

@@ -93,11 +93,12 @@
     "941070561",
     "1139307843",
     "922921003",
-    "1444106389"
+    "1444106389",
+    "1590820344"
    ],
    "score": 3.45,
-   "evidence": "Hunt round 2 (targeted run 42952269115, term teleprompter): 104 low-star in 90d across 9 teleprompter apps (Teleprompter.com 27, BIGVU 23, PromptSmart Pro 18, Teleprompter 15, PromptSmart Lite 7, Teleprompter Pro 5, Teleprompter for Video 5; us and gb), 47 on paywall or price: mirroring for hardware prompters and remote control moved behind $60/yr or £80 (Teleprompter, Teleprompter Pro, Video Teleprompter), paywall only after the script is set up, a £29.99 paid app that then asks for a subscription (PromptSmart Pro), $90/yr with watermark and export limits (Teleprompter.com); 35 on recording bugs (audio out of sync, crashes), 17 on voice-follow scrolling lagging. Paying users: $30, $79, $90, $140 named. Grossing in us (Teleprompter.com, BIGVU) and gb (BIGVU, Teleprompter for Video). But the incumbents are small (1-5k ratings), Telepromptr (1.3k, ★4.6) already has free mirroring and a $59.99 one-time Pro (last update 2024-12), TeleprompterPAD is free (no recording), browser prompters are free, and 2026 brought many new entrants. Scores: evidence 4, demand 3, WTP 4, gap 3.5, competition 2.5, build 3.5 = 3.45",
-   "promote_if": "Round 3 shows Telepromptr and the 2026 entrants drawing their own complaints (stale, paywalled, account walls), or the same pain in a non-English storefront, lifting competition to 3.5+"
+   "evidence": "Hunt rounds 2-3 (targeted runs 42952269115, 42956004620): about 150 low-star in 90d across 14 teleprompter apps; about 65 are about basics behind a paywall, steady at about 20 a month (Aug 18, Sep 21, Oct 19), in us 40, br 15, gb 10. Teleprompter - VILO (br 30 of 37): you record the whole video and only then learn you must subscribe to save it, and the '3-day trial' bills the annual plan at once. Teleprompter, Teleprompter Pro and Video Teleprompter moved mirroring (needed for hardware rigs) and remote control behind $60/yr or £80. PromptSmart Pro charges £29.99 up front and then a subscription. Teleprompter.com: $90/yr, watermark, no free export. Paying users name $10-$140. Grossing in us (Teleprompter.com, BIGVU) and gb (BIGVU, Teleprompter for Video); PromptSmart Pro in the paid charts (ee, eg). Competition: Telepromptr (1.4k ratings, ★4.6, 2 low-star) already has free mirroring and a $59.99 one-time Pro but hasn't been updated since 2024-12; TeleprompterPAD is free with no recording (26 ratings); the 2026 entrants (Teleprompter App 366 ratings, Prompt+ 56, Autocue 19, Prompter 1) are tiny and quiet. Instagram's Edits/Reels and CapCut have free teleprompters, but Instagram's is Reels-only (about 3 minutes), with no remote and no voice scrolling (teleprompter.com/blog, 2026-07-18). The wedge that survives: long-form and landscape recording, mirroring for rigs and phone-as-remote free, no account, one-time Pro. Scores: evidence 4, demand 2.5 (largest incumbent 6.6k ratings, grossing in 1-2 storefronts), WTP 4, gap 3.5, competition 3, build 3.5 = 3.43",
+   "promote_if": "Proven demand rises: a teleprompter app with 20k+ ratings or grossing in 3+ storefronts shows the same paywall complaints, or the complaints spread to a 4th storefront (de, fr, es, jp) at >=10 a month. Or Telepromptr stops working on iOS 27 (its one-time, free-mirror offer is the closest alternative)"
   },
   {
    "key": "paywall:zero:forced-trial-history",
@@ -108,8 +109,8 @@
     "1459260306",
     "1189568780"
    ],
-   "score": 3.2,
-   "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2",
+   "score": 3.3,
+   "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2 | Round 3: FastEasy (78.9k ratings) is also subscription-only ('further use requires a subscription', apppricinglab.com), so it isn't a free fix; but free or cheap indie timers keep arriving (Intermittent Fasting Tracker 5.8k ratings 5 low-star, Fasting + 6.8k 2, FastHabit 1.6k 2, Easy Fast 1.4k 2). Competition 2 instead of 1.5 = 3.3",
    "promote_if": "The free alternatives turn out paywalled or ad-heavy too, or >=15 reviews ask for Zero history import/export that nobody offers"
   }
  ],
@@ -1302,6 +1303,34 @@
     "1501329079"
    ],
    "reason": "Hunt round 2 (term tasbih counter): Tasbih Counter Pro 5 low-star, iTasbeeh 2, Tasbih Counter Lite 1. No pain",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "paywall:invoice-makers:tier-limits",
+   "date": "2026-11-11",
+   "incumbents": [
+    "540236748",
+    "694831622",
+    "1405254630",
+    "1606911248",
+    "592163563"
+   ],
+   "reason": "Hunt round 3 (term invoice maker): about 75 low-star in 90d across 5 apps (Square Invoices 23, Invoice2go 17, Invoice Fly 15, Invoice Simple 12, Joist 8; us, au, gb): price rises, 100-invoices-a-year tiers, weekly subscriptions, losing access to your own invoices after cancelling. But the loudest complaints are payment processing (Square fees, slow deposits, Stripe funds held in Invoice Fly, Invoice2go closing accounts after declining its payments product): invoicing and getting paid is small-business finance. Zoho Invoice (18k ratings, ★4.87, 5 low-star) is free",
+   "reason_type": "excluded"
+  },
+  {
+   "key": "discovery:teleprompter-alternatives-2026-11-11",
+   "date": "2026-11-11",
+   "incumbents": [
+    "572401027",
+    "1507218595",
+    "1483052809",
+    "1580691933",
+    "6743309542",
+    "6449695164",
+    "6762933643"
+   ],
+   "reason": "Hunt round 3: the teleprompter alternatives are quiet (Telepromptr 2 low-star, Prompt+ 1, TeleprompterPAD 0, Telepromptme 0, Teleprompter App 0, Autocue 0, Prompter 0), so they hold no cluster of their own. They count as competition for paywall:teleprompters:basics-paywalled",
    "reason_type": "evidence"
   }
  ]

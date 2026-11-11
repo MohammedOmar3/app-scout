@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-09 — no ideas today (3 hunt rounds; best lead `paywall:timer-plus:forced-paywall`, which needs a non-price wedge) — [report](reports/2026-11-09.md)
+**Latest:** 2026-11-11 — no ideas today (3 hunt rounds; best lead `paywall:teleprompters:basics-paywalled`, which needs proven demand) — [report](reports/2026-11-11.md)
 
 ## How it works
 
