@@ -80,6 +80,37 @@
    "score": 3.2,
    "evidence": "Official Cookidoo App (4.87, 41.7k ratings, charts in 9 storefronts): 78 low-star in 90d (de 36, es 14, it 12, fr 7, at 7, pt 2), 28 in the last 14 days, 35 on price. Vorwerk is moving legacy 36/48 EUR (PL 139/199 zl) subscribers to 60 EUR (259 zl) from 2026-12-10 (finanse.wp.pl 2026-11-04; mixbuch.app 2026-11-02); reviewers say they'll cancel. But the fix we can build doesn't reach the pain: guided cooking and TM6/TM7 functions need Cookidoo, and only 4 reviews ask for somewhere to keep their own recipes. MixBuch (own recipes with TM step settings, import, cook mode; free tier with ads and a 2-recipe limit; 1.99/mo, 14.99/yr, 49.99 one-time) already serves that, plus Rezeptwelt (free) and generic recipe keepers. 'Thermomix' is a trademark, so naming and ASO are constrained. Scores: evidence 3.5, demand 4, WTP 3, gap 2, competition 2.5, build 4 = 3.2",
    "promote_if": "after the 2026-12-10 switch, >=10 low-star reviews (or threads) ask for a place to keep their own or created recipes, or for manual TM-step recipes without Cookidoo, and MixBuch draws its own complaints (ads, limits, AI)"
+  },
+  {
+   "key": "paywall:teleprompters:basics-paywalled",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "incumbents": [
+    "941620509",
+    "1420515755",
+    "1124958568",
+    "894811756",
+    "941070561",
+    "1139307843",
+    "922921003",
+    "1444106389"
+   ],
+   "score": 3.45,
+   "evidence": "Hunt round 2 (targeted run 42952269115, term teleprompter): 104 low-star in 90d across 9 teleprompter apps (Teleprompter.com 27, BIGVU 23, PromptSmart Pro 18, Teleprompter 15, PromptSmart Lite 7, Teleprompter Pro 5, Teleprompter for Video 5; us and gb), 47 on paywall or price: mirroring for hardware prompters and remote control moved behind $60/yr or £80 (Teleprompter, Teleprompter Pro, Video Teleprompter), paywall only after the script is set up, a £29.99 paid app that then asks for a subscription (PromptSmart Pro), $90/yr with watermark and export limits (Teleprompter.com); 35 on recording bugs (audio out of sync, crashes), 17 on voice-follow scrolling lagging. Paying users: $30, $79, $90, $140 named. Grossing in us (Teleprompter.com, BIGVU) and gb (BIGVU, Teleprompter for Video). But the incumbents are small (1-5k ratings), Telepromptr (1.3k, ★4.6) already has free mirroring and a $59.99 one-time Pro (last update 2024-12), TeleprompterPAD is free (no recording), browser prompters are free, and 2026 brought many new entrants. Scores: evidence 4, demand 3, WTP 4, gap 3.5, competition 2.5, build 3.5 = 3.45",
+   "promote_if": "Round 3 shows Telepromptr and the 2026 entrants drawing their own complaints (stale, paywalled, account walls), or the same pain in a non-English storefront, lifting competition to 3.5+"
+  },
+  {
+   "key": "paywall:zero:forced-trial-history",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "incumbents": [
+    "1168348542",
+    "1459260306",
+    "1189568780"
+   ],
+   "score": 3.2,
+   "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2",
+   "promote_if": "The free alternatives turn out paywalled or ad-heavy too, or >=15 reviews ask for Zero history import/export that nobody offers"
   }
  ],
  "rejected": [
@@ -1250,6 +1281,28 @@
    ],
    "reason": "Flitsmeister v15.0 (nl): 19 low-star in 14 days about ad push notifications that can't be turned off without losing speed-camera alerts. Speed-camera and traffic data is crowd/licensed data plus navigation and background location: fails Gate B",
    "reason_type": "build"
+  },
+  {
+   "key": "discovery:baby-trackers-2026-11-11",
+   "date": "2026-11-11",
+   "incumbents": [
+    "529815782",
+    "1491340863",
+    "568940747"
+   ],
+   "reason": "Hunt round 2 (term baby tracker): quiet apart from The Wonder Weeks (32, already rejected 11-04): Napper 8, The Bump 6. Off-store, Baby Tracker by Nighp (largely free, ★4.8) is the low-complaint option (unstar.app, 2026-06-01). No cluster",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "discovery:tasbih-counters-2026-11-11",
+   "date": "2026-11-11",
+   "incumbents": [
+    "1341100401",
+    "1534763309",
+    "1501329079"
+   ],
+   "reason": "Hunt round 2 (term tasbih counter): Tasbih Counter Pro 5 low-star, iTasbeeh 2, Tasbih Counter Lite 1. No pain",
+   "reason_type": "evidence"
   }
  ]
 }

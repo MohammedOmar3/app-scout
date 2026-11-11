@@ -2,6 +2,25 @@
   "updated": "2026-11-11",
   "open_targets": [
     {
+      "key": "paywall:teleprompters:basics-paywalled",
+      "incumbents": [
+        "941620509",
+        "1420515755",
+        "1124958568",
+        "894811756",
+        "941070561"
+      ],
+      "terms": [
+        "teleprompter",
+        "prompter"
+      ],
+      "why": "Best lead today (watchlist 3.45): basic teleprompter features (mirroring, remote, export) paywalled across 9 apps",
+      "evidence": "104 low-star in 90d across 9 apps (us, gb), 47 on paywall or price, paying users name $30-$140",
+      "missing": "Competition: check Telepromptr (572401027), TeleprompterPAD, Prompt+ and the 2026 entrants for their own complaints; a storefront beyond us/gb",
+      "rounds": 1,
+      "last_round": "2026-11-11"
+    },
+    {
       "key": "paywall:timer-plus:forced-paywall",
       "incumbents": [
         "1279716547",
@@ -403,6 +422,16 @@
     },
     {
       "key": "discovery:grocery-lists-2026-11-11",
+      "outcome": "rejected",
+      "date": "2026-11-11"
+    },
+    {
+      "key": "discovery:baby-trackers-2026-11-11",
+      "outcome": "rejected",
+      "date": "2026-11-11"
+    },
+    {
+      "key": "discovery:tasbih-counters-2026-11-11",
       "outcome": "rejected",
       "date": "2026-11-11"
     }
