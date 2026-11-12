@@ -84,7 +84,7 @@
   {
    "key": "paywall:teleprompters:basics-paywalled",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "incumbents": [
     "941620509",
     "1420515755",
@@ -96,21 +96,21 @@
     "1444106389",
     "1590820344"
    ],
-   "score": 3.45,
-   "evidence": "Hunt rounds 2-3 (targeted runs 42952269115, 42956004620): about 150 low-star in 90d across 14 teleprompter apps; about 65 are about basics behind a paywall, steady at about 20 a month (Aug 18, Sep 21, Oct 19), in us 40, br 15, gb 10. Teleprompter - VILO (br 30 of 37): you record the whole video and only then learn you must subscribe to save it, and the '3-day trial' bills the annual plan at once. Teleprompter, Teleprompter Pro and Video Teleprompter moved mirroring (needed for hardware rigs) and remote control behind $60/yr or £80. PromptSmart Pro charges £29.99 up front and then a subscription. Teleprompter.com: $90/yr, watermark, no free export. Paying users name $10-$140. Grossing in us (Teleprompter.com, BIGVU) and gb (BIGVU, Teleprompter for Video); PromptSmart Pro in the paid charts (ee, eg). Competition: Telepromptr (1.4k ratings, ★4.6, 2 low-star) already has free mirroring and a $59.99 one-time Pro but hasn't been updated since 2024-12; TeleprompterPAD is free with no recording (26 ratings); the 2026 entrants (Teleprompter App 366 ratings, Prompt+ 56, Autocue 19, Prompter 1) are tiny and quiet. Instagram's Edits/Reels and CapCut have free teleprompters, but Instagram's is Reels-only (about 3 minutes), with no remote and no voice scrolling (teleprompter.com/blog, 2026-07-18). The wedge that survives: long-form and landscape recording, mirroring for rigs and phone-as-remote free, no account, one-time Pro. Scores: evidence 4, demand 2.5 (largest incumbent 6.6k ratings, grossing in 1-2 storefronts), WTP 4, gap 3.5, competition 3, build 3.5 = 3.43",
-   "promote_if": "Proven demand rises: a teleprompter app with 20k+ ratings or grossing in 3+ storefronts shows the same paywall complaints, or the complaints spread to a 4th storefront (de, fr, es, jp) at >=10 a month. Or Telepromptr stops working on iOS 27 (its one-time, free-mirror offer is the closest alternative)"
+   "score": 3.5,
+   "evidence": "Hunt rounds 2-3 (targeted runs 42952269115, 42956004620): about 150 low-star in 90d across 14 teleprompter apps; about 65 are about basics behind a paywall, steady at about 20 a month (Aug 18, Sep 21, Oct 19), in us 40, br 15, gb 10. Teleprompter - VILO (br 30 of 37): you record the whole video and only then learn you must subscribe to save it, and the '3-day trial' bills the annual plan at once. Teleprompter, Teleprompter Pro and Video Teleprompter moved mirroring (needed for hardware rigs) and remote control behind $60/yr or £80. PromptSmart Pro charges £29.99 up front and then a subscription. Teleprompter.com: $90/yr, watermark, no free export. Paying users name $10-$140. Grossing in us (Teleprompter.com, BIGVU) and gb (BIGVU, Teleprompter for Video); PromptSmart Pro in the paid charts (ee, eg). Competition: Telepromptr (1.4k ratings, ★4.6, 2 low-star) already has free mirroring and a $59.99 one-time Pro but hasn't been updated since 2024-12; TeleprompterPAD is free with no recording (26 ratings); the 2026 entrants (Teleprompter App 366 ratings, Prompt+ 56, Autocue 19, Prompter 1) are tiny and quiet. Instagram's Edits/Reels and CapCut have free teleprompters, but Instagram's is Reels-only (about 3 minutes), with no remote and no voice scrolling (teleprompter.com/blog, 2026-07-18). The wedge that survives: long-form and landscape recording, mirroring for rigs and phone-as-remote free, no account, one-time Pro. Scores: evidence 4, demand 2.5 (largest incumbent 6.6k ratings, grossing in 1-2 storefronts), WTP 4, gap 3.5, competition 3, build 3.5 = 3.43 | 11-12 (targeted run 43145482483): the demand gap was a storefront artefact. In us the incumbents are bigger than the gb counts showed: Teleprompter 34.7k ratings, Teleprompter.com 30.3k (grossing in 4 storefronts), BIGVU 36.5k. Teleprompter (34.7k) carries the mirroring complaint ('I can't mirror my text without a $60 annual subscription', 1* us 2026-09-22). A stricter manual count of the 78 pay-related low-star in 90d gives 31 about basics paywalled (save, export, mirror, remote, 'not free') across 8 apps and 3 storefronts (us, br, gb), plus about 12 trial-billing traps; tapering (Aug 10, Sep 13, Oct 6, Nov 3). New competition: Open Prompter (free, MIT, no IAP, mirroring on both axes, Bluetooth remote, recording, no account; 7 ratings; openprompter.app 2026-08-25), CueCard (free, open source), GoTeleprompter, and 10+ other 2026 entrants (CueCam, CueSync, CueFrame, Cue: Floating Teleprompter, TelIs, Video Skript). They are tiny, so the market isn't closed by the rule, but the category is filling fast. Scores: evidence 3.5, demand 3.5, WTP 4, gap 3.5, competition 3, build 3.5 = 3.50",
+   "promote_if": "Evidence volume: >=50 basics-paywall low-star in 90 days (or >=15 in the last 30) across the teleprompter apps, which needs a 4th storefront (de, fr, es, jp, br) that the targeted collector can't choose yet. Demand is no longer the gap. Drop it if the 2026 free entrants (Open Prompter, CueCard) start charting"
   },
   {
    "key": "paywall:zero:forced-trial-history",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "incumbents": [
     "1168348542",
     "1459260306",
     "1189568780"
    ],
    "score": 3.3,
-   "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2 | Round 3: FastEasy (78.9k ratings) is also subscription-only ('further use requires a subscription', apppricinglab.com), so it isn't a free fix; but free or cheap indie timers keep arriving (Intermittent Fasting Tracker 5.8k ratings 5 low-star, Fasting + 6.8k 2, FastHabit 1.6k 2, Easy Fast 1.4k 2). Competition 2 instead of 1.5 = 3.3",
+   "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2 | Round 3: FastEasy (78.9k ratings) is also subscription-only ('further use requires a subscription', apppricinglab.com), so it isn't a free fix; but free or cheap indie timers keep arriving (Intermittent Fasting Tracker 5.8k ratings 5 low-star, Fasting + 6.8k 2, FastHabit 1.6k 2, Easy Fast 1.4k 2). Competition 2 instead of 1.5 = 3.3 | 11-12: 49 low-star in 90d; still only 7 mention history, data or export",
    "promote_if": "The free alternatives turn out paywalled or ad-heavy too, or >=15 reviews ask for Zero history import/export that nobody offers"
   }
  ],
@@ -1332,6 +1332,74 @@
    ],
    "reason": "Hunt round 3: the teleprompter alternatives are quiet (Telepromptr 2 low-star, Prompt+ 1, TeleprompterPAD 0, Telepromptme 0, Teleprompter App 0, Autocue 0, Prompter 0), so they hold no cluster of their own. They count as competition for paywall:teleprompters:basics-paywalled",
    "reason_type": "evidence"
+  },
+  {
+   "key": "removed:howbout:event-colours",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1477248221",
+    "952578473",
+    "1454483188"
+   ],
+   "reason": "Hunt round 1 (targeted run 43145482483): Howbout (28.8k ratings) moved per-event colours behind categories and Howbout+ in v16.3-16.5 (Sep 8 onwards): 148 low-star in 90d (us 81, gb 67), 131 about colours, but 113 of them in September and only 6 since 10-13, so the wave is over. Nobody offers to pay ('no, I'm not going to pay for a Calendar app'). TimeTree (45k, free, per-event label colours) and Google Calendar (free, 11 event colours) already give the fix, and neither draws colour complaints (TimeTree 0 of 44, Google Calendar 2 of 102); Saturn's 66 are school-schedule bugs. Scores: evidence 3, demand 2.5, WTP 1.5, gap 4, competition 2, build 3 = 2.7",
+   "reason_type": "score"
+  },
+  {
+   "key": "discovery:round1-batch-2026-11-12",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1113106806",
+    "355833469",
+    "527588389",
+    "1438388363",
+    "889571826",
+    "304731501",
+    "1048954353",
+    "1085047737",
+    "1488170618"
+   ],
+   "reason": "Hunt round 1 terms (shared calendar, friends calendar, metronome, score keeper, packing list, chore chart, reading log): metronomes quiet (Smart Metronome 22, Tempo 12, Soundbrenner 8); score keepers, packing lists and chore charts 0-3 each; Calendar by Bucket List Labs (46, ads shown to paying subscribers, a calendar client on top of iOS Calendar); Goodreads (46, 39 in 30 days after v4.37: accidental star taps while scrolling, Amazon ads; StoryGraph, Hardcover, Fable and Bookly exist and its value is the network); GuitarTuna (38, trial billing; real-time pitch detection is native audio work); Habit Tracker (35, template category). Nothing recurring that fits",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "widget-paywall:countdown-apps",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1403367428",
+    "1456997268",
+    "424216726"
+   ],
+   "reason": "Countdown (31k), Countdown@ and Countdown by Sevenlogics: about 30 low-star in 90d (us) about the home-screen widget being paid. The widget is the product, which is native extension work Gate B allows only as a side feature, and countdown widgets are a template category (high 4.3 risk, dozens of free ones)",
+   "reason_type": "build"
+  },
+  {
+   "key": "paywall:musescore:sheet-music",
+   "date": "2026-11-12",
+   "incumbents": [
+    "835731296"
+   ],
+   "reason": "MuseScore (11k): 88 low-star in 90d, mostly trial billing and 'unusable without a subscription'. The value is the score catalogue, which is licensed content",
+   "reason_type": "build"
+  },
+  {
+   "key": "paywall:purestatus:whatsapp-hd-status",
+   "date": "2026-11-12",
+   "incumbents": [
+    "6444719503"
+   ],
+   "reason": "PureStatus (12k, ng and my): 28 low-star in 90d, 21 in October, after uploading HD WhatsApp statuses started to need a subscription. Reviewers would rather watch ads than pay, the trick depends on WhatsApp's own compression (which it can change any day), and many 'HD status' tools exist. Scores: evidence 3, demand 2, WTP 1, gap 3, competition 2, build 3 = 2.4",
+   "reason_type": "score"
+  },
+  {
+   "key": "locale:malaysia-prayer-times:jakim",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1543140251",
+    "1443457663",
+    "1605565857"
+   ],
+   "reason": "TheNoor (6.4k, my) dropped the JAKIM calculation method in v3.1.2, so times stopped matching mosques (about 10 of 25 low-star in 90d); Waktu Solat Malaysia (2.7k) draws unskippable-ad complaints (4 in 90d). Small, and the JAKIM-zone, ad-free app has shipped many times (iSolat, Solat Malaysia 2026, Ma Solat, Ihsan: Solat Time, SimpleSolat, the open waktusolat.app API). No wedge left",
+   "reason_type": "no-wedge"
   }
  ]
 }

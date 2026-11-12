@@ -212,7 +212,9 @@
    ],
    "evidence_reviews": 68,
    "old_reason": "Hurricane Tracker (45k ratings): 68 low-star reviews since July 2026 (28 in October, us) after a redesign and forced subscription, one-time buyers locked out; NHC data is public, but National Hurricane Center Data (4.8, 76k, free) and My Hurricane Tracker Pro (4.8, 5.8k, $3.99 one-time) already fill it",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-12",
+   "outcome": "still rejected (dominant-free-alternative): 48 low-star in 90d (us) on the v5.1 redesign and lifetime buyers limited to the Atlantic, but only 3 since 10-13 as the season ends 11-30, and National Hurricane Center Data (free, 76k) covers it"
   },
   {
    "key": "removed:vocabulary:ai-definitions",
@@ -222,7 +224,9 @@
    ],
    "evidence_reviews": 67,
    "old_reason": "Vocabulary (222k ratings): 67 low-star in 90d (us, gb), only 14 on AI-made or wrong definitions; the rest is billing. Its core is the home-screen widget, which needs native extension work, and free dictionary word-of-the-day apps exist",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-12",
+   "outcome": "still rejected (build): 69 low-star in 90d (34 since 10-13), mostly trial billing; the product is the home-screen widget (native extension)"
   },
   {
    "key": "ads:case-tracker:uscis-status",
@@ -233,7 +237,9 @@
    ],
    "evidence_reviews": 56,
    "old_reason": "Case Tracker for USCIS & NVC (319k ratings): 56 low-star in 90d (us), 28 on ads or Pro not unlocking, nearly all since v11.27. Killed: Lawfully (4.8, 174k) and tip-funded trackers like U.S. Immigration Case Tracker already exist, and the USCIS Case Status API needs an approved production demo and is described for customers and representatives, so the data can't be counted on in 14 days",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-12",
+   "outcome": "still rejected (build): 62 low-star in 90d, 51 since 10-13, on ads and Pro not unlocking since v11.29, but USCIS case-status data needs an approved API"
   },
   {
    "key": "paywall:quizlet:learn-rounds",
@@ -243,7 +249,9 @@
    ],
    "evidence_reviews": 53,
    "old_reason": "Quizlet (115k ratings): 53 low-star in 90d (us, gb, pl, ch): Learn rounds capped, forced AI, new UI. Flashcards is a crowded template category with free options (Knowt ★4.7 11k free, Anki); AnkiMobile already rejected",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-12",
+   "outcome": "still rejected (evidence): 70 low-star in 90d, only 14 about Learn rounds (now 2 free rounds; gb 5, us 5, ch 2, at 1, pl 1); Anki and Knowt are free"
   },
   {
    "key": "ads:prayer-times:ads-before-adhan",

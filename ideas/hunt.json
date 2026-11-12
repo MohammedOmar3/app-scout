@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "open_targets": [
     {
       "key": "paywall:teleprompters:basics-paywalled",
@@ -17,10 +17,10 @@
         "teleprompter para video"
       ],
       "why": "Best lead today (watchlist 3.45): basic teleprompter features (mirroring, remote, export) paywalled across 9 apps",
-      "evidence": "About 65 basics-paywall low-star in 90d across 11 apps (us 40, br 15, gb 10), steady at about 20 a month. Alternatives quiet but small; Telepromptr (one-time, free mirroring) stale since 2024-12; Instagram/CapCut teleprompters are short-form only. Watchlist 3.43",
-      "missing": "Proven demand: a teleprompter app with 20k+ ratings or grossing in 3+ storefronts with the same complaint, or a 4th storefront (de, fr, es, jp) at >=10 a month. The targeted collector only reaches us/gb (plus charted storefronts) for these apps, so a de/fr/es/jp check needs a storefront option in collector_ctl.py",
-      "rounds": 2,
-      "last_round": "2026-11-11"
+      "evidence": "Demand gap closed 11-12: in us the incumbents have 30-36k ratings (Teleprompter 34.7k, Teleprompter.com 30.3k grossing in 4 storefronts, BIGVU 36.5k); the 6.6k figure was a gb count. Strict manual count: 31 basics-paywall low-star in 90d across 8 apps (us 24/br 11/gb 8 by loose count), plus ~12 trial traps; tapering (Aug 10, Sep 13, Oct 6, Nov 3). New free entrants with the wedge: Open Prompter (MIT, free, 7 ratings), CueCard (open source) and 10+ others. Watchlist 3.50",
+      "missing": "Evidence volume: >=50 basics-paywall complaints in 90d or >=15 in the last 30, which needs scans in de/fr/es/jp (collector_ctl.py targeted can't pass --term-storefronts yet). Re-check on 11-19 with the daily data; drop if Open Prompter or CueCard start charting",
+      "rounds": 3,
+      "last_round": "2026-11-12"
     },
     {
       "key": "paywall:timer-plus:forced-paywall",
@@ -64,10 +64,10 @@
         "intermittent fasting"
       ],
       "why": "Watchlist 3.3: Zero forces a trial and locks users' own fasting history behind the subscription",
-      "evidence": "53 low-star in 90d (us 45, gb 7), steady 16-21 a month since Aug",
+      "evidence": "53 low-star in 90d (us 45, gb 7), steady 16-21 a month since Aug | 11-12: 49 low-star in 90d, 7 mention history or export",
       "missing": ">=15 reviews asking to import or export Zero history, or the indie no-subscription timers drawing their own complaints",
       "rounds": 1,
-      "last_round": "2026-11-11"
+      "last_round": "2026-11-12"
     }
   ],
   "closed": [
@@ -460,6 +460,16 @@
       "key": "discovery:teleprompter-alternatives-2026-11-11",
       "outcome": "rejected",
       "date": "2026-11-11"
+    },
+    {
+      "key": "removed:howbout:event-colours",
+      "outcome": "rejected",
+      "date": "2026-11-12"
+    },
+    {
+      "key": "discovery:round1-batch-2026-11-12",
+      "outcome": "rejected",
+      "date": "2026-11-12"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: hurricane-tracker (68), vocabulary (67), case-tracker (56), quizlet (53). Quick checks: each was killed by a strong free alternative or a data/extension build. 2) Teleprompters (watchlist 3.43) go first in the targeted run: Teleprompter.com 1420515755, BIGVU 1124958568, VILO 1590820344, Teleprompter 941620509, plus terms 'teleprompter para video', 'souffleur' to pull non-English apps; the question is demand (a 20k+ app or 3+ grossing storefronts with the same complaint). 3) Zero (1168348542) and the indie fasting timers only if a slot is spare. 4) Timer Plus waits for the 12-02 daily data; Cookidoo waits until after 12-10. 5) Discovery: categories not yet scanned with app-factory fit (metronome, score keeper, packing list, chore chart, kids reward chart, reading log), one run's worth of terms."
