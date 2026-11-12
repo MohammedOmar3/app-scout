@@ -112,6 +112,20 @@
    "score": 3.3,
    "evidence": "Hunt round 2: Zero (51k ratings) 53 low-star in 90d (us 45, gb 7) since v7.14-8.0: no way past a forced 7-day trial, no free version, own fasting history locked behind the subscription, $80-95 a year; plus Fastic 13 and BodyFast 11. But a fasting timer is a template category: FastEasy (11.8k ratings, 0 low-star in 90d), FastHabit, MyFast and a stream of indie 'no subscription fasting app' launches on Product Hunt already offer it. Scores: evidence 3.5, demand 3, WTP 3, gap 4, competition 1.5, build 4.5 = 3.2 | Round 3: FastEasy (78.9k ratings) is also subscription-only ('further use requires a subscription', apppricinglab.com), so it isn't a free fix; but free or cheap indie timers keep arriving (Intermittent Fasting Tracker 5.8k ratings 5 low-star, Fasting + 6.8k 2, FastHabit 1.6k 2, Easy Fast 1.4k 2). Competition 2 instead of 1.5 = 3.3 | 11-12: 49 low-star in 90d; still only 7 mention history, data or export",
    "promote_if": "The free alternatives turn out paywalled or ad-heavy too, or >=15 reviews ask for Zero history import/export that nobody offers"
+  },
+  {
+   "key": "paywall:structured:recurring-tasks",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "incumbents": [
+    "1499198946",
+    "1187285712",
+    "608834326",
+    "1480220328"
+   ],
+   "score": 3.2,
+   "evidence": "Hunt round 3: Structured (169k ratings in us, 4.8; Pro $29.99-49.99/yr or $99.99 lifetime) keeps recurring tasks and routines in Pro. 11 of its 30 low-star in 90d are about that ('No recurring tasks for free', 1* us 2026-10-27; 'Cannot repeat tasks without paying', 1* gb 2026-09-21), 14 in 2026, in us and gb; plus Week Planner 2 and Calendars by Readdle 2 = 15 across 3 apps. Many writers are teens and won't pay. Competition: Apple Calendar and Reminders (free recurring, reminders show in the day view since iOS 18), Google Calendar, Sorted3 ($14.99 one-time Pro), Tiimo (21k, subscription, 0 recurring complaints). Wedge: a visual day timeline where recurring routines are free and Pro is one-time. Scores: evidence 2.5, demand 4.5, WTP 2.5, gap 4, competition 2.5, build 3.5 = 3.2",
+   "promote_if": ">=15 recurring-paywall low-star in 90 days at Structured alone, or >=8 at a second visual planner (Tiimo, Sorted3, Routinery), plus evidence that Apple Calendar + Reminders doesn't cover it (reviews saying so)"
   }
  ],
  "rejected": [
@@ -1426,6 +1440,31 @@
    ],
    "reason": "Sticker.ly (9.2k; us 34, co 22): 69 low-star in 90d on minute-long unskippable ads and stickers behind a $40/yr plan. WhatsApp now makes stickers from photos itself and iOS Messages has built-in stickers; sticker makers are a template category with free ones",
    "reason_type": "ios-builtin"
+  },
+  {
+   "key": "discovery:round3-batch-2026-11-12",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1389771232",
+    "286799607",
+    "400666114",
+    "410965399",
+    "573916046",
+    "1602403259",
+    "412876581",
+    "912022264",
+    "375819093",
+    "728530482",
+    "1451559391",
+    "1068421785",
+    "972387337",
+    "1422994973",
+    "1212616790",
+    "443059509",
+    "1312538762"
+   ],
+   "reason": "Hunt round 3 (targeted run 43153156618): the unscanned paid apps rated under 4.4 are quiet (Scrivener 9 low-star in 90d, Guitar Pro 7, Cleartune 2, PLANBELLA 1, Forvo 1, Phone Buddy 1, Fitness Point Pro 1, Pool-Calculator 1, iSmoothRun, Webmail App, Animal Typing, House Design Pro and Kinder 0). Terms garden planner (Seed to Spoon 3; a flood of 2026 entrants such as FarmIt, Croppa, GroundKit, GrowWise), pool chemistry (iAquaLink 29 is a pump-hardware app, Clorox Pool 4), aquarium (3), beekeeping (none), digital planner: Simple Calendar (jp 54) is a data-loss bug in v6.2.0, Microsoft To Do (62) is iOS 27 crashes and broken list sharing, Zinnia 24 and Week Planner 20 mixed. Structured went to the watchlist",
+   "reason_type": "evidence"
   }
  ]
 }
