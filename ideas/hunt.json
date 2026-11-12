@@ -470,6 +470,11 @@
       "key": "discovery:round1-batch-2026-11-12",
       "outcome": "rejected",
       "date": "2026-11-12"
+    },
+    {
+      "key": "discovery:round2-batch-2026-11-12",
+      "outcome": "rejected",
+      "date": "2026-11-12"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: hurricane-tracker (68), vocabulary (67), case-tracker (56), quizlet (53). Quick checks: each was killed by a strong free alternative or a data/extension build. 2) Teleprompters (watchlist 3.43) go first in the targeted run: Teleprompter.com 1420515755, BIGVU 1124958568, VILO 1590820344, Teleprompter 941620509, plus terms 'teleprompter para video', 'souffleur' to pull non-English apps; the question is demand (a 20k+ app or 3+ grossing storefronts with the same complaint). 3) Zero (1168348542) and the indie fasting timers only if a slot is spare. 4) Timer Plus waits for the 12-02 daily data; Cookidoo waits until after 12-10. 5) Discovery: categories not yet scanned with app-factory fit (metronome, score keeper, packing list, chore chart, kids reward chart, reading log), one run's worth of terms."

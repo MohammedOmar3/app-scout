@@ -1400,6 +1400,32 @@
    ],
    "reason": "TheNoor (6.4k, my) dropped the JAKIM calculation method in v3.1.2, so times stopped matching mosques (about 10 of 25 low-star in 90d); Waktu Solat Malaysia (2.7k) draws unskippable-ad complaints (4 in 90d). Small, and the JAKIM-zone, ad-free app has shipped many times (iSolat, Solat Malaysia 2026, Ma Solat, Ihsan: Solat Time, SimpleSolat, the open waktusolat.app API). No wedge left",
    "reason_type": "no-wedge"
+  },
+  {
+   "key": "discovery:round2-batch-2026-11-12",
+   "date": "2026-11-12",
+   "incumbents": [
+    "950562312",
+    "1068421785",
+    "1336227072",
+    "852691916",
+    "457941553",
+    "892700751",
+    "622851626",
+    "6504548974",
+    "1104165041"
+   ],
+   "reason": "Hunt round 2 (targeted run 43149437206; terms baby names, wedding planner, row counter, golf scorecard, bible reading plan, birthday reminder, sticker maker): BabyName - find it together (3.9k, us) 23 low-star in 90d on broken partner linking, repeated names and paid name packs, but the market is small (BabyCenter 7k with 1, Kinder 1.6k); wedding planners are marketplaces (Zola 16, The Knot 13); golf apps are GPS on course data (18Birdies 19, Golfshot 17); HelloBlink (23) is a sticker-printer companion app; knitting row counters, birthday reminders and Bible reading plans 0-1 each; Supershift 3",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "ads:sticker-ly:wa-stickers",
+   "date": "2026-11-12",
+   "incumbents": [
+    "1458740001"
+   ],
+   "reason": "Sticker.ly (9.2k; us 34, co 22): 69 low-star in 90d on minute-long unskippable ads and stickers behind a $40/yr plan. WhatsApp now makes stickers from photos itself and iOS Messages has built-in stickers; sticker makers are a template category with free ones",
+   "reason_type": "ios-builtin"
   }
  ]
 }
