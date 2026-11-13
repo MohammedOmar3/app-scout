@@ -33,38 +33,6 @@
       "missing": "Re-check after 2026-12-10: >=10 reviews or threads asking to keep their own or created recipes outside Cookidoo, plus a pl storefront scan. Not before 12-11",
       "rounds": 1,
       "last_round": "2026-11-09"
-    },
-    {
-      "key": "paywall:zero:forced-trial-history",
-      "incumbents": [
-        "1168348542"
-      ],
-      "terms": [
-        "intermittent fasting"
-      ],
-      "why": "Watchlist 3.3: Zero forces a trial and locks users' own fasting history behind the subscription",
-      "evidence": "53 low-star in 90d (us 45, gb 7), steady 16-21 a month since Aug | 11-12: 49 low-star in 90d, 7 mention history or export",
-      "missing": ">=15 reviews asking to import or export Zero history, or the indie no-subscription timers drawing their own complaints",
-      "rounds": 1,
-      "last_round": "2026-11-12"
-    },
-    {
-      "key": "paywall:structured:recurring-tasks",
-      "incumbents": [
-        "1499198946",
-        "1480220328"
-      ],
-      "terms": [
-        "visual planner",
-        "time blocking",
-        "routine planner",
-        "daily routine"
-      ],
-      "why": "Watchlist 3.2: a 169k-rating planner keeps recurring tasks behind Pro",
-      "evidence": "11 of 30 low-star in 90d at Structured (us, gb) + Week Planner 2 + Calendars 2 = 15 across 3 apps; Tiimo 0",
-      "missing": ">=15 at Structured in 90 days, or >=8 at a second visual planner; check Sorted3 and Routinery via the terms",
-      "rounds": 1,
-      "last_round": "2026-11-12"
     }
   ],
   "closed": [
@@ -481,6 +449,16 @@
     {
       "key": "paywall:teleprompters:basics-paywalled",
       "outcome": "watchlist",
+      "date": "2026-11-13"
+    },
+    {
+      "key": "paywall:structured:recurring-tasks",
+      "outcome": "watchlist",
+      "date": "2026-11-13"
+    },
+    {
+      "key": "paywall:zero:forced-trial-history",
+      "outcome": "rejected",
       "date": "2026-11-13"
     }
   ],
