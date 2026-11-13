@@ -1,27 +1,6 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "open_targets": [
-    {
-      "key": "paywall:teleprompters:basics-paywalled",
-      "incumbents": [
-        "941620509",
-        "1420515755",
-        "1124958568",
-        "894811756",
-        "941070561",
-        "1590820344"
-      ],
-      "terms": [
-        "teleprompter",
-        "prompter",
-        "teleprompter para video"
-      ],
-      "why": "Best lead today (watchlist 3.45): basic teleprompter features (mirroring, remote, export) paywalled across 9 apps",
-      "evidence": "Demand gap closed 11-12: in us the incumbents have 30-36k ratings (Teleprompter 34.7k, Teleprompter.com 30.3k grossing in 4 storefronts, BIGVU 36.5k); the 6.6k figure was a gb count. Strict manual count: 31 basics-paywall low-star in 90d across 8 apps (us 24/br 11/gb 8 by loose count), plus ~12 trial traps; tapering (Aug 10, Sep 13, Oct 6, Nov 3). New free entrants with the wedge: Open Prompter (MIT, free, 7 ratings), CueCard (open source) and 10+ others. Watchlist 3.50",
-      "missing": "Evidence volume: >=50 basics-paywall complaints in 90d or >=15 in the last 30, which needs scans in de/fr/es/jp (collector_ctl.py targeted can't pass --term-storefronts yet). Re-check on 11-19 with the daily data; drop if Open Prompter or CueCard start charting",
-      "rounds": 3,
-      "last_round": "2026-11-12"
-    },
     {
       "key": "paywall:timer-plus:forced-paywall",
       "incumbents": [
@@ -498,6 +477,11 @@
       "key": "discovery:round3-batch-2026-11-12",
       "outcome": "rejected",
       "date": "2026-11-12"
+    },
+    {
+      "key": "paywall:teleprompters:basics-paywalled",
+      "outcome": "watchlist",
+      "date": "2026-11-13"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: ads:prayer-times:ads-before-adhan (51), fleeceware:authenticator:weekly-sub (50), removed:photo-widget:watermark (49), paywall:photomyne:ai-restore-credits (46). 2) Targeted run 1: Structured 1499198946 and Tiimo 1480220328 plus terms 'visual planner', 'time blocking', 'routine planner', 'daily routine' (does a second planner share the recurring-task paywall?). 3) Teleprompters (3.50) need a 4th storefront: only worth a run once collector_ctl.py targeted passes --term-storefronts (de,fr,es,jp,br); otherwise re-check from the daily data on 11-19. 4) Timer Plus waits for the 12-02 data; Cookidoo waits until after 12-10. 5) Discovery terms not yet scanned: 'spelling', 'times tables', 'sight words' (practice tools parents pay for). 6) Judge demand on the us rating count: candidates' ratings come from one storefront (ratings_cc), often gb."
