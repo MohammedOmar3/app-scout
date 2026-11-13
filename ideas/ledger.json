@@ -1463,6 +1463,21 @@
    ],
    "reason": "Dropped from the watchlist after 3 days (was 3.3). Zero (51k) still has 49 low-star in 90d (us 42), 15 in the last 30 days, but only 10 mention history, data or export, and 3 of those in the last 30 days, so the one wedge that isn't price is thin. A search for 'intermittent fasting app no subscription no account' now returns a crowd of 2026 indie timers (FastWindow, TimeFast, FastClear, Null Fasting, Simple Fasting Timer, ZenFast, Intermittent Timer), on top of Intermittent Fasting Tracker (5.8k) and Fasting + (6.8k). The fast followers have shipped 'no subscription', and a fasting timer is a template category with high 4.3 risk",
    "reason_type": "no-wedge"
+  },
+  {
+   "key": "discovery:round3-batch-2026-11-13",
+   "date": "2026-11-13",
+   "incumbents": [
+    "1103318574",
+    "675634893",
+    "395965464",
+    "373044013",
+    "1059399615",
+    "926186904",
+    "871087584"
+   ],
+   "reason": "Hunt round 3 (targeted run 43363341253, first locale-only discovery run: terms Spritpreise, Benzinpreis, prix carburant, prezzi carburante, gasolineras, tankstation, Fahrtenbuch and Stundenplan in de, at, fr, it, es, nl, be, gb). Fuel-price apps run on free official data (MTS-K via Tankerkoenig, CC BY 4.0), but the pain is scattered: ADAC Drive (253k) 35 low-star in 90d, 12 on a new login wall for favourites in v7.1 (de only); mehr-tanken (364k) 26, stale prices, Austria missing and a broken widget, 1 on ads; Prezzi Benzina (82k, it) 19, wrong prices and ads; Sprit Club 7, Ballenoil 9, Spritpreisrechner and Spritkenig 0. No cluster near Gate A, and many free fuel apps exist. Untis Mobile (63) needs each school's Untis server. Fahrtenbuch (Psngr 0) and Stundenplan apps (Smart Timetable 3, Class Timetable 4, My Timetable 0) are quiet",
+   "reason_type": "evidence"
   }
  ]
 }

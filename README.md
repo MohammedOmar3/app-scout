@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-12 — no ideas today (3 hunt rounds; best lead `paywall:teleprompters:basics-paywalled` at 3.50, which needs complaint volume from a 4th storefront) — [report](reports/2026-11-12.md)
+**Latest:** 2026-11-13 — no ideas today (3 hunt rounds; best lead `paywall:teleprompters:basics-paywalled` stays at 3.50, and the 8 extra storefronts added no complaint volume) — [report](reports/2026-11-13.md)
 
 ## How it works
 
@@ -18,7 +18,7 @@ Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps
                                   circuit breaker on Apple 403s (stop fast, never burn the run)
                 merge (1 runner)  data branch + run.json with a health verdict + digest
   steps 1-5  triage -> validate (cross-app, Reddit/web, kill check) -> Gate A/A2 + Gate B -> score
-  step 7     no idea yet? hunt loop: targeted scans of the best leads + competitors (<=2/day),
+  step 7     no idea yet? hunt loop: targeted scans of the best leads + competitors (<=3/day, any storefronts),
              off-store evidence, re-score; repeat until one passes or budget is spent;
              unfinished hunts carry over in ideas/hunt.json
   step 6     report, briefs, ledger, hunt.json -> push after every round -> notification
