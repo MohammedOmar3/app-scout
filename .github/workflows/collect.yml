@@ -24,6 +24,9 @@ on:
       storefronts_per_app:
         description: "targeted: storefronts per app (blank = config)"
         default: ""
+      term_storefronts:
+        description: "targeted: comma list of storefronts to run the term searches in (blank = us,gb)"
+        default: ""
       shards:
         description: "parallel review shards (blank = 3 daily, 1 targeted)"
         default: ""
@@ -58,12 +61,14 @@ jobs:
           IDS: ${{ inputs.app_ids }}
           TERMS: ${{ inputs.terms }}
           SFA: ${{ inputs.storefronts_per_app }}
+          TSF: ${{ inputs.term_storefronts }}
           SHARDS: ${{ inputs.shards }}
         run: |
           [ -n "$SHARDS" ] || { [ "$MODE" = targeted ] && SHARDS=1 || SHARDS=3; }
           args="--phase plan --out data --mode $MODE --shards $SHARDS"
           [ -n "$IDS" ] && args="$args --app-ids $IDS"
           [ -n "$SFA" ] && args="$args --storefronts-per-app $SFA"
+          [ -n "$TSF" ] && args="$args --term-storefronts $TSF"
           if [ -n "$TERMS" ]; then python collector/collect.py $args --terms "$TERMS"; else python collector/collect.py $args; fi
       - uses: actions/upload-artifact@v4
         with: { name: plan, path: data/, retention-days: 1, include-hidden-files: true }

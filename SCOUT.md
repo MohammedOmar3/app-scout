@@ -159,7 +159,7 @@ python scout/collector_ctl.py targeted --app-ids <id,id,...> --terms "<term>,<te
 git -C ../data fetch -q --depth 1 origin data && git -C ../data checkout -q --detach FETCH_HEAD
 ```
 
-That scans the incumbents and up to ~40 competitors across 8 storefronts with both sort orders, so complaints shared across competitors (the strongest signal) show up. If the cap is reached (exit code 3), continue with H4 only.
+Add `--term-storefronts us,gb,de,fr,es,jp` (any storefront codes) when the gap is evidence from more storefronts: the term searches then run there, and apps found there are scanned there first. That scans the incumbents and up to ~40 competitors across 8 storefronts with both sort orders, so complaints shared across competitors (the strongest signal) show up. If the cap is reached (exit code 3), continue with H4 only.
 
 If the targeted run comes back FAILED with `soft-blocked` (Apple served empty pages to that runner; the canary check catches it in seconds), **don't conclude the apps have no complaints.** Do H4 for the same targets, then try the targeted run once more (the tool waits out the cool-off). Note both attempts in the report.
 

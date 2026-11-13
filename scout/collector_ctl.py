@@ -5,7 +5,7 @@
   python scout/collector_ctl.py ensure-fresh [--max-age-hours 14] [--timeout-min 75]
       use the latest data if it is fresh and healthy; otherwise wait for a running
       collection, or start one and wait. Retries once (smaller) if the run comes back FAILED.
-  python scout/collector_ctl.py targeted --app-ids 123,456 [--terms "a,b"] [--storefronts-per-app 8]
+  python scout/collector_ctl.py targeted --app-ids 123,456 [--terms "a,b"] [--storefronts-per-app 8] [--term-storefronts us,gb,de]
       targeted scan for the hunt loop (capped per day by config max_targeted_runs_per_day)
 
 Talks to the GitHub REST API through curl (the session's proxy adds credentials for the
@@ -171,6 +171,8 @@ def targeted(a):
     inputs = {"mode": "targeted", "app_ids": a.app_ids, "terms": a.terms or ""}
     if a.storefronts_per_app:
         inputs["storefronts_per_app"] = str(a.storefronts_per_app)
+    if a.term_storefronts:
+        inputs["term_storefronts"] = a.term_storefronts.replace(" ", "")
     rid = dispatch(inputs)
     concl = wait(rid, a.timeout_min)
     subprocess.run(["git", "-C", str(ROOT), "fetch", "-q", "--depth", "1", "origin", "data"], capture_output=True)
@@ -194,6 +196,7 @@ def main():
     t.add_argument("--app-ids", required=True)
     t.add_argument("--terms", default="")
     t.add_argument("--storefronts-per-app", type=int, default=0)
+    t.add_argument("--term-storefronts", default="", help="storefronts for the term searches, e.g. us,gb,de,fr (default us,gb)")
     t.add_argument("--timeout-min", type=int, default=45)
     a = ap.parse_args()
     if a.cmd == "status":
