@@ -13,10 +13,10 @@
         "tabata"
       ],
       "why": "Best near-miss (watchlist 3.5): a free interval timer (61k ratings) put a hard paywall on Start; Seconds removed free saved timers",
-      "evidence": "149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6. Seconds 36 (6 since 11-01). Only ~10 reviews mention classes or coaching. IntervalFree (free, no ads) and coach timers (Coach Clock, Timer for Instructors, PushPress) already exist | 11-11: 73 low-star in 14 days, but tapering to 1-2 a day by 11-05..07; 19 of 149 mention switching apps, only 3 classes or coaching | 11-13: daily data (last scan 11-09) unchanged, 39 low-star since 10-30 but 1-6 a day and falling; interval timers for classes and coaches are crowded (Coach Clock, Workout Timer: Multiple Timers, TimerLabs, Gymboss 2, Interval Timer - Multiple HIIT)",
-      "missing": "A non-price wedge that IntervalFree and the coach timers lack, named by >=10 reviews or threads, and the paywall still holding with complaints after 2026-12-01. Next check: daily data on 12-02; no targeted run needed before then",
-      "rounds": 1,
-      "last_round": "2026-11-09"
+      "evidence": "149 low-star in 90d (us 93, gb 56), 21 since 11-01, still v1.8.6. Seconds 36 (6 since 11-01). Only ~10 reviews mention classes or coaching. IntervalFree (free, no ads) and coach timers (Coach Clock, Timer for Instructors, PushPress) already exist | 11-11: 73 low-star in 14 days, but tapering to 1-2 a day by 11-05..07; 19 of 149 mention switching apps, only 3 classes or coaching | 11-13: daily data (last scan 11-09) unchanged, 39 low-star since 10-30 but 1-6 a day and falling; interval timers for classes and coaches are crowded (Coach Clock, Workout Timer: Multiple Timers, TimerLabs, Gymboss 2, Interval Timer - Multiple HIIT) | 11-14: 394 low-star in 90d across 7 storefronts (us 109, es 77, br 73, gb 59, mx 41, ar 21, co 14). The incumbent's $20 lifetime is refused too. GymPulseTimer ($4.99 one-time, no ads), Hyrox Workout and IntervalFree already ship the wedge, and the local free timers have 0-3 complaints. Score 3.5",
+      "missing": "A non-price wedge named by >=10 reviews or threads (class or instructor mode is at 9), or explicit asks to pay a fair one-time price. Re-check from the daily data on 12-02 (count instructor and class mentions in all 7 storefronts); reject as no-wedge if neither shows",
+      "rounds": 2,
+      "last_round": "2026-11-14"
     },
     {
       "key": "paywall:cookidoo:price-hike",
