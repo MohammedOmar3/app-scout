@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-13 — no ideas today (3 hunt rounds; best lead `paywall:teleprompters:basics-paywalled` stays at 3.50, and the 8 extra storefronts added no complaint volume) — [report](reports/2026-11-13.md)
+**Latest:** 2026-11-14 — no ideas today (3 hunt rounds; new best lead `regressed:line-calendar:yahoo-stamps`, provisional 3.65 but only one storefront and app so far; Timer Plus now 394 low-star in 7 storefronts but no wedge) — [report](reports/2026-11-14.md)
 
 ## How it works
 

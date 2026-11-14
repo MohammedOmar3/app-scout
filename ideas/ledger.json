@@ -113,6 +113,22 @@
    "score": 3.2,
    "evidence": "Hunt round 3: Structured (169k ratings in us, 4.8; Pro $29.99-49.99/yr or $99.99 lifetime) keeps recurring tasks and routines in Pro. 11 of its 30 low-star in 90d are about that ('No recurring tasks for free', 1* us 2026-10-27; 'Cannot repeat tasks without paying', 1* gb 2026-09-21), 14 in 2026, in us and gb; plus Week Planner 2 and Calendars by Readdle 2 = 15 across 3 apps. Many writers are teens and won't pay. Competition: Apple Calendar and Reminders (free recurring, reminders show in the day view since iOS 18), Google Calendar, Sorted3 ($14.99 one-time Pro), Tiimo (21k, subscription, 0 recurring complaints). Wedge: a visual day timeline where recurring routines are free and Pro is one-time. Scores: evidence 2.5, demand 4.5, WTP 2.5, gap 4, competition 2.5, build 3.5 = 3.2 | 11-13 (targeted run 43359025279, Structured, Tiimo and the planner terms in us, gb, ca, au, de, fr, nl, it): Structured 14 of 54 low-star in 90d are about repeats behind Pro (us 6, gb 4, ca 2, de 1, nl 1: 'A daily planner is near useless if you can't make the schedule repeat without paying for it', 1* us 2026-11-04). No second visual planner shares it: Tiimo 4 of 73 (mostly 'they removed routines' and bugs), Calendars by Readdle 5 of 64, Weekly Planner 3, Daily Planner 1, Zinnia 1, That Girl 0. About one new complaint a week. Gate A passes only loosely (17 across 2 apps); score stays 3.2 (evidence 2.5). Hunt closed; re-check from the daily data",
    "promote_if": ">=15 recurring-paywall low-star in 90 days at Structured alone, or >=8 at a second visual planner (Tiimo, Sorted3, Routinery), plus evidence that Apple Calendar + Reminders doesn't cover it (reviews saying so)"
+  },
+  {
+   "key": "regressed:line-calendar:yahoo-stamps",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "incumbents": [
+    "996870154",
+    "1547903349",
+    "952578473",
+    "538340426",
+    "443904275"
+   ],
+   "score": 3.65,
+   "gate_a": "not met: spread (one storefront, jp, and one app so far)",
+   "evidence": "From late September 2026, LY Corporation auto-updated the Yahoo!カレンダー app (id 996870154, 109k jp ratings, running since 2004) into 'LINEカレンダー' (ITmedia 2026-10-15). 108 low-star in 90d, all jp, 96 of them from Nov 1 to 12, on v6.3.0. Topics overlap: Yahoo events can't be edited, moved or copied in the new app (35), it's hard to read (colour background with white text; 34), the old ぺたっと hand-drawn stamps are gone, with fewer stamps and no stamp search (32), seasonal themes and cute backgrounds are gone (25), a LINE account is required and overseas users without a Japanese LINE account are locked out (37, loose count). WTP signals: 'お金払ってでも元に戻したい' (1★ 11-12), and PETAKO refugees in 2024 said they'd pay for more stamps. Off-store: a Yahoo!知恵袋 thread from 10-22 (11k views, 112 agree; a related question tried TimeTree and Lifebear and liked neither), and blog guides from 11-03 (seikatsureal) and 05-23 (checkstore) saying stamps and themes are what users miss. Second-app signal is thin: LINE 1 ('勝手に紐付け', 1★ 11-09) and TimeTree 1 ('Yahoo became LINE so I moved', 2★ 11-10). Alternatives: PETAKO (stamp calendar, 419 ratings, ads, stamps unlocked by watching ads), TimeTree (ads complaints), Lifebear (27 low-star in 90d), Jorte (not yet checked). LINE's roadmap adds stamp search and history in November and day, week and list views from January, but no themes and no editing of old Yahoo events. Provisional scores if Gate A passes: evidence 3.5, demand 4, WTP 3, gap 4, competition 3.5, build 4 (needs original or openly licensed stamp art) = 3.65",
+   "promote_if": "Gate A spread: >=8 low-star in a second app about the same change (the Yahoo! JAPAN or Yahoo!メール app, where old events are now edited, or refugees' complaints in PETAKO, Jorte, TimeTree or Lifebear), the complaints still coming after LINE's November stamp-search update, and a Jorte check (if Jorte gives free, ad-free stamps and themes, competition drops)"
   }
  ],
  "rejected": [

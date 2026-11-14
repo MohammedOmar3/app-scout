@@ -2,6 +2,28 @@
   "updated": "2026-11-14",
   "open_targets": [
     {
+      "key": "regressed:line-calendar:yahoo-stamps",
+      "incumbents": [
+        "996870154",
+        "1547903349",
+        "952578473",
+        "538340426"
+      ],
+      "terms": [
+        "スタンプ カレンダー",
+        "かわいい カレンダー",
+        "Yahoo!カレンダー",
+        "ジョルテ",
+        "手帳 アプリ"
+      ],
+      "term_storefronts": "jp",
+      "why": "Best lead (provisional 3.65): Yahoo!カレンダー (109k jp ratings) was auto-converted into LINE Calendar; 108 low-star in 90d, 96 of them in Nov 1-12, about lost stamps, themes, readability and editing, plus a forced LINE account",
+      "evidence": "See the ledger watchlist entry. Off-store: Yahoo!知恵袋 q10332273140 (11k views), seikatsureal 11-03, ITmedia 10-15",
+      "missing": "Gate A spread. Needs >=8 low-star in a SECOND app about the same change: the Yahoo! JAPAN app and Yahoo!メール (look up their ids with WebSearch; old Yahoo events can only be edited there now), or refugees complaining in PETAKO (1547903349), Jorte, TimeTree (952578473) or Lifebear (538340426). Also check Jorte's model (ads, paid stamps?), whether the stream continues after LINE's November stamp-search update, and how many reviews ask for a paid or ad-free stamp calendar",
+      "rounds": 1,
+      "last_round": "2026-11-14"
+    },
+    {
       "key": "paywall:timer-plus:forced-paywall",
       "incumbents": [
         "1279716547",
@@ -472,5 +494,5 @@
       "date": "2026-11-14"
     }
   ],
-  "plan_next_run": "1) Re-open queue, the next 4 open: regressed:storm-radar:free-tier (45), ads:timehop:daily-memories (42), ads:alarm-clock-hd:unskippable (35), fleeceware:fax:weekly-sub (35). 2) The targeted collector now takes --term-storefronts (11-13). Use it for discovery where English-store discovery has dried up, with local-language terms in each market: es/mx/br/ar ('temporizador de intervalos', 'contador de calorias', 'lista de compras', 'controle de ponto', 'agenda escolar'), and jp/kr ('タイマー', '日記', '習慣', '가계부' is finance, skip). Give one real incumbent id (the tool needs --app-ids). 3) Teleprompters (3.50) and Structured (3.2) are off the hunt: re-check only from the daily data if a new surge shows. 4) Timer Plus waits for the 12-02 data; Cookidoo waits until after 12-10. 5) Lose It! (41.6k) moved barcode scanning behind Premium and shows ads to paying users (35 pay- or ad-related low-star in 30 days by a loose count, us 33, 7 of them on barcode scanning). That corroborates the existing idea paywall:yazio:ads-and-extras (Plain Kcal); it isn't a new idea. 6) Judge demand on the us rating count: candidates' ratings come from one storefront (ratings_cc), and a term-storefront run stores the local count (e.g. Structured shows 10k from it, 30k from de, 169k in us)."
+  "plan_next_run": "1) FIRST: targeted run for regressed:line-calendar:yahoo-stamps with --term-storefronts jp: --app-ids 996870154,1547903349,952578473,538340426 plus the Yahoo! JAPAN and Yahoo!メール ids (find them with WebSearch first), terms 'スタンプ カレンダー,かわいい カレンダー,ジョルテ,手帳 アプリ'. Count low-star about the Yahoo->LINE change in every app except LINE Calendar; >=8 in one of them passes Gate A spread. Then re-score (provisional 3.65) and write the brief if it holds. Brief notes if it passes: personal stamp calendar, no account, import existing events via expo-calendar from the iOS calendar (Yahoo!カレンダー can sync to iOS by CalDAV, so check the setup steps), original or openly licensed stamp art (OpenMoji CC BY-SA, or commissioned), seasonal themes as the pro tier. 2) Re-open queue, the next 4 open: regressed:scanner-pro:v9 (35), paywall:night-sky:aura-ai (34), regressed:readdle-calendars:events-lost (33), paywall:islamic-apps:survey-onboarding (33). 3) Locale discovery in kr found todo mate (108k): 43 low-star in 90d about more ads and desktop mode moving to paid, with refugees naming Planet. Check it on the next kr pass. Study timer 열품타 and TheDayBefore are bug waves (widgets, timing). 4) Timer Plus waits for 12-02 (now 394 low-star in 7 storefronts, but no wedge). Cookidoo after 12-10. 5) Paprika 4 (Premium launched 11-06) corroborates Recipe Drop. Track the wave in the daily data."
 }
