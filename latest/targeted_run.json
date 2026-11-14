@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-14",
+ "mode": "targeted",
+ "status": "ok",
+ "finished": "2026-11-14T04:07:12+00:00",
+ "plan_minutes": 0.8,
+ "phase_minutes": {},
+ "partial": false,
+ "category_storefronts_today": null,
+ "feeds": null,
+ "unique_chart_apps": 183,
+ "eligible_candidates": 7910,
+ "carried_candidates": null,
+ "targets": [
+  "747364886"
+ ],
+ "terms": [
+  "シフト管理",
+  "日記",
+  "習慣化",
+  "時間割",
+  "디데이",
+  "시간표"
+ ],
+ "queued": 40,
+ "shards": 1,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 40,
+   "apps_scanned": 40,
+   "reviews_fetched": 14389,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 4.0,
+   "requests": 403,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 40,
+ "reviews_fetched": 14389,
+ "low_star_kept": 1897,
+ "review_files": 2597,
+ "requests": 422,
+ "failures": 0,
+ "http_status": {
+  "lookup 200": 7,
+  "target-search 200": 12,
+  "canary 200": 1,
+  "canary ok": 1,
+  "reviews 200": 402,
+  "reviews mostrecent p1 ok": 115,
+  "reviews mostrecent p2 ok": 53,
+  "reviews mosthelpful p1 ok": 115,
+  "reviews mosthelpful p2 ok": 88,
+  "reviews mostrecent p1 empty": 31
+ },
+ "error_samples": [],
+ "log": [
+  "[04:02:33] targeted plan: 1 ids, 6 terms -> 40 apps queued",
+  "[04:02:49] shard 0/1: 40 apps",
+  "[04:02:50] shard 0: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ }
+}

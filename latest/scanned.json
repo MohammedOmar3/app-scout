@@ -1,0 +1,6462 @@
+[
+ {
+  "id": "463624852",
+  "name": "Mercado Libre: Compras Online",
+  "genre": "Shopping",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 1219,
+  "hist": {
+   "1": 775,
+   "2": 102,
+   "3": 82,
+   "4": 51,
+   "5": 209
+  },
+  "low_new": 644,
+  "low_total": 708,
+  "low_share": 0.719
+ },
+ {
+  "id": "389801252",
+  "name": "Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 1597,
+  "hist": {
+   "1": 779,
+   "2": 144,
+   "3": 124,
+   "4": 91,
+   "5": 459
+  },
+  "low_new": 548,
+  "low_total": 800,
+  "low_share": 0.578
+ },
+ {
+  "id": "1279716547",
+  "name": "Interval Timer Plus & Tabata",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 884,
+  "hist": {
+   "1": 354,
+   "2": 27,
+   "3": 26,
+   "4": 40,
+   "5": 437
+  },
+  "low_new": 375,
+  "low_total": 400,
+  "low_share": 0.431
+ },
+ {
+  "id": "1644042837",
+  "name": "Hypic - Photo Editor & AI Art",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 679,
+  "hist": {
+   "1": 347,
+   "2": 55,
+   "3": 33,
+   "4": 47,
+   "5": 197
+  },
+  "low_new": 363,
+  "low_total": 396,
+  "low_share": 0.592
+ },
+ {
+  "id": "758103884",
+  "name": "foodpanda: Food & Groceries",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 785,
+  "hist": {
+   "1": 566,
+   "2": 57,
+   "3": 30,
+   "4": 22,
+   "5": 110
+  },
+  "low_new": 351,
+  "low_total": 405,
+  "low_share": 0.794
+ },
+ {
+  "id": "1129523589",
+  "name": "DAZN: Stream Live Sports",
+  "genre": "Sports",
+  "focus": [],
+  "fetched": 784,
+  "hist": {
+   "1": 479,
+   "2": 71,
+   "3": 43,
+   "4": 48,
+   "5": 143
+  },
+  "low_new": 335,
+  "low_total": 479,
+  "low_share": 0.702
+ },
+ {
+  "id": "1454762989",
+  "name": "Instories: AI Photo & Video",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 660,
+  "hist": {
+   "1": 423,
+   "2": 67,
+   "3": 44,
+   "4": 29,
+   "5": 97
+  },
+  "low_new": 293,
+  "low_total": 318,
+  "low_share": 0.742
+ },
+ {
+  "id": "1509453185",
+  "name": "TeraBox: 1TB Cloud & AI Space",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 773,
+  "hist": {
+   "1": 348,
+   "2": 25,
+   "3": 43,
+   "4": 56,
+   "5": 301
+  },
+  "low_new": 272,
+  "low_total": 289,
+  "low_share": 0.483
+ },
+ {
+  "id": "1238611143",
+  "name": "Lidl Plus",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 741,
+  "hist": {
+   "1": 247,
+   "2": 63,
+   "3": 78,
+   "4": 104,
+   "5": 249
+  },
+  "low_new": 257,
+  "low_total": 592,
+  "low_share": 0.418
+ },
+ {
+  "id": "1235601864",
+  "name": "TikTok-Global Video Community",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 793,
+  "hist": {
+   "1": 320,
+   "2": 71,
+   "3": 71,
+   "4": 93,
+   "5": 238
+  },
+  "low_new": 246,
+  "low_total": 291,
+  "low_share": 0.493
+ },
+ {
+  "id": "1506827551",
+  "name": "gov.br",
+  "genre": "Utilities",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 450,
+  "hist": {
+   "1": 315,
+   "2": 18,
+   "3": 14,
+   "4": 10,
+   "5": 93
+  },
+  "low_new": 216,
+  "low_total": 216,
+  "low_share": 0.74
+ },
+ {
+  "id": "596011949",
+  "name": "HungerStation - Food Delivery",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 525,
+  "hist": {
+   "1": 378,
+   "2": 29,
+   "3": 21,
+   "4": 9,
+   "5": 88
+  },
+  "low_new": 214,
+  "low_total": 334,
+  "low_share": 0.775
+ },
+ {
+  "id": "965359176",
+  "name": "Salams: Halal Muslim Marriage",
+  "genre": "Social Networking",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 475,
+  "hist": {
+   "1": 335,
+   "2": 36,
+   "3": 20,
+   "4": 15,
+   "5": 69
+  },
+  "low_new": 191,
+  "low_total": 196,
+  "low_share": 0.781
+ },
+ {
+  "id": "6478868302",
+  "name": "AI Video - AI Video Generator",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 307,
+  "hist": {
+   "1": 176,
+   "2": 17,
+   "3": 16,
+   "4": 14,
+   "5": 84
+  },
+  "low_new": 188,
+  "low_total": 196,
+  "low_share": 0.629
+ },
+ {
+  "id": "934459219",
+  "name": "JioHotstar",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 518,
+  "hist": {
+   "1": 333,
+   "2": 47,
+   "3": 46,
+   "4": 35,
+   "5": 57
+  },
+  "low_new": 185,
+  "low_total": 258,
+  "low_share": 0.734
+ },
+ {
+  "id": "1187285712",
+  "name": "Planificador semanal - agenda",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 748,
+  "hist": {
+   "1": 182,
+   "2": 47,
+   "3": 45,
+   "4": 81,
+   "5": 393
+  },
+  "low_new": 184,
+  "low_total": 314,
+  "low_share": 0.306
+ },
+ {
+  "id": "1574436604",
+  "name": "SUGO-Online Chat Party",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 436,
+  "hist": {
+   "1": 284,
+   "2": 10,
+   "3": 10,
+   "4": 9,
+   "5": 123
+  },
+  "low_new": 175,
+  "low_total": 215,
+  "low_share": 0.674
+ },
+ {
+  "id": "6502656704",
+  "name": "AI Song Generator: Mozart",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 374,
+  "hist": {
+   "1": 210,
+   "2": 29,
+   "3": 25,
+   "4": 43,
+   "5": 67
+  },
+  "low_new": 174,
+  "low_total": 191,
+  "low_share": 0.639
+ },
+ {
+  "id": "1052817340",
+  "name": "Hayu: Reality TV Streaming",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 608,
+  "hist": {
+   "1": 369,
+   "2": 141,
+   "3": 62,
+   "4": 13,
+   "5": 23
+  },
+  "low_new": 173,
+  "low_total": 175,
+  "low_share": 0.839
+ },
+ {
+  "id": "1445023295",
+  "name": "Deepstash: Smarter Every Day!",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 373,
+  "hist": {
+   "1": 161,
+   "2": 36,
+   "3": 34,
+   "4": 26,
+   "5": 116
+  },
+  "low_new": 172,
+  "low_total": 230,
+  "low_share": 0.528
+ },
+ {
+  "id": "546505307",
+  "name": "Zoom Workplace",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 1378,
+  "hist": {
+   "1": 406,
+   "2": 75,
+   "3": 110,
+   "4": 138,
+   "5": 649
+  },
+  "low_new": 168,
+  "low_total": 168,
+  "low_share": 0.349
+ },
+ {
+  "id": "780125801",
+  "name": "inDrive. Save on city rides",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 778,
+  "hist": {
+   "1": 231,
+   "2": 43,
+   "3": 55,
+   "4": 51,
+   "5": 398
+  },
+  "low_new": 163,
+  "low_total": 207,
+  "low_share": 0.352
+ },
+ {
+  "id": "1484584645",
+  "name": "Kemo",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 392,
+  "hist": {
+   "1": 204,
+   "2": 38,
+   "3": 33,
+   "4": 27,
+   "5": 90
+  },
+  "low_new": 159,
+  "low_total": 169,
+  "low_share": 0.617
+ },
+ {
+  "id": "1289057196",
+  "name": "Photo Collage Maker: SCRL",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 1065,
+  "hist": {
+   "1": 162,
+   "2": 42,
+   "3": 51,
+   "4": 104,
+   "5": 706
+  },
+  "low_new": 157,
+  "low_total": 199,
+  "low_share": 0.192
+ },
+ {
+  "id": "1115101477",
+  "name": "SmartLife: Smart Living",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 405,
+  "hist": {
+   "1": 173,
+   "2": 46,
+   "3": 59,
+   "4": 45,
+   "5": 82
+  },
+  "low_new": 149,
+  "low_total": 160,
+  "low_share": 0.541
+ },
+ {
+  "id": "723961236",
+  "name": "Booksy para clientes",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 800,
+  "hist": {
+   "1": 227,
+   "2": 52,
+   "3": 56,
+   "4": 44,
+   "5": 421
+  },
+  "low_new": 149,
+  "low_total": 149,
+  "low_share": 0.349
+ },
+ {
+  "id": "281796108",
+  "name": "Evernote: AI Notes & Notebook",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 186,
+   "2": 56,
+   "3": 35,
+   "4": 29,
+   "5": 87
+  },
+  "low_new": 145,
+  "low_total": 161,
+  "low_share": 0.616
+ },
+ {
+  "id": "292738169",
+  "name": "Deezer: Music Player, Podcast",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 773,
+  "hist": {
+   "1": 138,
+   "2": 80,
+   "3": 106,
+   "4": 116,
+   "5": 333
+  },
+  "low_new": 141,
+  "low_total": 160,
+  "low_share": 0.282
+ },
+ {
+  "id": "832556482",
+  "name": "Connected2.me",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 488,
+  "hist": {
+   "1": 299,
+   "2": 44,
+   "3": 36,
+   "4": 15,
+   "5": 94
+  },
+  "low_new": 138,
+  "low_total": 197,
+  "low_share": 0.703
+ },
+ {
+  "id": "1615398541",
+  "name": "TOD: Spor, Dizi & Film İzle",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 172,
+   "2": 16,
+   "3": 5,
+   "4": 2,
+   "5": 5
+  },
+  "low_new": 138,
+  "low_total": 148,
+  "low_share": 0.94
+ },
+ {
+  "id": "951937596",
+  "name": "Microsoft Outlook",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 1374,
+  "hist": {
+   "1": 282,
+   "2": 90,
+   "3": 129,
+   "4": 167,
+   "5": 706
+  },
+  "low_new": 136,
+  "low_total": 150,
+  "low_share": 0.271
+ },
+ {
+  "id": "909319292",
+  "name": "Calendario de Google: Organiza",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 879,
+  "hist": {
+   "1": 225,
+   "2": 101,
+   "3": 166,
+   "4": 190,
+   "5": 197
+  },
+  "low_new": 131,
+  "low_total": 243,
+  "low_share": 0.371
+ },
+ {
+  "id": "586449534",
+  "name": "Microsoft PowerPoint",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 979,
+  "hist": {
+   "1": 295,
+   "2": 63,
+   "3": 96,
+   "4": 100,
+   "5": 425
+  },
+  "low_new": 130,
+  "low_total": 147,
+  "low_share": 0.366
+ },
+ {
+  "id": "1422994973",
+  "name": "심플 캘린더 - 매일 일정과 스케줄 플래너 (달력)",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 523,
+  "hist": {
+   "1": 193,
+   "2": 32,
+   "3": 40,
+   "4": 63,
+   "5": 195
+  },
+  "low_new": 129,
+  "low_total": 135,
+  "low_share": 0.43
+ },
+ {
+  "id": "942568279",
+  "name": "Crave",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 199,
+  "hist": {
+   "1": 145,
+   "2": 23,
+   "3": 16,
+   "4": 5,
+   "5": 10
+  },
+  "low_new": 128,
+  "low_total": 163,
+  "low_share": 0.844
+ },
+ {
+  "id": "1592900217",
+  "name": "Simply Sing: My Singing App",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 402,
+  "hist": {
+   "1": 137,
+   "2": 61,
+   "3": 49,
+   "4": 46,
+   "5": 109
+  },
+  "low_new": 126,
+  "low_total": 269,
+  "low_share": 0.493
+ },
+ {
+  "id": "6746049430",
+  "name": "FOX One: Live News, Sports, TV",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 189,
+  "hist": {
+   "1": 104,
+   "2": 20,
+   "3": 19,
+   "4": 8,
+   "5": 38
+  },
+  "low_new": 122,
+  "low_total": 130,
+  "low_share": 0.656
+ },
+ {
+  "id": "879383901",
+  "name": "Dil Mil: South Asian Dating",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 370,
+  "hist": {
+   "1": 217,
+   "2": 33,
+   "3": 17,
+   "4": 11,
+   "5": 92
+  },
+  "low_new": 120,
+  "low_total": 122,
+  "low_share": 0.676
+ },
+ {
+  "id": "380015247",
+  "name": "SCRUFF - Gay Dating & Chat",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 550,
+  "hist": {
+   "1": 230,
+   "2": 53,
+   "3": 66,
+   "4": 38,
+   "5": 163
+  },
+  "low_new": 119,
+  "low_total": 121,
+  "low_share": 0.515
+ },
+ {
+  "id": "1083804886",
+  "name": "ELSA Speak - English Learning",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 512,
+  "hist": {
+   "1": 221,
+   "2": 42,
+   "3": 47,
+   "4": 42,
+   "5": 160
+  },
+  "low_new": 117,
+  "low_total": 117,
+  "low_share": 0.514
+ },
+ {
+  "id": "1673723000",
+  "name": "Duet Dating App: Chat & Meet",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 210,
+  "hist": {
+   "1": 124,
+   "2": 34,
+   "3": 22,
+   "4": 7,
+   "5": 23
+  },
+  "low_new": 114,
+  "low_total": 149,
+  "low_share": 0.752
+ },
+ {
+  "id": "1583884012",
+  "name": "Swipewipe: Photo Cleaner",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 385,
+  "hist": {
+   "1": 79,
+   "2": 51,
+   "3": 47,
+   "4": 63,
+   "5": 145
+  },
+  "low_new": 111,
+  "low_total": 176,
+  "low_share": 0.338
+ },
+ {
+  "id": "1478870872",
+  "name": "FET: Kinky BDSM Dating App",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 381,
+  "hist": {
+   "1": 141,
+   "2": 36,
+   "3": 34,
+   "4": 43,
+   "5": 127
+  },
+  "low_new": 111,
+  "low_total": 127,
+  "low_share": 0.465
+ },
+ {
+  "id": "1480220328",
+  "name": "Tiimo: To-Do List Planner",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 505,
+  "hist": {
+   "1": 114,
+   "2": 51,
+   "3": 77,
+   "4": 78,
+   "5": 185
+  },
+  "low_new": 111,
+  "low_total": 209,
+  "low_share": 0.327
+ },
+ {
+  "id": "996870154",
+  "name": "LINEカレンダー",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 199,
+  "hist": {
+   "1": 148,
+   "2": 12,
+   "3": 15,
+   "4": 7,
+   "5": 17
+  },
+  "low_new": 110,
+  "low_total": 110,
+  "low_share": 0.804
+ },
+ {
+  "id": "1113106806",
+  "name": "Calendar ·",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 338,
+  "hist": {
+   "1": 152,
+   "2": 51,
+   "3": 26,
+   "4": 32,
+   "5": 77
+  },
+  "low_new": 108,
+  "low_total": 115,
+  "low_share": 0.601
+ },
+ {
+  "id": "384101264",
+  "name": "Daily Mail: Breaking News Live",
+  "genre": "News",
+  "focus": [],
+  "fetched": 394,
+  "hist": {
+   "1": 182,
+   "2": 62,
+   "3": 45,
+   "4": 18,
+   "5": 87
+  },
+  "low_new": 106,
+  "low_total": 109,
+  "low_share": 0.619
+ },
+ {
+  "id": "1126609754",
+  "name": "PREVIEW: Planner for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target"
+  ],
+  "fetched": 568,
+  "hist": {
+   "1": 253,
+   "2": 52,
+   "3": 63,
+   "4": 82,
+   "5": 118
+  },
+  "low_new": 105,
+  "low_total": 105,
+  "low_share": 0.537
+ },
+ {
+  "id": "608834326",
+  "name": "Calendario: Mi Agenda y Tareas",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 884,
+  "hist": {
+   "1": 194,
+   "2": 59,
+   "3": 65,
+   "4": 94,
+   "5": 472
+  },
+  "low_new": 104,
+  "low_total": 233,
+  "low_share": 0.286
+ },
+ {
+  "id": "1122457592",
+  "name": "Librus",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 193,
+  "hist": {
+   "1": 177,
+   "2": 5,
+   "3": 4,
+   "4": 4,
+   "5": 3
+  },
+  "low_new": 103,
+  "low_total": 109,
+  "low_share": 0.943
+ },
+ {
+  "id": "1045548013",
+  "name": "Roomster",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 305,
+  "hist": {
+   "1": 209,
+   "2": 21,
+   "3": 12,
+   "4": 7,
+   "5": 56
+  },
+  "low_new": 102,
+  "low_total": 113,
+  "low_share": 0.754
+ },
+ {
+  "id": "314498713",
+  "name": "BetterSleep: Relax and Sleep",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 114,
+   "2": 37,
+   "3": 33,
+   "4": 43,
+   "5": 166
+  },
+  "low_new": 100,
+  "low_total": 110,
+  "low_share": 0.384
+ },
+ {
+  "id": "6471257645",
+  "name": "Screen Mirroring App: Smart TV",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 298,
+  "hist": {
+   "1": 240,
+   "2": 6,
+   "3": 6,
+   "4": 3,
+   "5": 43
+  },
+  "low_new": 100,
+  "low_total": 119,
+  "low_share": 0.826
+ },
+ {
+  "id": "903825183",
+  "name": "シフト給料計算カレンダー",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 181,
+  "hist": {
+   "1": 81,
+   "2": 29,
+   "3": 20,
+   "4": 23,
+   "5": 28
+  },
+  "low_new": 100,
+  "low_total": 100,
+  "low_share": 0.608
+ },
+ {
+  "id": "873518909",
+  "name": "Luxy - Selective Dating App",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 355,
+  "hist": {
+   "1": 211,
+   "2": 19,
+   "3": 7,
+   "4": 9,
+   "5": 109
+  },
+  "low_new": 99,
+  "low_total": 107,
+  "low_share": 0.648
+ },
+ {
+  "id": "1625553531",
+  "name": "Remote for Firestick · Fire TV",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 322,
+  "hist": {
+   "1": 122,
+   "2": 12,
+   "3": 8,
+   "4": 11,
+   "5": 169
+  },
+  "low_new": 99,
+  "low_total": 110,
+  "low_share": 0.416
+ },
+ {
+  "id": "1466734547",
+  "name": "VicoHome: Smart Home Camera",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 251,
+  "hist": {
+   "1": 110,
+   "2": 29,
+   "3": 26,
+   "4": 24,
+   "5": 62
+  },
+  "low_new": 99,
+  "low_total": 108,
+  "low_share": 0.554
+ },
+ {
+  "id": "400101401",
+  "name": "TVING",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 199,
+  "hist": {
+   "1": 122,
+   "2": 13,
+   "3": 14,
+   "4": 11,
+   "5": 39
+  },
+  "low_new": 99,
+  "low_total": 113,
+  "low_share": 0.678
+ },
+ {
+  "id": "642416310",
+  "name": "에브리타임",
+  "genre": "Social Networking",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 192,
+  "hist": {
+   "1": 139,
+   "2": 6,
+   "3": 13,
+   "4": 12,
+   "5": 22
+  },
+  "low_new": 99,
+  "low_total": 99,
+  "low_share": 0.755
+ },
+ {
+  "id": "1585824635",
+  "name": "Video Up! Video Editor & Maker",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 323,
+  "hist": {
+   "1": 179,
+   "2": 27,
+   "3": 23,
+   "4": 16,
+   "5": 78
+  },
+  "low_new": 97,
+  "low_total": 101,
+  "low_share": 0.638
+ },
+ {
+  "id": "743843090",
+  "name": "Athan Pro: Muslim Prayer Times",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 664,
+  "hist": {
+   "1": 121,
+   "2": 30,
+   "3": 43,
+   "4": 58,
+   "5": 412
+  },
+  "low_new": 96,
+  "low_total": 131,
+  "low_share": 0.227
+ },
+ {
+  "id": "578496721",
+  "name": "DC Metro and Bus - Tracker",
+  "genre": "Navigation",
+  "focus": [],
+  "fetched": 192,
+  "hist": {
+   "1": 110,
+   "2": 30,
+   "3": 18,
+   "4": 13,
+   "5": 21
+  },
+  "low_new": 96,
+  "low_total": 97,
+  "low_share": 0.729
+ },
+ {
+  "id": "1485191072",
+  "name": "抖音商城-下单返积分、退货包运费",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 112,
+   "2": 8,
+   "3": 5,
+   "4": 4,
+   "5": 71
+  },
+  "low_new": 95,
+  "low_total": 189,
+  "low_share": 0.6
+ },
+ {
+  "id": "725335996",
+  "name": "Booksy para profesionales",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 657,
+  "hist": {
+   "1": 159,
+   "2": 35,
+   "3": 37,
+   "4": 55,
+   "5": 371
+  },
+  "low_new": 95,
+  "low_total": 95,
+  "low_share": 0.295
+ },
+ {
+  "id": "1493268178",
+  "name": "DMSS",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 615,
+  "hist": {
+   "1": 99,
+   "2": 29,
+   "3": 40,
+   "4": 69,
+   "5": 378
+  },
+  "low_new": 94,
+  "low_total": 94,
+  "low_share": 0.208
+ },
+ {
+  "id": "1594204443",
+  "name": "Runna: Running Plans & Coach",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 692,
+  "hist": {
+   "1": 78,
+   "2": 33,
+   "3": 44,
+   "4": 65,
+   "5": 472
+  },
+  "low_new": 94,
+  "low_total": 121,
+  "low_share": 0.16
+ },
+ {
+  "id": "989307692",
+  "name": "U-Haul: Moving Made Easier®",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 129,
+   "2": 34,
+   "3": 17,
+   "4": 1,
+   "5": 17
+  },
+  "low_new": 93,
+  "low_total": 94,
+  "low_share": 0.823
+ },
+ {
+  "id": "1486598248",
+  "name": "Binge",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 110,
+   "2": 35,
+   "3": 38,
+   "4": 10,
+   "5": 5
+  },
+  "low_new": 93,
+  "low_total": 95,
+  "low_share": 0.732
+ },
+ {
+  "id": "1289684085",
+  "name": "Chispa: Dating App for Latinos",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 128,
+   "2": 28,
+   "3": 19,
+   "4": 10,
+   "5": 15
+  },
+  "low_new": 92,
+  "low_total": 102,
+  "low_share": 0.78
+ },
+ {
+  "id": "979618672",
+  "name": "My BT",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 126,
+   "2": 14,
+   "3": 21,
+   "4": 9,
+   "5": 28
+  },
+  "low_new": 92,
+  "low_total": 107,
+  "low_share": 0.707
+ },
+ {
+  "id": "540222216",
+  "name": "Soy Cliente GNP",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 175,
+  "hist": {
+   "1": 106,
+   "2": 14,
+   "3": 5,
+   "4": 8,
+   "5": 42
+  },
+  "low_new": 91,
+  "low_total": 91,
+  "low_share": 0.686
+ },
+ {
+  "id": "411766326",
+  "name": "Schoology",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 257,
+  "hist": {
+   "1": 191,
+   "2": 20,
+   "3": 15,
+   "4": 10,
+   "5": 21
+  },
+  "low_new": 90,
+  "low_total": 100,
+  "low_share": 0.821
+ },
+ {
+  "id": "981030648",
+  "name": "智学网—懂你的学习伙伴",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 110,
+   "2": 4,
+   "3": 8,
+   "4": 6,
+   "5": 72
+  },
+  "low_new": 90,
+  "low_total": 90,
+  "low_share": 0.57
+ },
+ {
+  "id": "1567636697",
+  "name": "ATLAS:EARTH: Collect Places",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 368,
+  "hist": {
+   "1": 106,
+   "2": 34,
+   "3": 57,
+   "4": 43,
+   "5": 128
+  },
+  "low_new": 89,
+  "low_total": 116,
+  "low_share": 0.38
+ },
+ {
+  "id": "987782077",
+  "name": "Wavve (웨이브)",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 196,
+  "hist": {
+   "1": 132,
+   "2": 14,
+   "3": 14,
+   "4": 4,
+   "5": 32
+  },
+  "low_new": 89,
+  "low_total": 98,
+  "low_share": 0.745
+ },
+ {
+  "id": "449141888",
+  "name": "Untappd: Beer, Wine & Spirits",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 387,
+  "hist": {
+   "1": 88,
+   "2": 22,
+   "3": 19,
+   "4": 53,
+   "5": 205
+  },
+  "low_new": 89,
+  "low_total": 113,
+  "low_share": 0.284
+ },
+ {
+  "id": "542557212",
+  "name": "Everand: Audiobooks & Ebooks",
+  "genre": "Book",
+  "focus": [],
+  "fetched": 341,
+  "hist": {
+   "1": 165,
+   "2": 64,
+   "3": 59,
+   "4": 24,
+   "5": 29
+  },
+  "low_new": 88,
+  "low_total": 95,
+  "low_share": 0.672
+ },
+ {
+  "id": "1492560451",
+  "name": "KeyConnect Digital Car Key",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 228,
+  "hist": {
+   "1": 156,
+   "2": 13,
+   "3": 6,
+   "4": 3,
+   "5": 50
+  },
+  "low_new": 88,
+  "low_total": 99,
+  "low_share": 0.741
+ },
+ {
+  "id": "1586366816",
+  "name": "WOMBO Dream - AI Art Generator",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 336,
+  "hist": {
+   "1": 130,
+   "2": 26,
+   "3": 40,
+   "4": 48,
+   "5": 92
+  },
+  "low_new": 88,
+  "low_total": 90,
+  "low_share": 0.464
+ },
+ {
+  "id": "505800761",
+  "name": "Burner: Second Phone Number",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 195,
+  "hist": {
+   "1": 124,
+   "2": 17,
+   "3": 17,
+   "4": 9,
+   "5": 28
+  },
+  "low_new": 88,
+  "low_total": 97,
+  "low_share": 0.723
+ },
+ {
+  "id": "1477619146",
+  "name": "Bark - Parental Controls",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 197,
+  "hist": {
+   "1": 120,
+   "2": 27,
+   "3": 17,
+   "4": 5,
+   "5": 28
+  },
+  "low_new": 86,
+  "low_total": 88,
+  "low_share": 0.746
+ },
+ {
+  "id": "1585933612",
+  "name": "AlphaNovel - Novels & Stories",
+  "genre": "Book",
+  "focus": [],
+  "fetched": 359,
+  "hist": {
+   "1": 103,
+   "2": 38,
+   "3": 56,
+   "4": 39,
+   "5": 123
+  },
+  "low_new": 86,
+  "low_total": 92,
+  "low_share": 0.393
+ },
+ {
+  "id": "1273867416",
+  "name": "MasterClass: Online Classes",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 323,
+  "hist": {
+   "1": 117,
+   "2": 53,
+   "3": 51,
+   "4": 29,
+   "5": 73
+  },
+  "low_new": 86,
+  "low_total": 87,
+  "low_share": 0.526
+ },
+ {
+  "id": "750823886",
+  "name": "出会い - ワクワク（わくわく）- マッチングアプリ",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 188,
+  "hist": {
+   "1": 139,
+   "2": 6,
+   "3": 10,
+   "4": 6,
+   "5": 27
+  },
+  "low_new": 85,
+  "low_total": 92,
+  "low_share": 0.771
+ },
+ {
+  "id": "1575719736",
+  "name": "Blood Pressure Log, Heart Rate",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 247,
+  "hist": {
+   "1": 79,
+   "2": 18,
+   "3": 16,
+   "4": 42,
+   "5": 92
+  },
+  "low_new": 85,
+  "low_total": 93,
+  "low_share": 0.393
+ },
+ {
+  "id": "1503665233",
+  "name": "Call Recorder for iPhone.",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 306,
+  "hist": {
+   "1": 215,
+   "2": 25,
+   "3": 11,
+   "4": 4,
+   "5": 51
+  },
+  "low_new": 83,
+  "low_total": 85,
+  "low_share": 0.784
+ },
+ {
+  "id": "944060491",
+  "name": "Roadtrippers - Trip Planner",
+  "genre": "Travel",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 372,
+  "hist": {
+   "1": 173,
+   "2": 36,
+   "3": 38,
+   "4": 39,
+   "5": 86
+  },
+  "low_new": 82,
+  "low_total": 82,
+  "low_share": 0.562
+ },
+ {
+  "id": "6466786430",
+  "name": "Inkitt CandyJar: TV & Shorts",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 308,
+  "hist": {
+   "1": 100,
+   "2": 43,
+   "3": 48,
+   "4": 46,
+   "5": 71
+  },
+  "low_new": 80,
+  "low_total": 95,
+  "low_share": 0.464
+ },
+ {
+  "id": "464562684",
+  "name": "netkeiba ネットケイバ",
+  "genre": "Sports",
+  "focus": [],
+  "fetched": 194,
+  "hist": {
+   "1": 89,
+   "2": 25,
+   "3": 17,
+   "4": 12,
+   "5": 51
+  },
+  "low_new": 80,
+  "low_total": 86,
+  "low_share": 0.588
+ },
+ {
+  "id": "1518956326",
+  "name": "마이루틴: 루틴 습관 투두 플래너・ADHD 하루 계획표",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 481,
+  "hist": {
+   "1": 101,
+   "2": 24,
+   "3": 52,
+   "4": 72,
+   "5": 232
+  },
+  "low_new": 80,
+  "low_total": 80,
+  "low_share": 0.26
+ },
+ {
+  "id": "1616629991",
+  "name": "ThemePack: Widgets & Wallpaper",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 396,
+  "hist": {
+   "1": 80,
+   "2": 27,
+   "3": 52,
+   "4": 68,
+   "5": 169
+  },
+  "low_new": 79,
+  "low_total": 107,
+  "low_share": 0.27
+ },
+ {
+  "id": "914406371",
+  "name": "JOOX音樂 - AI聽歌識曲播放器",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 399,
+  "hist": {
+   "1": 131,
+   "2": 38,
+   "3": 32,
+   "4": 26,
+   "5": 172
+  },
+  "low_new": 78,
+  "low_total": 78,
+  "low_share": 0.424
+ },
+ {
+  "id": "1469506430",
+  "name": "썸원 SumOne",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 641,
+  "hist": {
+   "1": 105,
+   "2": 37,
+   "3": 85,
+   "4": 87,
+   "5": 327
+  },
+  "low_new": 78,
+  "low_total": 78,
+  "low_share": 0.222
+ },
+ {
+  "id": "6760173601",
+  "name": "Muse from Meta",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 642,
+  "hist": {
+   "1": 62,
+   "2": 15,
+   "3": 16,
+   "4": 33,
+   "5": 516
+  },
+  "low_new": 77,
+  "low_total": 146,
+  "low_share": 0.12
+ },
+ {
+  "id": "1327105431",
+  "name": "Malwarebytes - Mobile Security",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 340,
+  "hist": {
+   "1": 100,
+   "2": 30,
+   "3": 25,
+   "4": 31,
+   "5": 154
+  },
+  "low_new": 77,
+  "low_total": 92,
+  "low_share": 0.382
+ },
+ {
+  "id": "1439422220",
+  "name": "Universal TV Remote ·",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 265,
+  "hist": {
+   "1": 98,
+   "2": 20,
+   "3": 22,
+   "4": 28,
+   "5": 97
+  },
+  "low_new": 75,
+  "low_total": 84,
+  "low_share": 0.445
+ },
+ {
+  "id": "1672111368",
+  "name": "CoinIn: Coin Scan Identifier",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 303,
+  "hist": {
+   "1": 141,
+   "2": 16,
+   "3": 17,
+   "4": 15,
+   "5": 114
+  },
+  "low_new": 75,
+  "low_total": 80,
+  "low_share": 0.518
+ },
+ {
+  "id": "396069556",
+  "name": "Feedly - Smart News Reader",
+  "genre": "News",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 426,
+  "hist": {
+   "1": 169,
+   "2": 73,
+   "3": 69,
+   "4": 53,
+   "5": 62
+  },
+  "low_new": 75,
+  "low_total": 75,
+  "low_share": 0.568
+ },
+ {
+  "id": "447785763",
+  "name": "PayPal POS (ex Zettle)",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 427,
+  "hist": {
+   "1": 157,
+   "2": 34,
+   "3": 41,
+   "4": 39,
+   "5": 156
+  },
+  "low_new": 75,
+  "low_total": 75,
+  "low_share": 0.447
+ },
+ {
+  "id": "657189652",
+  "name": "Clue Period & Cycle Tracker",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 402,
+  "hist": {
+   "1": 111,
+   "2": 50,
+   "3": 58,
+   "4": 54,
+   "5": 129
+  },
+  "low_new": 74,
+  "low_total": 83,
+  "low_share": 0.4
+ },
+ {
+  "id": "1330998651",
+  "name": "Aula",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 203,
+  "hist": {
+   "1": 119,
+   "2": 24,
+   "3": 29,
+   "4": 12,
+   "5": 19
+  },
+  "low_new": 73,
+  "low_total": 75,
+  "low_share": 0.704
+ },
+ {
+  "id": "354936286",
+  "name": "Flitsmeister",
+  "genre": "Navigation",
+  "focus": [],
+  "fetched": 205,
+  "hist": {
+   "1": 117,
+   "2": 26,
+   "3": 19,
+   "4": 9,
+   "5": 34
+  },
+  "low_new": 73,
+  "low_total": 84,
+  "low_share": 0.698
+ },
+ {
+  "id": "6466241694",
+  "name": "Themie: Wallpapers & Theme",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 370,
+  "hist": {
+   "1": 72,
+   "2": 21,
+   "3": 46,
+   "4": 67,
+   "5": 164
+  },
+  "low_new": 73,
+  "low_total": 85,
+  "low_share": 0.251
+ },
+ {
+  "id": "1441909643",
+  "name": "열품타",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 569,
+  "hist": {
+   "1": 95,
+   "2": 39,
+   "3": 91,
+   "4": 136,
+   "5": 208
+  },
+  "low_new": 73,
+  "low_total": 73,
+  "low_share": 0.236
+ },
+ {
+  "id": "763638165",
+  "name": "IPVanish VPN: Fast & Secure",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 338,
+  "hist": {
+   "1": 136,
+   "2": 36,
+   "3": 17,
+   "4": 27,
+   "5": 122
+  },
+  "low_new": 71,
+  "low_total": 75,
+  "low_share": 0.509
+ },
+ {
+  "id": "1050171910",
+  "name": "Free VPN by Free VPN .org™",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 489,
+  "hist": {
+   "1": 114,
+   "2": 17,
+   "3": 26,
+   "4": 37,
+   "5": 295
+  },
+  "low_new": 70,
+  "low_total": 86,
+  "low_share": 0.268
+ },
+ {
+  "id": "1288415553",
+  "name": "The Official Wyze App",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 257,
+  "hist": {
+   "1": 115,
+   "2": 37,
+   "3": 33,
+   "4": 14,
+   "5": 58
+  },
+  "low_new": 70,
+  "low_total": 98,
+  "low_share": 0.591
+ },
+ {
+  "id": "6472827673",
+  "name": "HBO Max: Stream filmes en tv",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 232,
+  "hist": {
+   "1": 76,
+   "2": 22,
+   "3": 23,
+   "4": 21,
+   "5": 90
+  },
+  "low_new": 68,
+  "low_total": 68,
+  "low_share": 0.422
+ },
+ {
+  "id": "1022831885",
+  "name": "Robokiller: Spam Call Blocker",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 203,
+  "hist": {
+   "1": 104,
+   "2": 18,
+   "3": 23,
+   "4": 11,
+   "5": 47
+  },
+  "low_new": 67,
+  "low_total": 79,
+  "low_share": 0.601
+ },
+ {
+  "id": "512266300",
+  "name": "NOW: TV, Movies, Live Sport",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 97,
+   "2": 29,
+   "3": 17,
+   "4": 23,
+   "5": 32
+  },
+  "low_new": 67,
+  "low_total": 76,
+  "low_share": 0.636
+ },
+ {
+  "id": "1485352913",
+  "name": "Pokémon HOME",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 344,
+  "hist": {
+   "1": 89,
+   "2": 28,
+   "3": 67,
+   "4": 93,
+   "5": 67
+  },
+  "low_new": 66,
+  "low_total": 67,
+  "low_share": 0.34
+ },
+ {
+  "id": "342138881",
+  "name": "StarMaker-Sing Karaoke Songs",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 392,
+  "hist": {
+   "1": 90,
+   "2": 37,
+   "3": 56,
+   "4": 45,
+   "5": 164
+  },
+  "low_new": 65,
+  "low_total": 74,
+  "low_share": 0.324
+ },
+ {
+  "id": "1510917465",
+  "name": "Meete - Meet New Friends",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 319,
+  "hist": {
+   "1": 178,
+   "2": 24,
+   "3": 30,
+   "4": 16,
+   "5": 71
+  },
+  "low_new": 64,
+  "low_total": 64,
+  "low_share": 0.633
+ },
+ {
+  "id": "835880015",
+  "name": "TV+ Movies, Series & Live TV",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 151,
+   "2": 8,
+   "3": 9,
+   "4": 6,
+   "5": 26
+  },
+  "low_new": 64,
+  "low_total": 72,
+  "low_share": 0.795
+ },
+ {
+  "id": "1522122685",
+  "name": "Clapper: Video, Live, Chat",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 431,
+  "hist": {
+   "1": 123,
+   "2": 28,
+   "3": 44,
+   "4": 54,
+   "5": 182
+  },
+  "low_new": 64,
+  "low_total": 68,
+  "low_share": 0.35
+ },
+ {
+  "id": "1463756032",
+  "name": "Cleaner Neat: Clean Up Storage",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 310,
+  "hist": {
+   "1": 166,
+   "2": 28,
+   "3": 13,
+   "4": 15,
+   "5": 88
+  },
+  "low_new": 63,
+  "low_total": 63,
+  "low_share": 0.626
+ },
+ {
+  "id": "1558953048",
+  "name": "minical - 일정 관리 캘린더 앱 (달력)",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 581,
+  "hist": {
+   "1": 83,
+   "2": 19,
+   "3": 43,
+   "4": 81,
+   "5": 355
+  },
+  "low_new": 63,
+  "low_total": 63,
+  "low_share": 0.176
+ },
+ {
+  "id": "1436732536",
+  "name": "Lensa AI: Photo Editor",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 343,
+  "hist": {
+   "1": 131,
+   "2": 51,
+   "3": 34,
+   "4": 25,
+   "5": 102
+  },
+  "low_new": 62,
+  "low_total": 64,
+  "low_share": 0.531
+ },
+ {
+  "id": "409838725",
+  "name": "Splice - Video Editor & Maker",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 399,
+  "hist": {
+   "1": 83,
+   "2": 33,
+   "3": 37,
+   "4": 52,
+   "5": 194
+  },
+  "low_new": 62,
+  "low_total": 69,
+  "low_share": 0.291
+ },
+ {
+  "id": "510873505",
+  "name": "Secret Photo Vault: Keepsafe",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 338,
+  "hist": {
+   "1": 119,
+   "2": 22,
+   "3": 33,
+   "4": 36,
+   "5": 128
+  },
+  "low_new": 61,
+  "low_total": 67,
+  "low_share": 0.417
+ },
+ {
+  "id": "1387514950",
+  "name": "MGM+",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 186,
+  "hist": {
+   "1": 76,
+   "2": 29,
+   "3": 21,
+   "4": 14,
+   "5": 46
+  },
+  "low_new": 61,
+  "low_total": 66,
+  "low_share": 0.565
+ },
+ {
+  "id": "1141119371",
+  "name": "FantasyPros - Fantasy Advice",
+  "genre": "Sports",
+  "focus": [],
+  "fetched": 204,
+  "hist": {
+   "1": 62,
+   "2": 23,
+   "3": 24,
+   "4": 19,
+   "5": 76
+  },
+  "low_new": 61,
+  "low_total": 67,
+  "low_share": 0.417
+ },
+ {
+  "id": "1501810129",
+  "name": "D&D Beyond",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 323,
+  "hist": {
+   "1": 67,
+   "2": 25,
+   "3": 43,
+   "4": 61,
+   "5": 127
+  },
+  "low_new": 61,
+  "low_total": 64,
+  "low_share": 0.285
+ },
+ {
+  "id": "924641763",
+  "name": "Agenda Edu SuperApp",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 109,
+  "hist": {
+   "1": 49,
+   "2": 18,
+   "3": 11,
+   "4": 9,
+   "5": 22
+  },
+  "low_new": 61,
+  "low_total": 61,
+  "low_share": 0.615
+ },
+ {
+  "id": "446747531",
+  "name": "ピクトリンク",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 193,
+  "hist": {
+   "1": 99,
+   "2": 31,
+   "3": 22,
+   "4": 22,
+   "5": 19
+  },
+  "low_new": 60,
+  "low_total": 62,
+  "low_share": 0.674
+ },
+ {
+  "id": "1451873163",
+  "name": "Feed Preview: Insta Grid",
+  "genre": "Photo & Video",
+  "focus": [
+   "target"
+  ],
+  "fetched": 615,
+  "hist": {
+   "1": 107,
+   "2": 20,
+   "3": 45,
+   "4": 82,
+   "5": 361
+  },
+  "low_new": 60,
+  "low_total": 68,
+  "low_share": 0.207
+ },
+ {
+  "id": "1187626329",
+  "name": "The Dyrt: RV & Free Camping",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 199,
+  "hist": {
+   "1": 75,
+   "2": 31,
+   "3": 18,
+   "4": 19,
+   "5": 56
+  },
+  "low_new": 59,
+  "low_total": 64,
+  "low_share": 0.533
+ },
+ {
+  "id": "1057252115",
+  "name": "UNUM — Layout for Instagram",
+  "genre": "Graphics & Design",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 484,
+  "hist": {
+   "1": 240,
+   "2": 91,
+   "3": 57,
+   "4": 36,
+   "5": 60
+  },
+  "low_new": 59,
+  "low_total": 59,
+  "low_share": 0.684
+ },
+ {
+  "id": "1276551855",
+  "name": "Avast One: Security & Privacy",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 330,
+  "hist": {
+   "1": 95,
+   "2": 31,
+   "3": 31,
+   "4": 31,
+   "5": 142
+  },
+  "low_new": 58,
+  "low_total": 59,
+  "low_share": 0.382
+ },
+ {
+  "id": "826510222",
+  "name": "Joyn | deine Streaming App",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 45,
+   "2": 17,
+   "3": 25,
+   "4": 38,
+   "5": 73
+  },
+  "low_new": 58,
+  "low_total": 73,
+  "low_share": 0.313
+ },
+ {
+  "id": "1360309966",
+  "name": "Piano: Keyboard Lessons & Game",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 61,
+   "2": 20,
+   "3": 47,
+   "4": 69,
+   "5": 196
+  },
+  "low_new": 58,
+  "low_total": 70,
+  "low_share": 0.206
+ },
+ {
+  "id": "1605170923",
+  "name": "GoWish - Your Digital Wishlist",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 603,
+  "hist": {
+   "1": 47,
+   "2": 27,
+   "3": 52,
+   "4": 101,
+   "5": 376
+  },
+  "low_new": 57,
+  "low_total": 89,
+  "low_share": 0.123
+ },
+ {
+  "id": "1481469888",
+  "name": "Reports+ Unfollowers Follower",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 445,
+  "hist": {
+   "1": 183,
+   "2": 25,
+   "3": 9,
+   "4": 20,
+   "5": 208
+  },
+  "low_new": 57,
+  "low_total": 76,
+  "low_share": 0.467
+ },
+ {
+  "id": "1553223828",
+  "name": "하루콩",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 763,
+  "hist": {
+   "1": 56,
+   "2": 33,
+   "3": 53,
+   "4": 117,
+   "5": 504
+  },
+  "low_new": 57,
+  "low_total": 57,
+  "low_share": 0.117
+ },
+ {
+  "id": "1640653011",
+  "name": "Mico - Widget & Live Wallpaper",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 347,
+  "hist": {
+   "1": 57,
+   "2": 23,
+   "3": 40,
+   "4": 62,
+   "5": 165
+  },
+  "low_new": 56,
+  "low_total": 59,
+  "low_share": 0.231
+ },
+ {
+  "id": "414461255",
+  "name": "Vivino: Drink The Right Wine",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 384,
+  "hist": {
+   "1": 67,
+   "2": 42,
+   "3": 28,
+   "4": 50,
+   "5": 197
+  },
+  "low_new": 56,
+  "low_total": 62,
+  "low_share": 0.284
+ },
+ {
+  "id": "1092220726",
+  "name": "TalkingParents: Co-Parent App",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 199,
+  "hist": {
+   "1": 116,
+   "2": 22,
+   "3": 29,
+   "4": 8,
+   "5": 24
+  },
+  "low_new": 56,
+  "low_total": 56,
+  "low_share": 0.693
+ },
+ {
+  "id": "1546796934",
+  "name": "Rock Identifier: Stone ID",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 384,
+  "hist": {
+   "1": 60,
+   "2": 28,
+   "3": 33,
+   "4": 54,
+   "5": 209
+  },
+  "low_new": 56,
+  "low_total": 62,
+  "low_share": 0.229
+ },
+ {
+  "id": "1450486923",
+  "name": "갓생 루틴 루티너리 - 하루 습관 계획표, 투두리스트",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 689,
+  "hist": {
+   "1": 59,
+   "2": 30,
+   "3": 54,
+   "4": 102,
+   "5": 444
+  },
+  "low_new": 56,
+  "low_total": 56,
+  "low_share": 0.129
+ },
+ {
+  "id": "1219301037",
+  "name": "Microsoft Planner",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 424,
+  "hist": {
+   "1": 150,
+   "2": 58,
+   "3": 85,
+   "4": 59,
+   "5": 72
+  },
+  "low_new": 55,
+  "low_total": 55,
+  "low_share": 0.491
+ },
+ {
+  "id": "458035189",
+  "name": "비트윈 Between-커플,사진,기념일,디데이,연애",
+  "genre": "Social Networking",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 589,
+  "hist": {
+   "1": 97,
+   "2": 22,
+   "3": 35,
+   "4": 78,
+   "5": 357
+  },
+  "low_new": 54,
+  "low_total": 54,
+  "low_share": 0.202
+ },
+ {
+  "id": "952578473",
+  "name": "TimeTree 캘린더 공유 앱",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 587,
+  "hist": {
+   "1": 62,
+   "2": 33,
+   "3": 60,
+   "4": 87,
+   "5": 345
+  },
+  "low_new": 54,
+  "low_total": 67,
+  "low_share": 0.162
+ },
+ {
+  "id": "863809868",
+  "name": "TalkU: Unlimited Calls + Texts",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 294,
+  "hist": {
+   "1": 158,
+   "2": 15,
+   "3": 23,
+   "4": 19,
+   "5": 79
+  },
+  "low_new": 53,
+  "low_total": 54,
+  "low_share": 0.588
+ },
+ {
+  "id": "840216376",
+  "name": "ParcelTrack - Package Tracker",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 321,
+  "hist": {
+   "1": 138,
+   "2": 27,
+   "3": 19,
+   "4": 19,
+   "5": 118
+  },
+  "low_new": 52,
+  "low_total": 52,
+  "low_share": 0.514
+ },
+ {
+  "id": "6737527615",
+  "name": "Gemini Notebook",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 437,
+  "hist": {
+   "1": 47,
+   "2": 16,
+   "3": 21,
+   "4": 48,
+   "5": 305
+  },
+  "low_new": 52,
+  "low_total": 65,
+  "low_share": 0.144
+ },
+ {
+  "id": "1505220130",
+  "name": "투두메이트: 할 일 목록, 루틴 플래너",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 269,
+  "hist": {
+   "1": 49,
+   "2": 14,
+   "3": 28,
+   "4": 42,
+   "5": 136
+  },
+  "low_new": 51,
+  "low_total": 51,
+  "low_share": 0.234
+ },
+ {
+  "id": "1499198946",
+  "name": "Structured – Agenda del día",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 506,
+  "hist": {
+   "1": 41,
+   "2": 23,
+   "3": 44,
+   "4": 77,
+   "5": 321
+  },
+  "low_new": 50,
+  "low_total": 141,
+  "low_share": 0.126
+ },
+ {
+  "id": "341776037",
+  "name": "5-0 Radio Pro Police Scanner",
+  "genre": "News",
+  "focus": [],
+  "fetched": 319,
+  "hist": {
+   "1": 56,
+   "2": 12,
+   "3": 15,
+   "4": 41,
+   "5": 195
+  },
+  "low_new": 49,
+  "low_total": 54,
+  "low_share": 0.213
+ },
+ {
+  "id": "968585775",
+  "name": "BandLab – Music Maker & Beats",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 394,
+  "hist": {
+   "1": 52,
+   "2": 21,
+   "3": 31,
+   "4": 71,
+   "5": 219
+  },
+  "low_new": 49,
+  "low_total": 74,
+  "low_share": 0.185
+ },
+ {
+  "id": "6670422243",
+  "name": "Finelo: Master Trading",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 388,
+  "hist": {
+   "1": 54,
+   "2": 6,
+   "3": 21,
+   "4": 54,
+   "5": 253
+  },
+  "low_new": 48,
+  "low_total": 64,
+  "low_share": 0.155
+ },
+ {
+  "id": "6475700817",
+  "name": "Artrace: AR Drawing & Sketch",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 377,
+  "hist": {
+   "1": 40,
+   "2": 13,
+   "3": 31,
+   "4": 67,
+   "5": 226
+  },
+  "low_new": 48,
+  "low_total": 48,
+  "low_share": 0.141
+ },
+ {
+  "id": "1037701735",
+  "name": "Asiacell",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 207,
+  "hist": {
+   "1": 65,
+   "2": 4,
+   "3": 12,
+   "4": 14,
+   "5": 112
+  },
+  "low_new": 48,
+  "low_total": 48,
+  "low_share": 0.333
+ },
+ {
+  "id": "714004506",
+  "name": "Official Cookidoo App",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 703,
+  "hist": {
+   "1": 54,
+   "2": 34,
+   "3": 45,
+   "4": 103,
+   "5": 467
+  },
+  "low_new": 48,
+  "low_total": 119,
+  "low_share": 0.125
+ },
+ {
+  "id": "475816966",
+  "name": "Seconds Interval Timer",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 478,
+  "hist": {
+   "1": 67,
+   "2": 17,
+   "3": 36,
+   "4": 49,
+   "5": 309
+  },
+  "low_new": 47,
+  "low_total": 51,
+  "low_share": 0.176
+ },
+ {
+  "id": "1348649804",
+  "name": "Findo - Phone Location Tracker",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 269,
+  "hist": {
+   "1": 138,
+   "2": 15,
+   "3": 18,
+   "4": 12,
+   "5": 86
+  },
+  "low_new": 46,
+  "low_total": 47,
+  "low_share": 0.569
+ },
+ {
+  "id": "1442571346",
+  "name": "Hoop - make new friends",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 69,
+   "2": 32,
+   "3": 55,
+   "4": 81,
+   "5": 156
+  },
+  "low_new": 46,
+  "low_total": 50,
+  "low_share": 0.257
+ },
+ {
+  "id": "662557215",
+  "name": "حراج",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 436,
+  "hist": {
+   "1": 78,
+   "2": 15,
+   "3": 28,
+   "4": 29,
+   "5": 286
+  },
+  "low_new": 46,
+  "low_total": 51,
+  "low_share": 0.213
+ },
+ {
+  "id": "1201725025",
+  "name": "Faladdin Astrology & Horoscope",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 352,
+  "hist": {
+   "1": 67,
+   "2": 19,
+   "3": 25,
+   "4": 20,
+   "5": 221
+  },
+  "low_new": 45,
+  "low_total": 56,
+  "low_share": 0.244
+ },
+ {
+  "id": "994411720",
+  "name": "Joy Wedding Planner & Website",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 398,
+  "hist": {
+   "1": 84,
+   "2": 35,
+   "3": 19,
+   "4": 60,
+   "5": 200
+  },
+  "low_new": 45,
+  "low_total": 45,
+  "low_share": 0.299
+ },
+ {
+  "id": "489940389",
+  "name": "Paperless Post: Invitations",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 304,
+  "hist": {
+   "1": 115,
+   "2": 51,
+   "3": 44,
+   "4": 35,
+   "5": 59
+  },
+  "low_new": 44,
+  "low_total": 44,
+  "low_share": 0.546
+ },
+ {
+  "id": "479267592",
+  "name": "CARFAX - New & Used Cars",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 192,
+  "hist": {
+   "1": 65,
+   "2": 12,
+   "3": 14,
+   "4": 16,
+   "5": 85
+  },
+  "low_new": 43,
+  "low_total": 43,
+  "low_share": 0.401
+ },
+ {
+  "id": "448639966",
+  "name": "PicCollage: Magic Photo Editor",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 599,
+  "hist": {
+   "1": 42,
+   "2": 19,
+   "3": 28,
+   "4": 117,
+   "5": 393
+  },
+  "low_new": 43,
+  "low_total": 43,
+  "low_share": 0.102
+ },
+ {
+  "id": "1634551626",
+  "name": "CoinSnap: Coin Identifier",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 353,
+  "hist": {
+   "1": 57,
+   "2": 17,
+   "3": 38,
+   "4": 53,
+   "5": 188
+  },
+  "low_new": 42,
+  "low_total": 49,
+  "low_share": 0.21
+ },
+ {
+  "id": "316126557",
+  "name": "MapQuest GPS Navigation & Maps",
+  "genre": "Navigation",
+  "focus": [],
+  "fetched": 198,
+  "hist": {
+   "1": 33,
+   "2": 21,
+   "3": 32,
+   "4": 27,
+   "5": 85
+  },
+  "low_new": 42,
+  "low_total": 53,
+  "low_share": 0.273
+ },
+ {
+  "id": "1449660663",
+  "name": "Backbone — Next-Level Play",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 318,
+  "hist": {
+   "1": 80,
+   "2": 30,
+   "3": 36,
+   "4": 44,
+   "5": 128
+  },
+  "low_new": 41,
+  "low_total": 45,
+  "low_share": 0.346
+ },
+ {
+  "id": "337472899",
+  "name": "Insight Timer: Meditate, Sleep",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 392,
+  "hist": {
+   "1": 40,
+   "2": 22,
+   "3": 23,
+   "4": 38,
+   "5": 269
+  },
+  "low_new": 41,
+  "low_total": 52,
+  "low_share": 0.158
+ },
+ {
+  "id": "1133960732",
+  "name": "Mimo: Learn Python Coding & AI",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 384,
+  "hist": {
+   "1": 51,
+   "2": 19,
+   "3": 47,
+   "4": 76,
+   "5": 191
+  },
+  "low_new": 40,
+  "low_total": 42,
+  "low_share": 0.182
+ },
+ {
+  "id": "1434023161",
+  "name": "Musicana - Organizer & Player",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 338,
+  "hist": {
+   "1": 52,
+   "2": 21,
+   "3": 38,
+   "4": 76,
+   "5": 151
+  },
+  "low_new": 40,
+  "low_total": 46,
+  "low_share": 0.216
+ },
+ {
+  "id": "1111447047",
+  "name": "Habitify: 습관 트래커",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 550,
+  "hist": {
+   "1": 85,
+   "2": 44,
+   "3": 49,
+   "4": 93,
+   "5": 279
+  },
+  "low_new": 40,
+  "low_total": 40,
+  "low_share": 0.235
+ },
+ {
+  "id": "1634567736",
+  "name": "Blessed - Daily Verse & Prayer",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 297,
+  "hist": {
+   "1": 32,
+   "2": 14,
+   "3": 11,
+   "4": 23,
+   "5": 217
+  },
+  "low_new": 39,
+  "low_total": 41,
+  "low_share": 0.155
+ },
+ {
+  "id": "6482289804",
+  "name": "Donna AI Song & Music Maker",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 373,
+  "hist": {
+   "1": 52,
+   "2": 25,
+   "3": 24,
+   "4": 57,
+   "5": 215
+  },
+  "low_new": 39,
+  "low_total": 42,
+  "low_share": 0.206
+ },
+ {
+  "id": "1508098273",
+  "name": "Keiki Learning games for Kids",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 376,
+  "hist": {
+   "1": 73,
+   "2": 12,
+   "3": 19,
+   "4": 44,
+   "5": 228
+  },
+  "low_new": 38,
+  "low_total": 43,
+  "low_share": 0.226
+ },
+ {
+  "id": "6443877058",
+  "name": "Universal TV Remote Control・",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 292,
+  "hist": {
+   "1": 99,
+   "2": 8,
+   "3": 20,
+   "4": 22,
+   "5": 143
+  },
+  "low_new": 38,
+  "low_total": 45,
+  "low_share": 0.366
+ },
+ {
+  "id": "1361619409",
+  "name": "Yoga-Go: Tai Chi & Pilates",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 387,
+  "hist": {
+   "1": 115,
+   "2": 25,
+   "3": 19,
+   "4": 46,
+   "5": 182
+  },
+  "low_new": 38,
+  "low_total": 43,
+  "low_share": 0.362
+ },
+ {
+  "id": "381059732",
+  "name": "Week Calendar - Smart Planner",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 432,
+  "hist": {
+   "1": 136,
+   "2": 42,
+   "3": 35,
+   "4": 49,
+   "5": 170
+  },
+  "low_new": 38,
+  "low_total": 67,
+  "low_share": 0.412
+ },
+ {
+  "id": "1665672552",
+  "name": "Coin ID: Coin Value Identifier",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 211,
+  "hist": {
+   "1": 67,
+   "2": 14,
+   "3": 13,
+   "4": 20,
+   "5": 97
+  },
+  "low_new": 37,
+  "low_total": 37,
+  "low_share": 0.384
+ },
+ {
+  "id": "978931264",
+  "name": "FAX from iPhone: Send Doc App",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 299,
+  "hist": {
+   "1": 99,
+   "2": 13,
+   "3": 11,
+   "4": 17,
+   "5": 159
+  },
+  "low_new": 37,
+  "low_total": 42,
+  "low_share": 0.375
+ },
+ {
+  "id": "1084591612",
+  "name": "Mutual LDS Dating: Meet & Date",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 230,
+  "hist": {
+   "1": 51,
+   "2": 31,
+   "3": 25,
+   "4": 24,
+   "5": 99
+  },
+  "low_new": 37,
+  "low_total": 47,
+  "low_share": 0.357
+ },
+ {
+  "id": "490474324",
+  "name": "Buffer: Plan & Schedule Posts",
+  "genre": "Social Networking",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 514,
+  "hist": {
+   "1": 119,
+   "2": 42,
+   "3": 56,
+   "4": 67,
+   "5": 230
+  },
+  "low_new": 36,
+  "low_total": 36,
+  "low_share": 0.313
+ },
+ {
+  "id": "469463298",
+  "name": "Citymapper: All Live Transit",
+  "genre": "Navigation",
+  "focus": [],
+  "fetched": 392,
+  "hist": {
+   "1": 48,
+   "2": 24,
+   "3": 32,
+   "4": 42,
+   "5": 246
+  },
+  "low_new": 35,
+  "low_total": 41,
+  "low_share": 0.184
+ },
+ {
+  "id": "961390574",
+  "name": "CARROT Weather: Alerts & Radar",
+  "genre": "Weather",
+  "focus": [],
+  "fetched": 343,
+  "hist": {
+   "1": 47,
+   "2": 29,
+   "3": 32,
+   "4": 38,
+   "5": 197
+  },
+  "low_new": 35,
+  "low_total": 38,
+  "low_share": 0.222
+ },
+ {
+  "id": "535811906",
+  "name": "GoDaddy: Websites & Marketing",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 334,
+  "hist": {
+   "1": 68,
+   "2": 21,
+   "3": 40,
+   "4": 34,
+   "5": 171
+  },
+  "low_new": 35,
+  "low_total": 44,
+  "low_share": 0.266
+ },
+ {
+  "id": "804913240",
+  "name": "Rapchat: Music Maker Studio",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 299,
+  "hist": {
+   "1": 47,
+   "2": 19,
+   "3": 24,
+   "4": 39,
+   "5": 170
+  },
+  "low_new": 34,
+  "low_total": 35,
+  "low_share": 0.221
+ },
+ {
+  "id": "1559236118",
+  "name": "FOX Weather: Daily Forecasts",
+  "genre": "Weather",
+  "focus": [],
+  "fetched": 196,
+  "hist": {
+   "1": 28,
+   "2": 21,
+   "3": 16,
+   "4": 26,
+   "5": 105
+  },
+  "low_new": 34,
+  "low_total": 35,
+  "low_share": 0.25
+ },
+ {
+  "id": "288113403",
+  "name": "iTranslate Translator",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 397,
+  "hist": {
+   "1": 77,
+   "2": 32,
+   "3": 33,
+   "4": 41,
+   "5": 214
+  },
+  "low_new": 34,
+  "low_total": 40,
+  "low_share": 0.275
+ },
+ {
+  "id": "312101965",
+  "name": "Bon Appétit: Recipes & Cooking",
+  "genre": "Food & Drink",
+  "focus": [],
+  "fetched": 306,
+  "hist": {
+   "1": 106,
+   "2": 49,
+   "3": 36,
+   "4": 33,
+   "5": 82
+  },
+  "low_new": 33,
+  "low_total": 35,
+  "low_share": 0.507
+ },
+ {
+  "id": "1552708303",
+  "name": "Speak English with Loora AI",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 444,
+  "hist": {
+   "1": 66,
+   "2": 14,
+   "3": 29,
+   "4": 32,
+   "5": 303
+  },
+  "low_new": 33,
+  "low_total": 46,
+  "low_share": 0.18
+ },
+ {
+  "id": "369692259",
+  "name": "M6+ : Streaming & Tv Replay",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 23,
+   "2": 11,
+   "3": 18,
+   "4": 55,
+   "5": 93
+  },
+  "low_new": 33,
+  "low_total": 36,
+  "low_share": 0.17
+ },
+ {
+  "id": "1171686996",
+  "name": "Preview for Instagram Layout",
+  "genre": "Photo & Video",
+  "focus": [
+   "target"
+  ],
+  "fetched": 253,
+  "hist": {
+   "1": 112,
+   "2": 25,
+   "3": 22,
+   "4": 9,
+   "5": 85
+  },
+  "low_new": 33,
+  "low_total": 33,
+  "low_share": 0.542
+ },
+ {
+  "id": "1190077343",
+  "name": "Boon: AI Logo Maker & Design",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 274,
+  "hist": {
+   "1": 46,
+   "2": 16,
+   "3": 11,
+   "4": 40,
+   "5": 161
+  },
+  "low_new": 32,
+  "low_total": 41,
+  "low_share": 0.226
+ },
+ {
+  "id": "1670649189",
+  "name": "TV Remote - Universal",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 182,
+  "hist": {
+   "1": 58,
+   "2": 5,
+   "3": 17,
+   "4": 7,
+   "5": 95
+  },
+  "low_new": 32,
+  "low_total": 57,
+  "low_share": 0.346
+ },
+ {
+  "id": "1247275033",
+  "name": "Unfold: Reels & Story Maker",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 280,
+  "hist": {
+   "1": 72,
+   "2": 43,
+   "3": 38,
+   "4": 39,
+   "5": 88
+  },
+  "low_new": 32,
+  "low_total": 32,
+  "low_share": 0.411
+ },
+ {
+  "id": "1559233786",
+  "name": "Quran by Quranly",
+  "genre": "Book",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 513,
+  "hist": {
+   "1": 45,
+   "2": 17,
+   "3": 15,
+   "4": 71,
+   "5": 365
+  },
+  "low_new": 31,
+  "low_total": 31,
+  "low_share": 0.121
+ },
+ {
+  "id": "1625234008",
+  "name": "DMV Practice Test 2026 myDMV",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 194,
+  "hist": {
+   "1": 35,
+   "2": 17,
+   "3": 19,
+   "4": 20,
+   "5": 103
+  },
+  "low_new": 31,
+  "low_total": 33,
+  "low_share": 0.268
+ },
+ {
+  "id": "6745089450",
+  "name": "Bible Widgets: Verses & Prayer",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 205,
+  "hist": {
+   "1": 28,
+   "2": 3,
+   "3": 14,
+   "4": 11,
+   "5": 149
+  },
+  "low_new": 31,
+  "low_total": 36,
+  "low_share": 0.151
+ },
+ {
+  "id": "1581650857",
+  "name": "Substack",
+  "genre": "News",
+  "focus": [],
+  "fetched": 396,
+  "hist": {
+   "1": 52,
+   "2": 16,
+   "3": 36,
+   "4": 39,
+   "5": 253
+  },
+  "low_new": 31,
+  "low_total": 44,
+  "low_share": 0.172
+ },
+ {
+  "id": "1512361252",
+  "name": "muute｜AIジャーナリング 自己分析や感情日記で自分探し",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 191,
+  "hist": {
+   "1": 35,
+   "2": 15,
+   "3": 29,
+   "4": 52,
+   "5": 60
+  },
+  "low_new": 31,
+  "low_total": 31,
+  "low_share": 0.262
+ },
+ {
+  "id": "6449750416",
+  "name": "Plug AI: Texting Assistant",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 178,
+  "hist": {
+   "1": 91,
+   "2": 11,
+   "3": 12,
+   "4": 9,
+   "5": 55
+  },
+  "low_new": 29,
+  "low_total": 31,
+  "low_share": 0.573
+ },
+ {
+  "id": "1432927987",
+  "name": "Salon Soft - Agenda e Sistema",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 102,
+  "hist": {
+   "1": 32,
+   "2": 7,
+   "3": 8,
+   "4": 11,
+   "5": 44
+  },
+  "low_new": 29,
+  "low_total": 29,
+  "low_share": 0.382
+ },
+ {
+  "id": "747364886",
+  "name": "シフトボード：バイトの給料計算とシフト管理",
+  "genre": "Productivity",
+  "focus": [
+   "target"
+  ],
+  "fetched": 198,
+  "hist": {
+   "1": 24,
+   "2": 22,
+   "3": 25,
+   "4": 73,
+   "5": 54
+  },
+  "low_new": 29,
+  "low_total": 29,
+  "low_share": 0.232
+ },
+ {
+  "id": "1373844471",
+  "name": "VPN Lumos: Open & Connect USA",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 284,
+  "hist": {
+   "1": 97,
+   "2": 13,
+   "3": 8,
+   "4": 6,
+   "5": 160
+  },
+  "low_new": 28,
+  "low_total": 28,
+  "low_share": 0.387
+ },
+ {
+  "id": "6448227169",
+  "name": "NoteSnap: Banknote Identifier",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 159,
+  "hist": {
+   "1": 47,
+   "2": 10,
+   "3": 24,
+   "4": 14,
+   "5": 64
+  },
+  "low_new": 28,
+  "low_total": 28,
+  "low_share": 0.358
+ },
+ {
+  "id": "1532504123",
+  "name": "My Feed・Preview for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 284,
+  "hist": {
+   "1": 121,
+   "2": 27,
+   "3": 34,
+   "4": 23,
+   "5": 79
+  },
+  "low_new": 28,
+  "low_total": 28,
+  "low_share": 0.521
+ },
+ {
+  "id": "1574719849",
+  "name": "WeiBook: Agenda y gestión",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 104,
+  "hist": {
+   "1": 46,
+   "2": 10,
+   "3": 5,
+   "4": 3,
+   "5": 40
+  },
+  "low_new": 28,
+  "low_total": 28,
+  "low_share": 0.538
+ },
+ {
+  "id": "538340426",
+  "name": "Lifebear カレンダーと手帳で予定表スケジュール管理",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 199,
+  "hist": {
+   "1": 71,
+   "2": 7,
+   "3": 17,
+   "4": 35,
+   "5": 69
+  },
+  "low_new": 28,
+  "low_total": 28,
+  "low_share": 0.392
+ },
+ {
+  "id": "945662980",
+  "name": "Storm Tracker°",
+  "genre": "Weather",
+  "focus": [],
+  "fetched": 200,
+  "hist": {
+   "1": 70,
+   "2": 19,
+   "3": 12,
+   "4": 19,
+   "5": 80
+  },
+  "low_new": 26,
+  "low_total": 26,
+  "low_share": 0.445
+ },
+ {
+  "id": "1276437113",
+  "name": "Otter Transcribe Voice Notes",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 331,
+  "hist": {
+   "1": 48,
+   "2": 25,
+   "3": 23,
+   "4": 40,
+   "5": 195
+  },
+  "low_new": 26,
+  "low_total": 28,
+  "low_share": 0.221
+ },
+ {
+  "id": "497328576",
+  "name": "Any.do: To do list & Planner",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 532,
+  "hist": {
+   "1": 151,
+   "2": 66,
+   "3": 62,
+   "4": 62,
+   "5": 191
+  },
+  "low_new": 26,
+  "low_total": 30,
+  "low_share": 0.408
+ },
+ {
+  "id": "626144601",
+  "name": "TickTick:할일 목록/스케줄 플래너/미리알림/달력",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 557,
+  "hist": {
+   "1": 20,
+   "2": 10,
+   "3": 15,
+   "4": 67,
+   "5": 445
+  },
+  "low_new": 26,
+  "low_total": 27,
+  "low_share": 0.054
+ },
+ {
+  "id": "1179744119",
+  "name": "Frameo",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 337,
+  "hist": {
+   "1": 29,
+   "2": 23,
+   "3": 39,
+   "4": 51,
+   "5": 195
+  },
+  "low_new": 25,
+  "low_total": 46,
+  "low_share": 0.154
+ },
+ {
+  "id": "300235330",
+  "name": "ASICS Runkeeper—Run Tracker",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 395,
+  "hist": {
+   "1": 54,
+   "2": 31,
+   "3": 39,
+   "4": 57,
+   "5": 214
+  },
+  "low_new": 25,
+  "low_total": 26,
+  "low_share": 0.215
+ },
+ {
+  "id": "1460579936",
+  "name": "Falou - Fast language learning",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 394,
+  "hist": {
+   "1": 35,
+   "2": 28,
+   "3": 32,
+   "4": 65,
+   "5": 234
+  },
+  "low_new": 25,
+  "low_total": 35,
+  "low_share": 0.16
+ },
+ {
+  "id": "1345983058",
+  "name": "Kyte: PDV e Estoque para Loja",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 192,
+  "hist": {
+   "1": 41,
+   "2": 15,
+   "3": 25,
+   "4": 38,
+   "5": 73
+  },
+  "low_new": 25,
+  "low_total": 25,
+  "low_share": 0.292
+ },
+ {
+  "id": "991283955",
+  "name": "TheDayBefore (디데이 위젯)",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 449,
+  "hist": {
+   "1": 28,
+   "2": 14,
+   "3": 45,
+   "4": 79,
+   "5": 283
+  },
+  "low_new": 25,
+  "low_total": 25,
+  "low_share": 0.094
+ },
+ {
+  "id": "448357306",
+  "name": "5K Runner: couch to 5K running",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 344,
+  "hist": {
+   "1": 35,
+   "2": 15,
+   "3": 18,
+   "4": 39,
+   "5": 237
+  },
+  "low_new": 24,
+  "low_total": 25,
+  "low_share": 0.145
+ },
+ {
+  "id": "1019382747",
+  "name": "Filmora: AI Video Editor&Maker",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 49,
+   "2": 15,
+   "3": 31,
+   "4": 49,
+   "5": 249
+  },
+  "low_new": 24,
+  "low_total": 28,
+  "low_share": 0.163
+ },
+ {
+  "id": "666575203",
+  "name": "GRIDS Post maker for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 585,
+  "hist": {
+   "1": 56,
+   "2": 19,
+   "3": 41,
+   "4": 89,
+   "5": 380
+  },
+  "low_new": 24,
+  "low_total": 24,
+  "low_share": 0.128
+ },
+ {
+  "id": "404990064",
+  "name": "SkyView®",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 416,
+  "hist": {
+   "1": 67,
+   "2": 20,
+   "3": 37,
+   "4": 55,
+   "5": 237
+  },
+  "low_new": 22,
+  "low_total": 23,
+  "low_share": 0.209
+ },
+ {
+  "id": "583009522",
+  "name": "CyberGhost: Safe & Private VPN",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 401,
+  "hist": {
+   "1": 62,
+   "2": 19,
+   "3": 17,
+   "4": 30,
+   "5": 273
+  },
+  "low_new": 20,
+  "low_total": 21,
+  "low_share": 0.202
+ },
+ {
+  "id": "1200776424",
+  "name": "Call Recorder for iPhone ㅤ",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 260,
+  "hist": {
+   "1": 192,
+   "2": 13,
+   "3": 9,
+   "4": 8,
+   "5": 38
+  },
+  "low_new": 20,
+  "low_total": 20,
+  "low_share": 0.788
+ },
+ {
+  "id": "1097815000",
+  "name": "Planes Live - Flight Tracker",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 278,
+  "hist": {
+   "1": 125,
+   "2": 35,
+   "3": 29,
+   "4": 15,
+   "5": 74
+  },
+  "low_new": 20,
+  "low_total": 20,
+  "low_share": 0.576
+ },
+ {
+  "id": "521633042",
+  "name": "Tinybeans Private Family Album",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 255,
+  "hist": {
+   "1": 59,
+   "2": 31,
+   "3": 27,
+   "4": 23,
+   "5": 115
+  },
+  "low_new": 20,
+  "low_total": 21,
+  "low_share": 0.353
+ },
+ {
+  "id": "749133753",
+  "name": "Clime: NOAA Weather Radar Live",
+  "genre": "Weather",
+  "focus": [],
+  "fetched": 380,
+  "hist": {
+   "1": 58,
+   "2": 31,
+   "3": 25,
+   "4": 39,
+   "5": 227
+  },
+  "low_new": 20,
+  "low_total": 30,
+  "low_share": 0.234
+ },
+ {
+  "id": "1126552896",
+  "name": "Vehicle Smart - Car Check",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 189,
+  "hist": {
+   "1": 19,
+   "2": 4,
+   "3": 3,
+   "4": 13,
+   "5": 150
+  },
+  "low_new": 19,
+  "low_total": 19,
+  "low_share": 0.122
+ },
+ {
+  "id": "381471023",
+  "name": "Flashlight Ⓞ",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 277,
+  "hist": {
+   "1": 57,
+   "2": 17,
+   "3": 16,
+   "4": 25,
+   "5": 162
+  },
+  "low_new": 19,
+  "low_total": 19,
+  "low_share": 0.267
+ },
+ {
+  "id": "1062022008",
+  "name": "LumaFusion",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 264,
+  "hist": {
+   "1": 62,
+   "2": 18,
+   "3": 27,
+   "4": 39,
+   "5": 118
+  },
+  "low_new": 19,
+  "low_total": 25,
+  "low_share": 0.303
+ },
+ {
+  "id": "871544379",
+  "name": "Homebase: Employee Scheduling",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 229,
+  "hist": {
+   "1": 34,
+   "2": 14,
+   "3": 20,
+   "4": 21,
+   "5": 140
+  },
+  "low_new": 19,
+  "low_total": 24,
+  "low_share": 0.21
+ },
+ {
+  "id": "1210179946",
+  "name": "PhotoSplit for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 299,
+  "hist": {
+   "1": 151,
+   "2": 25,
+   "3": 18,
+   "4": 17,
+   "5": 88
+  },
+  "low_new": 19,
+  "low_total": 19,
+  "low_share": 0.589
+ },
+ {
+  "id": "450527929",
+  "name": "djay - DJ App & AI Mixer",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 418,
+  "hist": {
+   "1": 36,
+   "2": 25,
+   "3": 32,
+   "4": 44,
+   "5": 281
+  },
+  "low_new": 18,
+  "low_total": 21,
+  "low_share": 0.146
+ },
+ {
+  "id": "992210239",
+  "name": "Happier Meditation",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 316,
+  "hist": {
+   "1": 27,
+   "2": 13,
+   "3": 20,
+   "4": 19,
+   "5": 237
+  },
+  "low_new": 18,
+  "low_total": 19,
+  "low_share": 0.127
+ },
+ {
+  "id": "1450752252",
+  "name": "Tua Agenda: Para Profissionais",
+  "genre": "Productivity",
+  "focus": [
+   "target"
+  ],
+  "fetched": 111,
+  "hist": {
+   "1": 11,
+   "2": 8,
+   "3": 9,
+   "4": 10,
+   "5": 73
+  },
+  "low_new": 18,
+  "low_total": 18,
+  "low_share": 0.171
+ },
+ {
+  "id": "1529825567",
+  "name": "오늘학교 - 초중고 시간표 급식",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 183,
+  "hist": {
+   "1": 27,
+   "2": 6,
+   "3": 11,
+   "4": 22,
+   "5": 117
+  },
+  "low_new": 18,
+  "low_total": 18,
+  "low_share": 0.18
+ },
+ {
+  "id": "1640383777",
+  "name": "꼬박일기 - 꼬박꼬박 일기쓰는 습관",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 267,
+  "hist": {
+   "1": 22,
+   "2": 8,
+   "3": 18,
+   "4": 33,
+   "5": 186
+  },
+  "low_new": 18,
+  "low_total": 18,
+  "low_share": 0.112
+ },
+ {
+  "id": "395107915",
+  "name": "Kuwait Prayer Times",
+  "genre": "Utilities",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 307,
+  "hist": {
+   "1": 26,
+   "2": 10,
+   "3": 16,
+   "4": 28,
+   "5": 227
+  },
+  "low_new": 17,
+  "low_total": 17,
+  "low_share": 0.117
+ },
+ {
+  "id": "627958823",
+  "name": "JusTalk - Video Chat & Calls",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 393,
+  "hist": {
+   "1": 20,
+   "2": 8,
+   "3": 35,
+   "4": 93,
+   "5": 237
+  },
+  "low_new": 17,
+  "low_total": 24,
+  "low_share": 0.071
+ },
+ {
+  "id": "379968583",
+  "name": "Busuu: Language Learning App",
+  "genre": "Education",
+  "focus": [],
+  "fetched": 419,
+  "hist": {
+   "1": 17,
+   "2": 20,
+   "3": 44,
+   "4": 79,
+   "5": 259
+  },
+  "low_new": 17,
+  "low_total": 20,
+  "low_share": 0.088
+ },
+ {
+  "id": "316793974",
+  "name": "FlightAware Flight Tracker",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 309,
+  "hist": {
+   "1": 42,
+   "2": 21,
+   "3": 18,
+   "4": 24,
+   "5": 204
+  },
+  "low_new": 17,
+  "low_total": 19,
+  "low_share": 0.204
+ },
+ {
+  "id": "1503939262",
+  "name": "Popl: AI Lead Capture",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 219,
+  "hist": {
+   "1": 35,
+   "2": 7,
+   "3": 11,
+   "4": 15,
+   "5": 151
+  },
+  "low_new": 17,
+  "low_total": 19,
+  "low_share": 0.192
+ },
+ {
+  "id": "349853799",
+  "name": "Route4Me Route Planner",
+  "genre": "Navigation",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 329,
+  "hist": {
+   "1": 57,
+   "2": 25,
+   "3": 21,
+   "4": 46,
+   "5": 180
+  },
+  "low_new": 17,
+  "low_total": 17,
+  "low_share": 0.249
+ },
+ {
+  "id": "1538243082",
+  "name": "Calendario, diario, horario",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 182,
+  "hist": {
+   "1": 35,
+   "2": 19,
+   "3": 16,
+   "4": 32,
+   "5": 80
+  },
+  "low_new": 17,
+  "low_total": 17,
+  "low_share": 0.297
+ },
+ {
+  "id": "457130897",
+  "name": "타임스프레드: 구독캘린더, 최애 일정, 시간표, 캘린더",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 188,
+  "hist": {
+   "1": 30,
+   "2": 7,
+   "3": 18,
+   "4": 32,
+   "5": 101
+  },
+  "low_new": 17,
+  "low_total": 17,
+  "low_share": 0.197
+ },
+ {
+  "id": "586106611",
+  "name": "ElaSalaty: PrayerTimes & Qibla",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 518,
+  "hist": {
+   "1": 57,
+   "2": 13,
+   "3": 28,
+   "4": 43,
+   "5": 377
+  },
+  "low_new": 16,
+  "low_total": 16,
+  "low_share": 0.135
+ },
+ {
+  "id": "1326757844",
+  "name": "Fazilet Calendar: Salāh Times",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 202,
+  "hist": {
+   "1": 43,
+   "2": 11,
+   "3": 13,
+   "4": 11,
+   "5": 124
+  },
+  "low_new": 16,
+  "low_total": 16,
+  "low_share": 0.267
+ },
+ {
+  "id": "1052970183",
+  "name": "Voloco: Vocal Recording Studio",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 321,
+  "hist": {
+   "1": 41,
+   "2": 14,
+   "3": 33,
+   "4": 48,
+   "5": 185
+  },
+  "low_new": 16,
+  "low_total": 20,
+  "low_share": 0.171
+ },
+ {
+  "id": "576588894",
+  "name": "Sky Guide",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 330,
+  "hist": {
+   "1": 19,
+   "2": 8,
+   "3": 6,
+   "4": 19,
+   "5": 278
+  },
+  "low_new": 16,
+  "low_total": 18,
+  "low_share": 0.082
+ },
+ {
+  "id": "477120941",
+  "name": "iDoceo - Planner and gradebook",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 497,
+  "hist": {
+   "1": 20,
+   "2": 15,
+   "3": 24,
+   "4": 49,
+   "5": 389
+  },
+  "low_new": 16,
+  "low_total": 16,
+  "low_share": 0.07
+ },
+ {
+  "id": "749083919",
+  "name": "Weather Live° - Local Forecast",
+  "genre": "Weather",
+  "focus": [],
+  "fetched": 391,
+  "hist": {
+   "1": 65,
+   "2": 28,
+   "3": 33,
+   "4": 45,
+   "5": 220
+  },
+  "low_new": 15,
+  "low_total": 15,
+  "low_share": 0.238
+ },
+ {
+  "id": "1014568284",
+  "name": "Planoly: Social Media Planner",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 525,
+  "hist": {
+   "1": 160,
+   "2": 52,
+   "3": 44,
+   "4": 52,
+   "5": 217
+  },
+  "low_new": 15,
+  "low_total": 15,
+  "low_share": 0.404
+ },
+ {
+  "id": "1636538135",
+  "name": "Sponte Agenda Plus",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 69,
+  "hist": {
+   "1": 31,
+   "2": 9,
+   "3": 8,
+   "4": 0,
+   "5": 21
+  },
+  "low_new": 15,
+  "low_total": 15,
+  "low_share": 0.58
+ },
+ {
+  "id": "1454509502",
+  "name": "Azkar - اذكار : Athan & Prayer",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 425,
+  "hist": {
+   "1": 21,
+   "2": 11,
+   "3": 24,
+   "4": 26,
+   "5": 343
+  },
+  "low_new": 14,
+  "low_total": 15,
+  "low_share": 0.075
+ },
+ {
+  "id": "6748598501",
+  "name": "Compass App - Qibla finder",
+  "genre": "Navigation",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 15,
+  "hist": {
+   "1": 14,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 1
+  },
+  "low_new": 14,
+  "low_total": 17,
+  "low_share": 0.933
+ },
+ {
+  "id": "1538019085",
+  "name": "Jacquie Lawson Ecards",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 392,
+  "hist": {
+   "1": 15,
+   "2": 6,
+   "3": 13,
+   "4": 32,
+   "5": 326
+  },
+  "low_new": 14,
+  "low_total": 14,
+  "low_share": 0.054
+ },
+ {
+  "id": "1536589530",
+  "name": "Chefs Plate: Easy Meal Planner",
+  "genre": "Food & Drink",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 102,
+  "hist": {
+   "1": 59,
+   "2": 6,
+   "3": 10,
+   "4": 6,
+   "5": 21
+  },
+  "low_new": 14,
+  "low_total": 14,
+  "low_share": 0.637
+ },
+ {
+  "id": "6444851827",
+  "name": "Across: 캘린더, 내 일정 도구",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 369,
+  "hist": {
+   "1": 19,
+   "2": 9,
+   "3": 18,
+   "4": 50,
+   "5": 273
+  },
+  "low_new": 14,
+  "low_total": 14,
+  "low_share": 0.076
+ },
+ {
+  "id": "349447615",
+  "name": "CamCard AI Business Assistant",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 248,
+  "hist": {
+   "1": 86,
+   "2": 27,
+   "3": 19,
+   "4": 23,
+   "5": 93
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.456
+ },
+ {
+  "id": "883625430",
+  "name": "Planet Rock",
+  "genre": "Music",
+  "focus": [],
+  "fetched": 143,
+  "hist": {
+   "1": 19,
+   "2": 11,
+   "3": 14,
+   "4": 9,
+   "5": 90
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.21
+ },
+ {
+  "id": "1548135477",
+  "name": "TikSave - Save TikTok Video",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 274,
+  "hist": {
+   "1": 115,
+   "2": 14,
+   "3": 9,
+   "4": 7,
+   "5": 129
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.471
+ },
+ {
+  "id": "650684932",
+  "name": "OBD Fusion",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 228,
+  "hist": {
+   "1": 55,
+   "2": 13,
+   "3": 16,
+   "4": 33,
+   "5": 111
+  },
+  "low_new": 13,
+  "low_total": 14,
+  "low_share": 0.298
+ },
+ {
+  "id": "325955298",
+  "name": "Life Bible App",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 333,
+  "hist": {
+   "1": 21,
+   "2": 12,
+   "3": 14,
+   "4": 29,
+   "5": 257
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.099
+ },
+ {
+  "id": "933921849",
+  "name": "Message from Santa® call&video",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 277,
+  "hist": {
+   "1": 35,
+   "2": 14,
+   "3": 21,
+   "4": 38,
+   "5": 169
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.177
+ },
+ {
+  "id": "284220417",
+  "name": "Currency",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 256,
+  "hist": {
+   "1": 31,
+   "2": 11,
+   "3": 13,
+   "4": 20,
+   "5": 181
+  },
+  "low_new": 13,
+  "low_total": 14,
+  "low_share": 0.164
+ },
+ {
+  "id": "1248966041",
+  "name": "SmartWOD Timer – Reloj WOD",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 447,
+  "hist": {
+   "1": 24,
+   "2": 14,
+   "3": 26,
+   "4": 37,
+   "5": 346
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.085
+ },
+ {
+  "id": "988424260",
+  "name": "디데이 카운트°",
+  "genre": "Utilities",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 408,
+  "hist": {
+   "1": 36,
+   "2": 25,
+   "3": 39,
+   "4": 66,
+   "5": 242
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.15
+ },
+ {
+  "id": "1176935129",
+  "name": "DAILY NOTE - 하루 메모 일기장",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 416,
+  "hist": {
+   "1": 23,
+   "2": 8,
+   "3": 26,
+   "4": 55,
+   "5": 304
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.075
+ },
+ {
+  "id": "1116889464",
+  "name": "The Couple - 기념일 · 디데이 · 커플 기록",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 463,
+  "hist": {
+   "1": 12,
+   "2": 11,
+   "3": 33,
+   "4": 75,
+   "5": 332
+  },
+  "low_new": 13,
+  "low_total": 13,
+  "low_share": 0.05
+ },
+ {
+  "id": "6739181227",
+  "name": "Minhaj | منهاج",
+  "genre": "Book",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 61,
+  "hist": {
+   "1": 12,
+   "2": 0,
+   "3": 2,
+   "4": 3,
+   "5": 44
+  },
+  "low_new": 12,
+  "low_total": 13,
+  "low_share": 0.197
+ },
+ {
+  "id": "1055281310",
+  "name": "Philips Hue",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 300,
+  "hist": {
+   "1": 37,
+   "2": 15,
+   "3": 17,
+   "4": 27,
+   "5": 204
+  },
+  "low_new": 12,
+  "low_total": 26,
+  "low_share": 0.173
+ },
+ {
+  "id": "1517946671",
+  "name": "Webfic-Make Reading Fantastic",
+  "genre": "Book",
+  "focus": [],
+  "fetched": 331,
+  "hist": {
+   "1": 71,
+   "2": 22,
+   "3": 32,
+   "4": 47,
+   "5": 159
+  },
+  "low_new": 12,
+  "low_total": 12,
+  "low_share": 0.281
+ },
+ {
+  "id": "517914548",
+  "name": "Dashlane Password Manager",
+  "genre": "Productivity",
+  "focus": [],
+  "fetched": 397,
+  "hist": {
+   "1": 45,
+   "2": 17,
+   "3": 14,
+   "4": 30,
+   "5": 291
+  },
+  "low_new": 12,
+  "low_total": 23,
+  "low_share": 0.156
+ },
+ {
+  "id": "543577420",
+  "name": "PhotoGrid: Video Collage Maker",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 582,
+  "hist": {
+   "1": 41,
+   "2": 16,
+   "3": 19,
+   "4": 46,
+   "5": 460
+  },
+  "low_new": 12,
+  "low_total": 13,
+  "low_share": 0.098
+ },
+ {
+  "id": "784907999",
+  "name": "Later: Social Media Scheduler",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 229,
+  "hist": {
+   "1": 108,
+   "2": 32,
+   "3": 32,
+   "4": 17,
+   "5": 40
+  },
+  "low_new": 12,
+  "low_total": 12,
+  "low_share": 0.611
+ },
+ {
+  "id": "977552680",
+  "name": "Paper Planner, Diary, Calendar",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 151,
+  "hist": {
+   "1": 25,
+   "2": 9,
+   "3": 11,
+   "4": 18,
+   "5": 88
+  },
+  "low_new": 12,
+  "low_total": 12,
+  "low_share": 0.225
+ },
+ {
+  "id": "1669413773",
+  "name": "LazyFit: Workout For Beginners",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 390,
+  "hist": {
+   "1": 9,
+   "2": 10,
+   "3": 20,
+   "4": 44,
+   "5": 307
+  },
+  "low_new": 11,
+  "low_total": 11,
+  "low_share": 0.049
+ },
+ {
+  "id": "1092957825",
+  "name": "منومعاي: اسم المتصل ورقم ثاني",
+  "genre": "Social Networking",
+  "focus": [],
+  "fetched": 401,
+  "hist": {
+   "1": 92,
+   "2": 9,
+   "3": 7,
+   "4": 9,
+   "5": 284
+  },
+  "low_new": 11,
+  "low_total": 11,
+  "low_share": 0.252
+ },
+ {
+  "id": "1490587079",
+  "name": "Glorify: Devotional & Prayer",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 333,
+  "hist": {
+   "1": 19,
+   "2": 14,
+   "3": 17,
+   "4": 20,
+   "5": 263
+  },
+  "low_new": 11,
+  "low_total": 11,
+  "low_share": 0.099
+ },
+ {
+  "id": "571588936",
+  "name": "Planner Pro - Daily Planner",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 395,
+  "hist": {
+   "1": 39,
+   "2": 26,
+   "3": 38,
+   "4": 71,
+   "5": 221
+  },
+  "low_new": 11,
+  "low_total": 12,
+  "low_share": 0.165
+ },
+ {
+  "id": "1456241316",
+  "name": "데이스탬프 - 좋은 습관, 루틴 쉽게 만들기",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 242,
+  "hist": {
+   "1": 24,
+   "2": 10,
+   "3": 15,
+   "4": 41,
+   "5": 152
+  },
+  "low_new": 11,
+  "low_total": 11,
+  "low_share": 0.14
+ },
+ {
+  "id": "1255711035",
+  "name": "#Bible - Verse of the Day",
+  "genre": "Reference",
+  "focus": [],
+  "fetched": 365,
+  "hist": {
+   "1": 11,
+   "2": 6,
+   "3": 11,
+   "4": 17,
+   "5": 320
+  },
+  "low_new": 10,
+  "low_total": 12,
+  "low_share": 0.047
+ },
+ {
+  "id": "422154977",
+  "name": "Meet Mobile: Swim",
+  "genre": "Sports",
+  "focus": [],
+  "fetched": 103,
+  "hist": {
+   "1": 54,
+   "2": 12,
+   "3": 7,
+   "4": 6,
+   "5": 24
+  },
+  "low_new": 10,
+  "low_total": 42,
+  "low_share": 0.641
+ },
+ {
+  "id": "557745942",
+  "name": "24me Smart Personal Assistant",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 342,
+  "hist": {
+   "1": 41,
+   "2": 21,
+   "3": 26,
+   "4": 73,
+   "5": 181
+  },
+  "low_new": 10,
+  "low_total": 10,
+  "low_share": 0.181
+ },
+ {
+  "id": "892355414",
+  "name": "Inoreader: News & RSS reader",
+  "genre": "News",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 207,
+  "hist": {
+   "1": 42,
+   "2": 12,
+   "3": 23,
+   "4": 28,
+   "5": 102
+  },
+  "low_new": 10,
+  "low_total": 10,
+  "low_share": 0.261
+ },
+ {
+  "id": "1168323403",
+  "name": "ToDoリスト リマインダー通知付きのメモ帳&やることリスト",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 191,
+  "hist": {
+   "1": 21,
+   "2": 9,
+   "3": 12,
+   "4": 44,
+   "5": 105
+  },
+  "low_new": 10,
+  "low_total": 10,
+  "low_share": 0.157
+ },
+ {
+  "id": "1095535226",
+  "name": "DAYBOX",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 173,
+  "hist": {
+   "1": 28,
+   "2": 4,
+   "3": 12,
+   "4": 10,
+   "5": 119
+  },
+  "low_new": 10,
+  "low_total": 10,
+  "low_share": 0.185
+ },
+ {
+  "id": "1447056625",
+  "name": "Namaz App: Learn Salah Prayer",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 348,
+  "hist": {
+   "1": 7,
+   "2": 5,
+   "3": 14,
+   "4": 19,
+   "5": 303
+  },
+  "low_new": 9,
+  "low_total": 10,
+  "low_share": 0.034
+ },
+ {
+  "id": "1351866913",
+  "name": "Smart Quran",
+  "genre": "Book",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 130,
+  "hist": {
+   "1": 15,
+   "2": 17,
+   "3": 30,
+   "4": 30,
+   "5": 38
+  },
+  "low_new": 9,
+  "low_total": 9,
+  "low_share": 0.246
+ },
+ {
+  "id": "1254875992",
+  "name": "Lightleap by Lightricks",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 289,
+  "hist": {
+   "1": 88,
+   "2": 22,
+   "3": 53,
+   "4": 31,
+   "5": 95
+  },
+  "low_new": 9,
+  "low_total": 9,
+  "low_share": 0.381
+ },
+ {
+  "id": "1457844741",
+  "name": "Pontotel Gestão",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 98,
+  "hist": {
+   "1": 44,
+   "2": 4,
+   "3": 7,
+   "4": 4,
+   "5": 39
+  },
+  "low_new": 9,
+  "low_total": 9,
+  "low_share": 0.49
+ },
+ {
+  "id": "1047462806",
+  "name": "みんチャレ-習慣化で目標達成～ダイエットや禁酒・禁煙を継続",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 196,
+  "hist": {
+   "1": 25,
+   "2": 15,
+   "3": 13,
+   "4": 27,
+   "5": 116
+  },
+  "low_new": 9,
+  "low_total": 9,
+  "low_share": 0.204
+ },
+ {
+  "id": "1479583573",
+  "name": "Prayer Times - Azan Alarm",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 180,
+  "hist": {
+   "1": 31,
+   "2": 17,
+   "3": 6,
+   "4": 9,
+   "5": 117
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.267
+ },
+ {
+  "id": "1215221442",
+  "name": "Ezan Vakti Namaz Zamanı",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 83,
+  "hist": {
+   "1": 13,
+   "2": 8,
+   "3": 1,
+   "4": 7,
+   "5": 54
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.253
+ },
+ {
+  "id": "1546488743",
+  "name": "Hilal: TV-Content, Athan-Qibla",
+  "genre": "Entertainment",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 184,
+  "hist": {
+   "1": 68,
+   "2": 13,
+   "3": 19,
+   "4": 12,
+   "5": 72
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.44
+ },
+ {
+  "id": "1546156891",
+  "name": "Heartify: Heart Health Monitor",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 242,
+  "hist": {
+   "1": 99,
+   "2": 11,
+   "3": 14,
+   "4": 17,
+   "5": 101
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.455
+ },
+ {
+  "id": "1106201141",
+  "name": "Plann: Preview for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 470,
+  "hist": {
+   "1": 148,
+   "2": 56,
+   "3": 38,
+   "4": 27,
+   "5": 201
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.434
+ },
+ {
+  "id": "1464216437",
+  "name": "ifPonto Cell",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 104,
+  "hist": {
+   "1": 21,
+   "2": 2,
+   "3": 6,
+   "4": 12,
+   "5": 63
+  },
+  "low_new": 8,
+  "low_total": 8,
+  "low_share": 0.221
+ },
+ {
+  "id": "1381145375",
+  "name": "Quranic: Quran Arabic Learning",
+  "genre": "Education",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 271,
+  "hist": {
+   "1": 10,
+   "2": 9,
+   "3": 14,
+   "4": 33,
+   "5": 205
+  },
+  "low_new": 7,
+  "low_total": 7,
+  "low_share": 0.07
+ },
+ {
+  "id": "668210239",
+  "name": "feeder.co - RSS Feed Reader",
+  "genre": "News",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 68,
+  "hist": {
+   "1": 27,
+   "2": 7,
+   "3": 8,
+   "4": 6,
+   "5": 20
+  },
+  "low_new": 7,
+  "low_total": 7,
+  "low_share": 0.5
+ },
+ {
+  "id": "362375140",
+  "name": "Phonegram - Tech News & Tools",
+  "genre": "News",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 385,
+  "hist": {
+   "1": 35,
+   "2": 0,
+   "3": 4,
+   "4": 30,
+   "5": 316
+  },
+  "low_new": 6,
+  "low_total": 6,
+  "low_share": 0.091
+ },
+ {
+  "id": "570748340",
+  "name": "Split Pic Collage Maker Layout",
+  "genre": "Graphics & Design",
+  "focus": [],
+  "fetched": 278,
+  "hist": {
+   "1": 36,
+   "2": 9,
+   "3": 12,
+   "4": 38,
+   "5": 183
+  },
+  "low_new": 6,
+  "low_total": 6,
+  "low_share": 0.162
+ },
+ {
+  "id": "1466169815",
+  "name": "2nd1st - Truth, News & Social",
+  "genre": "News",
+  "focus": [],
+  "fetched": 199,
+  "hist": {
+   "1": 51,
+   "2": 7,
+   "3": 12,
+   "4": 12,
+   "5": 117
+  },
+  "low_new": 6,
+  "low_total": 6,
+  "low_share": 0.291
+ },
+ {
+  "id": "1491951412",
+  "name": "Gendo Profissionais",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 102,
+  "hist": {
+   "1": 23,
+   "2": 8,
+   "3": 11,
+   "4": 10,
+   "5": 50
+  },
+  "low_new": 6,
+  "low_total": 6,
+  "low_share": 0.304
+ },
+ {
+  "id": "1134843005",
+  "name": "Tabata Timer □ Cronometro",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 238,
+  "hist": {
+   "1": 29,
+   "2": 14,
+   "3": 19,
+   "4": 17,
+   "5": 159
+  },
+  "low_new": 6,
+  "low_total": 6,
+  "low_share": 0.181
+ },
+ {
+  "id": "1547002158",
+  "name": "Tarateel AlQuran تراتيل القرآن",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 239,
+  "hist": {
+   "1": 5,
+   "2": 1,
+   "3": 3,
+   "4": 10,
+   "5": 220
+  },
+  "low_new": 5,
+  "low_total": 6,
+  "low_share": 0.025
+ },
+ {
+  "id": "1602490524",
+  "name": "5te5 Prayer Tracker",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 176,
+  "hist": {
+   "1": 7,
+   "2": 3,
+   "3": 7,
+   "4": 10,
+   "5": 149
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.057
+ },
+ {
+  "id": "1564193427",
+  "name": "Prayer times & اوقات الصلاة",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 76,
+  "hist": {
+   "1": 11,
+   "2": 2,
+   "3": 4,
+   "4": 4,
+   "5": 55
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.171
+ },
+ {
+  "id": "1557466684",
+  "name": "Prayer Times & Qibla",
+  "genre": "Utilities",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 102,
+  "hist": {
+   "1": 16,
+   "2": 6,
+   "3": 5,
+   "4": 3,
+   "5": 72
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.216
+ },
+ {
+  "id": "1361356590",
+  "name": "Balance: Meditation & Sleep",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 390,
+  "hist": {
+   "1": 14,
+   "2": 5,
+   "3": 6,
+   "4": 24,
+   "5": 341
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.049
+ },
+ {
+  "id": "1241264761",
+  "name": "iTranslate Converse",
+  "genre": "Travel",
+  "focus": [],
+  "fetched": 260,
+  "hist": {
+   "1": 115,
+   "2": 24,
+   "3": 19,
+   "4": 24,
+   "5": 78
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.535
+ },
+ {
+  "id": "1379890385",
+  "name": "MarQHR - Sistema de RH",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 34,
+  "hist": {
+   "1": 13,
+   "2": 3,
+   "3": 3,
+   "4": 1,
+   "5": 14
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.471
+ },
+ {
+  "id": "973130201",
+  "name": "Be Focused – Pomodoro Timer",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 365,
+  "hist": {
+   "1": 10,
+   "2": 15,
+   "3": 19,
+   "4": 49,
+   "5": 272
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.068
+ },
+ {
+  "id": "1564645368",
+  "name": "シンプル日記・シンプルで使いやすい日記アプリ",
+  "genre": "Utilities",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 153,
+  "hist": {
+   "1": 8,
+   "2": 7,
+   "3": 8,
+   "4": 23,
+   "5": 107
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.098
+ },
+ {
+  "id": "1623780682",
+  "name": "my nicca - 目標達成のためのシンプル習慣化アプリ",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 110,
+  "hist": {
+   "1": 12,
+   "2": 11,
+   "3": 18,
+   "4": 32,
+   "5": 37
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.209
+ },
+ {
+  "id": "1603782312",
+  "name": "SNS風日記・メモ帳 シークログ - 秘密の独り言や推し活",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 185,
+  "hist": {
+   "1": 5,
+   "2": 0,
+   "3": 8,
+   "4": 37,
+   "5": 135
+  },
+  "low_new": 5,
+  "low_total": 5,
+  "low_share": 0.027
+ },
+ {
+  "id": "454430015",
+  "name": "Dua & Azkar",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 582,
+  "hist": {
+   "1": 3,
+   "2": 2,
+   "3": 2,
+   "4": 30,
+   "5": 545
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.009
+ },
+ {
+  "id": "1669712591",
+  "name": "Al Quran - القران الكريم",
+  "genre": "Book",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 85,
+  "hist": {
+   "1": 12,
+   "2": 3,
+   "3": 1,
+   "4": 5,
+   "5": 64
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.176
+ },
+ {
+  "id": "6782209753",
+  "name": "منار | Manar",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 179,
+  "hist": {
+   "1": 3,
+   "2": 1,
+   "3": 2,
+   "4": 6,
+   "5": 167
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.022
+ },
+ {
+  "id": "1221258181",
+  "name": "Fatih Çollak ile Kur'an Işığı",
+  "genre": "Education",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 103,
+  "hist": {
+   "1": 25,
+   "2": 7,
+   "3": 10,
+   "4": 10,
+   "5": 51
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.311
+ },
+ {
+  "id": "628215241",
+  "name": "Punchbowl: Invitations & Cards",
+  "genre": "Lifestyle",
+  "focus": [],
+  "fetched": 224,
+  "hist": {
+   "1": 21,
+   "2": 10,
+   "3": 22,
+   "4": 29,
+   "5": 142
+  },
+  "low_new": 4,
+  "low_total": 6,
+  "low_share": 0.138
+ },
+ {
+  "id": "6465173251",
+  "name": "AI Phone:Call&Voice Translator",
+  "genre": "Utilities",
+  "focus": [],
+  "fetched": 27,
+  "hist": {
+   "1": 15,
+   "2": 1,
+   "3": 0,
+   "4": 1,
+   "5": 10
+  },
+  "low_new": 4,
+  "low_total": 37,
+  "low_share": 0.593
+ },
+ {
+  "id": "1192303985",
+  "name": "Grid Post: Pic Collage Editor",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 195,
+  "hist": {
+   "1": 55,
+   "2": 14,
+   "3": 12,
+   "4": 12,
+   "5": 102
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.354
+ },
+ {
+  "id": "1485713642",
+  "name": "Minha Agenda pra profissionais",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 126,
+  "hist": {
+   "1": 2,
+   "2": 4,
+   "3": 5,
+   "4": 21,
+   "5": 94
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.048
+ },
+ {
+  "id": "976019182",
+  "name": "AT - 보이는 디데이",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 310,
+  "hist": {
+   "1": 38,
+   "2": 21,
+   "3": 31,
+   "4": 59,
+   "5": 161
+  },
+  "low_new": 4,
+  "low_total": 4,
+  "low_share": 0.19
+ },
+ {
+  "id": "994433242",
+  "name": "Salah Times (Prayer Times)",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 122,
+  "hist": {
+   "1": 2,
+   "2": 4,
+   "3": 3,
+   "4": 9,
+   "5": 104
+  },
+  "low_new": 3,
+  "low_total": 4,
+  "low_share": 0.049
+ },
+ {
+  "id": "385990290",
+  "name": "تطبيق القرآن الكريم",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 573,
+  "hist": {
+   "1": 32,
+   "2": 10,
+   "3": 22,
+   "4": 96,
+   "5": 413
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.073
+ },
+ {
+  "id": "1020444082",
+  "name": "1Muslim: Islamic Prayer Times",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 90,
+  "hist": {
+   "1": 13,
+   "2": 3,
+   "3": 2,
+   "4": 10,
+   "5": 62
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.178
+ },
+ {
+  "id": "1006639052",
+  "name": "Add Background Music To Video",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 271,
+  "hist": {
+   "1": 96,
+   "2": 26,
+   "3": 22,
+   "4": 24,
+   "5": 103
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.45
+ },
+ {
+  "id": "661034398",
+  "name": "Sneaker Crush - Release Dates",
+  "genre": "Shopping",
+  "focus": [],
+  "fetched": 136,
+  "hist": {
+   "1": 25,
+   "2": 3,
+   "3": 5,
+   "4": 15,
+   "5": 88
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.206
+ },
+ {
+  "id": "1215348056",
+  "name": "Plan to Eat",
+  "genre": "Food & Drink",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 353,
+  "hist": {
+   "1": 3,
+   "2": 5,
+   "3": 9,
+   "4": 16,
+   "5": 320
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.023
+ },
+ {
+  "id": "1135683789",
+  "name": "Agenda: Planejador Diário",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 235,
+  "hist": {
+   "1": 17,
+   "2": 7,
+   "3": 13,
+   "4": 28,
+   "5": 170
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.102
+ },
+ {
+  "id": "1531898009",
+  "name": "Pontotel BatePonto",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 37,
+  "hist": {
+   "1": 18,
+   "2": 2,
+   "3": 1,
+   "4": 0,
+   "5": 16
+  },
+  "low_new": 3,
+  "low_total": 3,
+  "low_share": 0.541
+ },
+ {
+  "id": "1642460811",
+  "name": "القرآن الكريم المصحف بدون نت",
+  "genre": "Book",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 40,
+  "hist": {
+   "1": 1,
+   "2": 1,
+   "3": 4,
+   "4": 1,
+   "5": 33
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.05
+ },
+ {
+  "id": "6451255387",
+  "name": "الاصدار الحديث للاتصالات",
+  "genre": "Shopping",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 100,
+  "hist": {
+   "1": 12,
+   "2": 1,
+   "3": 2,
+   "4": 4,
+   "5": 81
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.13
+ },
+ {
+  "id": "1397834699",
+  "name": "Video to Live Wallpapers Maker",
+  "genre": "Photo & Video",
+  "focus": [],
+  "fetched": 136,
+  "hist": {
+   "1": 93,
+   "2": 15,
+   "3": 8,
+   "4": 5,
+   "5": 15
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.794
+ },
+ {
+  "id": "1482754577",
+  "name": "Keto Cycle: Keto Diet App",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 260,
+  "hist": {
+   "1": 143,
+   "2": 25,
+   "3": 11,
+   "4": 17,
+   "5": 64
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.646
+ },
+ {
+  "id": "1215301573",
+  "name": "Home Fitness for Weight Loss",
+  "genre": "Health & Fitness",
+  "focus": [],
+  "fetched": 247,
+  "hist": {
+   "1": 58,
+   "2": 12,
+   "3": 24,
+   "4": 29,
+   "5": 124
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.283
+ },
+ {
+  "id": "1474744889",
+  "name": "Flit",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 21,
+  "hist": {
+   "1": 8,
+   "2": 1,
+   "3": 0,
+   "4": 2,
+   "5": 10
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.429
+ },
+ {
+  "id": "1256319392",
+  "name": "Temporizador HIIT | Cero",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 174,
+  "hist": {
+   "1": 9,
+   "2": 4,
+   "3": 7,
+   "4": 9,
+   "5": 145
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.075
+ },
+ {
+  "id": "1554256831",
+  "name": "Interval Timer Plus",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 324,
+  "hist": {
+   "1": 6,
+   "2": 1,
+   "3": 6,
+   "4": 15,
+   "5": 296
+  },
+  "low_new": 2,
+  "low_total": 2,
+  "low_share": 0.022
+ },
+ {
+  "id": "1587151803",
+  "name": "Prayer Times: Athan Pro Muslim",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 66,
+  "hist": {
+   "1": 21,
+   "2": 6,
+   "3": 1,
+   "4": 2,
+   "5": 36
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.409
+ },
+ {
+  "id": "1136011989",
+  "name": "Quran Progress",
+  "genre": "Education",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 311,
+  "hist": {
+   "1": 2,
+   "2": 1,
+   "3": 3,
+   "4": 17,
+   "5": 288
+  },
+  "low_new": 1,
+  "low_total": 2,
+  "low_share": 0.01
+ },
+ {
+  "id": "1114371028",
+  "name": "Quran Bahasa Melayu",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 72,
+  "hist": {
+   "1": 17,
+   "2": 7,
+   "3": 11,
+   "4": 6,
+   "5": 31
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.333
+ },
+ {
+  "id": "560444328",
+  "name": "Qibla Compass",
+  "genre": "Navigation",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 348,
+  "hist": {
+   "1": 23,
+   "2": 7,
+   "3": 9,
+   "4": 22,
+   "5": 287
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.086
+ },
+ {
+  "id": "6756227351",
+  "name": "Quranify: Quran Audio Player",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 139,
+  "hist": {
+   "1": 1,
+   "2": 0,
+   "3": 0,
+   "4": 4,
+   "5": 134
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.007
+ },
+ {
+  "id": "330247123",
+  "name": "Sun Seeker - Sunlight Tracker",
+  "genre": "Navigation",
+  "focus": [],
+  "fetched": 135,
+  "hist": {
+   "1": 20,
+   "2": 4,
+   "3": 4,
+   "4": 13,
+   "5": 94
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.178
+ },
+ {
+  "id": "1522421913",
+  "name": "Camera Scanner - PDF",
+  "genre": "Business",
+  "focus": [],
+  "fetched": 93,
+  "hist": {
+   "1": 69,
+   "2": 6,
+   "3": 7,
+   "4": 1,
+   "5": 10
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.806
+ },
+ {
+  "id": "1380833056",
+  "name": "Dropout",
+  "genre": "Entertainment",
+  "focus": [],
+  "fetched": 395,
+  "hist": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 26,
+   "5": 363
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.01
+ },
+ {
+  "id": "1446828002",
+  "name": "InCollage - Collage Maker",
+  "genre": "Photo & Video",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 196,
+  "hist": {
+   "1": 5,
+   "2": 2,
+   "3": 7,
+   "4": 26,
+   "5": 156
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.036
+ },
+ {
+  "id": "1047085726",
+  "name": "簡単入力!!「タイムシート」",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 101,
+  "hist": {
+   "1": 36,
+   "2": 7,
+   "3": 27,
+   "4": 19,
+   "5": 12
+  },
+  "low_new": 1,
+  "low_total": 1,
+  "low_share": 0.426
+ },
+ {
+  "id": "699398541",
+  "name": "Daily Prayers for Muslim",
+  "genre": "Reference",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 117,
+  "hist": {
+   "1": 2,
+   "2": 0,
+   "3": 1,
+   "4": 7,
+   "5": 107
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.017
+ },
+ {
+  "id": "1541395117",
+  "name": "Lamalif Qur'an & Tajweed",
+  "genre": "Education",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 185,
+  "hist": {
+   "1": 2,
+   "2": 0,
+   "3": 0,
+   "4": 5,
+   "5": 178
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.011
+ },
+ {
+  "id": "564234167",
+  "name": "My Prayer: prayer times adhan alarm & Qibla Azkar",
+  "genre": "Utilities",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 304,
+  "hist": {
+   "1": 53,
+   "2": 15,
+   "3": 21,
+   "4": 33,
+   "5": 182
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.224
+ },
+ {
+  "id": "1240172616",
+  "name": "برنامج المؤذن مواقيت الصلاة",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 26,
+  "hist": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 1,
+   "5": 19
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.154
+ },
+ {
+  "id": "892285446",
+  "name": "اذكار فارس عباد ادعية الصباح و المساء صوت الشيخ",
+  "genre": "Lifestyle",
+  "focus": [
+   "islamic"
+  ],
+  "fetched": 102,
+  "hist": {
+   "1": 3,
+   "2": 1,
+   "3": 7,
+   "4": 6,
+   "5": 85
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.039
+ },
+ {
+  "id": "1562559674",
+  "name": "Curated: Planner for Instagram",
+  "genre": "Photo & Video",
+  "focus": [
+   "target"
+  ],
+  "fetched": 9,
+  "hist": {
+   "1": 0,
+   "2": 0,
+   "3": 1,
+   "4": 3,
+   "5": 5
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.0
+ },
+ {
+  "id": "303490844",
+  "name": "myHomework Student Planner",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 353,
+  "hist": {
+   "1": 24,
+   "2": 14,
+   "3": 36,
+   "4": 79,
+   "5": 200
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.108
+ },
+ {
+  "id": "578246316",
+  "name": "The Grid - Calendar",
+  "genre": "Productivity",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 131,
+  "hist": {
+   "1": 14,
+   "2": 3,
+   "3": 21,
+   "4": 29,
+   "5": 64
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.13
+ },
+ {
+  "id": "1521982746",
+  "name": "Working Timer - Timesheet",
+  "genre": "Productivity",
+  "focus": [
+   "target"
+  ],
+  "fetched": 2,
+  "hist": {
+   "1": 2,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 1.0
+ },
+ {
+  "id": "616033718",
+  "name": "Temporizador!",
+  "genre": "Utilities",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 126,
+  "hist": {
+   "1": 12,
+   "2": 4,
+   "3": 12,
+   "4": 34,
+   "5": 64
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.127
+ },
+ {
+  "id": "1255964203",
+  "name": "Tabata Timer: Interval Timer.",
+  "genre": "Health & Fitness",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 896,
+  "hist": {
+   "1": 3,
+   "2": 4,
+   "3": 5,
+   "4": 75,
+   "5": 809
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.008
+ },
+ {
+  "id": "1497457251",
+  "name": "Fulltan - 時間割アプリ",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 100,
+  "hist": {
+   "1": 5,
+   "2": 5,
+   "3": 19,
+   "4": 25,
+   "5": 46
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.1
+ },
+ {
+  "id": "1291693319",
+  "name": "大学生の時間割",
+  "genre": "Education",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 105,
+  "hist": {
+   "1": 15,
+   "2": 7,
+   "3": 19,
+   "4": 33,
+   "5": 31
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.21
+ },
+ {
+  "id": "1193470170",
+  "name": "簡単入力!!「シフト管理」バイトの給料計算と勤怠管理",
+  "genre": "Business",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 101,
+  "hist": {
+   "1": 22,
+   "2": 15,
+   "3": 22,
+   "4": 25,
+   "5": 17
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.366
+ },
+ {
+  "id": "1256888199",
+  "name": "D-Day 깔끔하고 아름다운 디데이 위젯",
+  "genre": "Lifestyle",
+  "focus": [
+   "target-competitor"
+  ],
+  "fetched": 123,
+  "hist": {
+   "1": 41,
+   "2": 9,
+   "3": 14,
+   "4": 24,
+   "5": 35
+  },
+  "low_new": 0,
+  "low_total": 0,
+  "low_share": 0.407
+ }
+]

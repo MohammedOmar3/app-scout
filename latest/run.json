@@ -1,0 +1,205 @@
+{
+ "date": "2026-11-14",
+ "mode": "daily",
+ "status": "ok",
+ "finished": "2026-11-14T01:42:34+00:00",
+ "plan_minutes": 11.1,
+ "phase_minutes": {
+  "charts": 6.1,
+  "focus+lookup": 4.9
+ },
+ "partial": true,
+ "category_storefronts_today": [
+  "us",
+  "gb",
+  "cv",
+  "st",
+  "ly",
+  "iq",
+  "ye",
+  "tj",
+  "tm",
+  "kg"
+ ],
+ "feeds": {
+  "free/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "grossing/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "paid": {
+   "ok": 107,
+   "empty": 36,
+   "skipped": 31
+  },
+  "free": {
+   "ok": 114,
+   "empty": 29,
+   "skipped": 31
+  },
+  "grossing": {
+   "ok": 106,
+   "empty": 37,
+   "skipped": 31
+  }
+ },
+ "unique_chart_apps": 13534,
+ "eligible_candidates": 7796,
+ "carried_candidates": 2027,
+ "targets": null,
+ "terms": null,
+ "queued": 250,
+ "shards": 3,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 84,
+   "apps_scanned": 83,
+   "reviews_fetched": 23833,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 7.3,
+   "requests": 723,
+   "failures": 0
+  },
+  {
+   "shard": 1,
+   "apps_queued": 83,
+   "apps_scanned": 83,
+   "reviews_fetched": 26242,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 6.9,
+   "requests": 681,
+   "failures": 0
+  },
+  {
+   "shard": 2,
+   "apps_queued": 83,
+   "apps_scanned": 83,
+   "reviews_fetched": 29245,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 7.2,
+   "requests": 728,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 249,
+ "reviews_fetched": 79320,
+ "low_star_kept": 14492,
+ "review_files": 2511,
+ "requests": 2767,
+ "failures": 99,
+ "http_status": {
+  "chart-legacy 200": 418,
+  "chart-legacy 403": 99,
+  "focus-islamic 200": 70,
+  "lookup 200": 48,
+  "canary 200": 3,
+  "canary ok": 3,
+  "reviews 200": 2129,
+  "reviews mostrecent p1 ok": 621,
+  "reviews mosthelpful p1 ok": 620,
+  "reviews mostrecent p2 ok": 314,
+  "reviews mosthelpful p2 ok": 478,
+  "reviews mostrecent p1 empty": 93,
+  "reviews mosthelpful p1 empty": 1,
+  "reviews mostrecent p2 empty": 1,
+  "reviews mosthelpful p2 empty": 1
+ },
+ "error_samples": [],
+ "log": [
+  "[01:29:48] charts: 962 feeds, 12586 unique apps, category storefronts today: us,gb,cv,st,ly,iq,ye,tj,tm,kg",
+  "[01:29:48] charts: stopped early (time budget or 403 breaker) - continuing with what we have",
+  "[01:32:42] focus 'islamic': 995 apps found by search",
+  "[01:34:44] lookup: 912 needed, 75 not in US store, cache size 38890",
+  "[01:34:44] plan: 7796 candidates (2027 carried over), queue 250 (40 focus)",
+  "[01:35:03] shard 0/3: 84 apps",
+  "[01:35:03] shard 0: canary ok",
+  "[01:35:00] shard 1/3: 83 apps",
+  "[01:35:01] shard 1: canary ok",
+  "[01:35:00] shard 2/3: 83 apps",
+  "[01:35:01] shard 2: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ },
+ "targeted_runs": [
+  {
+   "finished": "2026-11-14T02:53:45+00:00",
+   "targets": [
+    "1451873163",
+    "1126609754",
+    "1171686996",
+    "6449721164",
+    "1562559674"
+   ],
+   "terms": [
+    "feed planner",
+    "grid planner",
+    "instagram planner",
+    "feed preview"
+   ],
+   "apps_scanned": 38,
+   "low_star_kept": 1894,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  {
+   "finished": "2026-11-14T03:31:17+00:00",
+   "targets": [
+    "1450752252",
+    "1521982746"
+   ],
+   "terms": [
+    "agenda de clientes",
+    "agenda de citas",
+    "controle de ponto",
+    "registro de jornada",
+    "temporizador de intervalos"
+   ],
+   "apps_scanned": 40,
+   "low_star_kept": 3379,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  {
+   "finished": "2026-11-14T04:07:12+00:00",
+   "targets": [
+    "747364886"
+   ],
+   "terms": [
+    "シフト管理",
+    "日記",
+    "習慣化",
+    "時間割",
+    "디데이",
+    "시간표"
+   ],
+   "apps_scanned": 40,
+   "low_star_kept": 1897,
+   "health": {
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "mode": "targeted",
+ "phase_minutes": {},
+ "partial": false,
+ "targets": [
+  "747364886"
+ ],
+ "terms": [
+  "シフト管理",
+  "日記",
+  "習慣化",
+  "時間割",
+  "디데이",
+  "시간표"
+ ],
+ "unique_chart_apps": 183,
+ "requests": 19,
+ "failures": 0,
+ "http_status": {
+  "lookup 200": 7,
+  "target-search 200": 12
+ },
+ "date": "2026-11-14",
+ "eligible_candidates": 7910,
+ "queued": 40,
+ "shards": 1,
+ "plan_minutes": 0.8,
+ "log": [
+  "[04:02:33] targeted plan: 1 ids, 6 terms -> 40 apps queued"
+ ]
+}
