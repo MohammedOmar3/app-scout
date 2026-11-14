@@ -312,7 +312,9 @@
    ],
    "evidence_reviews": 45,
    "old_reason": "45 low-star reviews in 90d (us) about the free tier losing radar and storm tracks after the 2026 redesign; free radar is already in Apple Weather and MyRadar, and radar data beyond US NEXRAD needs licensing",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-14",
+   "outcome": "still rejected (build): 31 of 51 low-star in 90d (us only) about the free tier, radar or premium, falling to 4 in November. Radar beyond US NEXRAD still needs licensed data, and Apple Weather shows radar free"
   },
   {
    "key": "ads:timehop:daily-memories",
@@ -322,7 +324,9 @@
    ],
    "evidence_reviews": 42,
    "old_reason": "Timehop (187k ratings) v5.0: 42 low-star in 90d (us, gb) on unskippable ads and paywalled memories, fading to 4 since 10-28. After 5 hunt rounds no differentiator beyond ~14 on-device 'on this day' clones (Photo Flashback free, On This Day Rewind) and Apple Photos Memories, no off-store threads, no willingness to pay. Was on the watchlist at 3.5 since 2026-11-03",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-14",
+   "outcome": "still rejected (no-wedge): 36 in 90d (us 32, gb 4) about ads or the new paywall, but 15 in Sep, 19 in Oct and 1 in November, so the wave is over. Apple Photos Memories and the on-device 'on this day' clones still cover it"
   },
   {
    "key": "ads:alarm-clock-hd:unskippable",
@@ -332,7 +336,9 @@
    ],
    "evidence_reviews": 35,
    "old_reason": "Alarm Clock HD (104k ratings): 35 low-star in 90d (us), 26 on unskippable ads, from 10-15 year users; reliable alarms need native AlarmKit work (same Gate B failure as bugs:alarmy:battery-drain), and the iOS Clock is free",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-14",
+   "outcome": "still rejected (build): 23 in 90d (us only) about ads that can't be closed, 14 of them in October. A reliable alarm still needs AlarmKit native work, and the iOS Clock is free"
   },
   {
    "key": "fleeceware:fax:weekly-sub",
@@ -343,7 +349,9 @@
    ],
    "evidence_reviews": 35,
    "old_reason": "FAX from iPhone (379k) 35 low-star and FaxFree (175k) 33, us: 'free' fax apps that bill about $9/week at the send step. Killed: Genius Fax (4.9, 44k) already sells $0.99 per-page credits with no subscription needed to send, every page costs a carrier fee so there is no useful free tier, and Gate B wants one pro entitlement, not consumables",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-14",
+   "outcome": "still rejected (other): FAX from iPhone 20 and FaxFree 15 in 90d (us) about weekly billing. Every page costs a carrier fee, so there is no useful free tier, and Genius Fax already sells per-page credits"
   },
   {
    "key": "regressed:scanner-pro:v9",

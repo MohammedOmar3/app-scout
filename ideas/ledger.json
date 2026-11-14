@@ -1478,6 +1478,20 @@
    ],
    "reason": "Hunt round 3 (targeted run 43363341253, first locale-only discovery run: terms Spritpreise, Benzinpreis, prix carburant, prezzi carburante, gasolineras, tankstation, Fahrtenbuch and Stundenplan in de, at, fr, it, es, nl, be, gb). Fuel-price apps run on free official data (MTS-K via Tankerkoenig, CC BY 4.0), but the pain is scattered: ADAC Drive (253k) 35 low-star in 90d, 12 on a new login wall for favourites in v7.1 (de only); mehr-tanken (364k) 26, stale prices, Austria missing and a broken widget, 1 on ads; Prezzi Benzina (82k, it) 19, wrong prices and ads; Sprit Club 7, Ballenoil 9, Spritpreisrechner and Spritkenig 0. No cluster near Gate A, and many free fuel apps exist. Untis Mobile (63) needs each school's Untis server. Fahrtenbuch (Psngr 0) and Stundenplan apps (Smart Timetable 3, Class Timetable 4, My Timetable 0) are quiet",
    "reason_type": "evidence"
+  },
+  {
+   "key": "paywall:feed-preview:hard-paywall",
+   "date": "2026-11-14",
+   "incumbents": [
+    "1451873163",
+    "1126609754",
+    "1171686996",
+    "1532504123",
+    "1057252115",
+    "1106201141"
+   ],
+   "reason": "Feed Preview (MWM, 8.8k us ratings) removed its free version in September: 45 low-star in 90d (us 43), 19 in the last 30, about a 'choose your plan' screen with no X and $7.99 a week. Targeted run 43548256912 scanned 7 other grid planners in us, gb, ca and au: Preview (45k us ratings, free unlimited grid, no Instagram login) 8 matching, My Feed 5, UNUM 4, Inpreview 2, Plann 2, Planoly 2. The complaint stays in one app, and reviewers say they will switch to the free planners ('other apps are continuing to do it for free'; 'I only need it once every few months'), so there's no wedge or willingness to pay beyond what Preview and UNUM give free. No independent off-store threads. Template category with high 4.3 risk. Score about 2.7",
+   "reason_type": "no-wedge"
   }
  ]
 }

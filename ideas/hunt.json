@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "open_targets": [
     {
       "key": "paywall:timer-plus:forced-paywall",
@@ -465,6 +465,11 @@
       "key": "discovery:round3-batch-2026-11-13",
       "outcome": "rejected",
       "date": "2026-11-13"
+    },
+    {
+      "key": "paywall:feed-preview:hard-paywall",
+      "outcome": "rejected",
+      "date": "2026-11-14"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: regressed:storm-radar:free-tier (45), ads:timehop:daily-memories (42), ads:alarm-clock-hd:unskippable (35), fleeceware:fax:weekly-sub (35). 2) The targeted collector now takes --term-storefronts (11-13). Use it for discovery where English-store discovery has dried up, with local-language terms in each market: es/mx/br/ar ('temporizador de intervalos', 'contador de calorias', 'lista de compras', 'controle de ponto', 'agenda escolar'), and jp/kr ('タイマー', '日記', '習慣', '가계부' is finance, skip). Give one real incumbent id (the tool needs --app-ids). 3) Teleprompters (3.50) and Structured (3.2) are off the hunt: re-check only from the daily data if a new surge shows. 4) Timer Plus waits for the 12-02 data; Cookidoo waits until after 12-10. 5) Lose It! (41.6k) moved barcode scanning behind Premium and shows ads to paying users (35 pay- or ad-related low-star in 30 days by a loose count, us 33, 7 of them on barcode scanning). That corroborates the existing idea paywall:yazio:ads-and-extras (Plain Kcal); it isn't a new idea. 6) Judge demand on the us rating count: candidates' ratings come from one storefront (ratings_cc), and a term-storefront run stores the local count (e.g. Structured shows 10k from it, 30k from de, 169k in us)."
