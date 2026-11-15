@@ -2,23 +2,6 @@
   "updated": "2026-11-15",
   "open_targets": [
     {
-      "key": "bloat:insight-timer:simple-timer",
-      "incumbents": [
-        "337472899"
-      ],
-      "terms": [
-        "meditation timer",
-        "meditation bell",
-        "mindfulness bell"
-      ],
-      "term_storefronts": "us,gb,au,ca,de,nl",
-      "why": "Insight Timer (449k ratings): 41 low-star in 90d (us 32, gb 9) about gamification, streaks, a video feed, forced goal questions every launch, AI programmes and paywalled replays; long-time users say they used it 'when it was just a simple timer'",
-      "evidence": "Daily data 11-15: ~15 on bloat/gamification/feed, ~8 on forced onboarding questions, ~4 on new paywalls (rewind, replay limits, offline timer), ~3 on AI",
-      "missing": "Spread to more storefronts and a second app; check the simple-timer alternatives (Medito, Equanimity, Zazen, Oak, Enso) and whether their reviews share the complaint",
-      "rounds": 1,
-      "last_round": "2026-11-15"
-    },
-    {
       "key": "paywall:timer-plus:forced-paywall",
       "incumbents": [
         "1279716547",
@@ -490,6 +473,11 @@
     },
     {
       "key": "regressed:line-calendar:yahoo-stamps",
+      "outcome": "rejected",
+      "date": "2026-11-15"
+    },
+    {
+      "key": "bloat:insight-timer:simple-timer",
       "outcome": "rejected",
       "date": "2026-11-15"
     }

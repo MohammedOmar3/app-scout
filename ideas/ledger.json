@@ -122,7 +122,7 @@
     "475772902"
    ],
    "score": 3.1,
-   "evidence": "Re-opened 2026-11-15 from rejected. watchlist 3.1: 35 low-star in 90d (us), search moved into the 'Aura' AI subscription, pop-ups, $35-85 trial charges. Wedge: a no-AI star map where search is free and Pro is one-time. But Stellarium Mobile (free base, optional Plus) already ships it and Sky Tonight is free; an AR sky engine (catalog, motion sensors, Skia rendering) is a tight 14 days. Scores: evidence 3, demand 5, WTP 2.5, gap 3, competition 2, build 2 = 3.1",
+   "evidence": "Re-opened 2026-11-15 from rejected. watchlist 3.1: 35 low-star in 90d (us), search moved into the 'Aura' AI subscription, pop-ups, $35-85 trial charges. Wedge: a no-AI star map where search is free and Pro is one-time. But Stellarium Mobile (free base, optional Plus) already ships it and Sky Tonight is free; an AR sky engine (catalog, motion sensors, Skia rendering) is a tight 14 days. Scores: evidence 3, demand 5, WTP 2.5, gap 3, competition 2, build 2 = 3.1 | 11-15 hunt round 2 (targeted run 43671991827, star map and stargazing terms in us, gb, au, ca, de, nl): Night Sky 47 low-star in 90d (us 36, de 3, gb 3, ca 3, nl 2), 32 about pay or AI. Sky Guide (3.3k) 18, about 5 from lifetime buyers moved to a subscription (de, us, ru-speaking us); SkyView Lite 10 (accuracy bugs); Stellarium 4, Sky Tonight 4, Star Walk 2 Plus 5, Star Walk 2 Pro 4. The strongest free alternative, Stellarium, draws almost nothing. Second app still under 8, score stays 3.1",
    "promote_if": ">=8 low-star at a second star-map app (Star Walk 2, SkyView, Sky Guide, Stellarium) about search or basics behind a subscription, and a check that Stellarium's free tier lacks something users ask for. Build fit caps the score near 3.5, so only a bigger wave would make it an idea"
   }
  ],
@@ -1536,6 +1536,20 @@
    ],
    "reason": "todo mate (108k kr ratings): 41 low-star in 90d (kr 36, us 5) about the desktop/PC mode moving to a subscription (about 20) and full-screen timed ads (about 15); refugees name Planet. The only wedge, free desktop or web access, is already free in Todoist, TickTick and Apple Reminders on Mac, and a to-do list is a template category with high 4.3 risk. Score about 3.0",
    "reason_type": "no-wedge"
+  },
+  {
+   "key": "bloat:insight-timer:simple-timer",
+   "date": "2026-11-15",
+   "incumbents": [
+    "337472899",
+    "571800810",
+    "493145008",
+    "509073019",
+    "380816407",
+    "1210209691"
+   ],
+   "reason": "Hunt round 2 (targeted run 43671991827; terms meditation timer, meditation bell, mindfulness bell in us, gb, au, ca, de, nl). Insight Timer (449k ratings): 57 low-star in 90d across 5 storefronts (us 32, ca 9, gb 9, de 4, nl 2), about 24 on gamification, streaks, pop-ups and the video feed since the v20.17 redesign (May 2026), 11 on forced goal questions, 3 on AI; Calm (114) and Headspace (84) share 'lost its focus' and AI complaints, mostly alongside trial billing. But nearly all of them want the guided library without the noise, which is content we can't make; only about 5 ask for just the timer ('All I need is a timer. And I expect it to be free', 2* nl 2026-09-04). The simple timers are quiet and plentiful (Meditation Timer Pro 4 low-star, Mindfulness Bell 4, Meditation Time 2, Oak 0) and free ones exist (MindTime, Medito, Plum Village). Timer-only evidence is under Gate A",
+   "reason_type": "evidence"
   }
  ]
 }
