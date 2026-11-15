@@ -2,6 +2,27 @@
   "updated": "2026-11-15",
   "open_targets": [
     {
+      "key": "ads:pedometers:history-paywall",
+      "incumbents": [
+        "1037595083",
+        "839671656",
+        "979101825",
+        "712286167"
+      ],
+      "terms": [
+        "pedometer",
+        "step counter",
+        "Schrittzähler",
+        "podomètre"
+      ],
+      "term_storefronts": "de,fr,it,es,nl,jp",
+      "why": "New watchlist 3.2: StepsApp, Stepz, Pedometer++ moved history, widgets or setup behind subscriptions and full-screen ads",
+      "evidence": "See the ledger watchlist entry (StepsApp 65 low-star in 5 storefronts, Stepz 21, Pedometer++ 13 of 57 on pay or ads)",
+      "missing": "A non-price wedge named by >=10 reviews that needs no Watch app, or explicit asks to pay once. Check from the daily data first; spend a targeted run only if the wave grows",
+      "rounds": 1,
+      "last_round": "2026-11-15"
+    },
+    {
       "key": "paywall:timer-plus:forced-paywall",
       "incumbents": [
         "1279716547",
@@ -480,7 +501,12 @@
       "key": "bloat:insight-timer:simple-timer",
       "outcome": "rejected",
       "date": "2026-11-15"
+    },
+    {
+      "key": "discovery:round3-batch-2026-11-15",
+      "outcome": "rejected",
+      "date": "2026-11-15"
     }
   ],
-  "plan_next_run": "1) FIRST: targeted run for regressed:line-calendar:yahoo-stamps with --term-storefronts jp: --app-ids 996870154,1547903349,952578473,538340426 plus the Yahoo! JAPAN and Yahoo!メール ids (find them with WebSearch first), terms 'スタンプ カレンダー,かわいい カレンダー,ジョルテ,手帳 アプリ'. Count low-star about the Yahoo->LINE change in every app except LINE Calendar; >=8 in one of them passes Gate A spread. Then re-score (provisional 3.65) and write the brief if it holds. Brief notes if it passes: personal stamp calendar, no account, import existing events via expo-calendar from the iOS calendar (Yahoo!カレンダー can sync to iOS by CalDAV, so check the setup steps), original or openly licensed stamp art (OpenMoji CC BY-SA, or commissioned), seasonal themes as the pro tier. 2) Re-open queue, the next 4 open: regressed:scanner-pro:v9 (35), paywall:night-sky:aura-ai (34), regressed:readdle-calendars:events-lost (33), paywall:islamic-apps:survey-onboarding (33). 3) Locale discovery in kr found todo mate (108k): 43 low-star in 90d about more ads and desktop mode moving to paid, with refugees naming Planet. Check it on the next kr pass. Study timer 열품타 and TheDayBefore are bug waves (widgets, timing). 4) Timer Plus waits for 12-02 (now 394 low-star in 7 storefronts, but no wedge). Cookidoo after 12-10. 5) Paprika 4 (Premium launched 11-06) corroborates Recipe Drop. Track the wave in the daily data."
+  "plan_next_run": "1) Re-open queue, the next 4 open: bugs:discogs:logouts-collection (31), paywall:google-forms:third-party-clients (31), ads:dc-metro:ad-walls (30), paywall:wonder-weeks:lifetime-revoked (25). 2) Locale discovery in storefronts not yet tried: tr, pl and sa/ae (non-islamic utilities: calendar, notes, to-do, step counter, shopping list in Turkish, Polish and Arabic), with --term-storefronts tr,pl,sa,ae,eg,kw. 3) Pedometers (watchlist 3.2): count non-price asks in the daily data (free widget, history, family goals); only run a targeted scan if the wave grows past 100 low-star. 4) Night Sky (3.1), passport photos (3.1): only on new evidence. 5) Timer Plus waits for 12-02; Cookidoo after 12-10. 6) Context: 'no iPhone Duo support' complaints are spread over 127 apps (267 reviews, mostly platforms: LINE 28, LinkedIn 16, eufy 11, Google Calendar 10); watch for a single-purpose tool category where every app lacks Duo layouts"
 }

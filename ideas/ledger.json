@@ -124,6 +124,32 @@
    "score": 3.1,
    "evidence": "Re-opened 2026-11-15 from rejected. watchlist 3.1: 35 low-star in 90d (us), search moved into the 'Aura' AI subscription, pop-ups, $35-85 trial charges. Wedge: a no-AI star map where search is free and Pro is one-time. But Stellarium Mobile (free base, optional Plus) already ships it and Sky Tonight is free; an AR sky engine (catalog, motion sensors, Skia rendering) is a tight 14 days. Scores: evidence 3, demand 5, WTP 2.5, gap 3, competition 2, build 2 = 3.1 | 11-15 hunt round 2 (targeted run 43671991827, star map and stargazing terms in us, gb, au, ca, de, nl): Night Sky 47 low-star in 90d (us 36, de 3, gb 3, ca 3, nl 2), 32 about pay or AI. Sky Guide (3.3k) 18, about 5 from lifetime buyers moved to a subscription (de, us, ru-speaking us); SkyView Lite 10 (accuracy bugs); Stellarium 4, Sky Tonight 4, Star Walk 2 Plus 5, Star Walk 2 Pro 4. The strongest free alternative, Stellarium, draws almost nothing. Second app still under 8, score stays 3.1",
    "promote_if": ">=8 low-star at a second star-map app (Star Walk 2, SkyView, Sky Guide, Stellarium) about search or basics behind a subscription, and a check that Stellarium's free tier lacks something users ask for. Build fit caps the score near 3.5, so only a bigger wave would make it an idea"
+  },
+  {
+   "key": "ads:pedometers:history-paywall",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "incumbents": [
+    "1037595083",
+    "839671656",
+    "979101825",
+    "712286167"
+   ],
+   "score": 3.2,
+   "evidence": "Hunt round 3 (targeted run 43674821082; term pedometer in us, gb, ca, au, de, fr). StepsApp (304k ratings, grossing in 3 storefronts): 65 low-star in 90d (us 14, gb 12, ca 11, fr 10, de), 57 since 10-01: forced trial at setup, full-screen ads, 'used to be free, why I gotta pay to see my steps' (1* gb 2026-11-11), plus Apple Watch crashes. Stepz (10k): 21, about 13 on unskippable game ads and history or widget moved to paid (de, us, gb, fr). StepUp (150k): sync bugs and a $25 ad-removal re-purchase. Pedometer++ (185k) now has a subscription and premium-maps ads on the Watch (13 of 57 on pay or ads). Wedge: a clean step counter where history and the widget are free and Pro is one-time. But it is price-only, the Health app shows steps and history free, watchOS 27 adds a steps complication, and the other big complaint (Watch crashes) needs a watchOS app (Gate B). Template category, 4.3 risk high. Scores: evidence 3.5, demand 4.5, WTP 2, gap 3.5, competition 2, build 4 = 3.2",
+   "promote_if": "a non-price wedge named by >=10 reviews that needs no Watch app (for example a free lock-screen widget with history, or a family or team walking goal without accounts), or explicit asks to pay once"
+  },
+  {
+   "key": "paywall:passport-photos:surprise-price",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "incumbents": [
+    "1500544448",
+    "1527550865"
+   ],
+   "score": 3.1,
+   "evidence": "Hunt round 3 (term passport photo in us, gb, ca, au, de, fr). PhotoAiD (19k us ratings): 99 low-star in 90d (us 34, fr 24, gb 18, de 13, au): a $19.99 price shown only at the end ('NOT that any photo would cost $19.99', 1* us 2026-11-08), photos rejected by passport offices, faces and hair altered by AI retouching, no French e-photo code. Smartphone iD (21.6k fr): 22, mostly fr, rejected photos and paid-before-validation. Wedge: an honest ID-photo app that shows the price first, never retouches the face, and exports a free 4x6 print sheet. But neither incumbent is grossing, France (ANTS e-photo) and Germany (digital photos only from certified providers since 2025) need certified services, $1 and free web tools already exist, and template 4.3 risk is high. Scores: evidence 4, demand 2.5, WTP 3, gap 3, competition 2.5, build 3 = 3.1",
+   "promote_if": "grossing presence for passport-photo apps in us or gb, plus >=3 independent threads asking for an honest, cheap self-serve option in a storefront where self-taken digital photos are accepted (us online renewal, gb)"
   }
  ],
  "rejected": [
@@ -1549,6 +1575,25 @@
     "1210209691"
    ],
    "reason": "Hunt round 2 (targeted run 43671991827; terms meditation timer, meditation bell, mindfulness bell in us, gb, au, ca, de, nl). Insight Timer (449k ratings): 57 low-star in 90d across 5 storefronts (us 32, ca 9, gb 9, de 4, nl 2), about 24 on gamification, streaks, pop-ups and the video feed since the v20.17 redesign (May 2026), 11 on forced goal questions, 3 on AI; Calm (114) and Headspace (84) share 'lost its focus' and AI complaints, mostly alongside trial billing. But nearly all of them want the guided library without the noise, which is content we can't make; only about 5 ask for just the timer ('All I need is a timer. And I expect it to be free', 2* nl 2026-09-04). The simple timers are quiet and plentiful (Meditation Timer Pro 4 low-star, Mindfulness Bell 4, Meditation Time 2, Oak 0) and free ones exist (MindTime, Medito, Plum Village). Timer-only evidence is under Gate A",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "removed:biscuit:dog-walk-rewards",
+   "date": "2026-11-15",
+   "incumbents": [
+    "1601414482"
+   ],
+   "reason": "Biscuit Pet Care (13k gb ratings): 42 low-star in 90d (gb only) after the September rewards change removed the shop vouchers dog walkers earned. The value is a rewards partnership with retailers, a two-sided business we can't rebuild, and one storefront",
+   "reason_type": "build"
+  },
+  {
+   "key": "discovery:round3-batch-2026-11-15",
+   "date": "2026-11-15",
+   "incumbents": [
+    "529353551",
+    "966702368"
+   ],
+   "reason": "Hunt round 3 (targeted run 43674821082; terms home inventory, pantry, pet care, passport photo, pedometer in us, gb, ca, au, de, fr): home inventory and pantry apps are quiet (Sortly 0 low-star in 90d, Pantry Check 2, Cooklist 8), and many no-subscription home-inventory apps launched in 2026. Pet-care hits are services and shops (Petco, Chewy, Wag!, PetDesk). Pedometers and passport photos went to the watchlist",
    "reason_type": "evidence"
   }
  ]

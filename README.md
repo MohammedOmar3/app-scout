@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-14 — no ideas today (3 hunt rounds; new best lead `regressed:line-calendar:yahoo-stamps`, provisional 3.65 but only one storefront and app so far; Timer Plus now 394 low-star in 7 storefronts but no wedge) — [report](reports/2026-11-14.md)
+**Latest:** 2026-11-15 — no ideas today (3 hunt rounds; LINE Calendar rejected, the complaint stays in one app; new watchlist: pedometers 3.2, passport photos 3.1, Night Sky re-opened 3.1) — [report](reports/2026-11-15.md)
 
 ## How it works
 
