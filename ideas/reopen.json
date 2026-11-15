@@ -361,7 +361,9 @@
    ],
    "evidence_reviews": 35,
    "old_reason": "Scanner Pro (338k ratings): 35 low-star in 60d after v9.0 broke saving and pushed a subscription on one-time buyers. Killed: Notes and Files scan free, and Genius Scan and Adobe Scan are free; template category",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-15",
+   "outcome": "still rejected (ios-builtin): 40 low-star in 90d (us 33, gb 29 all-time 1-2*), about v9 losing scans and one-time buyers asked to subscribe again. Notes and Files scan documents free, so hard kill (a) stands"
   },
   {
    "key": "paywall:night-sky:aura-ai",
@@ -371,7 +373,9 @@
    ],
    "evidence_reviews": 34,
    "old_reason": "Night Sky (498k ratings): 34 low-star in 90d (us 31, gb 3) on search moving behind an AI 'Aura' subscription and paywall pop-ups. Needs a sky engine and catalog plus AR compass work; Sky Guide, SkyView and Stellarium already serve the category",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-15",
+   "outcome": "watchlist 3.1: 35 low-star in 90d (us), search moved into the 'Aura' AI subscription, pop-ups, $35-85 trial charges. Wedge: a no-AI star map where search is free and Pro is one-time. But Stellarium Mobile (free base, optional Plus) already ships it and Sky Tonight is free; an AR sky engine (catalog, motion sensors, Skia rendering) is a tight 14 days. Scores: evidence 3, demand 5, WTP 2.5, gap 3, competition 2, build 2 = 3.1"
   },
   {
    "key": "paywall:islamic-apps:survey-onboarding",
@@ -382,7 +386,9 @@
    ],
    "evidence_reviews": 33,
    "old_reason": "33 low-star reviews in 90d across Pillars (14; us, gb, ae) and Niyat (19; us, au, ca) about a long unskippable onboarding survey ending in a paywall before basic prayer/Quran features; same kill as paywall:islamic-apps:basic-worship-features: MAWAQIT, Quran.com, Pray Watch and IslamApp are free and ad-free with no survey",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-15",
+   "outcome": "still rejected (no-wedge): Pillars 16 and Niyat 25 low-star in 90d about a long survey ending in a paywall. 'Free, no survey, no ads' is already what MAWAQIT, Pray Watch and IslamApp ship, with few complaints, so the wedge is shared"
   },
   {
    "key": "regressed:readdle-calendars:events-lost",
@@ -392,7 +398,9 @@
    ],
    "evidence_reviews": 33,
    "old_reason": "Calendars by Readdle (122k ratings): 33 low-star in 90d (us, gb): events vanishing (~8), repeat events moved to Pro (~4), month-view redesign (~4). Calendar is a crowded category and Apple Calendar is free, local-capable and repeats events",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-15",
+   "outcome": "still rejected (ios-builtin): now 69 low-star in 90d across 7 storefronts (gb, us, br, es, mx, de, fr): about 20 on events vanishing, 6 on repeat events moved to Pro, plus the September redesign. Apple Calendar is free, keeps events in iCloud and repeats them, so hard kill (a) stands; the repeat-paywall reviews feed paywall:structured:recurring-tasks instead"
   },
   {
    "key": "bugs:discogs:logouts-collection",

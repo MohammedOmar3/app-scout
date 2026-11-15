@@ -115,20 +115,15 @@
    "promote_if": ">=15 recurring-paywall low-star in 90 days at Structured alone, or >=8 at a second visual planner (Tiimo, Sorted3, Routinery), plus evidence that Apple Calendar + Reminders doesn't cover it (reviews saying so)"
   },
   {
-   "key": "regressed:line-calendar:yahoo-stamps",
-   "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
+   "key": "paywall:night-sky:aura-ai",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-15",
    "incumbents": [
-    "996870154",
-    "1547903349",
-    "952578473",
-    "538340426",
-    "443904275"
+    "475772902"
    ],
-   "score": 3.65,
-   "gate_a": "not met: spread (one storefront, jp, and one app so far)",
-   "evidence": "From late September 2026, LY Corporation auto-updated the Yahoo!カレンダー app (id 996870154, 109k jp ratings, running since 2004) into 'LINEカレンダー' (ITmedia 2026-10-15). 108 low-star in 90d, all jp, 96 of them from Nov 1 to 12, on v6.3.0. Topics overlap: Yahoo events can't be edited, moved or copied in the new app (35), it's hard to read (colour background with white text; 34), the old ぺたっと hand-drawn stamps are gone, with fewer stamps and no stamp search (32), seasonal themes and cute backgrounds are gone (25), a LINE account is required and overseas users without a Japanese LINE account are locked out (37, loose count). WTP signals: 'お金払ってでも元に戻したい' (1★ 11-12), and PETAKO refugees in 2024 said they'd pay for more stamps. Off-store: a Yahoo!知恵袋 thread from 10-22 (11k views, 112 agree; a related question tried TimeTree and Lifebear and liked neither), and blog guides from 11-03 (seikatsureal) and 05-23 (checkstore) saying stamps and themes are what users miss. Second-app signal is thin: LINE 1 ('勝手に紐付け', 1★ 11-09) and TimeTree 1 ('Yahoo became LINE so I moved', 2★ 11-10). Alternatives: PETAKO (stamp calendar, 419 ratings, ads, stamps unlocked by watching ads), TimeTree (ads complaints), Lifebear (27 low-star in 90d), Jorte (not yet checked). LINE's roadmap adds stamp search and history in November and day, week and list views from January, but no themes and no editing of old Yahoo events. Provisional scores if Gate A passes: evidence 3.5, demand 4, WTP 3, gap 4, competition 3.5, build 4 (needs original or openly licensed stamp art) = 3.65",
-   "promote_if": "Gate A spread: >=8 low-star in a second app about the same change (the Yahoo! JAPAN or Yahoo!メール app, where old events are now edited, or refugees' complaints in PETAKO, Jorte, TimeTree or Lifebear), the complaints still coming after LINE's November stamp-search update, and a Jorte check (if Jorte gives free, ad-free stamps and themes, competition drops)"
+   "score": 3.1,
+   "evidence": "Re-opened 2026-11-15 from rejected. watchlist 3.1: 35 low-star in 90d (us), search moved into the 'Aura' AI subscription, pop-ups, $35-85 trial charges. Wedge: a no-AI star map where search is free and Pro is one-time. But Stellarium Mobile (free base, optional Plus) already ships it and Sky Tonight is free; an AR sky engine (catalog, motion sensors, Skia rendering) is a tight 14 days. Scores: evidence 3, demand 5, WTP 2.5, gap 3, competition 2, build 2 = 3.1",
+   "promote_if": ">=8 low-star at a second star-map app (Star Walk 2, SkyView, Sky Guide, Stellarium) about search or basics behind a subscription, and a check that Stellarium's free tier lacks something users ask for. Build fit caps the score near 3.5, so only a bigger wave would make it an idea"
   }
  ],
  "rejected": [
@@ -941,15 +936,6 @@
    "reason_type": "dominant-free-alternative"
   },
   {
-   "key": "paywall:night-sky:aura-ai",
-   "date": "2026-11-06",
-   "incumbents": [
-    "475772902"
-   ],
-   "reason": "Night Sky (498k ratings): 34 low-star in 90d (us 31, gb 3) on search moving behind an AI 'Aura' subscription and paywall pop-ups. Needs a sky engine and catalog plus AR compass work; Sky Guide, SkyView and Stellarium already serve the category",
-   "reason_type": "dominant-free-alternative"
-  },
-  {
    "key": "discovery:round2-batch-2026-11-06",
    "date": "2026-11-06",
    "incumbents": [
@@ -1507,6 +1493,48 @@
     "1106201141"
    ],
    "reason": "Feed Preview (MWM, 8.8k us ratings) removed its free version in September: 45 low-star in 90d (us 43), 19 in the last 30, about a 'choose your plan' screen with no X and $7.99 a week. Targeted run 43548256912 scanned 7 other grid planners in us, gb, ca and au: Preview (45k us ratings, free unlimited grid, no Instagram login) 8 matching, My Feed 5, UNUM 4, Inpreview 2, Plann 2, Planoly 2. The complaint stays in one app, and reviewers say they will switch to the free planners ('other apps are continuing to do it for free'; 'I only need it once every few months'), so there's no wedge or willingness to pay beyond what Preview and UNUM give free. No independent off-store threads. Template category with high 4.3 risk. Score about 2.7",
+   "reason_type": "no-wedge"
+  },
+  {
+   "key": "regressed:line-calendar:yahoo-stamps",
+   "date": "2026-11-15",
+   "incumbents": [
+    "996870154",
+    "299147843",
+    "669931877",
+    "952578473",
+    "538340426",
+    "1547903349",
+    "443904275"
+   ],
+   "reason": "Hunt round 1 (targeted run 43669302429, jp terms スタンプ カレンダー, かわいい カレンダー, ジョルテ, 手帳 アプリ, Yahoo!カレンダー; 40 apps). The pain stays in LINE Calendar: 129 low-star in 90d there (jp only), but across 22 other jp calendar apps plus Yahoo! JAPAN, Yahoo!メール and LINE only 3 low-star mention the Yahoo-to-LINE change (Yahoo! JAPAN 1, TimeTree 1, LINE 1; one more 2-star in ノコメ about ads after the 2024 Yahoo shutdown), so Gate A spread fails. And the refugees have plenty of low-complaint homes: Cahoカレンダー (404k jp ratings, 7 low-star in 90d, 0 about ads), Treeカレンダー (110k, 6), うさまる (11.9k, 1), momochy (8.8k, 0); only Ucカレンダー (13 of 22 on ads) and Stampカレンダー DX (14 of 16 on ads) are weak. LINE Calendar is ad-free for now and LY says stamp search and history ship in November (DIME 2026-10-29). The old ぺたっと stamps are Yahoo's art, so the one wedge left is 'a cute stamp calendar', which the category already has. Score about 3.2 with competition 1.5",
+   "reason_type": "no-wedge"
+  },
+  {
+   "key": "fleeceware:offender-locator:no-cancel",
+   "date": "2026-11-15",
+   "incumbents": [
+    "322664011"
+   ],
+   "reason": "Surge in Offender Locator (22.7k ratings): 83 low-star in 14 days (us 118, gb 8 in 60d), about a 3-day trial that can't be cancelled in the app and weekly billing. A billing dispute on public registry data: the US DOJ already ships the free official NSOPW app (id991873782), and nationwide data means 50+ state registries or a paid API (Family Watchdog), so Gate B fails on data",
+   "reason_type": "build"
+  },
+  {
+   "key": "paywall:artworkout:energy",
+   "date": "2026-11-15",
+   "incumbents": [
+    "1564657118"
+   ],
+   "reason": "ArtWorkout (258k ratings): 55 low-star in 14 days (us, gb), mostly kids angry about an energy meter (5 energy per lesson) and ads. The product is a library of step-by-step drawing lessons, so it is content production, not a 14-day app, and Simply Draw was rejected for the same reason on 11-05",
+   "reason_type": "build"
+  },
+  {
+   "key": "paywall:todo-mate:desktop-mode",
+   "date": "2026-11-15",
+   "incumbents": [
+    "1505220130"
+   ],
+   "reason": "todo mate (108k kr ratings): 41 low-star in 90d (kr 36, us 5) about the desktop/PC mode moving to a subscription (about 20) and full-screen timed ads (about 15); refugees name Planet. The only wedge, free desktop or web access, is already free in Todoist, TickTick and Apple Reminders on Mac, and a to-do list is a template category with high 4.3 risk. Score about 3.0",
    "reason_type": "no-wedge"
   }
  ]
