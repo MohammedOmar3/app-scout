@@ -118,7 +118,7 @@
   {
    "key": "ads:pedometers:history-paywall",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "incumbents": [
     "1037595083",
     "839671656",
@@ -126,7 +126,7 @@
     "712286167"
    ],
    "score": 3.2,
-   "evidence": "Hunt round 3 (targeted run 43674821082; term pedometer in us, gb, ca, au, de, fr). StepsApp (304k ratings, grossing in 3 storefronts): 65 low-star in 90d (us 14, gb 12, ca 11, fr 10, de), 57 since 10-01: forced trial at setup, full-screen ads, 'used to be free, why I gotta pay to see my steps' (1* gb 2026-11-11), plus Apple Watch crashes. Stepz (10k): 21, about 13 on unskippable game ads and history or widget moved to paid (de, us, gb, fr). StepUp (150k): sync bugs and a $25 ad-removal re-purchase. Pedometer++ (185k) now has a subscription and premium-maps ads on the Watch (13 of 57 on pay or ads). Wedge: a clean step counter where history and the widget are free and Pro is one-time. But it is price-only, the Health app shows steps and history free, watchOS 27 adds a steps complication, and the other big complaint (Watch crashes) needs a watchOS app (Gate B). Template category, 4.3 risk high. Scores: evidence 3.5, demand 4.5, WTP 2, gap 3.5, competition 2, build 4 = 3.2",
+   "evidence": "Hunt round 3 (targeted run 43674821082; term pedometer in us, gb, ca, au, de, fr). StepsApp (304k ratings, grossing in 3 storefronts): 65 low-star in 90d (us 14, gb 12, ca 11, fr 10, de), 57 since 10-01: forced trial at setup, full-screen ads, 'used to be free, why I gotta pay to see my steps' (1* gb 2026-11-11), plus Apple Watch crashes. Stepz (10k): 21, about 13 on unskippable game ads and history or widget moved to paid (de, us, gb, fr). StepUp (150k): sync bugs and a $25 ad-removal re-purchase. Pedometer++ (185k) now has a subscription and premium-maps ads on the Watch (13 of 57 on pay or ads). Wedge: a clean step counter where history and the widget are free and Pro is one-time. But it is price-only, the Health app shows steps and history free, watchOS 27 adds a steps complication, and the other big complaint (Watch crashes) needs a watchOS app (Gate B). Template category, 4.3 risk high. Scores: evidence 3.5, demand 4.5, WTP 2, gap 3.5, competition 2, build 4 = 3.2 | 11-16: StepsApp 88 low-star in 90d after tr and pl were added (us 16, gb 13, ca 11, fr 10, de), same mix; others unchanged. Score stays 3.2",
    "promote_if": "a non-price wedge named by >=10 reviews that needs no Watch app (for example a free lock-screen widget with history, or a family or team walking goal without accounts), or explicit asks to pay once"
   },
   {
@@ -1622,6 +1622,19 @@
    ],
    "reason": "Dropped from the watchlist (was 3.4) on its promote_if check. 93 low-star in 90d (us 80, gb 13); a late-October burst of about 19 after v4.4.x (Watch app redesign, rest timer between exercises removed, Power Pack buyers asked to subscribe), then 1 in November. The new complaints are about the Watch app, which is outside Gate B, and no wedge appeared that Lift5x5 (free full 5x5, StrongLifts CSV import, lifetime option) and the other 5x5 clones lack",
    "reason_type": "no-wedge"
+  },
+  {
+   "key": "paywall:tide-apps:widgets-and-ads",
+   "date": "2026-11-16",
+   "incumbents": [
+    "1352211125",
+    "585223877",
+    "957143504",
+    "777280890",
+    "1406371071"
+   ],
+   "reason": "Hunt round 3 (targeted run 43802215233; terms tide times, tide chart, tide tables, tides, marées, Gezeiten in us, gb, au, ca, nz, fr; 40 apps). The paywall drift seen in the daily data (Tide Alert moved home-screen widgets to paid, Tides Near Me v4 added a premium banner, Tide Graph Pro went free plus subscription) is small: Tide Charts 17 low-star in 90d (3 on ads, the rest the Watch redesign and wrong times), Tide Guide 5, Tide Alert 4, Tides Near Me 3, and 0 across 15 other tide apps (marée.info, Tides NZ, UK Tides, TidesPro, My Tide Times). WillyWeather (au) has about 10 on ads, but it's a weather app and BoM's data and app are free. The category is also filling with 2026 entrants (Tideline, Find My Tide, Saltwater Tides, Tide Watcher, Tide AI), and tide data outside the US and Canada is licensed",
+   "reason_type": "evidence"
   }
  ]
 }
