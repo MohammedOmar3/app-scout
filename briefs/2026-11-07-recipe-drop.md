@@ -103,3 +103,12 @@ Off-store links (all written by competitors, so not independent):
   - Is a public ReciMe recipe share link parseable (a second switching path)?
   - Should Paprika import be free (drives switching) or `pro`?
   - Should the store listing lead with "no AI"?
+
+## Update 2026-11-16: Paprika 4 moved new features to a subscription
+
+The big one-time alternative named in §3 changed on 2026-11-06. [Paprika 4](https://apps.apple.com/us/app/paprika-recipe-manager-4/id1303222868) (54k ratings) is now free to download, with a 50-recipe, single-device free tier; earlier buyers keep their Paprika 3 features ("Standard"); and the new features, including **social media import** and photo scanning, are in a Premium subscription ($14.99/yr intro, $9.99/yr for existing users) ([Hedgehog Chef guide, 11-09, a competitor](https://hedgehogchef.com/guides/paprika-4-subscription); [Well Stockd, 11-03](https://www.wellstockd.com/blog/paprika-app-alternative)).
+
+- **Store evidence:** 81 low-star reviews from 10-17 to 11-14 (us 66, gb 15), against 6 in the 60 days before. Almost all came after 11-06 and are about paying again: "Features that we paid for in Paprika 3 are now locked behind a paywall in the forced upgrade to Paprika 4" (1★ us 2026-11-13); "I paid for this app for four devices and now they want a yearly subscription too?" (1★ us 2026-11-11). Some say Standard features are missing too, which may be a migration bug.
+- **What it changes here:** §3 said Paprika "can't import social video". It now can, but only on a subscription. So the wedge (social import with a one-time `pro`) is now something *both* the incumbent (ReciMe) and the big one-time alternative (Paprika) lack, and there is a fresh pool of paying, angry Paprika users. Paprika import (its `.paprikarecipes` export) moves from nice-to-have to a launch feature.
+- **Score:** competition 3 → 3.5 and willingness to pay 4 → 4.5 (these users already paid $5–30 per platform). The score rises from 3.8 to about 3.95. It is still conditional on the day-1 Instagram caption test in §7.
+- This is an evidence update to an existing idea, not a new idea.

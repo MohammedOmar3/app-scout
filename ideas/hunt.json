@@ -511,6 +511,11 @@
       "key": "discovery:round1-batch-2026-11-16",
       "outcome": "rejected",
       "date": "2026-11-16"
+    },
+    {
+      "key": "paywall:stronglifts:lifetime-revoked",
+      "outcome": "rejected",
+      "date": "2026-11-16"
     }
   ],
   "plan_next_run": "1) Re-open queue, the next 4 open: bugs:discogs:logouts-collection (31), paywall:google-forms:third-party-clients (31), ads:dc-metro:ad-walls (30), paywall:wonder-weeks:lifetime-revoked (25). 2) Locale discovery in storefronts not yet tried: tr, pl and sa/ae (non-islamic utilities: calendar, notes, to-do, step counter, shopping list in Turkish, Polish and Arabic), with --term-storefronts tr,pl,sa,ae,eg,kw. 3) Pedometers (watchlist 3.2): count non-price asks in the daily data (free widget, history, family goals); only run a targeted scan if the wave grows past 100 low-star. 4) Night Sky (3.1), passport photos (3.1): only on new evidence. 5) Timer Plus waits for 12-02; Cookidoo after 12-10. 6) Context: 'no iPhone Duo support' complaints are spread over 127 apps (267 reviews, mostly platforms: LINE 28, LinkedIn 16, eufy 11, Google Calendar 10); watch for a single-purpose tool category where every app lacks Duo layouts"
