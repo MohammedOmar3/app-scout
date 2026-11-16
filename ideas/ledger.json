@@ -25,8 +25,9 @@
     "1593779280",
     "1303222868"
    ],
-   "evidence": "ReciMe (4.8, 328k, grossing us/gb/nz): 168 low-star in 90d (us 58, gb 56, ca 35, au 17), ~134 on forced 7-day trial / 'not free' / 5-imports-a-week cap / price; non-US rising Aug 21, Sep 40, Oct 46; still on v8.2.2. Paprika (4.9, 54k, $4.99): 6 low-star since June on no Instagram/Facebook/YouTube import. Re-opened from the 2026-11-02 rejection (alternatives were paid, so hard kill b never applied). Conditional on a day-1 Instagram caption test; ~3.5 if Instagram is paste-only",
-   "reopened_from": "rejected 2026-11-02"
+   "evidence": "ReciMe (4.8, 328k, grossing us/gb/nz): 168 low-star in 90d (us 58, gb 56, ca 35, au 17), ~134 on forced 7-day trial / 'not free' / 5-imports-a-week cap / price; non-US rising Aug 21, Sep 40, Oct 46; still on v8.2.2. Paprika (4.9, 54k, $4.99): 6 low-star since June on no Instagram/Facebook/YouTube import. Re-opened from the 2026-11-02 rejection (alternatives were paid, so hard kill b never applied). Conditional on a day-1 Instagram caption test; ~3.5 if Instagram is paste-only | 2026-11-16: Paprika 4 (54k, the main one-time alternative) went free-to-download with a subscription for premium features around 2026-11-06; 13 low-star 11-01..11-07 (us, gb), from buyers of Paprika 3 asked to pay again ('I paid for paprika 3, now ... premium subscription', 1* us 2026-11-07). The one-time recipe-manager slot this idea targets is now emptier",
+   "reopened_from": "rejected 2026-11-02",
+   "last_seen": "2026-11-16"
   },
   {
    "key": "paywall:yazio:ads-and-extras",
@@ -1594,6 +1595,34 @@
     "966702368"
    ],
    "reason": "Hunt round 3 (targeted run 43674821082; terms home inventory, pantry, pet care, passport photo, pedometer in us, gb, ca, au, de, fr): home inventory and pantry apps are quiet (Sortly 0 low-star in 90d, Pantry Check 2, Cooklist 8), and many no-subscription home-inventory apps launched in 2026. Pet-care hits are services and shops (Petco, Chewy, Wag!, PetDesk). Pedometers and passport photos went to the watchlist",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "fleeceware:cardash:carplay-video",
+   "date": "2026-11-16",
+   "incumbents": [
+    "6797764175"
+   ],
+   "reason": "Surge in CarDash: Video Player for Cars (2.8k ratings): 122 low-star in 90d (us 74, in 31, ca 11, gb 6), 119 in the last 30 days: $8 a week with no trial, paid but Pro not activated, Netflix/Disney+/Hotstar don't play (DRM), audio only. The core is CarPlay screen mirroring, which needs CarPlay entitlements and native work Expo can't do, and the streaming ask is blocked by DRM",
+   "reason_type": "build"
+  },
+  {
+   "key": "paywall:goodnotes:one-time-revoked",
+   "date": "2026-11-16",
+   "incumbents": [
+    "1444383602"
+   ],
+   "reason": "Goodnotes (24.8k ratings in its scanned storefront): 166 low-star in 90d (us 77, tr 29, gb 25, pl 19), many from one-time Goodnotes 5 buyers now treated as free users or pushed to subscribe ('What happened with one time payment version?', 1* pl 2026-11-14). A handwriting and PDF-annotation notebook is far beyond 14 days (PencilKit canvas, PDF layers, sync), and Apple Notes does handwriting and PDF markup for free",
+   "reason_type": "build"
+  },
+  {
+   "key": "discovery:round1-batch-2026-11-16",
+   "date": "2026-11-16",
+   "incumbents": [
+    "1303222868",
+    "1037595083"
+   ],
+   "reason": "Hunt round 1 (targeted run 43794403695, locale discovery: takvim, not defteri, adımsayar, alışveriş listesi, kalendarz, lista zakupów, krokomierz, notatnik, تقويم, قائمة التسوق, ملاحظات, عداد خطوات in tr, pl, sa, ae, eg, kw; 40 apps). The searches return global platforms and retailers (Gemini, OneNote, Goodnotes, Trendyol, Żabka, Watsons, CarrefourSA, Cepte Şok), not local utilities. AdımPara (89.9k tr, step rewards) 10 low-star; Hilal Calendar 24 (sa, already in the ledger). No local utility cluster in Turkish, Polish or Arabic",
    "reason_type": "evidence"
   }
  ]

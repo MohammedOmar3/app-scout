@@ -410,7 +410,9 @@
    ],
    "evidence_reviews": 31,
    "old_reason": "Discogs (67k ratings): 31 low-star in 90d (us, gb), about 11 on forced logouts and password resets, 8 on collection sort resets, 7 on a broken video player, 3 on an upsell sheet; mostly bugs, and VinylBox ($0.99-1.99/mo, Discogs sync) and iCollect Music (4.5, 2.5k) already cover the collection",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-16",
+   "outcome": "still rejected (other): 23 low-star in 90d (us, gb), mostly bugs: forced logouts, the video player that can't be closed, collection unreadable with VoiceOver, plus the 'unlock the power' upsell sheet. Marketplace and collection data belong to Discogs, and VinylBox and iCollect Music already sync it"
   },
   {
    "key": "paywall:google-forms:third-party-clients",
@@ -421,7 +423,9 @@
    ],
    "evidence_reviews": 31,
    "old_reason": "Forms for Google Docs (62k ratings): 31 low-star in 90d (us, gb), mostly subscription pop-ups and people expecting Google's own app. Form+ (4.8, 45k) and two others already exist, and the app depends on Google's API and OAuth review",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-16",
+   "outcome": "still rejected (build): 34 low-star in 90d (us, gb): pop-ups with a timed close button, paying to see responses, and people angry it isn't Google's own app. A Forms client needs Google's restricted-scope OAuth verification, and forms.google.com works free in Safari"
   },
   {
    "key": "ads:dc-metro:ad-walls",
@@ -431,7 +435,9 @@
    ],
    "evidence_reviews": 30,
    "old_reason": "~30 low-star reviews in 90d (us) on unskippable ads in DC Metro and Bus; one-city audience, and Citymapper, Transit and Apple Maps cover DC for free",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-16",
+   "outcome": "still rejected (dominant-free-alternative): 24 low-star in 90d, all us, nearly all about unskippable ads that block train times. One city; Transit, Citymapper, Google Maps and Apple Maps give DC real-time arrivals free, so spread and wedge both fail"
   },
   {
    "key": "paywall:wonder-weeks:lifetime-revoked",
@@ -441,7 +447,9 @@
    ],
    "evidence_reviews": 25,
    "old_reason": "The Wonder Weeks (122k ratings): 25 low-star in 90d (us, gb), ~10 in the days after v14.0 (2026-10-28) moved one-time buyers to $5/month; the leap framework is the publisher's proprietary content, reviewers also call it inaccurate, and clones already exist (Baby Leaps $6.99/yr, LittleLeaps, Baby Tracker: Leaps & Weeks); fails Gate B on content rights",
-   "status": "open"
+   "status": "closed",
+   "reopened": "2026-11-16",
+   "outcome": "still rejected (build): the wave continues, 30 low-star in 90d (us, gb), $6-10 buyers asked to create an account and pay $5 a month after v14. The leap calendar is the publisher's proprietary content and it borders on child-development health claims"
   }
  ]
 }
