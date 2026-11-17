@@ -2,7 +2,7 @@
 
 Finds small, buildable iOS app ideas by mining **proven, repeated pain** in apps that are already charting — then writes evidence-backed briefs ready for `/app-factory idea`.
 
-**Latest:** 2026-11-16 — no ideas today (3 hunt rounds, one targeted run lost to a 403 on the data push; Paprika 4's subscription surge strengthens the existing Recipe Drop idea; tide apps and tr/pl/ar locale discovery came up empty) — [report](reports/2026-11-16.md)
+**Latest:** 2026-11-17 — no ideas today (3 hunt rounds; visual day planners that paywall repeats and routines rose to 3.5 on the watchlist with Routinery as a second app; Secret Santa and dog-training leads rejected) — [report](reports/2026-11-17.md)
 
 ## How it works
 

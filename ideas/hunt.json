@@ -20,9 +20,9 @@
       ],
       "term_storefronts": "it,es,nl,br,mx,se,ch,at",
       "why": "Best lead today (3.5): visual day planners paywall repeats and routines (Structured Pro; Routinery v3.30 cut free to one routine; Tiimo free has no routines; Me+ caps routine steps)",
-      "evidence": "26 strict low-star in 90d across 4 apps and 9 storefronts (Structured 16, Routinery 7, Me+ 2, Tiimo 1); about 9 more on Structured's price change",
-      "missing": "Volume >=35 strict, or >=5 explicit asks to pay once; check that no free visual planner with free repeats has >5k ratings",
-      "rounds": 1,
+      "evidence": "About 29 strict low-star in 90d across 4 apps and 11 storefronts (Structured 18, Routinery 7, Me+ 2-3, Tiimo 1), about 12 in the last 30 days; about 9 more on Structured's price change; 0 explicit asks to pay once. Two reviewers say they'd rather use the phone's calendar or reminders. Easeline, DayZen and Fezer already give free repeats but have almost no ratings. Score 3.54",
+      "missing": "Re-check from the daily data only (no more targeted runs on it): promote if strict complaints reach >=35 in 90d or >=5 reviews/threads ask to pay once; reject as no-wedge if Easeline/DayZen-style free-repeat planners gain traction (>5k ratings) or the count stalls below 30 by 12-01",
+      "rounds": 2,
       "last_round": "2026-11-17"
     },
     {
@@ -557,5 +557,5 @@
       "date": "2026-11-17"
     }
   ],
-  "plan_next_run": "1) Collector: round 2 today (run 43798722500) failed when the merge job's push to the data branch got HTTP 403 ('Permission to MohammedOmar3/app-scout.git denied to github-actions[bot]'); round 3 at 04:08 worked, so it looked transient. If it happens again, check the repo's Actions workflow permissions and any ruleset on the data branch. 2) The re-open queue is empty (all items checked by 11-16). 3) Recipe Drop (proposed 11-07) is stronger: Paprika 4 (11-06) put social import into a subscription and drew 81 low-star in 4 weeks; the day-1 Instagram caption test is still the gate before building. 4) Discovery: the strongest pattern this week is paid one-time apps moving buyers to subscriptions (Paprika, Goodnotes, StrongLifts, Sky Guide, Merriam-Webster, Wonder Weeks). Look for one in a buildable category: list candidates with paid_storefronts>0 or a 'Pro'/'Plus' paid twin, scan the ones not scanned in 30 days with targeted runs, and search the daily data for 'paid for ... now subscription' each day. 5) Pedometers: StepsApp at 88 low-star; check non-price asks if it passes 100. 6) Timer Plus on 12-02; Cookidoo after 12-10. Night Sky and passport photos only on new evidence"
+  "plan_next_run": "1) Collector: today's scheduled daily fired late (03:41 UTC) after ensure-fresh had already dispatched one at 02:45, so the collection ran twice and hunt round 2 waited about 50 min. Consider checking for an imminent scheduled run in ensure-fresh, or moving the cron earlier. 2) Check every target id and term against ideas/ledger.json before a targeted run (Goodreads, Bookly, metronomes and Calendar by Bucket List Labs were already in discovery:round1-batch-2026-11-12; caught today before dispatch). 3) Best lead: paywall:structured:recurring-tasks (3.54), re-check from the daily data; no more targeted runs on it unless volume jumps. 4) Timer Plus on 12-02; Cookidoo after 12-10; pedometers only if StepsApp passes 100. 5) Discovery ideas not yet tried: shift-work and school-timetable apps in es, br, mx, de (escala de trabalho, turnos, horario escolar, Stundenplan); and the untouched-app sweep (apps with >=15 low-star in 90d not in the ledger) on each new daily scan"
 }
