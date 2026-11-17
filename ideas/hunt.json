@@ -2,6 +2,30 @@
   "updated": "2026-11-17",
   "open_targets": [
     {
+      "key": "paywall:structured:recurring-tasks",
+      "incumbents": [
+        "1499198946",
+        "1450486923",
+        "1596403446",
+        "1480220328"
+      ],
+      "terms": [
+        "daily planner",
+        "routine planner",
+        "visual planner",
+        "planner diario",
+        "agenda giornaliera",
+        "dagplanner",
+        "rotina diaria"
+      ],
+      "term_storefronts": "it,es,nl,br,mx,se,ch,at",
+      "why": "Best lead today (3.5): visual day planners paywall repeats and routines (Structured Pro; Routinery v3.30 cut free to one routine; Tiimo free has no routines; Me+ caps routine steps)",
+      "evidence": "26 strict low-star in 90d across 4 apps and 9 storefronts (Structured 16, Routinery 7, Me+ 2, Tiimo 1); about 9 more on Structured's price change",
+      "missing": "Volume >=35 strict, or >=5 explicit asks to pay once; check that no free visual planner with free repeats has >5k ratings",
+      "rounds": 1,
+      "last_round": "2026-11-17"
+    },
+    {
       "key": "ads:pedometers:history-paywall",
       "incumbents": [
         "1037595083",
