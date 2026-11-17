@@ -1635,6 +1635,43 @@
    ],
    "reason": "Hunt round 3 (targeted run 43802215233; terms tide times, tide chart, tide tables, tides, marées, Gezeiten in us, gb, au, ca, nz, fr; 40 apps). The paywall drift seen in the daily data (Tide Alert moved home-screen widgets to paid, Tides Near Me v4 added a premium banner, Tide Graph Pro went free plus subscription) is small: Tide Charts 17 low-star in 90d (3 on ads, the rest the Watch redesign and wrong times), Tide Guide 5, Tide Alert 4, Tides Near Me 3, and 0 across 15 other tide apps (marée.info, Tides NZ, UK Tides, TidesPro, My Tide Times). WillyWeather (au) has about 10 on ads, but it's a weather app and BoM's data and app are free. The category is also filling with 2026 entrants (Tideline, Find My Tide, Saltwater Tides, Tide Watcher, Tide AI), and tide data outside the US and Canada is licensed",
    "reason_type": "evidence"
+  },
+  {
+   "key": "regressed:ankimobile:v26-10-redesign",
+   "date": "2026-11-17",
+   "incumbents": [
+    "373493387"
+   ],
+   "reason": "Surge: AnkiMobile 26.10 (phased rollout from 11-03) redesigned Browse, the deck list and the review top bar. 69 low-star since 10-20 (us 50, gb 9, ca 8, au 2), nearly all 'bring back the old UI'. The incumbent is already fixing it: an Anki team response on 11-14 and the 26.10.1 hotfix on 11-16 (slim review bar) on forums.ankiweb.net. Users stay for AnkiWeb sync with desktop, which a 14-day Expo app can't replace; the earlier paywall:ankimobile:price-ui (10-31) was a different pain",
+   "reason_type": "other"
+  },
+  {
+   "key": "paywall:flipaclip:audio-video-plus",
+   "date": "2026-11-17",
+   "incumbents": [
+    "1101848914"
+   ],
+   "reason": "FlipaClip (271k ratings) v5.0-5.1 put audio, video import and extra layers behind FlipaClip+ or rewarded ads that often fail: 70 low-star in 30 days (us 60, gb 10). A frame-by-frame animation editor (layers, onion skin, audio track, video export) is far beyond 14 days, and the reviewers are mostly young and say they can't pay",
+   "reason_type": "build"
+  },
+  {
+   "key": "bugs:drawnames:secret-santa",
+   "date": "2026-11-17",
+   "incumbents": [
+    "932002377"
+   ],
+   "reason": "Hunt round 1 (targeted run 44011323466; terms secret santa, amigo secreto, amigo invisible, wichteln, lootjes trekken in us, gb, es, mx, br, de, nl, fr). drawnames (210k ratings) has 38 low-star in 90d (us 14, nl 8, de 7, gb 3, au 3, mx 2), but about 30 are crashes after v1.80 on iOS 27 and the 11-09 outage. Only about 6 are a real gap (same match every year, past draws lost, every participant must install and log in). The other gift-exchange apps scanned are quiet (Secret Santa 22: 2, Intercambio de regalos 0, Secret Gift 0, Santa's Secret Keeper 0), free web draws are everywhere, and nobody offers to pay",
+   "reason_type": "evidence"
+  },
+  {
+   "key": "fleeceware:woofz:dog-training-billing",
+   "date": "2026-11-17",
+   "incumbents": [
+    "1532020050",
+    "6736829352"
+   ],
+   "reason": "Hunt round 1. Woofz 143 low-star in 90d (us 82, gb 19, fr 13, de 9, es 7, mx 7) and PawChamp 35, but 107 of them are billing disputes from the web-funnel checkout (surprise add-ons like a 'Zen guide' or chat, cancelling hidden); only about 15 touch the training itself ('very basic'). Billing disputes aren't an opportunity on their own, the product is authored training content, and Dogo (6 low-star in 90d across 4 storefronts) already offers the plain version",
+   "reason_type": "no-wedge"
   }
  ]
 }

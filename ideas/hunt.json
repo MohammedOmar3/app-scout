@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "open_targets": [
     {
       "key": "ads:pedometers:history-paywall",
@@ -17,7 +17,7 @@
       ],
       "term_storefronts": "de,fr,it,es,nl,jp",
       "why": "New watchlist 3.2: StepsApp, Stepz, Pedometer++ moved history, widgets or setup behind subscriptions and full-screen ads",
-      "evidence": "See the ledger watchlist entry (StepsApp 65 low-star in 5 storefronts, Stepz 21, Pedometer++ 13 of 57 on pay or ads) | 11-16: round 1 added tr and pl storefronts for StepsApp: 88 low-star in 90d (us 16, gb 13, ca 11, fr 10, de); still mostly ads, a forced trial and Watch sync. Stepz 21, StepUp 36, Pedometer++ 57, unchanged",
+      "evidence": "See the ledger watchlist entry (StepsApp 65 low-star in 5 storefronts, Stepz 21, Pedometer++ 13 of 57 on pay or ads) | 11-16: round 1 added tr and pl storefronts for StepsApp: 88 low-star in 90d (us 16, gb 13, ca 11, fr 10, de); still mostly ads, a forced trial and Watch sync. Stepz 21, StepUp 36, Pedometer++ 57, unchanged | 11-17: daily data unchanged (StepsApp 88, Stepz 21, StepUp 36, Pedometer++ 57); not re-scanned",
       "missing": "Unchanged: a non-price wedge named by >=10 reviews that needs no Watch app, or explicit asks to pay once. StepsApp is near the 100-low-star mark; if it passes 100, count the non-price asks before spending a run",
       "rounds": 1,
       "last_round": "2026-11-16"
@@ -521,6 +521,16 @@
       "key": "paywall:tide-apps:widgets-and-ads",
       "outcome": "rejected",
       "date": "2026-11-16"
+    },
+    {
+      "key": "bugs:drawnames:secret-santa",
+      "outcome": "rejected",
+      "date": "2026-11-17"
+    },
+    {
+      "key": "fleeceware:woofz:dog-training-billing",
+      "outcome": "rejected",
+      "date": "2026-11-17"
     }
   ],
   "plan_next_run": "1) Collector: round 2 today (run 43798722500) failed when the merge job's push to the data branch got HTTP 403 ('Permission to MohammedOmar3/app-scout.git denied to github-actions[bot]'); round 3 at 04:08 worked, so it looked transient. If it happens again, check the repo's Actions workflow permissions and any ruleset on the data branch. 2) The re-open queue is empty (all items checked by 11-16). 3) Recipe Drop (proposed 11-07) is stronger: Paprika 4 (11-06) put social import into a subscription and drew 81 low-star in 4 weeks; the day-1 Instagram caption test is still the gate before building. 4) Discovery: the strongest pattern this week is paid one-time apps moving buyers to subscriptions (Paprika, Goodnotes, StrongLifts, Sky Guide, Merriam-Webster, Wonder Weeks). Look for one in a buildable category: list candidates with paid_storefronts>0 or a 'Pro'/'Plus' paid twin, scan the ones not scanned in 30 days with targeted runs, and search the daily data for 'paid for ... now subscription' each day. 5) Pedometers: StepsApp at 88 low-star; check non-price asks if it passes 100. 6) Timer Plus on 12-02; Cookidoo after 12-10. Night Sky and passport photos only on new evidence"
