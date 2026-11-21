@@ -1,0 +1,70 @@
+{
+ "mode": "daily",
+ "phase_minutes": {
+  "charts": 6.4,
+  "focus+lookup": 4.9
+ },
+ "partial": true,
+ "category_storefronts_today": [
+  "us",
+  "gb",
+  "pk",
+  "qa",
+  "kw",
+  "bh",
+  "om",
+  "jo",
+  "lb",
+  "ma"
+ ],
+ "feeds": {
+  "grossing/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "free/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "free": {
+   "ok": 102,
+   "empty": 49,
+   "skipped": 23
+  },
+  "paid": {
+   "ok": 98,
+   "empty": 52,
+   "skipped": 24
+  },
+  "grossing": {
+   "ok": 103,
+   "empty": 47,
+   "skipped": 24
+  }
+ },
+ "unique_chart_apps": 13168,
+ "carried_candidates": 2099,
+ "requests": 655,
+ "failures": 145,
+ "http_status": {
+  "chart-legacy 200": 394,
+  "chart-legacy 403": 145,
+  "breaker cooldown-1": 1,
+  "focus-islamic 200": 64,
+  "lookup 200": 52
+ },
+ "date": "2026-11-21",
+ "eligible_candidates": 7847,
+ "queued": 250,
+ "shards": 3,
+ "plan_minutes": 11.3,
+ "log": [
+  "[02:12:34] charts: 962 feeds, 12317 unique apps, category storefronts today: us,gb,pk,qa,kw,bh,om,jo,lb,ma",
+  "[02:12:34] charts: stopped early (time budget or 403 breaker) - continuing with what we have",
+  "[02:15:12] focus 'islamic': 897 apps found by search",
+  "[02:17:26] lookup: 1011 needed, 89 not in US store, cache size 43277",
+  "[02:17:26] plan: 7847 candidates (2099 carried over), queue 250 (40 focus)"
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "date": "2026-11-21",
+ "mode": "daily",
+ "status": "ok",
+ "finished": "2026-11-21T02:26:20+00:00",
+ "plan_minutes": 11.3,
+ "phase_minutes": {
+  "charts": 6.4,
+  "focus+lookup": 4.9
+ },
+ "partial": true,
+ "category_storefronts_today": [
+  "us",
+  "gb",
+  "pk",
+  "qa",
+  "kw",
+  "bh",
+  "om",
+  "jo",
+  "lb",
+  "ma"
+ ],
+ "feeds": {
+  "grossing/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "free/genre": {
+   "ok": 44,
+   "empty": 0,
+   "skipped": 176
+  },
+  "free": {
+   "ok": 102,
+   "empty": 49,
+   "skipped": 23
+  },
+  "paid": {
+   "ok": 98,
+   "empty": 52,
+   "skipped": 24
+  },
+  "grossing": {
+   "ok": 103,
+   "empty": 47,
+   "skipped": 24
+  }
+ },
+ "unique_chart_apps": 13168,
+ "eligible_candidates": 7847,
+ "carried_candidates": 2099,
+ "targets": null,
+ "terms": null,
+ "queued": 250,
+ "shards": 3,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 84,
+   "apps_scanned": 84,
+   "reviews_fetched": 29795,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 8.3,
+   "requests": 830,
+   "failures": 0
+  },
+  {
+   "shard": 1,
+   "apps_queued": 83,
+   "apps_scanned": 82,
+   "reviews_fetched": 32477,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 8.1,
+   "requests": 811,
+   "failures": 0
+  },
+  {
+   "shard": 2,
+   "apps_queued": 83,
+   "apps_scanned": 81,
+   "reviews_fetched": 31547,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 8.3,
+   "requests": 836,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 247,
+ "reviews_fetched": 93819,
+ "low_star_kept": 17399,
+ "review_files": 2866,
+ "requests": 3132,
+ "failures": 145,
+ "http_status": {
+  "chart-legacy 200": 394,
+  "chart-legacy 403": 145,
+  "breaker cooldown-1": 1,
+  "focus-islamic 200": 64,
+  "lookup 200": 52,
+  "canary 200": 3,
+  "canary ok": 3,
+  "reviews 200": 2474,
+  "reviews mostrecent p1 ok": 707,
+  "reviews mostrecent p2 ok": 371,
+  "reviews mosthelpful p1 ok": 701,
+  "reviews mosthelpful p2 ok": 565,
+  "reviews mosthelpful p2 empty": 13,
+  "reviews mostrecent p1 empty": 106,
+  "reviews mosthelpful p1 empty": 6,
+  "reviews mostrecent p2 empty": 5
+ },
+ "error_samples": [],
+ "log": [
+  "[02:12:34] charts: 962 feeds, 12317 unique apps, category storefronts today: us,gb,pk,qa,kw,bh,om,jo,lb,ma",
+  "[02:12:34] charts: stopped early (time budget or 403 breaker) - continuing with what we have",
+  "[02:15:12] focus 'islamic': 897 apps found by search",
+  "[02:17:26] lookup: 1011 needed, 89 not in US store, cache size 43277",
+  "[02:17:26] plan: 7847 candidates (2099 carried over), queue 250 (40 focus)",
+  "[02:17:42] shard 0/3: 84 apps",
+  "[02:17:43] shard 0: canary ok",
+  "[02:17:43] shard 1/3: 83 apps",
+  "[02:17:43] shard 1: canary ok",
+  "[02:17:43] shard 2/3: 83 apps",
+  "[02:17:43] shard 2: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ }
+}
