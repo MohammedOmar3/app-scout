@@ -1,0 +1,77 @@
+{
+ "date": "2026-11-17",
+ "mode": "targeted",
+ "status": "ok",
+ "finished": "2026-11-17T05:20:00+00:00",
+ "plan_minutes": 2.4,
+ "phase_minutes": {},
+ "partial": false,
+ "category_storefronts_today": null,
+ "feeds": null,
+ "unique_chart_apps": 238,
+ "eligible_candidates": 7923,
+ "carried_candidates": null,
+ "targets": [
+  "1499198946",
+  "1450486923",
+  "1596403446",
+  "1480220328"
+ ],
+ "terms": [
+  "daily planner",
+  "routine planner",
+  "planner diario",
+  "agenda giornaliera",
+  "dagplanner",
+  "rotina diaria",
+  "visual planner"
+ ],
+ "queued": 40,
+ "shards": 1,
+ "shards_missing": [],
+ "shards_detail": [
+  {
+   "shard": 0,
+   "apps_queued": 40,
+   "apps_scanned": 40,
+   "reviews_fetched": 19772,
+   "blocked": false,
+   "block_reason": "",
+   "cooldowns": 0,
+   "hit_deadline": false,
+   "minutes": 6.1,
+   "requests": 615,
+   "failures": 0
+  }
+ ],
+ "apps_scanned": 40,
+ "reviews_fetched": 19772,
+ "low_star_kept": 2746,
+ "review_files": 2825,
+ "requests": 672,
+ "failures": 0,
+ "http_status": {
+  "lookup 200": 1,
+  "target-search 200": 56,
+  "canary 200": 1,
+  "canary ok": 1,
+  "reviews 200": 614,
+  "reviews mostrecent p1 ok": 197,
+  "reviews mosthelpful p1 ok": 191,
+  "reviews mosthelpful p2 ok": 150,
+  "reviews mostrecent p2 ok": 55,
+  "reviews mosthelpful p2 empty": 4,
+  "reviews mostrecent p1 empty": 11,
+  "reviews mosthelpful p1 empty": 6
+ },
+ "error_samples": [],
+ "log": [
+  "[05:13:28] targeted plan: 4 ids, 7 terms -> 40 apps queued",
+  "[05:13:43] shard 0/1: 40 apps",
+  "[05:13:44] shard 0: canary ok"
+ ],
+ "health": {
+  "level": "OK",
+  "reasons": []
+ }
+}
